@@ -15,9 +15,12 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgres://cs348:group10@db:5432/housing_db
+      - DATABASE_URL=postgresql://cs348:group10@db:5432/housing_db
+      - PYTHONPATH=/backend
     depends_on:
       - db
+    networks:
+      - app-network
 
   db:
     image: postgres:17
