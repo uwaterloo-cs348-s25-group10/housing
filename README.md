@@ -22,7 +22,35 @@ docker-compose up --build
 * Backend: Fast API (Python)
 * DB: PostgreSQL
 * Fronted: (React)
+* ORM: SQLAlchemy
+* Containerization: Docker + Docker Compose
 
+## Sample Dataset
+We created a toy dataset consisting of one table: `apartments`.
+Table schema:
+
+* `id` (Integer, Primary Key)
+* `city` (String)
+* `registration_number` (String)
+
+## Hello World Functionality
+
+* `GET /` - returns "Hello World" message
+* `GET /apartments/` - returns all apartment rows
+* `POST /apartments/?city=...&registration_number=...` - adds a new apartment
+
+## How to Load Sample Data
+
+1. Swagger
+
+    Go to `http://localhost:8000/docs` and use `POST /apartments/`.
+    For example:
+    city: Waterloo,
+    registration_number: WLU7898
+
+2. curl
+
+    `curl -X POST "http://localhost:8000/apartments/?city=Waterloo&registration_number=WLU7898"`
 
 ## Authors
 * Andrew Lee
