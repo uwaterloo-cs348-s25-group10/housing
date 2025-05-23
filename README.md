@@ -18,6 +18,11 @@ docker-compose up --build
 * Backend: http://localhost:8000
 * API Docs (Swagger): http://localhost:8000/docs
 
+## Tech
+* Backend: Fast API (Python)
+* DB: PostgreSQL
+* Fronted: (React)
+
 
 ## Authors
 * Andrew Lee
