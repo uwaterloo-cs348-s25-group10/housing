@@ -1,0 +1,11 @@
+node_modules
+build
+.dockerignore
+Dockerfile
+README.md
+package-lock.json
+npm-debug.log
+*.log
+*.tgz
+*.zip
+*.tar.gz

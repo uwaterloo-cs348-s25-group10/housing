@@ -1,44 +1,59 @@
-services:
-  # frontend:
-  #   build: ./frontend
-  #   container_name: frontend-image
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     - backend
-  #   networks:
-  #     - app-network
+version: '3.8'
 
-  backend:
-    build: ./backend
-    container_name: backend-image
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
-      - "8000:8000"
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
     environment:
-      - DATABASE_URL=postgresql://cs348:group10@db:5432/housing_db
-      - PYTHONPATH=/backend
+      - REACT_APP_API_URL=http://localhost:8000
+      - CHOKIDAR_USEPOLLING=true
     depends_on:
-      - db
+      - backend
     networks:
       - app-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql://housing_user:housing_password@db:5432/housing_db
+    networks:
+      - app-network
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
   db:
     image: postgres:17
-    container_name: postgres-db
     environment:
-      POSTGRES_USER: cs348
-      POSTGRES_PASSWORD: group10
       POSTGRES_DB: housing_db
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      POSTGRES_USER: housing_user
+      POSTGRES_PASSWORD: housing_password
     ports:
       - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
     networks:
       - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U housing_user -d housing_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
 volumes:
   postgres_data:
 
 networks:
   app-network:
-  
+    driver: bridge
