@@ -8,7 +8,7 @@ from typing import Optional
 from sqlalchemy import func, text, create_engine
 
 import app.models
-from app.models import Apartment, Property, HousingPrice, Region
+from app.models import Apartment, Property, HousingPrice, Region, IncomeData
 from app.database import SessionLocal, engine, Base
 
 app = FastAPI()

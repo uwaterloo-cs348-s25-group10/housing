@@ -1,54 +1,60 @@
 """
 Author: Nandini Mehrotra
-Purpose: Drop & recreate all tables, then insert dummy data
-         for Regions, Properties, HousingPrice, Apartments.
+Purpose: Drop & recreate tables, then insert dummy data for Region, Property, HousingPrice and IncomeData.
 """
 
 from app.database import SessionLocal, engine, Base
-from app.models import Region, Property, HousingPrice, Apartment
+from app.models import Region, Property, HousingPrice, IncomeData
 
 def seed():
+
     Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
 
     db = SessionLocal()
     try:
         # Regions
-        toronto = Region(name="Toronto", province="ON")
-        ottawa  = Region(name="Ottawa", province="ON")
-        montreal= Region(name="Montreal", province="QC")
-        db.add_all([toronto, ottawa, montreal])
+        regions = [
+            Region(region_id=1, name="Vancouver", province="BC"),
+            Region(region_id=2, name="Calgary",   province="AB"),
+            Region(region_id=3, name="Toronto",   province="ON"),
+            Region(region_id=4, name="Ottawa",    province="ON"),
+            Region(region_id=5, name="Montreal",  province="QC"),
+        ]
+        db.add_all(regions)
         db.commit()
 
         # Properties
-        p1 = Property(region_id=toronto.region_id, type="Condo", subtype="High-rise")
-        p2 = Property(region_id=toronto.region_id, type="House", subtype="Detached")
-        p3 = Property(region_id=ottawa.region_id,  type="Condo", subtype="Low-rise")
-        p4 = Property(region_id=montreal.region_id,type="Apartment", subtype="Loft")
-        db.add_all([p1, p2, p3, p4])
-        db.commit()
-
-        # HousingPrice (multiple years & price ranges)
-        prices = [
-            (p1.property_id, 2020, 800_000),
-            (p1.property_id, 2021, 850_000),
-            (p2.property_id, 2020, 1_200_000),
-            (p2.property_id, 2021, 1_250_000),
-            (p3.property_id, 2020, 400_000),
-            (p3.property_id, 2021, 420_000),
-            (p4.property_id, 2020, 300_000),
-            (p4.property_id, 2021, 320_000),
+        properties = [
+            Property(property_id=1, region_id=1, type="Condo", subtype="High-rise"),
+            Property(property_id=2, region_id=2, type="Condo", subtype="Low-rise"),
+            Property(property_id=3, region_id=3, type="Condo", subtype="Low-rise"),
+            Property(property_id=4, region_id=4, type="Condo", subtype="High-rise"),
+            Property(property_id=5, region_id=5, type="Condo", subtype="Low-rise"),
         ]
-        db.add_all([
-            HousingPrice(property_id=pid, year=yr, avg_price=price)
-            for pid, yr, price in prices
-        ])
+        db.add_all(properties)
         db.commit()
 
-        # Apartments
-        a1 = Apartment(city="Toronto", registration_number="A-100")
-        a2 = Apartment(city="Ottawa", registration_number="O-200")
-        db.add_all([a1, a2])
+        # HousingPrice
+        housing_prices = [
+            HousingPrice(housing_id=1, property_id=1, year=2020, avg_price=550000),
+            HousingPrice(housing_id=2, property_id=2, year=2020, avg_price=475000),
+            HousingPrice(housing_id=3, property_id=3, year=2020, avg_price=625000),
+            HousingPrice(housing_id=4, property_id=4, year=2020, avg_price=500000),
+            HousingPrice(housing_id=5, property_id=5, year=2020, avg_price=525000),
+        ]
+        db.add_all(housing_prices)
+        db.commit()
+
+        # IncomeData
+        income_data = [
+            IncomeData(income_id=1, region_id=1, year=2020, avg_income=120000),
+            IncomeData(income_id=2, region_id=2, year=2020, avg_income=95000),
+            IncomeData(income_id=3, region_id=3, year=2020, avg_income=120000),
+            IncomeData(income_id=4, region_id=4, year=2020, avg_income=105000),
+            IncomeData(income_id=5, region_id=5, year=2020, avg_income=115000),
+        ]
+        db.add_all(income_data)
         db.commit()
 
         print("✅ Seed data inserted!")
