@@ -1,0 +1,39 @@
+== FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region ==
+ region  | province | year | property_type | avg_price 
+---------+----------+------+---------------+-----------
+ Ottawa  | ON       | 2020 | Condo         |    500000
+ Toronto | ON       | 2020 | Condo         |    625000
+(2 rows)
+
+== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 ==
+ region  | province | year | avg_income 
+---------+----------+------+------------
+ Ottawa  | ON       | 2020 |     105000
+ Toronto | ON       | 2020 |     120000
+(2 rows)
+
+FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos
+  region   | user_hai 
+-----------+----------
+ Calgary   |    30.53
+ Ottawa    |    29.00
+ Montreal  |    27.62
+ Vancouver |    26.36
+(4 rows)
+
+FEATURE 3: Reverse Lookup – Where Did This Price Exist? (±$25,000 around 600000)
+ region  | property_type | year | avg_price 
+---------+---------------+------+-----------
+ Toronto | Condo         | 2020 |    625000
+(1 row)
+
+FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos
+ region_id |   name    | hai_index 
+-----------+-----------+-----------
+         5 | Montreal  |     21.90
+         1 | Vancouver |     21.82
+         4 | Ottawa    |     21.00
+         2 | Calgary   |     20.00
+         3 | Toronto   |     19.20
+(5 rows)
+

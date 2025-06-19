@@ -2,12 +2,13 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 import time
 import logging
-from sqlalchemy import create_engine
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session
-from optional import Optional
-from app.models.apartments_model import Apartment
-from app.models.property_model import Property
+from typing import Optional
+from sqlalchemy import func, text, create_engine
+
+import app.models
+from app.models import Apartment, Property, HousingPrice, Region, IncomeData
 from app.database import SessionLocal, engine, Base
 
 app = FastAPI()
@@ -77,22 +78,89 @@ def create_apartments(type: str, subtype: str, region_id: int, db: Session = Dep
 
 @app.get("/reverse-lookup")
 def reverse_lookup(price: float, margin: int = 25000, property_type: Optional[str] = None, year: Optional[int] = None, db: Session = Depends(get_db)):
-    query = """
-    SELECT r.name, p.type, h.year, h.avg_price
-    FROM HousingPrice h
-    JOIN Property p ON h.property_id = p.property_id
-    JOIN Region r ON p.region_id = r.region_id
-    WHERE ABS(h.avg_price - :price) <= :margin
-    """
-    params = {"price": price, "margin": margin}
+    q = (
+        db.query(
+            Region.name.label("region"),
+            Property.type.label("property_type"),
+            HousingPrice.year,
+            HousingPrice.avg_price,
+        )
+        .join(Property, HousingPrice.property_id == Property.property_id)
+        .join(Region, Property.region_id == Region.region_id)
+        .filter(func.abs(HousingPrice.avg_price - price) <= margin)
+    )
 
-    if  property_type:
-        query += " AND P.type = :property_type"
-        params["property_type"] = property_type
+    if property_type:
+        q = q.filter(Property.type == property_type)
     if year:
-        query += " AND h.year = :year"
-        params["year"] = year
+        q = q.filter(HousingPrice.year == year)
 
-    results = db.execute(query, params).fetchall()
-    return [dict(row) for row in results]
+    return [
+        {
+            "region": region,
+            "property_type": ptype,
+            "year": yr,
+            "avg_price": avg,
+        }
+        for region, ptype, yr, avg in q.all()
+    ]
 
+@app.get("/housing-price/")
+def list_housing_prices(db: Session = Depends(get_db)):
+    return db.query(HousingPrice).all()
+
+@app.post("/housing-price/")
+def create_housing_price(
+    property_id: int,
+    year: int,
+    avg_price: float,
+    db: Session = Depends(get_db)
+):
+    record = HousingPrice(
+        property_id=property_id,
+        year=year,
+        avg_price=avg_price
+    )
+    db.add(record)
+    db.commit()
+    db.refresh(record)
+    return record
+
+@app.get("/trends/housing")
+def housing_trends(
+    province: str,
+    property_type: str,
+    year: int,
+    db: Session = Depends(get_db)
+):
+    """
+    Returns the average sale price for each region in the given
+    province, property type, and year.
+    """
+    q = (
+        db.query(
+            Region.name.label("region"),
+            HousingPrice.year,
+            Property.type.label("property_type"),
+            func.avg(HousingPrice.avg_price).label("avg_price"),
+        )
+        .join(Property, HousingPrice.property_id == Property.property_id)
+        .join(Region, Property.region_id == Region.region_id)
+        .filter(
+            Region.province == province,
+            Property.type == property_type,
+            HousingPrice.year == year,
+        )
+        .group_by(Region.name, HousingPrice.year, Property.type)
+        .order_by(Region.name)
+    )
+
+    return [
+        {
+            "region": region,
+            "year": yr,
+            "property_type": ptype,
+            "avg_price": avg,
+        }
+        for region, yr, ptype, avg in q.all()
+    ]
