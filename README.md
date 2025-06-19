@@ -16,6 +16,7 @@ cp .env.example .env
 docker-compose up --build
 ```
 5. Now you can access to the service
+* Frontend: http://localhost:3000 (On your network, you may use http://172.19.0.4:3000)
 * Backend: http://localhost:8000
 * API Docs (Swagger): http://localhost:8000/docs
 
@@ -26,32 +27,6 @@ docker-compose up --build
 * ORM: SQLAlchemy
 * Containerization: Docker + Docker Compose
 
-## Sample Dataset
-We created a toy dataset consisting of one table: `apartments`.
-Table schema:
-
-* `id` (Integer, Primary Key)
-* `city` (String)
-* `registration_number` (String)
-
-## Hello World Functionality
-
-* `GET /` - returns "Hello World" message
-* `GET /apartments/` - returns all apartment rows
-* `POST /apartments/?city=...&registration_number=...` - adds a new apartment
-
-## How to Load Sample Data
-
-1. Swagger
-
-    Go to `http://localhost:8000/docs` and use `POST /apartments/`.
-    For example:
-    city: Waterloo,
-    registration_number: WLU7898
-
-2. curl
-
-    `curl -X POST "http://localhost:8000/apartments/?city=Waterloo&registration_number=WLU7898"`
 
 ## Authors
 * Andrew Lee
