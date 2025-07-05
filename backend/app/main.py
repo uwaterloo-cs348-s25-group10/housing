@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import time
 import logging
@@ -10,6 +10,7 @@ from sqlalchemy import func, text, create_engine
 import app.models
 from app.models import Apartment, Property, HousingPrice, Region, IncomeData
 from app.database import SessionLocal, engine, Base
+from app.import_data import full_reset, load_csv_data, verify_data
 
 app = FastAPI()
 
@@ -164,3 +165,45 @@ def housing_trends(
         }
         for region, yr, ptype, avg in q.all()
     ]
+
+@app.post("/import-data/")
+async def import_data(reset: bool = True, random_year: bool = False):
+    """
+        Import CSV data into the database.
+        - reset: it will erase the current database
+        - random_year: year will be randomly selected between 2000 and 2025
+
+        Example: 
+        curl -X POST "http://localhost:8000/import-data/?reset=true&random_year=true"
+    """
+    try:
+        if reset:
+            full_reset()
+        
+        load_csv_data(random_year=random_year)
+        verify_data()
+        
+        return {"message": "Data imported successfully"}
+    except Exception as e:
+        logging.error(f"Data import failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
+    
+@app.post("/show-data")
+async def show_data(size: int = 5, random: bool = True):
+    """
+        Check the current data
+        - size: # of rows for each table
+        - random: each row will be randomly selected. Otherwise, it will order by the 'key'
+
+
+        Example: 
+        curl -X POST "http://localhost:8000/show-data"
+        curl -X POST "http://localhost:8000/show-data?size=10&random=True"
+    """
+    try:
+        verify_data(sample_size=size, random=random)
+        
+        return {"message": "Check Log"}
+    except Exception as e:
+        logging.error(f"Data import failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
