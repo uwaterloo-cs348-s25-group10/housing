@@ -5,7 +5,7 @@ IncomeData(income_id Int, region_id Int, year Int, avg_income Float)
 """
 
 from sqlalchemy import Column, Integer, Float, ForeignKey, UniqueConstraint
-from app.database import Base
+from app.db.base import Base
 
 class IncomeData(Base):
     __tablename__ = "income_data"

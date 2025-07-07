@@ -3,7 +3,8 @@ Author: Nandini Mehrotra
 Purpose: Drop & recreate tables, then insert dummy data for Region, Property, HousingPrice and IncomeData.
 """
 
-from app.database import SessionLocal, engine, Base
+from app.db.db_sample import SessionLocal, engine
+from app.db.base import Base
 from app.models import Region, Property, HousingPrice, IncomeData
 
 def seed():
