@@ -29,6 +29,8 @@ services:
         condition: service_healthy
     environment:
       - DATABASE_URL=postgresql://housing_user:housing_password@db:5432/housing_db
+    volumes:
+      - ./dataset:/app/dataset
     networks:
       - app-network
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload

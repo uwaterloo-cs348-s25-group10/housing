@@ -1,991 +1,991 @@
 ,region_name,year,avg_income,province
+0,Newfoundland and Labrador,2020,71500,NL
+1,Newfoundland and Labrador,2015,73000,NL
 2,Newfoundland and Labrador,2020,71500,NL
 3,Newfoundland and Labrador,2015,73000,NL
-6,Newfoundland and Labrador,2020,71500,NL
-7,Newfoundland and Labrador,2015,73000,NL
-10,Newfoundland and Labrador,2020,71500,NL
-11,Newfoundland and Labrador,2015,73000,NL
-14,"Corner Brook (CA), N.L.",2020,70000,
-15,"Corner Brook (CA), N.L.",2015,70000,
-18,"Corner Brook (CA), N.L.",2020,70000,
-19,"Corner Brook (CA), N.L.",2015,70000,
-22,"Corner Brook (CA), N.L.",2020,70000,
-23,"Corner Brook (CA), N.L.",2015,70000,
-26,"Gander (CA), N.L.",2020,78000,
-27,"Gander (CA), N.L.",2015,77000,
-30,"Gander (CA), N.L.",2020,78000,
-31,"Gander (CA), N.L.",2015,77000,
-34,"Gander (CA), N.L.",2020,78000,
-35,"Gander (CA), N.L.",2015,77000,
-38,"Grand Falls-Windsor (CA), N.L.",2020,66000,
-39,"Grand Falls-Windsor (CA), N.L.",2015,65500,
-42,"Grand Falls-Windsor (CA), N.L.",2020,66000,
-43,"Grand Falls-Windsor (CA), N.L.",2015,65500,
-46,"Grand Falls-Windsor (CA), N.L.",2020,66000,
-47,"Grand Falls-Windsor (CA), N.L.",2015,65500,
-50,"St. John's (CMA), N.L.",2020,85000,
-51,"St. John's (CMA), N.L.",2015,86000,
-54,"St. John's (CMA), N.L.",2020,85000,
-55,"St. John's (CMA), N.L.",2015,86000,
-58,"St. John's (CMA), N.L.",2020,85000,
-59,"St. John's (CMA), N.L.",2015,86000,
-62,Prince Edward Island,2020,73500,PE
-63,Prince Edward Island,2015,66000,PE
-66,Prince Edward Island,2020,73500,PE
-67,Prince Edward Island,2015,66000,PE
-70,Prince Edward Island,2020,73500,PE
-71,Prince Edward Island,2015,66000,PE
-74,"Charlottetown (CA), P.E.I.",2020,76500,
-75,"Charlottetown (CA), P.E.I.",2015,69000,
-78,"Charlottetown (CA), P.E.I.",2020,76500,
-79,"Charlottetown (CA), P.E.I.",2015,69000,
-82,"Charlottetown (CA), P.E.I.",2020,76500,
-83,"Charlottetown (CA), P.E.I.",2015,69000,
-86,"Summerside (CA), P.E.I.",2020,64500,
-87,"Summerside (CA), P.E.I.",2015,58000,
-90,"Summerside (CA), P.E.I.",2020,64500,
-91,"Summerside (CA), P.E.I.",2015,58000,
-94,"Summerside (CA), P.E.I.",2020,64500,
-95,"Summerside (CA), P.E.I.",2015,58000,
-98,Nova Scotia,2020,71500,NS
-99,Nova Scotia,2015,66000,NS
-102,Nova Scotia,2020,71500,NS
-103,Nova Scotia,2015,66000,NS
-106,Nova Scotia,2020,71500,NS
-107,Nova Scotia,2015,66000,NS
-110,"Cape Breton (CA), N.S.",2020,62000,
-111,"Cape Breton (CA), N.S.",2015,57200,
-114,"Cape Breton (CA), N.S.",2020,62000,
-115,"Cape Breton (CA), N.S.",2015,57200,
-118,"Cape Breton (CA), N.S.",2020,62000,
-119,"Cape Breton (CA), N.S.",2015,57200,
-122,"Halifax (CMA), N.S.",2020,81000,
-123,"Halifax (CMA), N.S.",2015,75500,
-126,"Halifax (CMA), N.S.",2020,81000,
-127,"Halifax (CMA), N.S.",2015,75500,
-130,"Halifax (CMA), N.S.",2020,81000,
-131,"Halifax (CMA), N.S.",2015,75500,
-134,"Kentville (CA), N.S.",2020,67000,
-135,"Kentville (CA), N.S.",2015,60400,
-138,"Kentville (CA), N.S.",2020,67000,
-139,"Kentville (CA), N.S.",2015,60400,
-142,"Kentville (CA), N.S.",2020,67000,
-143,"Kentville (CA), N.S.",2015,60400,
-146,"New Glasgow (CA), N.S.",2020,64000,
-147,"New Glasgow (CA), N.S.",2015,60400,
-150,"New Glasgow (CA), N.S.",2020,64000,
-151,"New Glasgow (CA), N.S.",2015,60400,
-154,"New Glasgow (CA), N.S.",2020,64000,
-155,"New Glasgow (CA), N.S.",2015,60400,
-158,"Truro (CA), N.S.",2020,66000,
-159,"Truro (CA), N.S.",2015,60000,
-162,"Truro (CA), N.S.",2020,66000,
-163,"Truro (CA), N.S.",2015,60000,
-166,"Truro (CA), N.S.",2020,66000,
-167,"Truro (CA), N.S.",2015,60000,
-170,New Brunswick,2020,70000,NB
-171,New Brunswick,2015,64000,NB
-174,New Brunswick,2020,70000,NB
-175,New Brunswick,2015,64000,NB
-178,New Brunswick,2020,70000,NB
-179,New Brunswick,2015,64000,NB
-182,"Bathurst (CA), N.B.",2020,62800,
-183,"Bathurst (CA), N.B.",2015,58000,
-186,"Bathurst (CA), N.B.",2020,62800,
-187,"Bathurst (CA), N.B.",2015,58000,
-190,"Bathurst (CA), N.B.",2020,62800,
-191,"Bathurst (CA), N.B.",2015,58000,
-194,"Campbellton (CA), N.B./Que.",2020,54400,
-195,"Campbellton (CA), N.B./Que.",2015,49200,
-198,"Campbellton (CA), N.B./Que.",2020,54400,
-199,"Campbellton (CA), N.B./Que.",2015,49200,
-202,"Campbellton (CA), N.B./Que.",2020,54400,
-203,"Campbellton (CA), N.B./Que.",2015,49200,
-206,"Edmundston (CA), N.B.",2020,60800,
-207,"Edmundston (CA), N.B.",2015,56800,
-210,"Edmundston (CA), N.B.",2020,60800,
-211,"Edmundston (CA), N.B.",2015,56800,
-214,"Edmundston (CA), N.B.",2020,60800,
-215,"Edmundston (CA), N.B.",2015,56800,
-218,"Fredericton (CMA), N.B.",2020,79000,
-219,"Fredericton (CMA), N.B.",2015,72500,
-222,"Fredericton (CMA), N.B.",2020,79000,
-223,"Fredericton (CMA), N.B.",2015,72500,
-226,"Fredericton (CMA), N.B.",2020,79000,
-227,"Fredericton (CMA), N.B.",2015,72500,
-230,"Miramichi (CA), N.B.",2020,66500,
-231,"Miramichi (CA), N.B.",2015,62800,
-234,"Miramichi (CA), N.B.",2020,66500,
-235,"Miramichi (CA), N.B.",2015,62800,
-238,"Miramichi (CA), N.B.",2020,66500,
-239,"Miramichi (CA), N.B.",2015,62800,
-242,"Moncton (CMA), N.B.",2020,74500,
-243,"Moncton (CMA), N.B.",2015,68000,
-246,"Moncton (CMA), N.B.",2020,74500,
-247,"Moncton (CMA), N.B.",2015,68000,
-250,"Moncton (CMA), N.B.",2020,74500,
-251,"Moncton (CMA), N.B.",2015,68000,
-254,"Saint John (CMA), N.B.",2020,74000,
-255,"Saint John (CMA), N.B.",2015,69000,
-258,"Saint John (CMA), N.B.",2020,74000,
-259,"Saint John (CMA), N.B.",2015,69000,
-262,"Saint John (CMA), N.B.",2020,74000,
-263,"Saint John (CMA), N.B.",2015,69000,
-266,Quebec,2020,72500,QC
-267,Quebec,2015,64500,QC
-270,Quebec,2020,72500,QC
-271,Quebec,2015,64500,QC
-274,Quebec,2020,72500,QC
-275,Quebec,2015,64500,QC
-278,"Alma (CA), Que.",2020,67500,
-279,"Alma (CA), Que.",2015,61200,
-282,"Alma (CA), Que.",2020,67500,
-283,"Alma (CA), Que.",2015,61200,
-286,"Alma (CA), Que.",2020,67500,
-287,"Alma (CA), Que.",2015,61200,
-290,"Amos (CA), Que.",2020,76500,
-291,"Amos (CA), Que.",2015,70000,
-294,"Amos (CA), Que.",2020,76500,
-295,"Amos (CA), Que.",2015,70000,
-298,"Amos (CA), Que.",2020,76500,
-299,"Amos (CA), Que.",2015,70000,
-302,"Baie-Comeau (CA), Que.",2020,75000,
-303,"Baie-Comeau (CA), Que.",2015,72500,
-306,"Baie-Comeau (CA), Que.",2020,75000,
-307,"Baie-Comeau (CA), Que.",2015,72500,
-310,"Baie-Comeau (CA), Que.",2020,75000,
-311,"Baie-Comeau (CA), Que.",2015,72500,
-314,"Cowansville (CA), Que.",2020,58800,
-315,"Cowansville (CA), Que.",2015,53600,
-318,"Cowansville (CA), Que.",2020,58800,
-319,"Cowansville (CA), Que.",2015,53600,
-322,"Cowansville (CA), Que.",2020,58800,
-323,"Cowansville (CA), Que.",2015,53600,
-326,"Dolbeau-Mistassini (CA), Que.",2020,63600,
-327,"Dolbeau-Mistassini (CA), Que.",2015,58000,
-330,"Dolbeau-Mistassini (CA), Que.",2020,63600,
-331,"Dolbeau-Mistassini (CA), Que.",2015,58000,
-334,"Dolbeau-Mistassini (CA), Que.",2020,63600,
-335,"Dolbeau-Mistassini (CA), Que.",2015,58000,
-338,"Drummondville (CMA), Que.",2020,64000,
-339,"Drummondville (CMA), Que.",2015,56800,
-342,"Drummondville (CMA), Que.",2020,64000,
-343,"Drummondville (CMA), Que.",2015,56800,
-346,"Drummondville (CMA), Que.",2020,64000,
-347,"Drummondville (CMA), Que.",2015,56800,
-350,"Granby (CA), Que.",2020,68500,
-351,"Granby (CA), Que.",2015,60800,
-354,"Granby (CA), Que.",2020,68500,
-355,"Granby (CA), Que.",2015,60800,
-358,"Granby (CA), Que.",2020,68500,
-359,"Granby (CA), Que.",2015,60800,
-362,"Joliette (CA), Que.",2020,61600,
-363,"Joliette (CA), Que.",2015,55200,
-366,"Joliette (CA), Que.",2020,61600,
-367,"Joliette (CA), Que.",2015,55200,
-370,"Joliette (CA), Que.",2020,61600,
-371,"Joliette (CA), Que.",2015,55200,
-374,"Lachute (CA), Que.",2020,56400,
-375,"Lachute (CA), Que.",2015,48400,
-378,"Lachute (CA), Que.",2020,56400,
-379,"Lachute (CA), Que.",2015,48400,
-382,"Lachute (CA), Que.",2020,56400,
-383,"Lachute (CA), Que.",2015,48400,
-386,"Matane (CA), Que.",2020,56800,
-387,"Matane (CA), Que.",2015,52400,
-390,"Matane (CA), Que.",2020,56800,
-391,"Matane (CA), Que.",2015,52400,
-394,"Matane (CA), Que.",2020,56800,
-395,"Matane (CA), Que.",2015,52400,
-398,"Montréal (CMA), Que.",2020,76000,
-399,"Montréal (CMA), Que.",2015,67000,
-402,"Montréal (CMA), Que.",2020,76000,
-403,"Montréal (CMA), Que.",2015,67000,
-406,"Montréal (CMA), Que.",2020,76000,
-407,"Montréal (CMA), Que.",2015,67000,
-410,"Québec (CMA), Que.",2020,76500,
-411,"Québec (CMA), Que.",2015,71000,
-414,"Québec (CMA), Que.",2020,76500,
-415,"Québec (CMA), Que.",2015,71000,
-418,"Québec (CMA), Que.",2020,76500,
-419,"Québec (CMA), Que.",2015,71000,
-422,"Rimouski (CA), Que.",2020,67000,
-423,"Rimouski (CA), Que.",2015,62400,
-426,"Rimouski (CA), Que.",2020,67000,
-427,"Rimouski (CA), Que.",2015,62400,
-430,"Rimouski (CA), Que.",2020,67000,
-431,"Rimouski (CA), Que.",2015,62400,
-434,"Rivière-du-Loup (CA), Que.",2020,67000,
-435,"Rivière-du-Loup (CA), Que.",2015,62000,
-438,"Rivière-du-Loup (CA), Que.",2020,67000,
-439,"Rivière-du-Loup (CA), Que.",2015,62000,
-442,"Rivière-du-Loup (CA), Que.",2020,67000,
-443,"Rivière-du-Loup (CA), Que.",2015,62000,
-446,"Rouyn-Noranda (CA), Que.",2020,76000,
-447,"Rouyn-Noranda (CA), Que.",2015,68000,
-450,"Rouyn-Noranda (CA), Que.",2020,76000,
-451,"Rouyn-Noranda (CA), Que.",2015,68000,
-454,"Rouyn-Noranda (CA), Que.",2020,76000,
-455,"Rouyn-Noranda (CA), Que.",2015,68000,
-458,"Saguenay (CMA), Que.",2020,70000,
-459,"Saguenay (CMA), Que.",2015,64000,
-462,"Saguenay (CMA), Que.",2020,70000,
-463,"Saguenay (CMA), Que.",2015,64000,
-466,"Saguenay (CMA), Que.",2020,70000,
-467,"Saguenay (CMA), Que.",2015,64000,
-470,"Saint-Georges (CA), Que.",2020,64500,
-471,"Saint-Georges (CA), Que.",2015,59200,
-474,"Saint-Georges (CA), Que.",2020,64500,
-475,"Saint-Georges (CA), Que.",2015,59200,
-478,"Saint-Georges (CA), Que.",2020,64500,
-479,"Saint-Georges (CA), Que.",2015,59200,
-482,"Saint-Hyacinthe (CA), Que.",2020,62000,
-483,"Saint-Hyacinthe (CA), Que.",2015,56000,
-486,"Saint-Hyacinthe (CA), Que.",2020,62000,
-487,"Saint-Hyacinthe (CA), Que.",2015,56000,
-490,"Saint-Hyacinthe (CA), Que.",2020,62000,
-491,"Saint-Hyacinthe (CA), Que.",2015,56000,
-494,"Sainte-Agathe-des-Monts (CA), Que.",2020,61200,
-495,"Sainte-Agathe-des-Monts (CA), Que.",2015,52800,
-498,"Sainte-Agathe-des-Monts (CA), Que.",2020,61200,
-499,"Sainte-Agathe-des-Monts (CA), Que.",2015,52800,
-502,"Sainte-Agathe-des-Monts (CA), Que.",2020,61200,
-503,"Sainte-Agathe-des-Monts (CA), Que.",2015,52800,
-506,"Sainte-Marie (CA), Que.",2020,78000,
-507,"Sainte-Marie (CA), Que.",2015,70000,
-510,"Sainte-Marie (CA), Que.",2020,78000,
-511,"Sainte-Marie (CA), Que.",2015,70000,
-514,"Sainte-Marie (CA), Que.",2020,78000,
-515,"Sainte-Marie (CA), Que.",2015,70000,
-518,"Salaberry-de-Valleyfield (CA), Que.",2020,62000,
-519,"Salaberry-de-Valleyfield (CA), Que.",2015,55200,
-522,"Salaberry-de-Valleyfield (CA), Que.",2020,62000,
-523,"Salaberry-de-Valleyfield (CA), Que.",2015,55200,
-526,"Salaberry-de-Valleyfield (CA), Que.",2020,62000,
-527,"Salaberry-de-Valleyfield (CA), Que.",2015,55200,
-530,"Sept-Îles (CA), Que.",2020,79000,
-531,"Sept-Îles (CA), Que.",2015,72500,
-534,"Sept-Îles (CA), Que.",2020,79000,
-535,"Sept-Îles (CA), Que.",2015,72500,
-538,"Sept-Îles (CA), Que.",2020,79000,
-539,"Sept-Îles (CA), Que.",2015,72500,
-542,"Shawinigan (CA), Que.",2020,53600,
-543,"Shawinigan (CA), Que.",2015,48400,
-546,"Shawinigan (CA), Que.",2020,53600,
-547,"Shawinigan (CA), Que.",2015,48400,
-550,"Shawinigan (CA), Que.",2020,53600,
-551,"Shawinigan (CA), Que.",2015,48400,
-554,"Sherbrooke (CMA), Que.",2020,65000,
-555,"Sherbrooke (CMA), Que.",2015,58000,
-558,"Sherbrooke (CMA), Que.",2020,65000,
-559,"Sherbrooke (CMA), Que.",2015,58000,
-562,"Sherbrooke (CMA), Que.",2020,65000,
-563,"Sherbrooke (CMA), Que.",2015,58000,
-566,"Sorel-Tracy (CA), Que.",2020,61600,
-567,"Sorel-Tracy (CA), Que.",2015,56000,
-570,"Sorel-Tracy (CA), Que.",2020,61600,
-571,"Sorel-Tracy (CA), Que.",2015,56000,
-574,"Sorel-Tracy (CA), Que.",2020,61600,
-575,"Sorel-Tracy (CA), Que.",2015,56000,
-578,"Thetford Mines (CA), Que.",2020,57200,
-579,"Thetford Mines (CA), Que.",2015,52000,
-582,"Thetford Mines (CA), Que.",2020,57200,
-583,"Thetford Mines (CA), Que.",2015,52000,
-586,"Thetford Mines (CA), Que.",2020,57200,
-587,"Thetford Mines (CA), Que.",2015,52000,
-590,"Trois-Rivières (CMA), Que.",2020,62400,
-591,"Trois-Rivières (CMA), Que.",2015,56000,
-594,"Trois-Rivières (CMA), Que.",2020,62400,
-595,"Trois-Rivières (CMA), Que.",2015,56000,
-598,"Trois-Rivières (CMA), Que.",2020,62400,
-599,"Trois-Rivières (CMA), Que.",2015,56000,
-602,"Val-d'Or (CA), Que.",2020,74500,
-603,"Val-d'Or (CA), Que.",2015,69000,
-606,"Val-d'Or (CA), Que.",2020,74500,
-607,"Val-d'Or (CA), Que.",2015,69000,
-610,"Val-d'Or (CA), Que.",2020,74500,
-611,"Val-d'Or (CA), Que.",2015,69000,
-614,"Victoriaville (CA), Que.",2020,63200,
-615,"Victoriaville (CA), Que.",2015,57200,
-618,"Victoriaville (CA), Que.",2020,63200,
-619,"Victoriaville (CA), Que.",2015,57200,
-622,"Victoriaville (CA), Que.",2020,63200,
-623,"Victoriaville (CA), Que.",2015,57200,
-626,Ontario,2020,91000,ON
-627,Ontario,2015,80000,ON
-630,Ontario,2020,91000,ON
-631,Ontario,2015,80000,ON
-634,Ontario,2020,91000,ON
-635,Ontario,2015,80000,ON
-638,"Barrie (CMA), Ont.",2020,97000,
-639,"Barrie (CMA), Ont.",2015,87000,
-642,"Barrie (CMA), Ont.",2020,97000,
-643,"Barrie (CMA), Ont.",2015,87000,
-646,"Barrie (CMA), Ont.",2020,97000,
-647,"Barrie (CMA), Ont.",2015,87000,
-650,"Belleville - Quinte West (CMA), Ont.",2020,78000,
-651,"Belleville - Quinte West (CMA), Ont.",2015,69000,
-654,"Belleville - Quinte West (CMA), Ont.",2020,78000,
-655,"Belleville - Quinte West (CMA), Ont.",2015,69000,
-658,"Belleville - Quinte West (CMA), Ont.",2020,78000,
-659,"Belleville - Quinte West (CMA), Ont.",2015,69000,
-662,"Brantford (CMA), Ont.",2020,85000,
-663,"Brantford (CMA), Ont.",2015,74500,
-666,"Brantford (CMA), Ont.",2020,85000,
-667,"Brantford (CMA), Ont.",2015,74500,
-670,"Brantford (CMA), Ont.",2020,85000,
-671,"Brantford (CMA), Ont.",2015,74500,
-674,"Brockville (CA), Ont.",2020,70500,
-675,"Brockville (CA), Ont.",2015,62800,
-678,"Brockville (CA), Ont.",2020,70500,
-679,"Brockville (CA), Ont.",2015,62800,
-682,"Brockville (CA), Ont.",2020,70500,
-683,"Brockville (CA), Ont.",2015,62800,
-686,"Centre Wellington (CA), Ont.",2020,101000,
-687,"Centre Wellington (CA), Ont.",2015,92000,
-690,"Centre Wellington (CA), Ont.",2020,101000,
-691,"Centre Wellington (CA), Ont.",2015,92000,
-694,"Centre Wellington (CA), Ont.",2020,101000,
-695,"Centre Wellington (CA), Ont.",2015,92000,
-698,"Chatham-Kent (CA), Ont.",2020,71500,
-699,"Chatham-Kent (CA), Ont.",2015,62800,
-702,"Chatham-Kent (CA), Ont.",2020,71500,
-703,"Chatham-Kent (CA), Ont.",2015,62800,
-706,"Chatham-Kent (CA), Ont.",2020,71500,
-707,"Chatham-Kent (CA), Ont.",2015,62800,
-710,"Cobourg (CA), Ont.",2020,77000,
-711,"Cobourg (CA), Ont.",2015,69500,
-714,"Cobourg (CA), Ont.",2020,77000,
-715,"Cobourg (CA), Ont.",2015,69500,
-718,"Cobourg (CA), Ont.",2020,77000,
-719,"Cobourg (CA), Ont.",2015,69500,
-722,"Collingwood (CA), Ont.",2020,82000,
-723,"Collingwood (CA), Ont.",2015,69500,
-726,"Collingwood (CA), Ont.",2020,82000,
-727,"Collingwood (CA), Ont.",2015,69500,
-730,"Collingwood (CA), Ont.",2020,82000,
-731,"Collingwood (CA), Ont.",2015,69500,
-734,"Cornwall (CA), Ont.",2020,65500,
-735,"Cornwall (CA), Ont.",2015,56000,
-738,"Cornwall (CA), Ont.",2020,65500,
-739,"Cornwall (CA), Ont.",2015,56000,
-742,"Cornwall (CA), Ont.",2020,65500,
-743,"Cornwall (CA), Ont.",2015,56000,
-746,"Elliot Lake (CA), Ont.",2020,50000,
-747,"Elliot Lake (CA), Ont.",2015,46000,
-750,"Elliot Lake (CA), Ont.",2020,50000,
-751,"Elliot Lake (CA), Ont.",2015,46000,
-754,"Elliot Lake (CA), Ont.",2020,50000,
-755,"Elliot Lake (CA), Ont.",2015,46000,
-758,"Essa (CA), Ont.",2020,108000,
-759,"Essa (CA), Ont.",2015,94000,
-762,"Essa (CA), Ont.",2020,108000,
-763,"Essa (CA), Ont.",2015,94000,
-766,"Essa (CA), Ont.",2020,108000,
-767,"Essa (CA), Ont.",2015,94000,
-770,"Greater Sudbury (CMA), Ont.",2020,84000,
-771,"Greater Sudbury (CMA), Ont.",2015,77500,
-774,"Greater Sudbury (CMA), Ont.",2020,84000,
-775,"Greater Sudbury (CMA), Ont.",2015,77500,
-778,"Greater Sudbury (CMA), Ont.",2020,84000,
-779,"Greater Sudbury (CMA), Ont.",2015,77500,
-782,"Guelph (CMA), Ont.",2020,97000,
-783,"Guelph (CMA), Ont.",2015,88000,
-786,"Guelph (CMA), Ont.",2020,97000,
-787,"Guelph (CMA), Ont.",2015,88000,
-790,"Guelph (CMA), Ont.",2020,97000,
-791,"Guelph (CMA), Ont.",2015,88000,
-794,"Hamilton (CMA), Ont.",2020,91000,
-795,"Hamilton (CMA), Ont.",2015,82000,
-798,"Hamilton (CMA), Ont.",2020,91000,
-799,"Hamilton (CMA), Ont.",2015,82000,
-802,"Hamilton (CMA), Ont.",2020,91000,
-803,"Hamilton (CMA), Ont.",2015,82000,
-806,"Hawkesbury (CA), Ont./Que.",2020,53600,
-807,"Hawkesbury (CA), Ont./Que.",2015,46000,
-810,"Hawkesbury (CA), Ont./Que.",2020,53600,
-811,"Hawkesbury (CA), Ont./Que.",2015,46000,
-814,"Hawkesbury (CA), Ont./Que.",2020,53600,
-815,"Hawkesbury (CA), Ont./Que.",2015,46000,
-818,"Ingersoll (CA), Ont.",2020,88000,
-819,"Ingersoll (CA), Ont.",2015,80000,
-822,"Ingersoll (CA), Ont.",2020,88000,
-823,"Ingersoll (CA), Ont.",2015,80000,
-826,"Ingersoll (CA), Ont.",2020,88000,
-827,"Ingersoll (CA), Ont.",2015,80000,
-830,"Kawartha Lakes (CA), Ont.",2020,82000,
-831,"Kawartha Lakes (CA), Ont.",2015,72500,
-834,"Kawartha Lakes (CA), Ont.",2020,82000,
-835,"Kawartha Lakes (CA), Ont.",2015,72500,
-838,"Kawartha Lakes (CA), Ont.",2020,82000,
-839,"Kawartha Lakes (CA), Ont.",2015,72500,
-842,"Kenora (CA), Ont.",2020,86000,
-843,"Kenora (CA), Ont.",2015,79500,
-846,"Kenora (CA), Ont.",2020,86000,
-847,"Kenora (CA), Ont.",2015,79500,
-850,"Kenora (CA), Ont.",2020,86000,
-851,"Kenora (CA), Ont.",2015,79500,
-854,"Kingston (CMA), Ont.",2020,83000,
-855,"Kingston (CMA), Ont.",2015,77000,
-858,"Kingston (CMA), Ont.",2020,83000,
-859,"Kingston (CMA), Ont.",2015,77000,
-862,"Kingston (CMA), Ont.",2020,83000,
-863,"Kingston (CMA), Ont.",2015,77000,
-866,"Kitchener - Cambridge - Waterloo (CMA), Ont.",2020,92000,
-867,"Kitchener - Cambridge - Waterloo (CMA), Ont.",2015,84000,
-870,"Kitchener - Cambridge - Waterloo (CMA), Ont.",2020,92000,
-871,"Kitchener - Cambridge - Waterloo (CMA), Ont.",2015,84000,
-874,"Kitchener - Cambridge - Waterloo (CMA), Ont.",2020,92000,
-875,"Kitchener - Cambridge - Waterloo (CMA), Ont.",2015,84000,
-878,"London (CMA), Ont.",2020,79500,
-879,"London (CMA), Ont.",2015,70000,
-882,"London (CMA), Ont.",2020,79500,
-883,"London (CMA), Ont.",2015,70000,
-886,"London (CMA), Ont.",2020,79500,
-887,"London (CMA), Ont.",2015,70000,
-890,"Midland (CA), Ont.",2020,71000,
-891,"Midland (CA), Ont.",2015,60800,
-894,"Midland (CA), Ont.",2020,71000,
-895,"Midland (CA), Ont.",2015,60800,
-898,"Midland (CA), Ont.",2020,71000,
-899,"Midland (CA), Ont.",2015,60800,
-902,"Norfolk (CA), Ont.",2020,82000,
-903,"Norfolk (CA), Ont.",2015,73000,
-906,"Norfolk (CA), Ont.",2020,82000,
-907,"Norfolk (CA), Ont.",2015,73000,
-910,"Norfolk (CA), Ont.",2020,82000,
-911,"Norfolk (CA), Ont.",2015,73000,
-914,"North Bay (CA), Ont.",2020,76000,
-915,"North Bay (CA), Ont.",2015,69500,
-918,"North Bay (CA), Ont.",2020,76000,
-919,"North Bay (CA), Ont.",2015,69500,
-922,"North Bay (CA), Ont.",2020,76000,
-923,"North Bay (CA), Ont.",2015,69500,
-926,"Orillia (CA), Ont.",2020,71000,
-927,"Orillia (CA), Ont.",2015,60400,
-930,"Orillia (CA), Ont.",2020,71000,
-931,"Orillia (CA), Ont.",2015,60400,
-934,"Orillia (CA), Ont.",2020,71000,
-935,"Orillia (CA), Ont.",2015,60400,
-938,"Oshawa (CMA), Ont.",2020,102000,
-939,"Oshawa (CMA), Ont.",2015,93000,
-942,"Oshawa (CMA), Ont.",2020,102000,
-943,"Oshawa (CMA), Ont.",2015,93000,
-946,"Oshawa (CMA), Ont.",2020,102000,
-947,"Oshawa (CMA), Ont.",2015,93000,
-950,"Ottawa - Gatineau (CMA), Ont./Que.",2020,98000,
-951,"Ottawa - Gatineau (CMA), Ont./Que.",2015,89000,
-954,"Ottawa - Gatineau (CMA), Ont./Que.",2020,98000,
-955,"Ottawa - Gatineau (CMA), Ont./Que.",2015,89000,
-958,"Ottawa - Gatineau (CMA), Ont./Que.",2020,98000,
-959,"Ottawa - Gatineau (CMA), Ont./Que.",2015,89000,
-962,"Owen Sound (CA), Ont.",2020,71500,
-963,"Owen Sound (CA), Ont.",2015,63200,
-966,"Owen Sound (CA), Ont.",2020,71500,
-967,"Owen Sound (CA), Ont.",2015,63200,
-970,"Owen Sound (CA), Ont.",2020,71500,
-971,"Owen Sound (CA), Ont.",2015,63200,
-974,"Pembroke (CA), Ont.",2020,73000,
-975,"Pembroke (CA), Ont.",2015,66500,
-978,"Pembroke (CA), Ont.",2020,73000,
-979,"Pembroke (CA), Ont.",2015,66500,
-982,"Pembroke (CA), Ont.",2020,73000,
-983,"Pembroke (CA), Ont.",2015,66500,
-986,"Petawawa (CA), Ont.",2020,102000,
-987,"Petawawa (CA), Ont.",2015,93000,
-990,"Petawawa (CA), Ont.",2020,102000,
-991,"Petawawa (CA), Ont.",2015,93000,
-994,"Petawawa (CA), Ont.",2020,102000,
-995,"Petawawa (CA), Ont.",2015,93000,
-998,"Peterborough (CMA), Ont.",2020,79000,
-999,"Peterborough (CMA), Ont.",2015,70000,
-1002,"Peterborough (CMA), Ont.",2020,79000,
-1003,"Peterborough (CMA), Ont.",2015,70000,
-1006,"Peterborough (CMA), Ont.",2020,79000,
-1007,"Peterborough (CMA), Ont.",2015,70000,
-1010,"Port Hope (CA), Ont.",2020,88000,
-1011,"Port Hope (CA), Ont.",2015,78500,
-1014,"Port Hope (CA), Ont.",2020,88000,
-1015,"Port Hope (CA), Ont.",2015,78500,
-1018,"Port Hope (CA), Ont.",2020,88000,
-1019,"Port Hope (CA), Ont.",2015,78500,
-1022,"Sarnia (CA), Ont.",2020,83000,
-1023,"Sarnia (CA), Ont.",2015,76500,
-1026,"Sarnia (CA), Ont.",2020,83000,
-1027,"Sarnia (CA), Ont.",2015,76500,
-1030,"Sarnia (CA), Ont.",2020,83000,
-1031,"Sarnia (CA), Ont.",2015,76500,
-1034,"Sault Ste. Marie (CA), Ont.",2020,74000,
-1035,"Sault Ste. Marie (CA), Ont.",2015,67000,
-1038,"Sault Ste. Marie (CA), Ont.",2020,74000,
-1039,"Sault Ste. Marie (CA), Ont.",2015,67000,
-1042,"Sault Ste. Marie (CA), Ont.",2020,74000,
-1043,"Sault Ste. Marie (CA), Ont.",2015,67000,
-1046,"St. Catharines - Niagara (CMA), Ont.",2020,77000,
-1047,"St. Catharines - Niagara (CMA), Ont.",2015,68000,
-1050,"St. Catharines - Niagara (CMA), Ont.",2020,77000,
-1051,"St. Catharines - Niagara (CMA), Ont.",2015,68000,
-1054,"St. Catharines - Niagara (CMA), Ont.",2020,77000,
-1055,"St. Catharines - Niagara (CMA), Ont.",2015,68000,
-1058,"Stratford (CA), Ont.",2020,77000,
-1059,"Stratford (CA), Ont.",2015,70000,
-1062,"Stratford (CA), Ont.",2020,77000,
-1063,"Stratford (CA), Ont.",2015,70000,
-1066,"Stratford (CA), Ont.",2020,77000,
-1067,"Stratford (CA), Ont.",2015,70000,
-1070,"Thunder Bay (CMA), Ont.",2020,80000,
-1071,"Thunder Bay (CMA), Ont.",2015,74000,
-1074,"Thunder Bay (CMA), Ont.",2020,80000,
-1075,"Thunder Bay (CMA), Ont.",2015,74000,
-1078,"Thunder Bay (CMA), Ont.",2020,80000,
-1079,"Thunder Bay (CMA), Ont.",2015,74000,
-1082,"Tillsonburg (CA), Ont.",2020,73500,
-1083,"Tillsonburg (CA), Ont.",2015,63200,
-1086,"Tillsonburg (CA), Ont.",2020,73500,
-1087,"Tillsonburg (CA), Ont.",2015,63200,
-1090,"Tillsonburg (CA), Ont.",2020,73500,
-1091,"Tillsonburg (CA), Ont.",2015,63200,
-1094,"Timmins (CA), Ont.",2020,82000,
-1095,"Timmins (CA), Ont.",2015,79500,
-1098,"Timmins (CA), Ont.",2020,82000,
-1099,"Timmins (CA), Ont.",2015,79500,
-1102,"Timmins (CA), Ont.",2020,82000,
-1103,"Timmins (CA), Ont.",2015,79500,
-1106,"Toronto (CMA), Ont.",2020,97000,
-1107,"Toronto (CMA), Ont.",2015,85000,
-1110,"Toronto (CMA), Ont.",2020,97000,
-1111,"Toronto (CMA), Ont.",2015,85000,
-1114,"Toronto (CMA), Ont.",2020,97000,
-1115,"Toronto (CMA), Ont.",2015,85000,
-1118,"Wasaga Beach (CA), Ont.",2020,76000,
-1119,"Wasaga Beach (CA), Ont.",2015,67000,
-1122,"Wasaga Beach (CA), Ont.",2020,76000,
-1123,"Wasaga Beach (CA), Ont.",2015,67000,
-1126,"Wasaga Beach (CA), Ont.",2020,76000,
-1127,"Wasaga Beach (CA), Ont.",2015,67000,
-1130,"Windsor (CMA), Ont.",2020,82000,
-1131,"Windsor (CMA), Ont.",2015,72000,
-1134,"Windsor (CMA), Ont.",2020,82000,
-1135,"Windsor (CMA), Ont.",2015,72000,
-1138,"Windsor (CMA), Ont.",2020,82000,
-1139,"Windsor (CMA), Ont.",2015,72000,
-1142,"Woodstock (CA), Ont.",2020,82000,
-1143,"Woodstock (CA), Ont.",2015,74000,
-1146,"Woodstock (CA), Ont.",2020,82000,
-1147,"Woodstock (CA), Ont.",2015,74000,
-1150,"Woodstock (CA), Ont.",2020,82000,
-1151,"Woodstock (CA), Ont.",2015,74000,
-1154,Manitoba,2020,79500,MB
-1155,Manitoba,2015,73500,MB
-1158,Manitoba,2020,79500,MB
-1159,Manitoba,2015,73500,MB
-1162,Manitoba,2020,79500,MB
-1163,Manitoba,2015,73500,MB
-1166,"Brandon (CA), Man.",2020,77500,
-1167,"Brandon (CA), Man.",2015,73000,
-1170,"Brandon (CA), Man.",2020,77500,
-1171,"Brandon (CA), Man.",2015,73000,
-1174,"Brandon (CA), Man.",2020,77500,
-1175,"Brandon (CA), Man.",2015,73000,
-1178,"Portage la Prairie (CA), Man.",2020,69000,
-1179,"Portage la Prairie (CA), Man.",2015,63200,
-1182,"Portage la Prairie (CA), Man.",2020,69000,
-1183,"Portage la Prairie (CA), Man.",2015,63200,
-1186,"Portage la Prairie (CA), Man.",2020,69000,
-1187,"Portage la Prairie (CA), Man.",2015,63200,
-1190,"Steinbach (CA), Man.",2020,72500,
-1191,"Steinbach (CA), Man.",2015,66500,
-1194,"Steinbach (CA), Man.",2020,72500,
-1195,"Steinbach (CA), Man.",2015,66500,
-1198,"Steinbach (CA), Man.",2020,72500,
-1199,"Steinbach (CA), Man.",2015,66500,
-1202,"Thompson (CA), Man.",2020,96000,
-1203,"Thompson (CA), Man.",2015,104000,
-1206,"Thompson (CA), Man.",2020,96000,
-1207,"Thompson (CA), Man.",2015,104000,
-1210,"Thompson (CA), Man.",2020,96000,
-1211,"Thompson (CA), Man.",2015,104000,
-1214,"Winkler (CA), Man.",2020,75000,
-1215,"Winkler (CA), Man.",2015,70000,
-1218,"Winkler (CA), Man.",2020,75000,
-1219,"Winkler (CA), Man.",2015,70000,
-1222,"Winkler (CA), Man.",2020,75000,
-1223,"Winkler (CA), Man.",2015,70000,
-1226,"Winnipeg (CMA), Man.",2020,83000,
-1227,"Winnipeg (CMA), Man.",2015,76500,
-1230,"Winnipeg (CMA), Man.",2020,83000,
-1231,"Winnipeg (CMA), Man.",2015,76500,
-1234,"Winnipeg (CMA), Man.",2020,83000,
-1235,"Winnipeg (CMA), Man.",2015,76500,
-1238,Saskatchewan,2020,82000,SK
-1239,Saskatchewan,2015,82000,SK
-1242,Saskatchewan,2020,82000,SK
-1243,Saskatchewan,2015,82000,SK
-1246,Saskatchewan,2020,82000,SK
-1247,Saskatchewan,2015,82000,SK
-1250,"Estevan (CA), Sask.",2020,96000,
-1251,"Estevan (CA), Sask.",2015,108000,
-1254,"Estevan (CA), Sask.",2020,96000,
-1255,"Estevan (CA), Sask.",2015,108000,
-1258,"Estevan (CA), Sask.",2020,96000,
-1259,"Estevan (CA), Sask.",2015,108000,
-1262,"Moose Jaw (CA), Sask.",2020,75500,
-1263,"Moose Jaw (CA), Sask.",2015,75000,
-1266,"Moose Jaw (CA), Sask.",2020,75500,
-1267,"Moose Jaw (CA), Sask.",2015,75000,
-1270,"Moose Jaw (CA), Sask.",2020,75500,
-1271,"Moose Jaw (CA), Sask.",2015,75000,
-1274,"North Battleford (CA), Sask.",2020,78000,
-1275,"North Battleford (CA), Sask.",2015,73000,
-1278,"North Battleford (CA), Sask.",2020,78000,
-1279,"North Battleford (CA), Sask.",2015,73000,
-1282,"North Battleford (CA), Sask.",2020,78000,
-1283,"North Battleford (CA), Sask.",2015,73000,
-1286,"Prince Albert (CA), Sask.",2020,78000,
-1287,"Prince Albert (CA), Sask.",2015,77000,
-1290,"Prince Albert (CA), Sask.",2020,78000,
-1291,"Prince Albert (CA), Sask.",2015,77000,
-1294,"Prince Albert (CA), Sask.",2020,78000,
-1295,"Prince Albert (CA), Sask.",2015,77000,
-1298,"Regina (CMA), Sask.",2020,90000,
-1299,"Regina (CMA), Sask.",2015,91000,
-1302,"Regina (CMA), Sask.",2020,90000,
-1303,"Regina (CMA), Sask.",2015,91000,
-1306,"Regina (CMA), Sask.",2020,90000,
-1307,"Regina (CMA), Sask.",2015,91000,
-1310,"Saskatoon (CMA), Sask.",2020,89000,
-1311,"Saskatoon (CMA), Sask.",2015,90000,
-1314,"Saskatoon (CMA), Sask.",2020,89000,
-1315,"Saskatoon (CMA), Sask.",2015,90000,
-1318,"Saskatoon (CMA), Sask.",2020,89000,
-1319,"Saskatoon (CMA), Sask.",2015,90000,
-1322,"Swift Current (CA), Sask.",2020,80000,
-1323,"Swift Current (CA), Sask.",2015,81000,
-1326,"Swift Current (CA), Sask.",2020,80000,
-1327,"Swift Current (CA), Sask.",2015,81000,
-1330,"Swift Current (CA), Sask.",2020,80000,
-1331,"Swift Current (CA), Sask.",2015,81000,
-1334,"Weyburn (CA), Sask.",2020,82000,
-1335,"Weyburn (CA), Sask.",2015,87000,
-1338,"Weyburn (CA), Sask.",2020,82000,
-1339,"Weyburn (CA), Sask.",2015,87000,
-1342,"Weyburn (CA), Sask.",2020,82000,
-1343,"Weyburn (CA), Sask.",2015,87000,
-1346,"Yorkton (CA), Sask.",2020,77500,
-1347,"Yorkton (CA), Sask.",2015,75000,
-1350,"Yorkton (CA), Sask.",2020,77500,
-1351,"Yorkton (CA), Sask.",2015,75000,
-1354,"Yorkton (CA), Sask.",2020,77500,
-1355,"Yorkton (CA), Sask.",2015,75000,
-1358,Alberta,2020,96000,AB
-1359,Alberta,2015,102000,AB
-1362,Alberta,2020,96000,AB
-1363,Alberta,2015,102000,AB
-1366,Alberta,2020,96000,AB
-1367,Alberta,2015,102000,AB
-1370,"Brooks (CA), Alta.",2020,91000,
-1371,"Brooks (CA), Alta.",2015,91000,
-1374,"Brooks (CA), Alta.",2020,91000,
-1375,"Brooks (CA), Alta.",2015,91000,
-1378,"Brooks (CA), Alta.",2020,91000,
-1379,"Brooks (CA), Alta.",2015,91000,
-1382,"Calgary (CMA), Alta.",2020,100000,
-1383,"Calgary (CMA), Alta.",2015,108000,
-1386,"Calgary (CMA), Alta.",2020,100000,
-1387,"Calgary (CMA), Alta.",2015,108000,
-1390,"Calgary (CMA), Alta.",2020,100000,
-1391,"Calgary (CMA), Alta.",2015,108000,
-1394,"Camrose (CA), Alta.",2020,76000,
-1395,"Camrose (CA), Alta.",2015,79500,
-1398,"Camrose (CA), Alta.",2020,76000,
-1399,"Camrose (CA), Alta.",2015,79500,
-1402,"Camrose (CA), Alta.",2020,76000,
-1403,"Camrose (CA), Alta.",2015,79500,
-1406,"Canmore (CA), Alta.",2020,106000,
-1407,"Canmore (CA), Alta.",2015,107000,
-1410,"Canmore (CA), Alta.",2020,106000,
-1411,"Canmore (CA), Alta.",2015,107000,
-1414,"Canmore (CA), Alta.",2020,106000,
-1415,"Canmore (CA), Alta.",2015,107000,
-1418,"Edmonton (CMA), Alta.",2020,96000,
-1419,"Edmonton (CMA), Alta.",2015,102000,
-1422,"Edmonton (CMA), Alta.",2020,96000,
-1423,"Edmonton (CMA), Alta.",2015,102000,
-1426,"Edmonton (CMA), Alta.",2020,96000,
-1427,"Edmonton (CMA), Alta.",2015,102000,
-1430,"Grande Prairie (CA), Alta.",2020,102000,
-1431,"Grande Prairie (CA), Alta.",2015,114000,
-1434,"Grande Prairie (CA), Alta.",2020,102000,
-1435,"Grande Prairie (CA), Alta.",2015,114000,
-1438,"Grande Prairie (CA), Alta.",2020,102000,
-1439,"Grande Prairie (CA), Alta.",2015,114000,
-1442,"High River (CA), Alta.",2020,82000,
-1443,"High River (CA), Alta.",2015,85000,
-1446,"High River (CA), Alta.",2020,82000,
-1447,"High River (CA), Alta.",2015,85000,
-1450,"High River (CA), Alta.",2020,82000,
-1451,"High River (CA), Alta.",2015,85000,
-1454,"Lacombe (CA), Alta.",2020,89000,
-1455,"Lacombe (CA), Alta.",2015,99000,
-1458,"Lacombe (CA), Alta.",2020,89000,
-1459,"Lacombe (CA), Alta.",2015,99000,
-1462,"Lacombe (CA), Alta.",2020,89000,
-1463,"Lacombe (CA), Alta.",2015,99000,
-1466,"Lethbridge (CMA), Alta.",2020,84000,
-1467,"Lethbridge (CMA), Alta.",2015,82000,
-1470,"Lethbridge (CMA), Alta.",2020,84000,
-1471,"Lethbridge (CMA), Alta.",2015,82000,
-1474,"Lethbridge (CMA), Alta.",2020,84000,
-1475,"Lethbridge (CMA), Alta.",2015,82000,
-1478,"Lloydminster (CA), Alta./Sask.",2020,95000,
-1479,"Lloydminster (CA), Alta./Sask.",2015,104000,
-1482,"Lloydminster (CA), Alta./Sask.",2020,95000,
-1483,"Lloydminster (CA), Alta./Sask.",2015,104000,
-1486,"Lloydminster (CA), Alta./Sask.",2020,95000,
-1487,"Lloydminster (CA), Alta./Sask.",2015,104000,
-1490,"Medicine Hat (CA), Alta.",2020,80000,
-1491,"Medicine Hat (CA), Alta.",2015,81000,
-1494,"Medicine Hat (CA), Alta.",2020,80000,
-1495,"Medicine Hat (CA), Alta.",2015,81000,
-1498,"Medicine Hat (CA), Alta.",2020,80000,
-1499,"Medicine Hat (CA), Alta.",2015,81000,
-1502,"Okotoks (CA), Alta.",2020,117000,
-1503,"Okotoks (CA), Alta.",2015,126000,
-1506,"Okotoks (CA), Alta.",2020,117000,
-1507,"Okotoks (CA), Alta.",2015,126000,
-1510,"Okotoks (CA), Alta.",2020,117000,
-1511,"Okotoks (CA), Alta.",2015,126000,
-1514,"Red Deer (CMA), Alta.",2020,85000,
-1515,"Red Deer (CMA), Alta.",2015,93000,
-1518,"Red Deer (CMA), Alta.",2020,85000,
-1519,"Red Deer (CMA), Alta.",2015,93000,
-1522,"Red Deer (CMA), Alta.",2020,85000,
-1523,"Red Deer (CMA), Alta.",2015,93000,
-1526,"Strathmore (CA), Alta.",2020,91000,
-1527,"Strathmore (CA), Alta.",2015,96000,
-1530,"Strathmore (CA), Alta.",2020,91000,
-1531,"Strathmore (CA), Alta.",2015,96000,
-1534,"Strathmore (CA), Alta.",2020,91000,
-1535,"Strathmore (CA), Alta.",2015,96000,
-1538,"Sylvan Lake (CA), Alta.",2020,93000,
-1539,"Sylvan Lake (CA), Alta.",2015,107000,
-1542,"Sylvan Lake (CA), Alta.",2020,93000,
-1543,"Sylvan Lake (CA), Alta.",2015,107000,
-1546,"Sylvan Lake (CA), Alta.",2020,93000,
-1547,"Sylvan Lake (CA), Alta.",2015,107000,
-1550,"Wetaskiwin (CA), Alta.",2020,69500,
-1551,"Wetaskiwin (CA), Alta.",2015,72500,
-1554,"Wetaskiwin (CA), Alta.",2020,69500,
-1555,"Wetaskiwin (CA), Alta.",2015,72500,
-1558,"Wetaskiwin (CA), Alta.",2020,69500,
-1559,"Wetaskiwin (CA), Alta.",2015,72500,
-1562,"Wood Buffalo (CA), Alta.",2020,182000,
-1563,"Wood Buffalo (CA), Alta.",2015,210000,
-1566,"Wood Buffalo (CA), Alta.",2020,182000,
-1567,"Wood Buffalo (CA), Alta.",2015,210000,
-1570,"Wood Buffalo (CA), Alta.",2020,182000,
-1571,"Wood Buffalo (CA), Alta.",2015,210000,
-1574,British Columbia,2020,85000,BC
-1575,British Columbia,2015,75500,BC
-1578,British Columbia,2020,85000,BC
-1579,British Columbia,2015,75500,BC
-1582,British Columbia,2020,85000,BC
-1583,British Columbia,2015,75500,BC
-1586,"Abbotsford - Mission (CMA), B.C.",2020,91000,
-1587,"Abbotsford - Mission (CMA), B.C.",2015,79500,
-1590,"Abbotsford - Mission (CMA), B.C.",2020,91000,
-1591,"Abbotsford - Mission (CMA), B.C.",2015,79500,
-1594,"Abbotsford - Mission (CMA), B.C.",2020,91000,
-1595,"Abbotsford - Mission (CMA), B.C.",2015,79500,
-1598,"Campbell River (CA), B.C.",2020,78500,
-1599,"Campbell River (CA), B.C.",2015,70500,
-1602,"Campbell River (CA), B.C.",2020,78500,
-1603,"Campbell River (CA), B.C.",2015,70500,
-1606,"Campbell River (CA), B.C.",2020,78500,
-1607,"Campbell River (CA), B.C.",2015,70500,
-1610,"Chilliwack (CMA), B.C.",2020,82000,
-1611,"Chilliwack (CMA), B.C.",2015,71000,
-1614,"Chilliwack (CMA), B.C.",2020,82000,
-1615,"Chilliwack (CMA), B.C.",2015,71000,
-1618,"Chilliwack (CMA), B.C.",2020,82000,
-1619,"Chilliwack (CMA), B.C.",2015,71000,
-1622,"Courtenay (CA), B.C.",2020,76500,
-1623,"Courtenay (CA), B.C.",2015,67500,
-1626,"Courtenay (CA), B.C.",2020,76500,
-1627,"Courtenay (CA), B.C.",2015,67500,
-1630,"Courtenay (CA), B.C.",2020,76500,
-1631,"Courtenay (CA), B.C.",2015,67500,
-1634,"Cranbrook (CA), B.C.",2020,84000,
-1635,"Cranbrook (CA), B.C.",2015,78500,
-1638,"Cranbrook (CA), B.C.",2020,84000,
-1639,"Cranbrook (CA), B.C.",2015,78500,
-1642,"Cranbrook (CA), B.C.",2020,84000,
-1643,"Cranbrook (CA), B.C.",2015,78500,
-1646,"Dawson Creek (CA), B.C.",2020,85000,
-1647,"Dawson Creek (CA), B.C.",2015,92000,
-1650,"Dawson Creek (CA), B.C.",2020,85000,
-1651,"Dawson Creek (CA), B.C.",2015,92000,
-1654,"Dawson Creek (CA), B.C.",2020,85000,
-1655,"Dawson Creek (CA), B.C.",2015,92000,
-1658,"Duncan (CA), B.C.",2020,75500,
-1659,"Duncan (CA), B.C.",2015,66000,
-1662,"Duncan (CA), B.C.",2020,75500,
-1663,"Duncan (CA), B.C.",2015,66000,
-1666,"Duncan (CA), B.C.",2020,75500,
-1667,"Duncan (CA), B.C.",2015,66000,
-1670,"Fort St. John (CA), B.C.",2020,106000,
-1671,"Fort St. John (CA), B.C.",2015,116000,
-1674,"Fort St. John (CA), B.C.",2020,106000,
-1675,"Fort St. John (CA), B.C.",2015,116000,
-1678,"Fort St. John (CA), B.C.",2020,106000,
-1679,"Fort St. John (CA), B.C.",2015,116000,
-1682,"Kamloops (CMA), B.C.",2020,87000,
-1683,"Kamloops (CMA), B.C.",2015,79500,
-1686,"Kamloops (CMA), B.C.",2020,87000,
-1687,"Kamloops (CMA), B.C.",2015,79500,
-1690,"Kamloops (CMA), B.C.",2020,87000,
-1691,"Kamloops (CMA), B.C.",2015,79500,
-1694,"Kelowna (CMA), B.C.",2020,85000,
-1695,"Kelowna (CMA), B.C.",2015,77000,
-1698,"Kelowna (CMA), B.C.",2020,85000,
-1699,"Kelowna (CMA), B.C.",2015,77000,
-1702,"Kelowna (CMA), B.C.",2020,85000,
-1703,"Kelowna (CMA), B.C.",2015,77000,
-1706,"Ladysmith (CA), B.C.",2020,80000,
-1707,"Ladysmith (CA), B.C.",2015,73000,
-1710,"Ladysmith (CA), B.C.",2020,80000,
-1711,"Ladysmith (CA), B.C.",2015,73000,
-1714,"Ladysmith (CA), B.C.",2020,80000,
-1715,"Ladysmith (CA), B.C.",2015,73000,
-1718,"Nanaimo (CMA), B.C.",2020,77500,
-1719,"Nanaimo (CMA), B.C.",2015,68000,
-1722,"Nanaimo (CMA), B.C.",2020,77500,
-1723,"Nanaimo (CMA), B.C.",2015,68000,
-1726,"Nanaimo (CMA), B.C.",2020,77500,
-1727,"Nanaimo (CMA), B.C.",2015,68000,
-1730,"Nelson (CA), B.C.",2020,74500,
-1731,"Nelson (CA), B.C.",2015,64000,
-1734,"Nelson (CA), B.C.",2020,74500,
-1735,"Nelson (CA), B.C.",2015,64000,
-1738,"Nelson (CA), B.C.",2020,74500,
-1739,"Nelson (CA), B.C.",2015,64000,
-1742,"Parksville (CA), B.C.",2020,73500,
-1743,"Parksville (CA), B.C.",2015,68000,
-1746,"Parksville (CA), B.C.",2020,73500,
-1747,"Parksville (CA), B.C.",2015,68000,
-1750,"Parksville (CA), B.C.",2020,73500,
-1751,"Parksville (CA), B.C.",2015,68000,
-1754,"Penticton (CA), B.C.",2020,71000,
-1755,"Penticton (CA), B.C.",2015,62000,
-1758,"Penticton (CA), B.C.",2020,71000,
-1759,"Penticton (CA), B.C.",2015,62000,
-1762,"Penticton (CA), B.C.",2020,71000,
-1763,"Penticton (CA), B.C.",2015,62000,
-1766,"Port Alberni (CA), B.C.",2020,67000,
-1767,"Port Alberni (CA), B.C.",2015,59600,
-1770,"Port Alberni (CA), B.C.",2020,67000,
-1771,"Port Alberni (CA), B.C.",2015,59600,
-1774,"Port Alberni (CA), B.C.",2020,67000,
-1775,"Port Alberni (CA), B.C.",2015,59600,
-1778,"Powell River (CA), B.C.",2020,66500,
-1779,"Powell River (CA), B.C.",2015,60800,
-1782,"Powell River (CA), B.C.",2020,66500,
-1783,"Powell River (CA), B.C.",2015,60800,
-1786,"Powell River (CA), B.C.",2020,66500,
-1787,"Powell River (CA), B.C.",2015,60800,
-1790,"Prince George (CA), B.C.",2020,91000,
-1791,"Prince George (CA), B.C.",2015,85000,
-1794,"Prince George (CA), B.C.",2020,91000,
-1795,"Prince George (CA), B.C.",2015,85000,
-1798,"Prince George (CA), B.C.",2020,91000,
-1799,"Prince George (CA), B.C.",2015,85000,
-1802,"Prince Rupert (CA), B.C.",2020,92000,
-1803,"Prince Rupert (CA), B.C.",2015,76000,
-1806,"Prince Rupert (CA), B.C.",2020,92000,
-1807,"Prince Rupert (CA), B.C.",2015,76000,
-1810,"Prince Rupert (CA), B.C.",2020,92000,
-1811,"Prince Rupert (CA), B.C.",2015,76000,
-1814,"Quesnel (CA), B.C.",2020,73000,
-1815,"Quesnel (CA), B.C.",2015,70500,
-1818,"Quesnel (CA), B.C.",2020,73000,
-1819,"Quesnel (CA), B.C.",2015,70500,
-1822,"Quesnel (CA), B.C.",2020,73000,
-1823,"Quesnel (CA), B.C.",2015,70500,
-1826,"Salmon Arm (CA), B.C.",2020,75000,
-1827,"Salmon Arm (CA), B.C.",2015,68000,
-1830,"Salmon Arm (CA), B.C.",2020,75000,
-1831,"Salmon Arm (CA), B.C.",2015,68000,
-1834,"Salmon Arm (CA), B.C.",2020,75000,
-1835,"Salmon Arm (CA), B.C.",2015,68000,
-1838,"Squamish (CA), B.C.",2020,111000,
-1839,"Squamish (CA), B.C.",2015,96000,
-1842,"Squamish (CA), B.C.",2020,111000,
-1843,"Squamish (CA), B.C.",2015,96000,
-1846,"Squamish (CA), B.C.",2020,111000,
-1847,"Squamish (CA), B.C.",2015,96000,
-1850,"Terrace (CA), B.C.",2020,90000,
-1851,"Terrace (CA), B.C.",2015,81000,
-1854,"Terrace (CA), B.C.",2020,90000,
-1855,"Terrace (CA), B.C.",2015,81000,
-1858,"Terrace (CA), B.C.",2020,90000,
-1859,"Terrace (CA), B.C.",2015,81000,
-1862,"Trail (CA), B.C.",2020,76000,
-1863,"Trail (CA), B.C.",2015,70000,
-1866,"Trail (CA), B.C.",2020,76000,
-1867,"Trail (CA), B.C.",2015,70000,
-1870,"Trail (CA), B.C.",2020,76000,
-1871,"Trail (CA), B.C.",2015,70000,
-1874,"Vancouver (CMA), B.C.",2020,90000,
-1875,"Vancouver (CMA), B.C.",2015,78500,
-1878,"Vancouver (CMA), B.C.",2020,90000,
-1879,"Vancouver (CMA), B.C.",2015,78500,
-1882,"Vancouver (CMA), B.C.",2020,90000,
-1883,"Vancouver (CMA), B.C.",2015,78500,
-1886,"Vernon (CA), B.C.",2020,79000,
-1887,"Vernon (CA), B.C.",2015,70000,
-1890,"Vernon (CA), B.C.",2020,79000,
-1891,"Vernon (CA), B.C.",2015,70000,
-1894,"Vernon (CA), B.C.",2020,79000,
-1895,"Vernon (CA), B.C.",2015,70000,
-1898,"Victoria (CMA), B.C.",2020,85000,
-1899,"Victoria (CMA), B.C.",2015,76000,
-1902,"Victoria (CMA), B.C.",2020,85000,
-1903,"Victoria (CMA), B.C.",2015,76000,
-1906,"Victoria (CMA), B.C.",2020,85000,
-1907,"Victoria (CMA), B.C.",2015,76000,
-1910,"Williams Lake (CA), B.C.",2020,81000,
-1911,"Williams Lake (CA), B.C.",2015,78000,
-1914,"Williams Lake (CA), B.C.",2020,81000,
-1915,"Williams Lake (CA), B.C.",2015,78000,
-1918,"Williams Lake (CA), B.C.",2020,81000,
-1919,"Williams Lake (CA), B.C.",2015,78000,
-1922,Yukon,2020,100000,YT
-1923,Yukon,2015,92000,YT
-1926,Yukon,2020,100000,YT
-1927,Yukon,2015,92000,YT
-1930,Yukon,2020,100000,YT
-1931,Yukon,2015,92000,YT
-1934,"Whitehorse (CA), Y.T.",2020,109000,
-1935,"Whitehorse (CA), Y.T.",2015,99000,
-1938,"Whitehorse (CA), Y.T.",2020,109000,
-1939,"Whitehorse (CA), Y.T.",2015,99000,
-1942,"Whitehorse (CA), Y.T.",2020,109000,
-1943,"Whitehorse (CA), Y.T.",2015,99000,
-1946,Northwest Territories,2020,127000,NT
-1947,Northwest Territories,2015,127000,NT
-1950,Northwest Territories,2020,127000,NT
-1951,Northwest Territories,2015,127000,NT
-1954,Northwest Territories,2020,127000,NT
-1955,Northwest Territories,2015,127000,NT
-1958,"Yellowknife (CA), N.W.T.",2020,148000,
-1959,"Yellowknife (CA), N.W.T.",2015,154000,
-1962,"Yellowknife (CA), N.W.T.",2020,148000,
-1963,"Yellowknife (CA), N.W.T.",2015,154000,
-1966,"Yellowknife (CA), N.W.T.",2020,148000,
-1967,"Yellowknife (CA), N.W.T.",2015,154000,
-1970,Nunavut,2020,118000,NU
-1971,Nunavut,2015,105000,NU
-1974,Nunavut,2020,118000,NU
-1975,Nunavut,2015,105000,NU
-1978,Nunavut,2020,118000,NU
-1979,Nunavut,2015,105000,NU
+4,Newfoundland and Labrador,2020,71500,NL
+5,Newfoundland and Labrador,2015,73000,NL
+6,Corner Brook,2020,70000,NL
+7,Corner Brook,2015,70000,NL
+8,Corner Brook,2020,70000,NL
+9,Corner Brook,2015,70000,NL
+10,Corner Brook,2020,70000,NL
+11,Corner Brook,2015,70000,NL
+12,Gander,2020,78000,NL
+13,Gander,2015,77000,NL
+14,Gander,2020,78000,NL
+15,Gander,2015,77000,NL
+16,Gander,2020,78000,NL
+17,Gander,2015,77000,NL
+18,Grand Falls-Windsor,2020,66000,NL
+19,Grand Falls-Windsor,2015,65500,NL
+20,Grand Falls-Windsor,2020,66000,NL
+21,Grand Falls-Windsor,2015,65500,NL
+22,Grand Falls-Windsor,2020,66000,NL
+23,Grand Falls-Windsor,2015,65500,NL
+24,St. John's,2020,85000,NL
+25,St. John's,2015,86000,NL
+26,St. John's,2020,85000,NL
+27,St. John's,2015,86000,NL
+28,St. John's,2020,85000,NL
+29,St. John's,2015,86000,NL
+30,Prince Edward Island,2020,73500,PE
+31,Prince Edward Island,2015,66000,PE
+32,Prince Edward Island,2020,73500,PE
+33,Prince Edward Island,2015,66000,PE
+34,Prince Edward Island,2020,73500,PE
+35,Prince Edward Island,2015,66000,PE
+36,Charlottetown,2020,76500,PE
+37,Charlottetown,2015,69000,PE
+38,Charlottetown,2020,76500,PE
+39,Charlottetown,2015,69000,PE
+40,Charlottetown,2020,76500,PE
+41,Charlottetown,2015,69000,PE
+42,Summerside,2020,64500,PE
+43,Summerside,2015,58000,PE
+44,Summerside,2020,64500,PE
+45,Summerside,2015,58000,PE
+46,Summerside,2020,64500,PE
+47,Summerside,2015,58000,PE
+48,Nova Scotia,2020,71500,NS
+49,Nova Scotia,2015,66000,NS
+50,Nova Scotia,2020,71500,NS
+51,Nova Scotia,2015,66000,NS
+52,Nova Scotia,2020,71500,NS
+53,Nova Scotia,2015,66000,NS
+54,Cape Breton,2020,62000,NS
+55,Cape Breton,2015,57200,NS
+56,Cape Breton,2020,62000,NS
+57,Cape Breton,2015,57200,NS
+58,Cape Breton,2020,62000,NS
+59,Cape Breton,2015,57200,NS
+60,Halifax,2020,81000,NS
+61,Halifax,2015,75500,NS
+62,Halifax,2020,81000,NS
+63,Halifax,2015,75500,NS
+64,Halifax,2020,81000,NS
+65,Halifax,2015,75500,NS
+66,Kentville,2020,67000,NS
+67,Kentville,2015,60400,NS
+68,Kentville,2020,67000,NS
+69,Kentville,2015,60400,NS
+70,Kentville,2020,67000,NS
+71,Kentville,2015,60400,NS
+72,New Glasgow,2020,64000,NS
+73,New Glasgow,2015,60400,NS
+74,New Glasgow,2020,64000,NS
+75,New Glasgow,2015,60400,NS
+76,New Glasgow,2020,64000,NS
+77,New Glasgow,2015,60400,NS
+78,Truro,2020,66000,NS
+79,Truro,2015,60000,NS
+80,Truro,2020,66000,NS
+81,Truro,2015,60000,NS
+82,Truro,2020,66000,NS
+83,Truro,2015,60000,NS
+84,New Brunswick,2020,70000,NB
+85,New Brunswick,2015,64000,NB
+86,New Brunswick,2020,70000,NB
+87,New Brunswick,2015,64000,NB
+88,New Brunswick,2020,70000,NB
+89,New Brunswick,2015,64000,NB
+90,Bathurst,2020,62800,NB
+91,Bathurst,2015,58000,NB
+92,Bathurst,2020,62800,NB
+93,Bathurst,2015,58000,NB
+94,Bathurst,2020,62800,NB
+95,Bathurst,2015,58000,NB
+96,Campbellton,2020,54400,NB
+97,Campbellton,2015,49200,NB
+98,Campbellton,2020,54400,NB
+99,Campbellton,2015,49200,NB
+100,Campbellton,2020,54400,NB
+101,Campbellton,2015,49200,NB
+102,Edmundston,2020,60800,NB
+103,Edmundston,2015,56800,NB
+104,Edmundston,2020,60800,NB
+105,Edmundston,2015,56800,NB
+106,Edmundston,2020,60800,NB
+107,Edmundston,2015,56800,NB
+108,Fredericton,2020,79000,NB
+109,Fredericton,2015,72500,NB
+110,Fredericton,2020,79000,NB
+111,Fredericton,2015,72500,NB
+112,Fredericton,2020,79000,NB
+113,Fredericton,2015,72500,NB
+114,Miramichi,2020,66500,NB
+115,Miramichi,2015,62800,NB
+116,Miramichi,2020,66500,NB
+117,Miramichi,2015,62800,NB
+118,Miramichi,2020,66500,NB
+119,Miramichi,2015,62800,NB
+120,Moncton,2020,74500,NB
+121,Moncton,2015,68000,NB
+122,Moncton,2020,74500,NB
+123,Moncton,2015,68000,NB
+124,Moncton,2020,74500,NB
+125,Moncton,2015,68000,NB
+126,Saint John,2020,74000,NB
+127,Saint John,2015,69000,NB
+128,Saint John,2020,74000,NB
+129,Saint John,2015,69000,NB
+130,Saint John,2020,74000,NB
+131,Saint John,2015,69000,NB
+132,Quebec,2020,72500,QC
+133,Quebec,2015,64500,QC
+134,Quebec,2020,72500,QC
+135,Quebec,2015,64500,QC
+136,Quebec,2020,72500,QC
+137,Quebec,2015,64500,QC
+138,Alma,2020,67500,QC
+139,Alma,2015,61200,QC
+140,Alma,2020,67500,QC
+141,Alma,2015,61200,QC
+142,Alma,2020,67500,QC
+143,Alma,2015,61200,QC
+144,Amos,2020,76500,QC
+145,Amos,2015,70000,QC
+146,Amos,2020,76500,QC
+147,Amos,2015,70000,QC
+148,Amos,2020,76500,QC
+149,Amos,2015,70000,QC
+150,Baie-Comeau,2020,75000,QC
+151,Baie-Comeau,2015,72500,QC
+152,Baie-Comeau,2020,75000,QC
+153,Baie-Comeau,2015,72500,QC
+154,Baie-Comeau,2020,75000,QC
+155,Baie-Comeau,2015,72500,QC
+156,Cowansville,2020,58800,QC
+157,Cowansville,2015,53600,QC
+158,Cowansville,2020,58800,QC
+159,Cowansville,2015,53600,QC
+160,Cowansville,2020,58800,QC
+161,Cowansville,2015,53600,QC
+162,Dolbeau-Mistassini,2020,63600,QC
+163,Dolbeau-Mistassini,2015,58000,QC
+164,Dolbeau-Mistassini,2020,63600,QC
+165,Dolbeau-Mistassini,2015,58000,QC
+166,Dolbeau-Mistassini,2020,63600,QC
+167,Dolbeau-Mistassini,2015,58000,QC
+168,Drummondville,2020,64000,QC
+169,Drummondville,2015,56800,QC
+170,Drummondville,2020,64000,QC
+171,Drummondville,2015,56800,QC
+172,Drummondville,2020,64000,QC
+173,Drummondville,2015,56800,QC
+174,Granby,2020,68500,QC
+175,Granby,2015,60800,QC
+176,Granby,2020,68500,QC
+177,Granby,2015,60800,QC
+178,Granby,2020,68500,QC
+179,Granby,2015,60800,QC
+180,Joliette,2020,61600,QC
+181,Joliette,2015,55200,QC
+182,Joliette,2020,61600,QC
+183,Joliette,2015,55200,QC
+184,Joliette,2020,61600,QC
+185,Joliette,2015,55200,QC
+186,Lachute,2020,56400,QC
+187,Lachute,2015,48400,QC
+188,Lachute,2020,56400,QC
+189,Lachute,2015,48400,QC
+190,Lachute,2020,56400,QC
+191,Lachute,2015,48400,QC
+192,Matane,2020,56800,QC
+193,Matane,2015,52400,QC
+194,Matane,2020,56800,QC
+195,Matane,2015,52400,QC
+196,Matane,2020,56800,QC
+197,Matane,2015,52400,QC
+198,Montréal,2020,76000,QC
+199,Montréal,2015,67000,QC
+200,Montréal,2020,76000,QC
+201,Montréal,2015,67000,QC
+202,Montréal,2020,76000,QC
+203,Montréal,2015,67000,QC
+204,Québec,2020,76500,QC
+205,Québec,2015,71000,QC
+206,Québec,2020,76500,QC
+207,Québec,2015,71000,QC
+208,Québec,2020,76500,QC
+209,Québec,2015,71000,QC
+210,Rimouski,2020,67000,QC
+211,Rimouski,2015,62400,QC
+212,Rimouski,2020,67000,QC
+213,Rimouski,2015,62400,QC
+214,Rimouski,2020,67000,QC
+215,Rimouski,2015,62400,QC
+216,Rivière-du-Loup,2020,67000,QC
+217,Rivière-du-Loup,2015,62000,QC
+218,Rivière-du-Loup,2020,67000,QC
+219,Rivière-du-Loup,2015,62000,QC
+220,Rivière-du-Loup,2020,67000,QC
+221,Rivière-du-Loup,2015,62000,QC
+222,Rouyn-Noranda,2020,76000,QC
+223,Rouyn-Noranda,2015,68000,QC
+224,Rouyn-Noranda,2020,76000,QC
+225,Rouyn-Noranda,2015,68000,QC
+226,Rouyn-Noranda,2020,76000,QC
+227,Rouyn-Noranda,2015,68000,QC
+228,Saguenay,2020,70000,QC
+229,Saguenay,2015,64000,QC
+230,Saguenay,2020,70000,QC
+231,Saguenay,2015,64000,QC
+232,Saguenay,2020,70000,QC
+233,Saguenay,2015,64000,QC
+234,Saint-Georges,2020,64500,QC
+235,Saint-Georges,2015,59200,QC
+236,Saint-Georges,2020,64500,QC
+237,Saint-Georges,2015,59200,QC
+238,Saint-Georges,2020,64500,QC
+239,Saint-Georges,2015,59200,QC
+240,Saint-Hyacinthe,2020,62000,QC
+241,Saint-Hyacinthe,2015,56000,QC
+242,Saint-Hyacinthe,2020,62000,QC
+243,Saint-Hyacinthe,2015,56000,QC
+244,Saint-Hyacinthe,2020,62000,QC
+245,Saint-Hyacinthe,2015,56000,QC
+246,Sainte-Agathe-des-Monts,2020,61200,QC
+247,Sainte-Agathe-des-Monts,2015,52800,QC
+248,Sainte-Agathe-des-Monts,2020,61200,QC
+249,Sainte-Agathe-des-Monts,2015,52800,QC
+250,Sainte-Agathe-des-Monts,2020,61200,QC
+251,Sainte-Agathe-des-Monts,2015,52800,QC
+252,Sainte-Marie,2020,78000,QC
+253,Sainte-Marie,2015,70000,QC
+254,Sainte-Marie,2020,78000,QC
+255,Sainte-Marie,2015,70000,QC
+256,Sainte-Marie,2020,78000,QC
+257,Sainte-Marie,2015,70000,QC
+258,Salaberry-de-Valleyfield,2020,62000,QC
+259,Salaberry-de-Valleyfield,2015,55200,QC
+260,Salaberry-de-Valleyfield,2020,62000,QC
+261,Salaberry-de-Valleyfield,2015,55200,QC
+262,Salaberry-de-Valleyfield,2020,62000,QC
+263,Salaberry-de-Valleyfield,2015,55200,QC
+264,Sept-Îles,2020,79000,QC
+265,Sept-Îles,2015,72500,QC
+266,Sept-Îles,2020,79000,QC
+267,Sept-Îles,2015,72500,QC
+268,Sept-Îles,2020,79000,QC
+269,Sept-Îles,2015,72500,QC
+270,Shawinigan,2020,53600,QC
+271,Shawinigan,2015,48400,QC
+272,Shawinigan,2020,53600,QC
+273,Shawinigan,2015,48400,QC
+274,Shawinigan,2020,53600,QC
+275,Shawinigan,2015,48400,QC
+276,Sherbrooke,2020,65000,QC
+277,Sherbrooke,2015,58000,QC
+278,Sherbrooke,2020,65000,QC
+279,Sherbrooke,2015,58000,QC
+280,Sherbrooke,2020,65000,QC
+281,Sherbrooke,2015,58000,QC
+282,Sorel-Tracy,2020,61600,QC
+283,Sorel-Tracy,2015,56000,QC
+284,Sorel-Tracy,2020,61600,QC
+285,Sorel-Tracy,2015,56000,QC
+286,Sorel-Tracy,2020,61600,QC
+287,Sorel-Tracy,2015,56000,QC
+288,Thetford Mines,2020,57200,QC
+289,Thetford Mines,2015,52000,QC
+290,Thetford Mines,2020,57200,QC
+291,Thetford Mines,2015,52000,QC
+292,Thetford Mines,2020,57200,QC
+293,Thetford Mines,2015,52000,QC
+294,Trois-Rivières,2020,62400,QC
+295,Trois-Rivières,2015,56000,QC
+296,Trois-Rivières,2020,62400,QC
+297,Trois-Rivières,2015,56000,QC
+298,Trois-Rivières,2020,62400,QC
+299,Trois-Rivières,2015,56000,QC
+300,Val-d'Or,2020,74500,QC
+301,Val-d'Or,2015,69000,QC
+302,Val-d'Or,2020,74500,QC
+303,Val-d'Or,2015,69000,QC
+304,Val-d'Or,2020,74500,QC
+305,Val-d'Or,2015,69000,QC
+306,Victoriaville,2020,63200,QC
+307,Victoriaville,2015,57200,QC
+308,Victoriaville,2020,63200,QC
+309,Victoriaville,2015,57200,QC
+310,Victoriaville,2020,63200,QC
+311,Victoriaville,2015,57200,QC
+312,Ontario,2020,91000,ON
+313,Ontario,2015,80000,ON
+314,Ontario,2020,91000,ON
+315,Ontario,2015,80000,ON
+316,Ontario,2020,91000,ON
+317,Ontario,2015,80000,ON
+318,Barrie,2020,97000,ON
+319,Barrie,2015,87000,ON
+320,Barrie,2020,97000,ON
+321,Barrie,2015,87000,ON
+322,Barrie,2020,97000,ON
+323,Barrie,2015,87000,ON
+324,Belleville - Quinte West,2020,78000,ON
+325,Belleville - Quinte West,2015,69000,ON
+326,Belleville - Quinte West,2020,78000,ON
+327,Belleville - Quinte West,2015,69000,ON
+328,Belleville - Quinte West,2020,78000,ON
+329,Belleville - Quinte West,2015,69000,ON
+330,Brantford,2020,85000,ON
+331,Brantford,2015,74500,ON
+332,Brantford,2020,85000,ON
+333,Brantford,2015,74500,ON
+334,Brantford,2020,85000,ON
+335,Brantford,2015,74500,ON
+336,Brockville,2020,70500,ON
+337,Brockville,2015,62800,ON
+338,Brockville,2020,70500,ON
+339,Brockville,2015,62800,ON
+340,Brockville,2020,70500,ON
+341,Brockville,2015,62800,ON
+342,Centre Wellington,2020,101000,ON
+343,Centre Wellington,2015,92000,ON
+344,Centre Wellington,2020,101000,ON
+345,Centre Wellington,2015,92000,ON
+346,Centre Wellington,2020,101000,ON
+347,Centre Wellington,2015,92000,ON
+348,Chatham-Kent,2020,71500,ON
+349,Chatham-Kent,2015,62800,ON
+350,Chatham-Kent,2020,71500,ON
+351,Chatham-Kent,2015,62800,ON
+352,Chatham-Kent,2020,71500,ON
+353,Chatham-Kent,2015,62800,ON
+354,Cobourg,2020,77000,ON
+355,Cobourg,2015,69500,ON
+356,Cobourg,2020,77000,ON
+357,Cobourg,2015,69500,ON
+358,Cobourg,2020,77000,ON
+359,Cobourg,2015,69500,ON
+360,Collingwood,2020,82000,ON
+361,Collingwood,2015,69500,ON
+362,Collingwood,2020,82000,ON
+363,Collingwood,2015,69500,ON
+364,Collingwood,2020,82000,ON
+365,Collingwood,2015,69500,ON
+366,Cornwall,2020,65500,ON
+367,Cornwall,2015,56000,ON
+368,Cornwall,2020,65500,ON
+369,Cornwall,2015,56000,ON
+370,Cornwall,2020,65500,ON
+371,Cornwall,2015,56000,ON
+372,Elliot Lake,2020,50000,ON
+373,Elliot Lake,2015,46000,ON
+374,Elliot Lake,2020,50000,ON
+375,Elliot Lake,2015,46000,ON
+376,Elliot Lake,2020,50000,ON
+377,Elliot Lake,2015,46000,ON
+378,Essa,2020,108000,ON
+379,Essa,2015,94000,ON
+380,Essa,2020,108000,ON
+381,Essa,2015,94000,ON
+382,Essa,2020,108000,ON
+383,Essa,2015,94000,ON
+384,Greater Sudbury,2020,84000,ON
+385,Greater Sudbury,2015,77500,ON
+386,Greater Sudbury,2020,84000,ON
+387,Greater Sudbury,2015,77500,ON
+388,Greater Sudbury,2020,84000,ON
+389,Greater Sudbury,2015,77500,ON
+390,Guelph,2020,97000,ON
+391,Guelph,2015,88000,ON
+392,Guelph,2020,97000,ON
+393,Guelph,2015,88000,ON
+394,Guelph,2020,97000,ON
+395,Guelph,2015,88000,ON
+396,Hamilton,2020,91000,ON
+397,Hamilton,2015,82000,ON
+398,Hamilton,2020,91000,ON
+399,Hamilton,2015,82000,ON
+400,Hamilton,2020,91000,ON
+401,Hamilton,2015,82000,ON
+402,Hawkesbury,2020,53600,ON
+403,Hawkesbury,2015,46000,ON
+404,Hawkesbury,2020,53600,ON
+405,Hawkesbury,2015,46000,ON
+406,Hawkesbury,2020,53600,ON
+407,Hawkesbury,2015,46000,ON
+408,Ingersoll,2020,88000,ON
+409,Ingersoll,2015,80000,ON
+410,Ingersoll,2020,88000,ON
+411,Ingersoll,2015,80000,ON
+412,Ingersoll,2020,88000,ON
+413,Ingersoll,2015,80000,ON
+414,Kawartha Lakes,2020,82000,ON
+415,Kawartha Lakes,2015,72500,ON
+416,Kawartha Lakes,2020,82000,ON
+417,Kawartha Lakes,2015,72500,ON
+418,Kawartha Lakes,2020,82000,ON
+419,Kawartha Lakes,2015,72500,ON
+420,Kenora,2020,86000,ON
+421,Kenora,2015,79500,ON
+422,Kenora,2020,86000,ON
+423,Kenora,2015,79500,ON
+424,Kenora,2020,86000,ON
+425,Kenora,2015,79500,ON
+426,Kingston,2020,83000,ON
+427,Kingston,2015,77000,ON
+428,Kingston,2020,83000,ON
+429,Kingston,2015,77000,ON
+430,Kingston,2020,83000,ON
+431,Kingston,2015,77000,ON
+432,Kitchener - Cambridge - Waterloo,2020,92000,ON
+433,Kitchener - Cambridge - Waterloo,2015,84000,ON
+434,Kitchener - Cambridge - Waterloo,2020,92000,ON
+435,Kitchener - Cambridge - Waterloo,2015,84000,ON
+436,Kitchener - Cambridge - Waterloo,2020,92000,ON
+437,Kitchener - Cambridge - Waterloo,2015,84000,ON
+438,London,2020,79500,ON
+439,London,2015,70000,ON
+440,London,2020,79500,ON
+441,London,2015,70000,ON
+442,London,2020,79500,ON
+443,London,2015,70000,ON
+444,Midland,2020,71000,ON
+445,Midland,2015,60800,ON
+446,Midland,2020,71000,ON
+447,Midland,2015,60800,ON
+448,Midland,2020,71000,ON
+449,Midland,2015,60800,ON
+450,Norfolk,2020,82000,ON
+451,Norfolk,2015,73000,ON
+452,Norfolk,2020,82000,ON
+453,Norfolk,2015,73000,ON
+454,Norfolk,2020,82000,ON
+455,Norfolk,2015,73000,ON
+456,North Bay,2020,76000,ON
+457,North Bay,2015,69500,ON
+458,North Bay,2020,76000,ON
+459,North Bay,2015,69500,ON
+460,North Bay,2020,76000,ON
+461,North Bay,2015,69500,ON
+462,Orillia,2020,71000,ON
+463,Orillia,2015,60400,ON
+464,Orillia,2020,71000,ON
+465,Orillia,2015,60400,ON
+466,Orillia,2020,71000,ON
+467,Orillia,2015,60400,ON
+468,Oshawa,2020,102000,ON
+469,Oshawa,2015,93000,ON
+470,Oshawa,2020,102000,ON
+471,Oshawa,2015,93000,ON
+472,Oshawa,2020,102000,ON
+473,Oshawa,2015,93000,ON
+474,Ottawa - Gatineau,2020,98000,ON
+475,Ottawa - Gatineau,2015,89000,ON
+476,Ottawa - Gatineau,2020,98000,ON
+477,Ottawa - Gatineau,2015,89000,ON
+478,Ottawa - Gatineau,2020,98000,ON
+479,Ottawa - Gatineau,2015,89000,ON
+480,Owen Sound,2020,71500,ON
+481,Owen Sound,2015,63200,ON
+482,Owen Sound,2020,71500,ON
+483,Owen Sound,2015,63200,ON
+484,Owen Sound,2020,71500,ON
+485,Owen Sound,2015,63200,ON
+486,Pembroke,2020,73000,ON
+487,Pembroke,2015,66500,ON
+488,Pembroke,2020,73000,ON
+489,Pembroke,2015,66500,ON
+490,Pembroke,2020,73000,ON
+491,Pembroke,2015,66500,ON
+492,Petawawa,2020,102000,ON
+493,Petawawa,2015,93000,ON
+494,Petawawa,2020,102000,ON
+495,Petawawa,2015,93000,ON
+496,Petawawa,2020,102000,ON
+497,Petawawa,2015,93000,ON
+498,Peterborough,2020,79000,ON
+499,Peterborough,2015,70000,ON
+500,Peterborough,2020,79000,ON
+501,Peterborough,2015,70000,ON
+502,Peterborough,2020,79000,ON
+503,Peterborough,2015,70000,ON
+504,Port Hope,2020,88000,ON
+505,Port Hope,2015,78500,ON
+506,Port Hope,2020,88000,ON
+507,Port Hope,2015,78500,ON
+508,Port Hope,2020,88000,ON
+509,Port Hope,2015,78500,ON
+510,Sarnia,2020,83000,ON
+511,Sarnia,2015,76500,ON
+512,Sarnia,2020,83000,ON
+513,Sarnia,2015,76500,ON
+514,Sarnia,2020,83000,ON
+515,Sarnia,2015,76500,ON
+516,Sault Ste. Marie,2020,74000,ON
+517,Sault Ste. Marie,2015,67000,ON
+518,Sault Ste. Marie,2020,74000,ON
+519,Sault Ste. Marie,2015,67000,ON
+520,Sault Ste. Marie,2020,74000,ON
+521,Sault Ste. Marie,2015,67000,ON
+522,St. Catharines - Niagara,2020,77000,ON
+523,St. Catharines - Niagara,2015,68000,ON
+524,St. Catharines - Niagara,2020,77000,ON
+525,St. Catharines - Niagara,2015,68000,ON
+526,St. Catharines - Niagara,2020,77000,ON
+527,St. Catharines - Niagara,2015,68000,ON
+528,Stratford,2020,77000,ON
+529,Stratford,2015,70000,ON
+530,Stratford,2020,77000,ON
+531,Stratford,2015,70000,ON
+532,Stratford,2020,77000,ON
+533,Stratford,2015,70000,ON
+534,Thunder Bay,2020,80000,ON
+535,Thunder Bay,2015,74000,ON
+536,Thunder Bay,2020,80000,ON
+537,Thunder Bay,2015,74000,ON
+538,Thunder Bay,2020,80000,ON
+539,Thunder Bay,2015,74000,ON
+540,Tillsonburg,2020,73500,ON
+541,Tillsonburg,2015,63200,ON
+542,Tillsonburg,2020,73500,ON
+543,Tillsonburg,2015,63200,ON
+544,Tillsonburg,2020,73500,ON
+545,Tillsonburg,2015,63200,ON
+546,Timmins,2020,82000,ON
+547,Timmins,2015,79500,ON
+548,Timmins,2020,82000,ON
+549,Timmins,2015,79500,ON
+550,Timmins,2020,82000,ON
+551,Timmins,2015,79500,ON
+552,Toronto,2020,97000,ON
+553,Toronto,2015,85000,ON
+554,Toronto,2020,97000,ON
+555,Toronto,2015,85000,ON
+556,Toronto,2020,97000,ON
+557,Toronto,2015,85000,ON
+558,Wasaga Beach,2020,76000,ON
+559,Wasaga Beach,2015,67000,ON
+560,Wasaga Beach,2020,76000,ON
+561,Wasaga Beach,2015,67000,ON
+562,Wasaga Beach,2020,76000,ON
+563,Wasaga Beach,2015,67000,ON
+564,Windsor,2020,82000,ON
+565,Windsor,2015,72000,ON
+566,Windsor,2020,82000,ON
+567,Windsor,2015,72000,ON
+568,Windsor,2020,82000,ON
+569,Windsor,2015,72000,ON
+570,Woodstock,2020,82000,ON
+571,Woodstock,2015,74000,ON
+572,Woodstock,2020,82000,ON
+573,Woodstock,2015,74000,ON
+574,Woodstock,2020,82000,ON
+575,Woodstock,2015,74000,ON
+576,Manitoba,2020,79500,MB
+577,Manitoba,2015,73500,MB
+578,Manitoba,2020,79500,MB
+579,Manitoba,2015,73500,MB
+580,Manitoba,2020,79500,MB
+581,Manitoba,2015,73500,MB
+582,Brandon,2020,77500,MB
+583,Brandon,2015,73000,MB
+584,Brandon,2020,77500,MB
+585,Brandon,2015,73000,MB
+586,Brandon,2020,77500,MB
+587,Brandon,2015,73000,MB
+588,Portage la Prairie,2020,69000,MB
+589,Portage la Prairie,2015,63200,MB
+590,Portage la Prairie,2020,69000,MB
+591,Portage la Prairie,2015,63200,MB
+592,Portage la Prairie,2020,69000,MB
+593,Portage la Prairie,2015,63200,MB
+594,Steinbach,2020,72500,MB
+595,Steinbach,2015,66500,MB
+596,Steinbach,2020,72500,MB
+597,Steinbach,2015,66500,MB
+598,Steinbach,2020,72500,MB
+599,Steinbach,2015,66500,MB
+600,Thompson,2020,96000,MB
+601,Thompson,2015,104000,MB
+602,Thompson,2020,96000,MB
+603,Thompson,2015,104000,MB
+604,Thompson,2020,96000,MB
+605,Thompson,2015,104000,MB
+606,Winkler,2020,75000,MB
+607,Winkler,2015,70000,MB
+608,Winkler,2020,75000,MB
+609,Winkler,2015,70000,MB
+610,Winkler,2020,75000,MB
+611,Winkler,2015,70000,MB
+612,Winnipeg,2020,83000,MB
+613,Winnipeg,2015,76500,MB
+614,Winnipeg,2020,83000,MB
+615,Winnipeg,2015,76500,MB
+616,Winnipeg,2020,83000,MB
+617,Winnipeg,2015,76500,MB
+618,Saskatchewan,2020,82000,SK
+619,Saskatchewan,2015,82000,SK
+620,Saskatchewan,2020,82000,SK
+621,Saskatchewan,2015,82000,SK
+622,Saskatchewan,2020,82000,SK
+623,Saskatchewan,2015,82000,SK
+624,Estevan,2020,96000,SK
+625,Estevan,2015,108000,SK
+626,Estevan,2020,96000,SK
+627,Estevan,2015,108000,SK
+628,Estevan,2020,96000,SK
+629,Estevan,2015,108000,SK
+630,Moose Jaw,2020,75500,SK
+631,Moose Jaw,2015,75000,SK
+632,Moose Jaw,2020,75500,SK
+633,Moose Jaw,2015,75000,SK
+634,Moose Jaw,2020,75500,SK
+635,Moose Jaw,2015,75000,SK
+636,North Battleford,2020,78000,SK
+637,North Battleford,2015,73000,SK
+638,North Battleford,2020,78000,SK
+639,North Battleford,2015,73000,SK
+640,North Battleford,2020,78000,SK
+641,North Battleford,2015,73000,SK
+642,Prince Albert,2020,78000,SK
+643,Prince Albert,2015,77000,SK
+644,Prince Albert,2020,78000,SK
+645,Prince Albert,2015,77000,SK
+646,Prince Albert,2020,78000,SK
+647,Prince Albert,2015,77000,SK
+648,Regina,2020,90000,SK
+649,Regina,2015,91000,SK
+650,Regina,2020,90000,SK
+651,Regina,2015,91000,SK
+652,Regina,2020,90000,SK
+653,Regina,2015,91000,SK
+654,Saskatoon,2020,89000,SK
+655,Saskatoon,2015,90000,SK
+656,Saskatoon,2020,89000,SK
+657,Saskatoon,2015,90000,SK
+658,Saskatoon,2020,89000,SK
+659,Saskatoon,2015,90000,SK
+660,Swift Current,2020,80000,SK
+661,Swift Current,2015,81000,SK
+662,Swift Current,2020,80000,SK
+663,Swift Current,2015,81000,SK
+664,Swift Current,2020,80000,SK
+665,Swift Current,2015,81000,SK
+666,Weyburn,2020,82000,SK
+667,Weyburn,2015,87000,SK
+668,Weyburn,2020,82000,SK
+669,Weyburn,2015,87000,SK
+670,Weyburn,2020,82000,SK
+671,Weyburn,2015,87000,SK
+672,Yorkton,2020,77500,SK
+673,Yorkton,2015,75000,SK
+674,Yorkton,2020,77500,SK
+675,Yorkton,2015,75000,SK
+676,Yorkton,2020,77500,SK
+677,Yorkton,2015,75000,SK
+678,Alberta,2020,96000,AB
+679,Alberta,2015,102000,AB
+680,Alberta,2020,96000,AB
+681,Alberta,2015,102000,AB
+682,Alberta,2020,96000,AB
+683,Alberta,2015,102000,AB
+684,Brooks,2020,91000,AB
+685,Brooks,2015,91000,AB
+686,Brooks,2020,91000,AB
+687,Brooks,2015,91000,AB
+688,Brooks,2020,91000,AB
+689,Brooks,2015,91000,AB
+690,Calgary,2020,100000,AB
+691,Calgary,2015,108000,AB
+692,Calgary,2020,100000,AB
+693,Calgary,2015,108000,AB
+694,Calgary,2020,100000,AB
+695,Calgary,2015,108000,AB
+696,Camrose,2020,76000,AB
+697,Camrose,2015,79500,AB
+698,Camrose,2020,76000,AB
+699,Camrose,2015,79500,AB
+700,Camrose,2020,76000,AB
+701,Camrose,2015,79500,AB
+702,Canmore,2020,106000,AB
+703,Canmore,2015,107000,AB
+704,Canmore,2020,106000,AB
+705,Canmore,2015,107000,AB
+706,Canmore,2020,106000,AB
+707,Canmore,2015,107000,AB
+708,Edmonton,2020,96000,AB
+709,Edmonton,2015,102000,AB
+710,Edmonton,2020,96000,AB
+711,Edmonton,2015,102000,AB
+712,Edmonton,2020,96000,AB
+713,Edmonton,2015,102000,AB
+714,Grande Prairie,2020,102000,AB
+715,Grande Prairie,2015,114000,AB
+716,Grande Prairie,2020,102000,AB
+717,Grande Prairie,2015,114000,AB
+718,Grande Prairie,2020,102000,AB
+719,Grande Prairie,2015,114000,AB
+720,High River,2020,82000,AB
+721,High River,2015,85000,AB
+722,High River,2020,82000,AB
+723,High River,2015,85000,AB
+724,High River,2020,82000,AB
+725,High River,2015,85000,AB
+726,Lacombe,2020,89000,AB
+727,Lacombe,2015,99000,AB
+728,Lacombe,2020,89000,AB
+729,Lacombe,2015,99000,AB
+730,Lacombe,2020,89000,AB
+731,Lacombe,2015,99000,AB
+732,Lethbridge,2020,84000,AB
+733,Lethbridge,2015,82000,AB
+734,Lethbridge,2020,84000,AB
+735,Lethbridge,2015,82000,AB
+736,Lethbridge,2020,84000,AB
+737,Lethbridge,2015,82000,AB
+738,Lloydminster,2020,95000,AB
+739,Lloydminster,2015,104000,AB
+740,Lloydminster,2020,95000,AB
+741,Lloydminster,2015,104000,AB
+742,Lloydminster,2020,95000,AB
+743,Lloydminster,2015,104000,AB
+744,Medicine Hat,2020,80000,AB
+745,Medicine Hat,2015,81000,AB
+746,Medicine Hat,2020,80000,AB
+747,Medicine Hat,2015,81000,AB
+748,Medicine Hat,2020,80000,AB
+749,Medicine Hat,2015,81000,AB
+750,Okotoks,2020,117000,AB
+751,Okotoks,2015,126000,AB
+752,Okotoks,2020,117000,AB
+753,Okotoks,2015,126000,AB
+754,Okotoks,2020,117000,AB
+755,Okotoks,2015,126000,AB
+756,Red Deer,2020,85000,AB
+757,Red Deer,2015,93000,AB
+758,Red Deer,2020,85000,AB
+759,Red Deer,2015,93000,AB
+760,Red Deer,2020,85000,AB
+761,Red Deer,2015,93000,AB
+762,Strathmore,2020,91000,AB
+763,Strathmore,2015,96000,AB
+764,Strathmore,2020,91000,AB
+765,Strathmore,2015,96000,AB
+766,Strathmore,2020,91000,AB
+767,Strathmore,2015,96000,AB
+768,Sylvan Lake,2020,93000,AB
+769,Sylvan Lake,2015,107000,AB
+770,Sylvan Lake,2020,93000,AB
+771,Sylvan Lake,2015,107000,AB
+772,Sylvan Lake,2020,93000,AB
+773,Sylvan Lake,2015,107000,AB
+774,Wetaskiwin,2020,69500,AB
+775,Wetaskiwin,2015,72500,AB
+776,Wetaskiwin,2020,69500,AB
+777,Wetaskiwin,2015,72500,AB
+778,Wetaskiwin,2020,69500,AB
+779,Wetaskiwin,2015,72500,AB
+780,Wood Buffalo,2020,182000,AB
+781,Wood Buffalo,2015,210000,AB
+782,Wood Buffalo,2020,182000,AB
+783,Wood Buffalo,2015,210000,AB
+784,Wood Buffalo,2020,182000,AB
+785,Wood Buffalo,2015,210000,AB
+786,British Columbia,2020,85000,BC
+787,British Columbia,2015,75500,BC
+788,British Columbia,2020,85000,BC
+789,British Columbia,2015,75500,BC
+790,British Columbia,2020,85000,BC
+791,British Columbia,2015,75500,BC
+792,Abbotsford - Mission,2020,91000,BC
+793,Abbotsford - Mission,2015,79500,BC
+794,Abbotsford - Mission,2020,91000,BC
+795,Abbotsford - Mission,2015,79500,BC
+796,Abbotsford - Mission,2020,91000,BC
+797,Abbotsford - Mission,2015,79500,BC
+798,Campbell River,2020,78500,BC
+799,Campbell River,2015,70500,BC
+800,Campbell River,2020,78500,BC
+801,Campbell River,2015,70500,BC
+802,Campbell River,2020,78500,BC
+803,Campbell River,2015,70500,BC
+804,Chilliwack,2020,82000,BC
+805,Chilliwack,2015,71000,BC
+806,Chilliwack,2020,82000,BC
+807,Chilliwack,2015,71000,BC
+808,Chilliwack,2020,82000,BC
+809,Chilliwack,2015,71000,BC
+810,Courtenay,2020,76500,BC
+811,Courtenay,2015,67500,BC
+812,Courtenay,2020,76500,BC
+813,Courtenay,2015,67500,BC
+814,Courtenay,2020,76500,BC
+815,Courtenay,2015,67500,BC
+816,Cranbrook,2020,84000,BC
+817,Cranbrook,2015,78500,BC
+818,Cranbrook,2020,84000,BC
+819,Cranbrook,2015,78500,BC
+820,Cranbrook,2020,84000,BC
+821,Cranbrook,2015,78500,BC
+822,Dawson Creek,2020,85000,BC
+823,Dawson Creek,2015,92000,BC
+824,Dawson Creek,2020,85000,BC
+825,Dawson Creek,2015,92000,BC
+826,Dawson Creek,2020,85000,BC
+827,Dawson Creek,2015,92000,BC
+828,Duncan,2020,75500,BC
+829,Duncan,2015,66000,BC
+830,Duncan,2020,75500,BC
+831,Duncan,2015,66000,BC
+832,Duncan,2020,75500,BC
+833,Duncan,2015,66000,BC
+834,Fort St. John,2020,106000,BC
+835,Fort St. John,2015,116000,BC
+836,Fort St. John,2020,106000,BC
+837,Fort St. John,2015,116000,BC
+838,Fort St. John,2020,106000,BC
+839,Fort St. John,2015,116000,BC
+840,Kamloops,2020,87000,BC
+841,Kamloops,2015,79500,BC
+842,Kamloops,2020,87000,BC
+843,Kamloops,2015,79500,BC
+844,Kamloops,2020,87000,BC
+845,Kamloops,2015,79500,BC
+846,Kelowna,2020,85000,BC
+847,Kelowna,2015,77000,BC
+848,Kelowna,2020,85000,BC
+849,Kelowna,2015,77000,BC
+850,Kelowna,2020,85000,BC
+851,Kelowna,2015,77000,BC
+852,Ladysmith,2020,80000,BC
+853,Ladysmith,2015,73000,BC
+854,Ladysmith,2020,80000,BC
+855,Ladysmith,2015,73000,BC
+856,Ladysmith,2020,80000,BC
+857,Ladysmith,2015,73000,BC
+858,Nanaimo,2020,77500,BC
+859,Nanaimo,2015,68000,BC
+860,Nanaimo,2020,77500,BC
+861,Nanaimo,2015,68000,BC
+862,Nanaimo,2020,77500,BC
+863,Nanaimo,2015,68000,BC
+864,Nelson,2020,74500,BC
+865,Nelson,2015,64000,BC
+866,Nelson,2020,74500,BC
+867,Nelson,2015,64000,BC
+868,Nelson,2020,74500,BC
+869,Nelson,2015,64000,BC
+870,Parksville,2020,73500,BC
+871,Parksville,2015,68000,BC
+872,Parksville,2020,73500,BC
+873,Parksville,2015,68000,BC
+874,Parksville,2020,73500,BC
+875,Parksville,2015,68000,BC
+876,Penticton,2020,71000,BC
+877,Penticton,2015,62000,BC
+878,Penticton,2020,71000,BC
+879,Penticton,2015,62000,BC
+880,Penticton,2020,71000,BC
+881,Penticton,2015,62000,BC
+882,Port Alberni,2020,67000,BC
+883,Port Alberni,2015,59600,BC
+884,Port Alberni,2020,67000,BC
+885,Port Alberni,2015,59600,BC
+886,Port Alberni,2020,67000,BC
+887,Port Alberni,2015,59600,BC
+888,Powell River,2020,66500,BC
+889,Powell River,2015,60800,BC
+890,Powell River,2020,66500,BC
+891,Powell River,2015,60800,BC
+892,Powell River,2020,66500,BC
+893,Powell River,2015,60800,BC
+894,Prince George,2020,91000,BC
+895,Prince George,2015,85000,BC
+896,Prince George,2020,91000,BC
+897,Prince George,2015,85000,BC
+898,Prince George,2020,91000,BC
+899,Prince George,2015,85000,BC
+900,Prince Rupert,2020,92000,BC
+901,Prince Rupert,2015,76000,BC
+902,Prince Rupert,2020,92000,BC
+903,Prince Rupert,2015,76000,BC
+904,Prince Rupert,2020,92000,BC
+905,Prince Rupert,2015,76000,BC
+906,Quesnel,2020,73000,BC
+907,Quesnel,2015,70500,BC
+908,Quesnel,2020,73000,BC
+909,Quesnel,2015,70500,BC
+910,Quesnel,2020,73000,BC
+911,Quesnel,2015,70500,BC
+912,Salmon Arm,2020,75000,BC
+913,Salmon Arm,2015,68000,BC
+914,Salmon Arm,2020,75000,BC
+915,Salmon Arm,2015,68000,BC
+916,Salmon Arm,2020,75000,BC
+917,Salmon Arm,2015,68000,BC
+918,Squamish,2020,111000,BC
+919,Squamish,2015,96000,BC
+920,Squamish,2020,111000,BC
+921,Squamish,2015,96000,BC
+922,Squamish,2020,111000,BC
+923,Squamish,2015,96000,BC
+924,Terrace,2020,90000,BC
+925,Terrace,2015,81000,BC
+926,Terrace,2020,90000,BC
+927,Terrace,2015,81000,BC
+928,Terrace,2020,90000,BC
+929,Terrace,2015,81000,BC
+930,Trail,2020,76000,BC
+931,Trail,2015,70000,BC
+932,Trail,2020,76000,BC
+933,Trail,2015,70000,BC
+934,Trail,2020,76000,BC
+935,Trail,2015,70000,BC
+936,Vancouver,2020,90000,BC
+937,Vancouver,2015,78500,BC
+938,Vancouver,2020,90000,BC
+939,Vancouver,2015,78500,BC
+940,Vancouver,2020,90000,BC
+941,Vancouver,2015,78500,BC
+942,Vernon,2020,79000,BC
+943,Vernon,2015,70000,BC
+944,Vernon,2020,79000,BC
+945,Vernon,2015,70000,BC
+946,Vernon,2020,79000,BC
+947,Vernon,2015,70000,BC
+948,Victoria,2020,85000,BC
+949,Victoria,2015,76000,BC
+950,Victoria,2020,85000,BC
+951,Victoria,2015,76000,BC
+952,Victoria,2020,85000,BC
+953,Victoria,2015,76000,BC
+954,Williams Lake,2020,81000,BC
+955,Williams Lake,2015,78000,BC
+956,Williams Lake,2020,81000,BC
+957,Williams Lake,2015,78000,BC
+958,Williams Lake,2020,81000,BC
+959,Williams Lake,2015,78000,BC
+960,Yukon,2020,100000,YT
+961,Yukon,2015,92000,YT
+962,Yukon,2020,100000,YT
+963,Yukon,2015,92000,YT
+964,Yukon,2020,100000,YT
+965,Yukon,2015,92000,YT
+966,Whitehorse,2020,109000,YT
+967,Whitehorse,2015,99000,YT
+968,Whitehorse,2020,109000,YT
+969,Whitehorse,2015,99000,YT
+970,Whitehorse,2020,109000,YT
+971,Whitehorse,2015,99000,YT
+972,Northwest Territories,2020,127000,NT
+973,Northwest Territories,2015,127000,NT
+974,Northwest Territories,2020,127000,NT
+975,Northwest Territories,2015,127000,NT
+976,Northwest Territories,2020,127000,NT
+977,Northwest Territories,2015,127000,NT
+978,Yellowknife,2020,148000,NT
+979,Yellowknife,2015,154000,NT
+980,Yellowknife,2020,148000,NT
+981,Yellowknife,2015,154000,NT
+982,Yellowknife,2020,148000,NT
+983,Yellowknife,2015,154000,NT
+984,Nunavut,2020,118000,NU
+985,Nunavut,2015,105000,NU
+986,Nunavut,2020,118000,NU
+987,Nunavut,2015,105000,NU
+988,Nunavut,2020,118000,NU
+989,Nunavut,2015,105000,NU
