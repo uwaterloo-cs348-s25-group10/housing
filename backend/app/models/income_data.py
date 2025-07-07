@@ -5,6 +5,7 @@ IncomeData(income_id Int, region_id Int, year Int, avg_income Float)
 """
 
 from sqlalchemy import Column, Integer, Float, ForeignKey, UniqueConstraint
+from sqlalchemy.orm import relationship
 from app.database import Base
 
 class IncomeData(Base):
