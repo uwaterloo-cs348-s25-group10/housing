@@ -19,3 +19,5 @@ class IncomeData(Base):
     __table_args__ = (
         UniqueConstraint("region_id", "year", name="uq_region_year"),
     )
+
+    region = relationship("Region", back_populates="income_data")
