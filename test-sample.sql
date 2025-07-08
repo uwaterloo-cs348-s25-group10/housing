@@ -29,7 +29,7 @@ WHERE R.province = 'ON'
   AND I.year = 2020
 GROUP BY R.name, R.province, I.year;
 
--- FEATURE 7b AFFORDABILITY BY INCOME
+-- FEATURE 2 AFFORDABILITY BY INCOME
 -- Calculates Home‐Affordability Index (HAI) = (user_income / avg_price) × 100,
 -- then returns the top 5 regions where HAI ≥ 25 for 2020 condos.
 \echo 'FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos'
@@ -82,3 +82,16 @@ GROUP BY r.region_id, r.name, i.avg_income
 ORDER BY hai_index DESC
 LIMIT 5;
 
+-- FEATURE 5: Data Gap Finder
+-- Finds regions that contain housing data but are missing income data for condos in 2019
+\echo 'FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos'
+SELECT DISTINCT R.region_id, R.name AS region
+FROM HousingPrice HP
+JOIN Property P ON HP.property_id = P.property_id
+JOIN Region R ON P.region_id = R.region_id
+WHERE HP.year = 2019 AND P.type = 'Condo'
+EXCEPT
+SELECT R.region_id, R.name
+FROM IncomeData I
+JOIN Region R ON I.region_id = R.region_id
+WHERE I.year = 2019;
