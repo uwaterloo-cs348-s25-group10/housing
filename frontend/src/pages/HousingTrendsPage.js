@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./HousingTrendsPage.css";
+import { apiClient } from "../config/api";
 import {
   Container,
   Typography,
@@ -19,83 +19,88 @@ import {
   TableBody,
   Box,
 } from "@mui/material";
-
-const PROVINCES = [
-  { code: "ON", name: "Ontario" },
-  { code: "QC", name: "Quebec" },
-  { code: "BC", name: "British Columbia" },
-];
-
-const REGIONS = {
-  ON: ["Toronto", "Ottawa"],
-  QC: ["Montreal", "Quebec City"],
-  BC: ["Vancouver", "Victoria"],
-};
-
-const PROPERTY_TYPES = ["House", "Condo", "Apartment"];
+import "./HousingTrendsPage.css";
 
 export default function HousingTrendsPage() {
+  const [provinces, setProvinces] = useState([]);
+  const [regions, setRegions] = useState([]);
+  const [years, setYears] = useState([]);
+  const [propertyTypes, setPropertyTypes] = useState([]);
+
   const [province, setProvince] = useState("");
   const [region, setRegion] = useState("");
   const [year, setYear] = useState("");
   const [propertyType, setPropertyType] = useState("");
-  const [regions, setRegions] = useState([]);
+
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
-  const [data, setData] = useState([]);
 
+  // on mount: load provinces, years & property types
   useEffect(() => {
-    if (province) setRegions(REGIONS[province] || []);
-    else {
+    apiClient
+      .get("/meta/housing")
+      .then((meta) => {
+        setProvinces(meta.provinces);
+        setYears(meta.years);
+        setPropertyTypes(meta.property_types);
+      })
+      .catch(console.error);
+  }, []);
+
+  // when province changes: fetch regions
+  useEffect(() => {
+    if (!province) {
       setRegions([]);
       setRegion("");
+    } else {
+      apiClient
+        .get(`/meta/regions/${province}`)
+        .then(setRegions)
+        .catch(console.error);
     }
   }, [province]);
 
-  const handleSearch = () => {
+  // search real data
+  const handleSearch = async () => {
     setSearched(true);
     setLoading(true);
-
-    // stubbed data
-    setTimeout(() => {
-      const results = Array.from({ length: 6 }).map(() => {
-        const prov = PROVINCES[Math.floor(Math.random() * PROVINCES.length)];
-        const regs = REGIONS[prov.code];
-        const reg = regs[Math.floor(Math.random() * regs.length)];
-        const yr = 2000 + Math.floor(Math.random() * 21);
-        const pt =
-          PROPERTY_TYPES[Math.floor(Math.random() * PROPERTY_TYPES.length)];
-        const price =
-          Math.round((300000 + Math.random() * 1200000) / 1000) * 1000;
-        return {
-          region: reg,
-          province: prov.code,
-          year: yr,
-          property_type: pt,
-          avg_price: price,
-        };
+    try {
+      const params = new URLSearchParams({
+        province,
+        property_type: propertyType,
+        year,
       });
+
+      if (region) {
+        params.append("region", region);
+      }
+
+      const results = await apiClient.get(`/trends/housing?${params}`);
       setData(results);
+    } catch (err) {
+      console.error(err);
+      setData([]);
+    } finally {
       setLoading(false);
-    }, 600);
+    }
   };
 
   return (
-    <Container maxWidth="lg" className="page-container" sx={{ pt: 4, pb: 4 }}>
+    <Container maxWidth="lg" sx={{ py: 4 }}>
       <Typography variant="h4" gutterBottom>
         Explore Historical Housing Prices
       </Typography>
       <Typography variant="subtitle1" color="text.secondary" gutterBottom>
-        View average home prices by region, year, and property type across
-        Canada.
+        View average prices by region, year, and property type.
       </Typography>
 
-      <Paper elevation={2} sx={{ p: 3, mb: 4 }}>
+      <Paper sx={{ p: 3, mb: 4 }} elevation={2}>
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={2}
-          alignItems="center"
           flexWrap="wrap"
+          alignItems="center"
         >
           <FormControl size="small" sx={{ flex: "1 1 200px" }}>
             <InputLabel>Province</InputLabel>
@@ -107,9 +112,9 @@ export default function HousingTrendsPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {PROVINCES.map((p) => (
-                <MenuItem key={p.code} value={p.code}>
-                  {p.name}
+              {provinces.map((p) => (
+                <MenuItem key={p} value={p}>
+                  {p}
                 </MenuItem>
               ))}
             </Select>
@@ -147,7 +152,7 @@ export default function HousingTrendsPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {Array.from({ length: 21 }, (_, i) => 2000 + i).map((y) => (
+              {years.map((y) => (
                 <MenuItem key={y} value={y}>
                   {y}
                 </MenuItem>
@@ -165,7 +170,7 @@ export default function HousingTrendsPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {PROPERTY_TYPES.map((pt) => (
+              {propertyTypes.map((pt) => (
                 <MenuItem key={pt} value={pt}>
                   {pt}
                 </MenuItem>
@@ -175,7 +180,6 @@ export default function HousingTrendsPage() {
 
           <Button
             variant="contained"
-            size="medium"
             onClick={handleSearch}
             disabled={loading}
             sx={{ flex: "0 0 120px", height: 40 }}
@@ -214,8 +218,8 @@ export default function HousingTrendsPage() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {data.map((row, idx) => (
-                <TableRow key={idx} hover>
+              {data.map((row, i) => (
+                <TableRow key={i} hover>
                   <TableCell>{row.region}</TableCell>
                   <TableCell>{row.province}</TableCell>
                   <TableCell>{row.year}</TableCell>
