@@ -46,5 +46,7 @@ In addition to report.pdf, this markdown will explain in technical terms.
 
 ## 🔗 Links
 Figma Designs: [CS348 Design Mockups](https://www.figma.com/design/l8FtoQQr5ftWvWdWMy8Mnt/CS-348-Designs?node-id=0-1&t=2HrGr2P0jI5X6Qz5-1)
+
 Kaggle Canada Housing Dataset: https://www.kaggle.com/datasets/yuliiabulana/canada-housing
+
 Statistics Canada Table 98-10-0055-01: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810005501
