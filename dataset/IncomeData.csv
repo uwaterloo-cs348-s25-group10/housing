@@ -1,10 +1,4 @@
 ,region_name,year,avg_income,province
-0,Newfoundland and Labrador,2020,71500,NL
-1,Newfoundland and Labrador,2015,73000,NL
-2,Newfoundland and Labrador,2020,71500,NL
-3,Newfoundland and Labrador,2015,73000,NL
-4,Newfoundland and Labrador,2020,71500,NL
-5,Newfoundland and Labrador,2015,73000,NL
 6,Corner Brook,2020,70000,NL
 7,Corner Brook,2015,70000,NL
 8,Corner Brook,2020,70000,NL
@@ -29,12 +23,6 @@
 27,St. John's,2015,86000,NL
 28,St. John's,2020,85000,NL
 29,St. John's,2015,86000,NL
-30,Prince Edward Island,2020,73500,PE
-31,Prince Edward Island,2015,66000,PE
-32,Prince Edward Island,2020,73500,PE
-33,Prince Edward Island,2015,66000,PE
-34,Prince Edward Island,2020,73500,PE
-35,Prince Edward Island,2015,66000,PE
 36,Charlottetown,2020,76500,PE
 37,Charlottetown,2015,69000,PE
 38,Charlottetown,2020,76500,PE
@@ -47,12 +35,6 @@
 45,Summerside,2015,58000,PE
 46,Summerside,2020,64500,PE
 47,Summerside,2015,58000,PE
-48,Nova Scotia,2020,71500,NS
-49,Nova Scotia,2015,66000,NS
-50,Nova Scotia,2020,71500,NS
-51,Nova Scotia,2015,66000,NS
-52,Nova Scotia,2020,71500,NS
-53,Nova Scotia,2015,66000,NS
 54,Cape Breton,2020,62000,NS
 55,Cape Breton,2015,57200,NS
 56,Cape Breton,2020,62000,NS
@@ -83,12 +65,6 @@
 81,Truro,2015,60000,NS
 82,Truro,2020,66000,NS
 83,Truro,2015,60000,NS
-84,New Brunswick,2020,70000,NB
-85,New Brunswick,2015,64000,NB
-86,New Brunswick,2020,70000,NB
-87,New Brunswick,2015,64000,NB
-88,New Brunswick,2020,70000,NB
-89,New Brunswick,2015,64000,NB
 90,Bathurst,2020,62800,NB
 91,Bathurst,2015,58000,NB
 92,Bathurst,2020,62800,NB
@@ -131,12 +107,6 @@
 129,Saint John,2015,69000,NB
 130,Saint John,2020,74000,NB
 131,Saint John,2015,69000,NB
-132,Quebec,2020,72500,QC
-133,Quebec,2015,64500,QC
-134,Quebec,2020,72500,QC
-135,Quebec,2015,64500,QC
-136,Quebec,2020,72500,QC
-137,Quebec,2015,64500,QC
 138,Alma,2020,67500,QC
 139,Alma,2015,61200,QC
 140,Alma,2020,67500,QC
@@ -311,12 +281,6 @@
 309,Victoriaville,2015,57200,QC
 310,Victoriaville,2020,63200,QC
 311,Victoriaville,2015,57200,QC
-312,Ontario,2020,91000,ON
-313,Ontario,2015,80000,ON
-314,Ontario,2020,91000,ON
-315,Ontario,2015,80000,ON
-316,Ontario,2020,91000,ON
-317,Ontario,2015,80000,ON
 318,Barrie,2020,97000,ON
 319,Barrie,2015,87000,ON
 320,Barrie,2020,97000,ON
@@ -575,12 +539,6 @@
 573,Woodstock,2015,74000,ON
 574,Woodstock,2020,82000,ON
 575,Woodstock,2015,74000,ON
-576,Manitoba,2020,79500,MB
-577,Manitoba,2015,73500,MB
-578,Manitoba,2020,79500,MB
-579,Manitoba,2015,73500,MB
-580,Manitoba,2020,79500,MB
-581,Manitoba,2015,73500,MB
 582,Brandon,2020,77500,MB
 583,Brandon,2015,73000,MB
 584,Brandon,2020,77500,MB
@@ -617,12 +575,6 @@
 615,Winnipeg,2015,76500,MB
 616,Winnipeg,2020,83000,MB
 617,Winnipeg,2015,76500,MB
-618,Saskatchewan,2020,82000,SK
-619,Saskatchewan,2015,82000,SK
-620,Saskatchewan,2020,82000,SK
-621,Saskatchewan,2015,82000,SK
-622,Saskatchewan,2020,82000,SK
-623,Saskatchewan,2015,82000,SK
 624,Estevan,2020,96000,SK
 625,Estevan,2015,108000,SK
 626,Estevan,2020,96000,SK
@@ -677,12 +629,6 @@
 675,Yorkton,2015,75000,SK
 676,Yorkton,2020,77500,SK
 677,Yorkton,2015,75000,SK
-678,Alberta,2020,96000,AB
-679,Alberta,2015,102000,AB
-680,Alberta,2020,96000,AB
-681,Alberta,2015,102000,AB
-682,Alberta,2020,96000,AB
-683,Alberta,2015,102000,AB
 684,Brooks,2020,91000,AB
 685,Brooks,2015,91000,AB
 686,Brooks,2020,91000,AB
@@ -785,12 +731,6 @@
 783,Wood Buffalo,2015,210000,AB
 784,Wood Buffalo,2020,182000,AB
 785,Wood Buffalo,2015,210000,AB
-786,British Columbia,2020,85000,BC
-787,British Columbia,2015,75500,BC
-788,British Columbia,2020,85000,BC
-789,British Columbia,2015,75500,BC
-790,British Columbia,2020,85000,BC
-791,British Columbia,2015,75500,BC
 792,Abbotsford - Mission,2020,91000,BC
 793,Abbotsford - Mission,2015,79500,BC
 794,Abbotsford - Mission,2020,91000,BC

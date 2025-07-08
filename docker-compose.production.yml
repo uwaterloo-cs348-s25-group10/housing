@@ -4,4 +4,4 @@ services:
   backend:
     environment:
       - DATABASE_URL=postgresql://cs348:group10@db:5432/housing_db
-      - DB_ENV=productionoad
+      - DB_ENV=production
