@@ -20,11 +20,11 @@
 git clone https://github.com/uwaterloo-cs348-s25-group10/housing
 cd housing
 ```
-3. Build and run the Docker container for production
-```bash
+3. Build and run the Docker container
+```
 make run-prod
 ```
-5. Now you can access to the service
+4. Now you can access to the service
 * Frontend: http://localhost:3000 (On your network, you may use http://172.19.0.4:3000)
 * Backend: http://localhost:8000
 * API Docs (Swagger): http://localhost:8000/docs
