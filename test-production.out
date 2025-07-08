@@ -1,0 +1,199 @@
+== FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region ==
+ region | province | year | property_type | avg_price 
+--------+----------+------+---------------+-----------
+(0 rows)
+
+== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 ==
+      region       | province | year | avg_income 
+-------------------+----------+------+------------
+ Barrie            | ON       | 2020 |      97000
+ Brantford         | ON       | 2020 |      85000
+ Centre Wellington | ON       | 2020 |     101000
+ Collingwood       | ON       | 2020 |      82000
+ Cornwall          | ON       | 2020 |      65500
+ Elliot Lake       | ON       | 2020 |      50000
+ Essa              | ON       | 2020 |     108000
+ Greater Sudbury   | ON       | 2020 |      84000
+ Guelph            | ON       | 2020 |      97000
+ Hamilton          | ON       | 2020 |      91000
+ Kawartha Lakes    | ON       | 2020 |      82000
+ Kenora            | ON       | 2020 |      86000
+ Kingston          | ON       | 2020 |      83000
+ London            | ON       | 2020 |      79500
+ Midland           | ON       | 2020 |      71000
+ North Bay         | ON       | 2020 |      76000
+ Orillia           | ON       | 2020 |      71000
+ Oshawa            | ON       | 2020 |     102000
+ Owen Sound        | ON       | 2020 |      71500
+ Pembroke          | ON       | 2020 |      73000
+ Peterborough      | ON       | 2020 |      79000
+ Sarnia            | ON       | 2020 |      83000
+ Sault Ste. Marie  | ON       | 2020 |      74000
+ Thunder Bay       | ON       | 2020 |      80000
+ Tillsonburg       | ON       | 2020 |      73500
+ Toronto           | ON       | 2020 |      97000
+ Wasaga Beach      | ON       | 2020 |      76000
+ Windsor           | ON       | 2020 |      82000
+ Woodstock         | ON       | 2020 |      82000
+(29 rows)
+
+FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos
+ region | user_hai 
+--------+----------
+(0 rows)
+
+FEATURE 3: Reverse Lookup – Where Did This Price Exist? (±$25,000 around 600000)
+             region              |   property_type   | year | avg_price 
+---------------------------------+-------------------+------+-----------
+ Surrey                          | MultiFamily       | 2024 |    619000
+ Barriere                        | Single Family     | 2024 |    595000
+ Chase                           | Single Family     | 2024 |    615000
+ Chilliwack                      | Duplex            | 2024 |    622500
+ Coquitlam                       | Manufactured Home | 2024 |    599900
+ Rural Stettler No. 6, County of | Single Family     | 2024 |    597000
+ Rural                           | Single Family     | 2024 |    599900
+ Lacombe                         | Condo             | 2024 |    589900
+ Hinton                          | Condo             | 2024 |    579000
+ Oyen                            | Single Family     | 2024 |    610000
+ Rural Woodlands County          | Single Family     | 2024 |    615000
+ Lac Des Iles                    | Single Family     | 2024 |    599900
+ Crossfield                      | Condo             | 2024 |    600000
+ Rural Starland County           | Single Family     | 2024 |    599000
+ Parkland Beach                  | Single Family     | 2024 |    599900
+ Canim Lake                      | Single Family     | 2024 |    600000
+ Tulameen                        | Single Family     | 2024 |    619000
+ Beaver Falls                    | Single Family     | 2024 |    625000
+ Kannata Valley                  | Single Family     | 2024 |    599900
+ Southey                         | Single Family     | 2024 |    599500
+ St Adolphe                      | Single Family     | 2024 |    599900
+ Pike Lake                       | Single Family     | 2024 |    578000
+ Harris Rm No. 316               | Single Family     | 2024 |    599900
+ Wood River Rm No. 74            | Single Family     | 2024 |    575000
+ Arborfield Rm No. 456           | Single Family     | 2024 |    585000
+ Elk Ridge                       | Single Family     | 2024 |    589000
+ Moose Mountain Rm No. 63        | Single Family     | 2024 |    575000
+ Wolverine Rm No. 340            | Single Family     | 2024 |    579900
+ Lomond Rm No. 37                | Single Family     | 2024 |    599999
+ Chaplin Rm No. 164              | Single Family     | 2024 |    585000
+ Brightsand Lake                 | Single Family     | 2024 |    595000
+ Rocanville Rm No. 151           | Single Family     | 2024 |    578000
+ Sarto                           | Single Family     | 2024 |    624900
+ Sioux Lookout                   | Single Family     | 2024 |    625000
+ Metinota                        | Single Family     | 2024 |    625000
+ Burgis Beach                    | Single Family     | 2024 |    599000
+ Loon Lake Rm No. 561            | Single Family     | 2024 |    619900
+ Tuxford                         | Single Family     | 2024 |    579900
+ Hitchcock Bay                   | Single Family     | 2024 |    589900
+ Bratt's Lake Rm No. 129         | Single Family     | 2024 |    599000
+ Brampton                        | Condo             | 2024 |    585000
+ Vaughan                         | Single Family     | 2024 |    599990
+ Charlottetown                   | Condo/Townhome    | 2024 |    610000
+ Second North River              | Single Family     | 2024 |    599900
+ West End                        | Single Family     | 2024 |    597777
+ Kentville                       | Single Family     | 2024 |    615000
+ Montague                        | Single Family     | 2024 |    625000
+ Greenhill                       | Single Family     | 2024 |    599900
+ Eastern Passage                 | Condo/Townhome    | 2024 |    624900
+ French Cove                     | Single Family     | 2024 |    625000
+ Quispamsis                      | Single Family     | 2024 |    575000
+ Hampton                         | Condo             | 2024 |    575000
+ Killarney Road                  | Single Family     | 2024 |    599900
+ Victoria Vale                   | Single Family     | 2024 |    599000
+ Mineville                       | Single Family     | 2024 |    618900
+ Summerville                     | Single Family     | 2024 |    599900
+ South Rawdon                    | Single Family     | 2024 |    599999
+ Hope River                      | Single Family     | 2024 |    599900
+ Hardwood Lands                  | Single Family     | 2024 |    599900
+ Dutch Settlement                | Single Family     | 2024 |    599900
+ Mount Uniacke                   | Single Family     | 2024 |    619900
+ Pugwash                         | Single Family     | 2024 |    599000
+ Summerside                      | Single Family     | 2024 |    625000
+ Poplar Grove                    | Single Family     | 2024 |    619900
+ Orleans                         | Condo             | 2024 |    579999
+ Labelle                         | Single Family     | 2024 |    590000
+ Lakeside                        | Single Family     | 2024 |    599000
+ Spectacle Lakes                 | Single Family     | 2024 |    599900
+ Lyttleton                       | Single Family     | 2024 |    599900
+ Port Williams                   | Single Family     | 2024 |    597900
+ Stoney Creek                    | Single Family     | 2024 |    575000
+ Summerville Centre              | Single Family     | 2024 |    575000
+ Halifax Regional Municipality   | Single Family     | 2024 |    619000
+ Clyde River                     | Single Family     | 2024 |    599000
+ Brudenell                       | Single Family     | 2024 |    579900
+ Granville Centre                | Single Family     | 2024 |    599900
+ Elgin                           | Single Family     | 2024 |    575000
+ Indian Brook                    | Single Family     | 2024 |    595000
+ Milltown Cross                  | Single Family     | 2024 |    599000
+ Kingston                        | Single Family     | 2024 |    589990
+ South Brookfield                | Single Family     | 2024 |    599000
+ Chéticamp                       | Single Family     | 2024 |    575000
+ Big Harbour Island              | Single Family     | 2024 |    599900
+ Spa Springs                     | Single Family     | 2024 |    594895
+ Sandy Point                     | Single Family     | 2024 |    615000
+ Penobsquis                      | Single Family     | 2024 |    599900
+ Springdale                      | Single Family     | 2024 |    575000
+ Long Reach                      | Single Family     | 2024 |    625000
+ North Grand Pre                 | Single Family     | 2024 |    599000
+ Nackawic                        | Single Family     | 2024 |    589900
+ Oakland                         | Single Family     | 2024 |    599500
+ Red Rock                        | Single Family     | 2024 |    599900
+ Upper Blackville                | Single Family     | 2024 |    589000
+ New Haven                       | Single Family     | 2024 |    599000
+ Roslin                          | Single Family     | 2024 |    584900
+ Windsor Forks                   | Single Family     | 2024 |    599900
+ DeSable                         | Single Family     | 2024 |    619900
+ Tay Creek                       | Single Family     | 2024 |    579000
+ Brooklyn Corner                 | Single Family     | 2024 |    589900
+ Kirkland                        | Single Family     | 2024 |    625000
+ Lake Loon                       | Single Family     | 2024 |    625000
+ Johnston Point                  | Single Family     | 2024 |    599000
+ Losier Settlement               | Single Family     | 2024 |    599000
+ Taylors Brook                   | Single Family     | 2024 |    579900
+ Archipelago                     | Single Family     | 2024 |    599900
+ Portugal Cove - St. Philips     | Single Family     | 2024 |    619900
+ Blaketown                       | Single Family     | 2024 |    599000
+ Dunville                        | Single Family     | 2024 |    599000
+ Mt Pearl                        | Single Family     | 2024 |    600000
+ Algoma Mills                    | Single Family     | 2024 |    599900
+ Conception Bay Central          | Single Family     | 2024 |    599900
+ Coboconk                        | Single Family     | 2024 |    599900
+ Nipissing                       | Single Family     | 2024 |    599900
+ Little Bay                      | Single Family     | 2024 |    610000
+ Clarkes Beach                   | Single Family     | 2024 |    599900
+ Renews                          | Single Family     | 2024 |    575000
+ Admirals Cove                   | Single Family     | 2024 |    599900
+ Lakeview                        | Single Family     | 2024 |    599900
+ Sandy Cove                      | Single Family     | 2024 |    575000
+ Fort Augustus                   | Single Family     | 2024 |    599000
+ Mattatall Lake                  | Single Family     | 2024 |    599900
+ Murray Corner                   | Single Family     | 2024 |    599900
+ Churchview                      | Single Family     | 2024 |    599900
+ Blue Mountain                   | Single Family     | 2024 |    599900
+ Norboro                         | Single Family     | 2024 |    596000
+ Currie                          | Single Family     | 2024 |    589000
+ Upper Whitehead                 | Single Family     | 2024 |    575000
+ St. Martins                     | Single Family     | 2024 |    575000
+ Whitney                         | Single Family     | 2024 |    589900
+ Dutch Brook                     | Single Family     | 2024 |    599900
+ Centrelea                       | Single Family     | 2024 |    599900
+ Anzac                           | Single Family     | 2024 |    589900
+ Fort Nelson - Remote            | Single Family     | 2024 |    599000
+ Rossport                        | Single Family     | 2024 |    575000
+ Burlington                      | MultiFamily       | 2024 |    589900
+ Toronto                         | MultiFamily       | 2024 |    580000
+ Innerkip                        | Single Family     | 2024 |    599000
+ Welland                         | Single Family     | 2024 |    599000
+ Vittoria                        | Single Family     | 2024 |    595000
+ Richmond Hill                   | Single Family     | 2024 |    599999
+ Elko                            | Single Family     | 2024 |    575000
+ Burdett                         | Single Family     | 2024 |    589000
+ Slave Lake                      | Single Family     | 2024 |    599000
+ Riondel                         | Single Family     | 2024 |    575000
+(144 rows)
+
+FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos
+ region_id | name | hai_index 
+-----------+------+-----------
+(0 rows)
+
+FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos

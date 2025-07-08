@@ -9,6 +9,7 @@ run-sample:
 
 run-prod:
 	DB_ENV=production docker compose -f docker-compose.yml -f docker-compose.production.yml --env-file .env.production up --build
+	docker compose exec backend python app/import_data.py
 
 clean-sample:
 	docker compose -f docker-compose.yml -f docker-compose.sample.yml down --volumes --remove-orphans
@@ -29,3 +30,9 @@ run-sample-sql:
 	docker compose exec backend python app/seed_data.py
 	docker compose exec -T db-sample psql -U cs348-sample -d sample_housing_db < test-sample.sql > test-sample.out
 	cat test-sample.out
+
+run-production-sql:
+	DB_ENV=sample docker compose -f docker-compose.yml -f docker-compose.production.yml --env-file .env.production up -d --build
+	docker compose exec backend python app/import_data.py
+	docker compose exec -T db psql -U cs348 -d housing_db < test-production.sql > test-production.out
+	cat test-production.out
