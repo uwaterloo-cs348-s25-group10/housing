@@ -97,6 +97,19 @@ def regions_by_province(province: str, db: Session = Depends(get_db)):
                      .all()]
     return names
 
+@app.get("/meta/income")
+def income_meta(db: Session = Depends(get_db)):
+    """
+    Returns the list of distinct provinces and years for IncomeData,
+    so the frontend can populate its dropdowns.
+    """
+    provinces = [p[0] for p in db.query(distinct(Region.province)).all()]
+    years     = sorted([y[0] for y in db.query(distinct(IncomeData.year)).all()])
+    return {
+        "provinces": provinces,
+        "years": years,
+    }
+
 @app.get("/reverse-lookup")
 def reverse_lookup(price: float, margin: int = 25000, property_type: Optional[str] = None, year: Optional[int] = None, db: Session = Depends(get_db)):
     q = (

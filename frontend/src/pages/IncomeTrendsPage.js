@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./IncomeTrendsPage.css";
+import { apiClient } from "../config/api";
 import {
   Container,
   Typography,
@@ -19,63 +19,65 @@ import {
   TableCell,
   TableBody,
 } from "@mui/material";
-
-const PROVINCES = [
-  { code: "ON", name: "Ontario" },
-  { code: "QC", name: "Quebec" },
-  { code: "BC", name: "British Columbia" },
-];
-
-const REGIONS = {
-  ON: ["Toronto", "Ottawa"],
-  QC: ["Montreal", "Quebec City"],
-  BC: ["Vancouver", "Victoria"],
-};
+import "./IncomeTrendsPage.css";
 
 export default function IncomeTrendsPage() {
+  const [provinces, setProvinces] = useState([]);
+  const [regions, setRegions] = useState([]);
+  const [years, setYears] = useState([]);
+
   const [province, setProvince] = useState("");
   const [region, setRegion] = useState("");
   const [year, setYear] = useState("");
-  const [regions, setRegions] = useState([]);
+
+  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
-  const [data, setData] = useState([]);
 
+  // on mount, load province & year options
   useEffect(() => {
-    if (province) setRegions(REGIONS[province] || []);
-    else {
+    apiClient
+      .get("/meta/income")
+      .then((meta) => {
+        setProvinces(meta.provinces);
+        setYears(meta.years);
+      })
+      .catch(console.error);
+  }, []);
+
+  // when province changes, load its regions
+  useEffect(() => {
+    if (!province) {
       setRegions([]);
       setRegion("");
+    } else {
+      apiClient
+        .get(`/meta/regions/${province}`)
+        .then(setRegions)
+        .catch(console.error);
     }
   }, [province]);
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     setSearched(true);
     setLoading(true);
-
-    // stubbed data
-    setTimeout(() => {
-      const results = Array.from({ length: 6 }).map(() => {
-        const prov = PROVINCES[Math.floor(Math.random() * PROVINCES.length)];
-        const regs = REGIONS[prov.code];
-        const reg = regs[Math.floor(Math.random() * regs.length)];
-        const yr = 2000 + Math.floor(Math.random() * 21);
-        const income =
-          Math.round((50000 + Math.random() * 100000) / 1000) * 1000;
-        return {
-          region: reg,
-          province: prov.code,
-          year: yr,
-          avg_income: income,
-        };
-      });
+    try {
+      const params = new URLSearchParams({ province, year });
+      if (region) params.append("region", region);
+      const results = await apiClient.get(
+        `/trends/income?${params.toString()}`
+      );
       setData(results);
+    } catch (err) {
+      console.error(err);
+      setData([]);
+    } finally {
       setLoading(false);
-    }, 600);
+    }
   };
 
   return (
-    <Container maxWidth="lg" className="page-container" sx={{ pt: 4, pb: 4 }}>
+    <Container maxWidth="lg" sx={{ pt: 4, pb: 4 }}>
       <Typography variant="h4" gutterBottom>
         Explore Historical Income
       </Typography>
@@ -100,9 +102,9 @@ export default function IncomeTrendsPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {PROVINCES.map((p) => (
-                <MenuItem key={p.code} value={p.code}>
-                  {p.name}
+              {provinces.map((p) => (
+                <MenuItem key={p} value={p}>
+                  {p}
                 </MenuItem>
               ))}
             </Select>
@@ -140,7 +142,7 @@ export default function IncomeTrendsPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {Array.from({ length: 21 }, (_, i) => 2000 + i).map((y) => (
+              {years.map((y) => (
                 <MenuItem key={y} value={y}>
                   {y}
                 </MenuItem>
@@ -150,7 +152,6 @@ export default function IncomeTrendsPage() {
 
           <Button
             variant="contained"
-            size="medium"
             onClick={handleSearch}
             disabled={loading}
             sx={{ flex: "0 0 120px", height: 40 }}
@@ -188,8 +189,8 @@ export default function IncomeTrendsPage() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {data.map((row, idx) => (
-                <TableRow key={idx} hover>
+              {data.map((row, i) => (
+                <TableRow key={i} hover>
                   <TableCell>{row.region}</TableCell>
                   <TableCell>{row.province}</TableCell>
                   <TableCell>{row.year}</TableCell>
