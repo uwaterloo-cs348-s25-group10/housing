@@ -9,7 +9,8 @@ from sqlalchemy import func, text, create_engine
 
 import app.models
 from app.models import Apartment, Property, HousingPrice, Region, IncomeData
-from app.database import SessionLocal, engine, Base
+from app.db.db_prod import SessionLocal, engine
+from app.db.base import Base
 from app.import_data import full_reset, load_csv_data, verify_data
 
 app = FastAPI()

@@ -1,0 +1,36 @@
+# override for sample db
+
+version: '3.8'
+
+services:
+  backend:
+    depends_on:
+      db:
+        condition: service_healthy
+      db-sample:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql://cs348:group10@db:5432/housing_db
+      - SAMPLE_DATABASE_URL=postgresql://cs348-sample:group10-sample@db-sample:5432/sample_housing_db
+      - DB_ENV=sample
+
+  db-sample:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: sample_housing_db
+      POSTGRES_USER: cs348-sample
+      POSTGRES_PASSWORD: group10-sample
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_sample_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cs348-sample -d sample_housing_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_sample_data:

@@ -5,7 +5,7 @@ HousingPrice(housing_id Int, property_id Int, year Int, avg_price Float)
 '''
 
 from sqlalchemy import Column, Integer, Float, ForeignKey, UniqueConstraint
-from app.database import Base
+from app.db.base import Base
 
 class HousingPrice(Base):
     __tablename__ = "housing_price"

@@ -1,7 +1,8 @@
 import pandas as pd
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
-from app.database import SessionLocal, engine, Base
+from app.db.db_prod import SessionLocal, engine
+from app.db.base import Base
 from app.models import Region, Property, HousingPrice, IncomeData
 import random
 
