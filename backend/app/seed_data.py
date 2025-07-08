@@ -43,6 +43,8 @@ def seed():
             HousingPrice(housing_id=3, property_id=3, year=2020, avg_price=625000),
             HousingPrice(housing_id=4, property_id=4, year=2020, avg_price=500000),
             HousingPrice(housing_id=5, property_id=5, year=2020, avg_price=525000),
+            HousingPrice(housing_id=6, property_id=1, year=2019, avg_price=530000),
+            HousingPrice(housing_id=7, property_id=2, year=2019, avg_price=480000),
         ]
         db.add_all(housing_prices)
         db.commit()
