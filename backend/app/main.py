@@ -6,6 +6,7 @@ from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session
 from typing import Optional
 from sqlalchemy import func, text, create_engine, distinct
+from sqlalchemy import func, cast, Numeric, text
 
 import app.models
 from app.models import Apartment, Property, HousingPrice, Region, IncomeData
@@ -211,21 +212,18 @@ def housing_trends(
     ]
 
 @app.get("/hai-rankings/")
-def hai_rankings(
-    year: int,
-    property_type: str,
-    db: Session = Depends(get_db)
-):
+def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
+    hai_expr = cast(
+        IncomeData.avg_income / func.avg(HousingPrice.avg_price) * 100,
+        Numeric
+    )
     q = (
         db.query(
             Region.region_id,
             Region.name.label("region"),
-            func.round(
-                IncomeData.avg_income / func.avg(HousingPrice.avg_price) * 100,
-                2
-            ).label("hai_index"),
+            func.round(hai_expr, 2).label("hai_index"),
         )
-        .join(Property,    Property.region_id == Region.region_id)
+        .join(Property, Property.region_id == Region.region_id)
         .join(HousingPrice, HousingPrice.property_id == Property.property_id)
         .join(
             IncomeData,
@@ -234,23 +232,20 @@ def hai_rankings(
         )
         .filter(
             HousingPrice.year == year,
-            Property.type   == property_type,
+            Property.type == property_type,
         )
         .group_by(
             Region.region_id,
             Region.name,
             IncomeData.avg_income
         )
+        .having(func.avg(HousingPrice.avg_price) > 0)   # avoid NULL / zero
         .order_by(text("hai_index DESC"))
         .limit(5)
     )
 
     return [
-        {
-            "region_id":   rid,
-            "region":      region,
-            "hai_index":   hai,
-        }
+        {"region_id": rid, "region": region, "hai_index": hai}
         for rid, region, hai in q.all()
     ]
 

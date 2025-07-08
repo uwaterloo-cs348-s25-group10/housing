@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Typography,
@@ -18,33 +18,36 @@ import {
   CircularProgress,
   Box,
 } from "@mui/material";
-
-const YEARS = Array.from({ length: 21 }, (_, i) => 2000 + i);
-const PROPERTY_TYPES = ["House", "Condo", "Apartment"];
-
-// Dummy top‐5 ranking
-const DUMMY_RANKING = [
-  { region_id: 5, name: "Montreal", hai_index: 21.9 },
-  { region_id: 1, name: "Vancouver", hai_index: 21.82 },
-  { region_id: 4, name: "Ottawa", hai_index: 21.0 },
-  { region_id: 2, name: "Calgary", hai_index: 20.0 },
-  { region_id: 3, name: "Toronto", hai_index: 19.2 },
-];
+import { apiClient } from "../config/api";
 
 export default function AffordabilityRankingPage() {
   const [year, setYear] = useState("");
   const [propertyType, setPropertyType] = useState("");
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState([]);
+  const [years, setYears] = useState([]);
+  const [propertyTypes, setPropertyTypes] = useState([]);
 
-  const handleSearch = () => {
+  useEffect(() => {
+    apiClient.get("/meta/housing").then((meta) => {
+      setYears(meta.years || []);
+      setPropertyTypes(meta.property_types || []);
+    });
+  }, []);
+
+  const handleSearch = async () => {
+    if (!year || !propertyType) return;
     setLoading(true);
     setResults([]);
-    // stub: immediately show dummy ranking
-    setTimeout(() => {
-      setResults(DUMMY_RANKING);
+    try {
+      const params = new URLSearchParams({ year, property_type: propertyType });
+      const res = await apiClient.get(`/hai-rankings/?${params}`);
+      setResults(res);
+    } catch (err) {
+      console.error(err);
+    } finally {
       setLoading(false);
-    }, 500);
+    }
   };
 
   return (
@@ -79,7 +82,7 @@ export default function AffordabilityRankingPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {YEARS.map((y) => (
+              {years.map((y) => (
                 <MenuItem key={y} value={y}>
                   {y}
                 </MenuItem>
@@ -97,7 +100,7 @@ export default function AffordabilityRankingPage() {
               <MenuItem value="">
                 <em>None</em>
               </MenuItem>
-              {PROPERTY_TYPES.map((pt) => (
+              {propertyTypes.map((pt) => (
                 <MenuItem key={pt} value={pt}>
                   {pt}
                 </MenuItem>
@@ -108,7 +111,7 @@ export default function AffordabilityRankingPage() {
           <Button
             variant="contained"
             onClick={handleSearch}
-            disabled={loading}
+            disabled={loading || !year || !propertyType}
             sx={{ flex: "0 0 140px", height: 40 }}
           >
             {loading ? (
@@ -135,7 +138,7 @@ export default function AffordabilityRankingPage() {
                 {results.map((row, idx) => (
                   <TableRow key={idx} hover>
                     <TableCell>{row.region_id}</TableCell>
-                    <TableCell>{row.name}</TableCell>
+                    <TableCell>{row.region}</TableCell>
                     <TableCell align="right">
                       {row.hai_index.toFixed(2)}
                     </TableCell>

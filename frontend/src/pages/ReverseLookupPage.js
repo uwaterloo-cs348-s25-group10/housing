@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Typography,
@@ -19,15 +19,7 @@ import {
   Box,
   CircularProgress,
 } from "@mui/material";
-
-const YEARS = Array.from({ length: 21 }, (_, i) => 2000 + i);
-const PROPERTY_TYPES = ["House", "Condo", "Apartment"];
-
-// Dummy results
-const DUMMY_RESULTS = [
-  { region: "Toronto", property_type: "Condo", year: 2020, price: 625000 },
-  { region: "Vancouver", property_type: "House", year: 2019, price: 610000 },
-];
+import { apiClient } from "../config/api";
 
 export default function ReverseLookupPage() {
   const [targetPrice, setTargetPrice] = useState("");
@@ -36,14 +28,35 @@ export default function ReverseLookupPage() {
   const [propertyType, setPropertyType] = useState("");
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState([]);
+  const [years, setYears] = useState([]);
+  const [propertyTypes, setPropertyTypes] = useState([]);
 
-  const handleSearch = () => {
+  useEffect(() => {
+    apiClient.get("/meta/housing").then((meta) => {
+      setYears(meta.years || []);
+      setPropertyTypes(meta.property_types || []);
+    });
+  }, []);
+
+  const handleSearch = async () => {
+    if (!targetPrice) return;
     setLoading(true);
-    // stub: show dummy results
-    setTimeout(() => {
-      setResults(DUMMY_RESULTS);
+    try {
+      const params = new URLSearchParams({
+        price: targetPrice,
+        margin: margin || 25000,
+      });
+      if (year) params.append("year", year);
+      if (propertyType) params.append("property_type", propertyType);
+
+      const res = await apiClient.get(`/reverse-lookup?${params}`);
+      setResults(res);
+    } catch (err) {
+      console.error(err);
+      setResults([]);
+    } finally {
       setLoading(false);
-    }, 500);
+    }
   };
 
   return (
@@ -90,7 +103,7 @@ export default function ReverseLookupPage() {
               <MenuItem value="">
                 <em>Any</em>
               </MenuItem>
-              {YEARS.map((y) => (
+              {years.map((y) => (
                 <MenuItem key={y} value={y}>
                   {y}
                 </MenuItem>
@@ -108,7 +121,7 @@ export default function ReverseLookupPage() {
               <MenuItem value="">
                 <em>Any</em>
               </MenuItem>
-              {PROPERTY_TYPES.map((pt) => (
+              {propertyTypes.map((pt) => (
                 <MenuItem key={pt} value={pt}>
                   {pt}
                 </MenuItem>
@@ -154,7 +167,7 @@ export default function ReverseLookupPage() {
                         style: "currency",
                         currency: "CAD",
                         maximumFractionDigits: 0,
-                      }).format(row.price)}
+                      }).format(row.avg_price)}
                     </TableCell>
                   </TableRow>
                 ))}
