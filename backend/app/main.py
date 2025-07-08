@@ -5,7 +5,7 @@ import logging
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session
 from typing import Optional
-from sqlalchemy import func, text, create_engine
+from sqlalchemy import func, text, create_engine, distinct
 
 import app.models
 from app.models import Apartment, Property, HousingPrice, Region, IncomeData
@@ -78,6 +78,38 @@ def create_apartments(type: str, subtype: str, region_id: int, db: Session = Dep
     db.refresh(property)
     return property
 
+
+@app.get("/meta/housing")
+def housing_meta(db: Session = Depends(get_db)):
+    provinces = [p[0] for p in db.query(distinct(Region.province)).all()]
+    years     = sorted([y[0] for y in db.query(distinct(HousingPrice.year)).all()])
+    property_types = [t[0] for t in db.query(distinct(Property.type)).all()]
+    return {
+        "provinces": provinces,
+        "years": years,
+        "property_types": property_types,
+    }
+
+@app.get("/meta/regions/{province}")
+def regions_by_province(province: str, db: Session = Depends(get_db)):
+    names = [r[0] for r in db.query(distinct(Region.name))
+                     .filter(Region.province == province)
+                     .all()]
+    return names
+
+@app.get("/meta/income")
+def income_meta(db: Session = Depends(get_db)):
+    """
+    Returns the list of distinct provinces and years for IncomeData,
+    so the frontend can populate its dropdowns.
+    """
+    provinces = [p[0] for p in db.query(distinct(Region.province)).all()]
+    years     = sorted([y[0] for y in db.query(distinct(IncomeData.year)).all()])
+    return {
+        "provinces": provinces,
+        "years": years,
+    }
+
 @app.get("/reverse-lookup")
 def reverse_lookup(price: float, margin: int = 25000, property_type: Optional[str] = None, year: Optional[int] = None, db: Session = Depends(get_db)):
     q = (
@@ -133,13 +165,14 @@ def housing_trends(
     province: str,
     property_type: str,
     year: int,
+    region: Optional[str] = None,
     db: Session = Depends(get_db)
 ):
     """
     Returns the average sale price for each region in the given
     province, property type, and year.
     """
-    q = (
+    base_q = (
         db.query(
             Region.name.label("region"),
             Region.province.label("province"),
@@ -149,11 +182,19 @@ def housing_trends(
         )
         .join(Property, HousingPrice.property_id == Property.property_id)
         .join(Region, Property.region_id == Region.region_id)
-        .filter(
-            Region.province == province,
-            Property.type == property_type,
-            HousingPrice.year == year,
-        )
+    )
+
+    filters = [
+        Region.province == province,
+        Property.type   == property_type,
+        HousingPrice.year == year,
+    ]
+    if region:
+        filters.append(Region.name == region)
+
+    q = (
+        base_q
+        .filter(*filters)
         .group_by(Region.name, Region.province, HousingPrice.year, Property.type)
         .order_by(Region.name)
     )
