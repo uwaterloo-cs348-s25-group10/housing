@@ -142,7 +142,8 @@ def housing_trends(
     q = (
         db.query(
             Region.name.label("region"),
-            HousingPrice.year,
+            Region.province.label("province"),
+            HousingPrice.year.label("year"),
             Property.type.label("property_type"),
             func.avg(HousingPrice.avg_price).label("avg_price"),
         )
@@ -153,18 +154,55 @@ def housing_trends(
             Property.type == property_type,
             HousingPrice.year == year,
         )
-        .group_by(Region.name, HousingPrice.year, Property.type)
+        .group_by(Region.name, Region.province, HousingPrice.year, Property.type)
         .order_by(Region.name)
     )
 
     return [
         {
             "region": region,
+            "province": prov,
             "year": yr,
             "property_type": ptype,
             "avg_price": avg,
         }
-        for region, yr, ptype, avg in q.all()
+        for region, prov, yr, ptype, avg in q.all()
+    ]
+
+@app.get("/trends/income")
+def income_trends(
+    province: str,
+    year: int,
+    db: Session = Depends(get_db)
+):
+    """
+    Returns the average income for each region in the given
+    province and year.
+    """
+    q = (
+        db.query(
+            Region.name.label("region"),
+            Region.province.label("province"),
+            IncomeData.year.label("year"),
+            func.avg(IncomeData.avg_income).label("avg_income"),
+        )
+        .join(Region, IncomeData.region_id == Region.region_id)
+        .filter(
+            Region.province == province,
+            IncomeData.year == year,
+        )
+        .group_by(Region.name, Region.province, IncomeData.year)
+        .order_by(Region.name)
+    )
+
+    return [
+        {
+            "region": region,
+            "province": prov,
+            "year": yr,
+            "avg_income": avg_inc,
+        }
+        for region, prov, yr, avg_inc in q.all()
     ]
 
 @app.post("/import-data/")
