@@ -30,16 +30,21 @@ make run-prod
 * API Docs (Swagger): http://localhost:8000/docs
 
 
-## 🚀 How to Seed & Test
+## 🚀 How to Seed & Test (sample-sql)
    ```bash
    #  make run-sample-sql
 ```
 
-## 🔗 Links
-📊 Figma Designs: [CS348 Design Mockups](https://www.figma.com/design/l8FtoQQr5ftWvWdWMy8Mnt/CS-348-Designs?node-id=0-1&t=2HrGr2P0jI5X6Qz5-1)
+## How do we utilize raw data?
+Note that we utilize production db for client using production data and sample db for debugging and testing using sample data.
 
-## Authors
-* Andrew Lee
-* Gurshabd Varaich
-* Minjae Lee
-* Nandini Mehrotra
+In addition to report.pdf, this markdown will explain in technical terms.
+1. Pre-processed datasets are in dataset folder.
+2. app/main.py reset production db and load csv files.
+3. main.py import Region.csv first and create lookup tables for tables using region_id as foreign key.
+4. Based on lookup mapping tables, we import remaining csv files to production db.
+
+## 🔗 Links
+Figma Designs: [CS348 Design Mockups](https://www.figma.com/design/l8FtoQQr5ftWvWdWMy8Mnt/CS-348-Designs?node-id=0-1&t=2HrGr2P0jI5X6Qz5-1)
+Kaggle Canada Housing Dataset: https://www.kaggle.com/datasets/yuliiabulana/canada-housing
+Statistics Canada Table 98-10-0055-01: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810005501
