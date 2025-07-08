@@ -1,120 +1,131 @@
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
+CREATE INDEX
 == FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region (Limit 10)==
    region    | province | year | property_type | avg_price 
 -------------+----------+------+---------------+-----------
- Ancaster    | ON       | 2020 | Condo         |    249000
- Brampton    | ON       | 2020 | Condo         |    585000
- Collingwood | ON       | 2020 | Condo         |    799000
- Innisfil    | ON       | 2020 | Condo         |   1449000
- Kenora      | ON       | 2020 | Condo         |    274900
- Lakeshore   | ON       | 2020 | Condo         |   1499000
- Mississauga | ON       | 2020 | Condo         |    639900
- Mount Hope  | ON       | 2020 | Condo         |    929900
- Oakville    | ON       | 2020 | Condo         |    649900
- Oro-Medonte | ON       | 2020 | Condo         |    629900
+ Ancaster    | ON       | 2020 | Condo         |    799900
+ Ayr         | ON       | 2020 | Condo         |    499900
+ Beamsville  | ON       | 2020 | Condo         |    699900
+ Brampton    | ON       | 2020 | Condo         |   1099999
+ Collingwood | ON       | 2020 | Condo         |    680000
+ Lakeshore   | ON       | 2020 | Condo         |    698000
+ Mississauga | ON       | 2020 | Condo         |    679000
+ Mount Hope  | ON       | 2020 | Condo         |    729900
+ Oakville    | ON       | 2020 | Condo         |   1849900
+ Oro-Medonte | ON       | 2020 | Condo         |   2599900
 (10 rows)
 
 == FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 (Limit 10) ==
-   region    | province | year | avg_income 
--------------+----------+------+------------
- Elliot Lake | ON       | 2020 |      50000
- Hamilton    | ON       | 2020 |      82000
- Midland     | ON       | 2020 |      71000
- Orillia     | ON       | 2020 |      60400
- Pembroke    | ON       | 2020 |      66500
-(5 rows)
+     region      | province | year | avg_income 
+-----------------+----------+------+------------
+ Greater Sudbury | ON       | 2020 |      77500
+ Kenora          | ON       | 2020 |      79500
+ Sarnia          | ON       | 2020 |      83000
+ Wasaga Beach    | ON       | 2020 |      67000
+(4 rows)
 
 FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos (Limit 10)
-       region       | user_hai 
---------------------+----------
- Saint John         |   116.94
- Bathurst           |   103.65
- Cranbrook          |    82.90
- Ancaster           |    58.23
- Stanley Bridge     |    56.86
- Kenora             |    52.75
- Rothesay           |    50.88
- Paradise           |    50.00
- Georgetown Royalty |    48.49
- Fredericton        |    44.07
+   region    | user_hai 
+-------------+----------
+ Meadow Lake |   116.47
+ Rosetown    |   107.41
+ Thunder Bay |   103.65
+ Big White   |    80.60
+ Saint John  |    72.86
+ Sparwood    |    60.42
+ Ingonish    |    58.26
+ Sicamous    |    49.40
+ Truro       |    43.28
+ Strathmore  |    42.77
 (10 rows)
 
 FEATURE 3: Reverse Lookup – Where Did This Price Exist? (±$25,000 around 600000) (Limit 10)
-    region    | property_type | year | avg_price 
---------------+---------------+------+-----------
- Sorrento     | Single Family | 2018 |    609000
- Powell River | Condo         | 2024 |    599900
- Powell River | Condo         | 2025 |    585000
- Cherryville  | Single Family | 2007 |    599900
- Barriere     | Single Family | 2020 |    595000
- Barriere     | Single Family | 2016 |    580000
- Big White    | Condo         | 2020 |    599900
- Merritt      | Single Family | 2021 |    599000
- Merritt      | Single Family | 2016 |    579000
- Salmon Arm   | Single Family | 2008 |    609900
+    region     | property_type | year | avg_price 
+---------------+---------------+------+-----------
+ Sorrento      | Single Family | 2019 |    609000
+ Powell River  | Condo         | 2018 |    599900
+ Cherryville   | Single Family | 2005 |    599900
+ Barriere      | Single Family | 2005 |    595000
+ Barriere      | Single Family | 2011 |    580000
+ Salmon Arm    | Single Family | 2001 |    609900
+ Salmon Arm    | Single Family | 2014 |    599000
+ Prince George | MultiFamily   | 2019 |    599900
+ Prince George | MultiFamily   | 2012 |    589900
+ Prince George | MultiFamily   | 2009 |    579900
 (10 rows)
 
 FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos (Limit 10)
- region_id |     name     | hai_index 
------------+--------------+-----------
-      1159 | Fredericton  |     22.04
-        34 | Powell River |     11.92
-(2 rows)
+ region_id |     name      | hai_index 
+-----------+---------------+-----------
+      1128 | Truro         |     19.70
+      1245 | Miramichi     |     19.01
+      1127 | Bathurst      |     17.06
+        64 | Williams Lake |     13.02
+      1041 | Wasaga Beach  |      9.07
+(5 rows)
 
 FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos
  region_id |         region          
 -----------+-------------------------
-       481 | Kenora
-       139 | Rocky Mountain House
+       202 | Warman
+        64 | Williams Lake
+       170 | Naramata
+      2413 | Simcoe
+       195 | Banff
+      3052 | Oshawa
+      1282 | Bouctouche
+      1127 | Bathurst
       2384 | St.Johns
       3050 | Oakville
-      1021 | Sault Ste. Marie
       1089 | Cornwall
-        75 | Golden
-      1890 | Debert
+        33 | Quesnel
         74 | Peachland
-      3089 | Beamsville
-      1280 | Hampton
-      2331 | ST. JOHN'S
+        27 | Blackfalds
       3093 | Dundas
+      1871 | Upper Sackville
       3072 | Ancaster
       1128 | Truro
       1168 | Bridgewater
-       207 | Strathmore
        477 | Wynyard
         34 | Powell River
       2292 | Paradise
-      1041 | Wasaga Beach
-      1159 | Fredericton
-      1637 | Stanley Bridge
+      1204 | Ellershouse
+        43 | Coldstream
       1025 | Thunder Bay
        575 | Emma Lake
       1066 | Stratford
       1031 | Innisfil
         94 | Cochrane
-       203 | Lacombe
-      1023 | Oro-Medonte
        573 | Candle Lake
-       388 | Osoyoos
-       218 | Hinton
-      2955 | High Level
+      3080 | Mississauga
       1090 | Shediac
+      1563 | Falls Lake
+       548 | Pittville Rm No. 169
        137 | St. Albert
        177 | Meadow Lake
-      1245 | Miramichi
       1027 | Creston
         77 | Rural Rocky View County
       2286 | St John's
+      1111 | Hammonds Plains
       1020 | Brampton
+      1230 | Cowie Hill
       1104 | Dartmouth
       1036 | Collingwood
+       651 | Carlyle
        134 | Chestermere
        143 | Rosetown
-       526 | Esterhazy
+      1284 | Lakeshore
+      1110 | Mahone Bay
        506 | Indian Head
         36 | Lake Country
-       202 | Warman
-      1081 | Saint John
-        64 | Williams Lake
-       252 | Sparwood
-(53 rows)
+(51 rows)
 
