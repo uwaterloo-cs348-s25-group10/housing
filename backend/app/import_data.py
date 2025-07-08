@@ -208,5 +208,5 @@ def verify_data(sample_size: int = 5, random: bool = True):
 
 if __name__ == "__main__":
     full_reset()
-    load_csv_data()
+    load_csv_data(random_year=True)
     verify_data()
