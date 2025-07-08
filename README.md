@@ -5,6 +5,7 @@
 ✔️ **Feature 2 – Personalized affordability quiz (“Where Can I Live?”)**  
 ✔️ **Feature 3 – Reverse price lookup**  
 ✔️ **Feature 4 – Affordability index ranking by region**  
+✔️ **Feature 5 – Data Gap Finder**
 
 ## 🔧 Tech Stack
 * Backend: Fast API (Python)
