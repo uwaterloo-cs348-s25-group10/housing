@@ -13,10 +13,20 @@
  Kenora      | ON       | 2024 | Condo         |    299900
 (10 rows)
 
-== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2024 (Limit 10) ==
- region | province | year | avg_income 
---------+----------+------+------------
-(0 rows)
+== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 (Limit 10) ==
+      region       | province | year | avg_income 
+-------------------+----------+------+------------
+ Barrie            | ON       | 2020 |      97000
+ Brantford         | ON       | 2020 |      85000
+ Centre Wellington | ON       | 2020 |     101000
+ Collingwood       | ON       | 2020 |      82000
+ Cornwall          | ON       | 2020 |      65500
+ Elliot Lake       | ON       | 2020 |      50000
+ Essa              | ON       | 2020 |     108000
+ Greater Sudbury   | ON       | 2020 |      84000
+ Guelph            | ON       | 2020 |      97000
+ Hamilton          | ON       | 2020 |      91000
+(10 rows)
 
 FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2024 condos (Limit 10)
         region        | user_hai 

@@ -17,8 +17,8 @@ GROUP BY R.name, R.province, HP.year, P.type
 LIMIT 10;
 
 -- FEATURE 1b EXPLORE INCOME DATA
--- This query returns the average 2024 income for Ontario regions, grouped by region.
-\echo '== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2024 (Limit 10) =='
+-- This query returns the average 2020 income for Ontario regions, grouped by region.
+\echo '== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 (Limit 10) =='
 SELECT
   R.name AS region,
   R.province AS province,
@@ -27,7 +27,7 @@ SELECT
 FROM income_data I
 JOIN region R ON I.region_id = R.region_id
 WHERE R.province = 'ON'
-  AND I.year = 2024
+  AND I.year = 2020
 GROUP BY R.name, R.province, I.year
 LIMIT 10;
 
