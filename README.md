@@ -30,9 +30,11 @@ make run-prod
 * API Docs (Swagger): http://localhost:8000/docs
 
 
-## 🚀 How to Seed & Test (sample-sql)
-   ```bash
-   #  make run-sample-sql
+## 🚀 How to Seed & Test
+You need to open docker first to test while you don't need to run-sample or run-prod.
+```bash
+make run-sample-sql (for test-sample.sql)
+make run-production-sql (for test-production.sql)
 ```
 
 ## How do we utilize raw data?
