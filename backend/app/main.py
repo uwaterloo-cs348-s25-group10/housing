@@ -169,6 +169,50 @@ def housing_trends(
         for region, prov, yr, ptype, avg in q.all()
     ]
 
+@app.get("/hai-rankings/")
+def hai_rankings(
+    year: int,
+    property_type: str,
+    db: Session = Depends(get_db)
+):
+    q = (
+        db.query(
+            Region.region_id,
+            Region.name.label("region"),
+            func.round(
+                IncomeData.avg_income / func.avg(HousingPrice.avg_price) * 100,
+                2
+            ).label("hai_index"),
+        )
+        .join(Property,    Property.region_id == Region.region_id)
+        .join(HousingPrice, HousingPrice.property_id == Property.property_id)
+        .join(
+            IncomeData,
+            (IncomeData.region_id == Region.region_id) &
+            (IncomeData.year == HousingPrice.year)
+        )
+        .filter(
+            HousingPrice.year == year,
+            Property.type   == property_type,
+        )
+        .group_by(
+            Region.region_id,
+            Region.name,
+            IncomeData.avg_income
+        )
+        .order_by(text("hai_index DESC"))
+        .limit(5)
+    )
+
+    return [
+        {
+            "region_id":   rid,
+            "region":      region,
+            "hai_index":   hai,
+        }
+        for rid, region, hai in q.all()
+    ]
+
 @app.get("/trends/income")
 def income_trends(
     province: str,
