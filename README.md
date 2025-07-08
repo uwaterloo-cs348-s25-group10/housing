@@ -20,13 +20,9 @@
 git clone https://github.com/uwaterloo-cs348-s25-group10/housing
 cd housing
 ```
-3. Set up the environment variables
+3. Build and run the Docker container for production
 ```bash
-cp .env.example .env
-```
-4. Build and run the Docker container
-```bash
-docker-compose up --build
+make run-prod
 ```
 5. Now you can access to the service
 * Frontend: http://localhost:3000 (On your network, you may use http://172.19.0.4:3000)
@@ -36,22 +32,7 @@ docker-compose up --build
 
 ## 🚀 How to Seed & Test
    ```bash
-   # 1) Build & start containers
-   docker compose up -d --build
-
-   # 2) Seed the database
-   docker compose exec backend python app/seed_data.py
-   # → “✅ Seed data inserted!”
-
-   # 3) Run all SQL feature tests
-   docker compose exec -T db psql \
-     -U housing_user \
-     -d housing_db \
-     < test-sample.sql \
-     > test-sample.out
-
-   # 4) View results
-   cat test-sample.out
+   #  make run-sample-sql
 ```
 
 ## 🔗 Links
