@@ -86,12 +86,12 @@ LIMIT 5;
 -- Finds regions that contain housing data but are missing income data for condos in 2019
 \echo 'FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos'
 SELECT DISTINCT R.region_id, R.name AS region
-FROM HousingPrice HP
-JOIN Property P ON HP.property_id = P.property_id
-JOIN Region R ON P.region_id = R.region_id
+FROM housing_price HP
+JOIN property P ON HP.property_id = P.property_id
+JOIN region R ON P.region_id = R.region_id
 WHERE HP.year = 2019 AND P.type = 'Condo'
 EXCEPT
 SELECT R.region_id, R.name
-FROM IncomeData I
-JOIN Region R ON I.region_id = R.region_id
+FROM income_data I
+JOIN region R ON I.region_id = R.region_id
 WHERE I.year = 2019;
