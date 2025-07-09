@@ -22,8 +22,10 @@
 * Backend: Fast API (Python)
 * DB: PostgreSQL
 * Fronted: (React)
-* ORM: SQLAlchemy
+* ORM: SQLAlchemy - There is no 
 * Containerization: Docker + Docker Compose
+
+For our project, we have been using SQLAlchemy to define and query our SQL schema instead of raw SQL directly, for efficiency and maintainabilty.
 
 ## 🚀 Getting Started
 1. Download and open Docker
