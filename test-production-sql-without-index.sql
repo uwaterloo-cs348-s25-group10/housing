@@ -1,3 +1,6 @@
+\echo '== Enabling psql timing =='
+\timing on
+
 -- FEATURE 1a EXPLORE HOUSING PRICES
 -- This query returns the average price of Ontario (“ON”) condos in 2020, broken down by region.
 \echo '== FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region (Limit 10)=='

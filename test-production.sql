@@ -15,6 +15,9 @@ CREATE INDEX IF NOT EXISTS idx_housing_avg_price ON housing_price(year, avg_pric
 CREATE INDEX IF NOT EXISTS idx_income_year ON income_data(year);
 CREATE INDEX IF NOT EXISTS idx_income_year_region ON housing_price(year, region_id);
 
+\echo '== Enabling psql timing =='
+\timing on
+
 -- FEATURE 1a EXPLORE HOUSING PRICES
 -- This query returns the average price of Ontario (“ON”) condos in 2020, broken down by region.
 \echo '== FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region (Limit 10)=='
