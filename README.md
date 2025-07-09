@@ -4,7 +4,8 @@
 ✔️ **Feature 1 – Explore regional trends in housing prices and incomes**  
 ✔️ **Feature 2 – Personalized affordability quiz (“Where Can I Live?”)**  
 ✔️ **Feature 3 – Reverse price lookup**  
-✔️ **Feature 4 – Affordability index ranking by region**  
+✔️ **Feature 4 – Affordability index ranking by region**
+✔️ **Feature 5 – Data Gap Finder**
 
 ## ✅ Feature Implementation Summary
 
