@@ -111,6 +111,7 @@ def income_meta(db: Session = Depends(get_db)):
         "years": years,
     }
 
+# FEATURE 3
 @app.get("/reverse-lookup")
 def reverse_lookup(price: float, margin: int = 25000, property_type: Optional[str] = None, year: Optional[int] = None, db: Session = Depends(get_db)):
     q = (
@@ -161,6 +162,7 @@ def create_housing_price(
     db.refresh(record)
     return record
 
+# FEATURE 1a
 @app.get("/trends/housing")
 def housing_trends(
     province: str,
@@ -211,6 +213,43 @@ def housing_trends(
         for region, prov, yr, ptype, avg in q.all()
     ]
 
+# FEATURE 2
+@app.get("/where-can-i-live")
+def where_can_i_live(
+    income: float,
+    year: int,
+    property_type: str,
+    min_hai: float = 25,
+    limit: int = 5,
+    db: Session = Depends(get_db)
+):
+    hai_expr = cast((income / func.avg(HousingPrice.avg_price)) * 100, Numeric)
+
+    results = (
+        db.query(
+            Region.name.label("region"),
+            func.round(hai_expr, 2).label("user_hai"),
+        )
+        .join(Property, HousingPrice.property_id == Property.property_id)
+        .join(Region, Property.region_id == Region.region_id)
+        .filter(
+            HousingPrice.year == year,
+            Property.type == property_type,
+        )
+        .group_by(Region.name)
+        .having(hai_expr >= min_hai)
+        .order_by(text("user_hai DESC"))
+        .limit(limit)
+        .all()
+    )
+
+    return [
+        {"region": region, "user_hai": float(hai)}
+        for region, hai in results
+    ]
+
+
+# FEATURE 4
 @app.get("/hai-rankings/")
 def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
     hai_expr = cast(
@@ -249,6 +288,7 @@ def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
         for rid, region, hai in q.all()
     ]
 
+# FEATURE 1b
 @app.get("/trends/income")
 def income_trends(
     province: str,
