@@ -67,3 +67,30 @@ Figma Designs: [CS348 Design Mockups](https://www.figma.com/design/l8FtoQQr5ftWv
 Kaggle Canada Housing Dataset: https://www.kaggle.com/datasets/yuliiabulana/canada-housing
 
 Statistics Canada Table 98-10-0055-01: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810005501
+
+
+## Additional Information regarding commands to utilize project
+
+Instead of running `docker-compose up --build`, use the following:
+
+**Run Environments**
+```bash
+make run-sample     # Launch with sample database
+make run-prod       # Launch with production database (default for frontend)
+```
+> **Note**: The **frontend always connects to the production database**, regardless of the mode.
+
+**SQL Test Scripts**
+
+```bash
+make run-sample-sql     # Run SQL script against sample DB
+make run-production-sql # Run SQL script against production DB
+make run-index-test     # Compare query performance with/without index
+```
+**Cleanup**
+```bash
+make clean-sample   # Stop and clean sample DB environment
+make clean-prod     # Stop and clean production DB environment
+make clean-default  # Clean only default docker-compose
+make clean-all      # Clean all environments (sample + prod + default)
+```
