@@ -45,7 +45,8 @@ make run-prod
 
 
 ## 🚀 How to Seed & Test
-You need to open docker first to test while you don't need to run-sample or run-prod.
+You need to open docker first to test features.
+You don't need to run-sample or run-prod.
 ```bash
 make run-sample-sql (for test-sample.sql)
 make run-production-sql (for test-production.sql)
