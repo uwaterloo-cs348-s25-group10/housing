@@ -288,6 +288,44 @@ def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
         for rid, region, hai in q.all()
     ]
 
+@app.get("/data-gaps/")
+def data_gap_finder(
+    year: int,
+    property_type: str,
+    db: Session = Depends(get_db)
+):
+
+    price_regions = (
+        db.query(
+            Region.region_id,
+            Region.name.label("region")
+        )
+        .join(Property, Property.region_id == Region.region_id)
+        .join(HousingPrice, HousingPrice.property_id == Property.property_id)
+        .filter(
+            HousingPrice.year == year,
+            Property.type == property_type
+        )
+        .distinct()
+    )
+
+    income_regions = (
+        db.query(
+            Region.region_id,
+            Region.name.label("region")
+        )
+        .join(IncomeData, IncomeData.region_id == Region.region_id)
+        .filter(IncomeData.year == year)
+        .distinct()
+    )
+
+    gap_query = price_regions.except_(income_regions)
+
+    return [
+        {"region_id": rid, "region": region}
+        for rid, region in db.execute(gap_query).fetchall()
+    ]
+
 # FEATURE 1b
 @app.get("/trends/income")
 def income_trends(
