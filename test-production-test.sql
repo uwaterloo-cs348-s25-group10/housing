@@ -15,9 +15,13 @@ CREATE INDEX IF NOT EXISTS idx_housing_avg_price ON housing_price(year, avg_pric
 CREATE INDEX IF NOT EXISTS idx_income_year ON income_data(year);
 CREATE INDEX IF NOT EXISTS idx_income_year_region ON housing_price(year, region_id);
 
+\echo '== Enabling psql timing =='
+\timing on
+
 -- FEATURE 1a EXPLORE HOUSING PRICES
 -- This query returns the average price of Ontario (“ON”) condos in 2020, broken down by region.
 \echo '== FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region (Limit 10)=='
+EXPLAIN (ANALYZE, BUFFERS)
 SELECT
   R.name AS region,
   R.province AS province,
@@ -36,6 +40,7 @@ LIMIT 10;
 -- FEATURE 1b EXPLORE INCOME DATA
 -- This query returns the average 2020 income for Ontario regions, grouped by region.
 \echo '== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 (Limit 10) =='
+EXPLAIN (ANALYZE, BUFFERS)
 SELECT
   R.name AS region,
   R.province AS province,
@@ -52,6 +57,7 @@ LIMIT 10;
 -- Calculates Home‐Affordability Index (HAI) = (user_income / avg_price) × 100,
 -- then returns the top 5 regions where HAI ≥ 25 for 2020 condos.
 \echo 'FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos (Limit 10)'
+EXPLAIN (ANALYZE, BUFFERS)
 SELECT
   sub.region,
   sub.user_HAI
@@ -72,6 +78,7 @@ LIMIT 10;
 -- FEATURE 3: Reverse Lookup – Where Did This Price Exist?
 -- Finds regions, property types, years, and prices within ±$25,000 of $600,000
 \echo 'FEATURE 3: Reverse Lookup – Where Did This Price Exist? (±$25,000 around 600000) (Limit 10)'
+EXPLAIN (ANALYZE, BUFFERS)
 SELECT
   R.name AS region,
   P.type AS property_type,
@@ -87,6 +94,7 @@ LIMIT 10;
 -- Computes Home‐Affordability Index (HAI) = (avg_income / avg_price) × 100
 -- and returns the top 5 most affordable regions for 2024 condos.
 \echo 'FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos (Limit 10)'
+EXPLAIN (ANALYZE, BUFFERS)
 SELECT
   r.region_id,
   r.name,
@@ -105,6 +113,7 @@ LIMIT 5;
 -- FEATURE 5: Data Gap Finder
 -- Finds regions that contain housing data but are missing income data for condos in 2019
 \echo 'FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos'
+EXPLAIN (ANALYZE, BUFFERS)
 SELECT DISTINCT R.region_id, R.name AS region
 FROM housing_price HP
 JOIN property P ON HP.property_id = P.property_id
