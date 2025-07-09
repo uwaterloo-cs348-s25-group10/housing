@@ -6,6 +6,17 @@
 ✔️ **Feature 3 – Reverse price lookup**  
 ✔️ **Feature 4 – Affordability index ranking by region**  
 
+## ✅ Feature Implementation Summary
+
+| Feature | Description | Backend Implementation | Frontend Implementation |
+|---------|-------------|-------------------------|--------------------------|
+| **Feature 1** | Explore regional trends in housing prices and incomes | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [frontend/src/pages/HousingTrendsPage.js](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/HousingTrendsPage.js) [frontend/src/pages/IncomeTrendsPage.js](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/IncomeTrendsPage.js) |
+| **Feature 2** | Personalized affordability quiz (“Where Can I Live?”) | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [frontend/src/pages/WhereCanLivePage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/WhereCanLivePage.js)<br><sub>*Currently uses dummy data; API integrated and tested*</sub> |
+| **Feature 3** | Reverse price lookup | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [`frontend/src/pages/ReverseLookupPage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/ReverseLookupPage.js) |
+| **Feature 4** | Affordability index ranking by region | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [`frontend/src/pages/AffordabilityRankingPage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/AffordabilityRankingPage.js) |
+| **Feature 5** | Data gap finder | [`test-production.sql`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/test-production.sql) | *Not implemented in frontend yet* |
+
+
 ## 🔧 Tech Stack
 * Backend: Fast API (Python)
 * DB: PostgreSQL
