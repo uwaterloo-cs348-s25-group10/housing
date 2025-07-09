@@ -53,7 +53,7 @@ make run-production-sql (for test-production.sql)
 ```
 
 ## How do we utilize raw data?
-Note that we utilize production db for client using production data and sample db for debugging and testing using sample data.
+We utilize production db for client using production data and sample db for debugging and testing using sample data.
 
 In addition to report.pdf, this markdown will explain in technical terms.
 1. Pre-processed datasets are in dataset folder.
