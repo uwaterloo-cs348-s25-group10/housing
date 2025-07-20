@@ -331,14 +331,20 @@ def data_gap_finder(
 # FEATURE 1b
 @app.get("/trends/income")
 def income_trends(
-    province: str,
-    year: int,
+    province: Optional[str] = Query(None),
+    year: Optional[int] = Query(None),
     db: Session = Depends(get_db)
 ):
     """
     Returns the average income for each region in the given
     province and year.
     """
+    filters = []
+    if province:
+        filters.append(Region.province == province)
+    if year:
+        filters.append(IncomeData.year == year)
+
     q = (
         db.query(
             Region.name.label("region"),
@@ -347,10 +353,7 @@ def income_trends(
             func.avg(IncomeData.avg_income).label("avg_income"),
         )
         .join(Region, IncomeData.region_id == Region.region_id)
-        .filter(
-            Region.province == province,
-            IncomeData.year == year,
-        )
+        .filter(*filters)
         .group_by(Region.name, Region.province, IncomeData.year)
         .order_by(Region.name)
     )
