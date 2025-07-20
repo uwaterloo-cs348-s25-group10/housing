@@ -253,11 +253,16 @@ def where_can_i_live(
 
 # FEATURE 4
 @app.get("/hai-rankings/")
-def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
+def hai_rankings(year: Optional[int] = Query(None), property_type: Optional[str] = Query(None), db: Session = Depends(get_db)):
     hai_expr = cast(
         IncomeData.avg_income / func.avg(HousingPrice.avg_price) * 100,
         Numeric
     )
+    filters = []
+    if year:
+        filters.append(HousingPrice.year == year)
+    if property_type:
+        filters.append(Property.type == property_type)
     q = (
         db.query(
             Region.region_id,
@@ -271,10 +276,7 @@ def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
             (IncomeData.region_id == Region.region_id) &
             (IncomeData.year == HousingPrice.year)
         )
-        .filter(
-            HousingPrice.year == year,
-            Property.type == property_type,
-        )
+        .filter(*filters)
         .group_by(
             Region.region_id,
             Region.name,
