@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 import time
 import logging
@@ -165,10 +165,10 @@ def create_housing_price(
 # FEATURE 1a
 @app.get("/trends/housing")
 def housing_trends(
-    province: str,
-    property_type: str,
-    year: int,
-    region: Optional[str] = None,
+    province: Optional[str] = Query(None),
+    property_type: Optional[str] = Query(None),
+    year: Optional[int] = Query(None),
+    region: Optional[str] = Query(None),
     db: Session = Depends(get_db)
 ):
     """
@@ -187,13 +187,15 @@ def housing_trends(
         .join(Region, Property.region_id == Region.region_id)
     )
 
-    filters = [
-        Region.province == province,
-        Property.type   == property_type,
-        HousingPrice.year == year,
-    ]
+    filters = []
+    if province:
+        filters.append(Region.province == province)
     if region:
         filters.append(Region.name == region)
+    if year:
+        filters.append(HousingPrice.year == year)
+    if property_type:
+        filters.append(Property.type == property_type)
 
     q = (
         base_q

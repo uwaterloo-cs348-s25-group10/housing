@@ -66,15 +66,12 @@ export default function HousingTrendsPage() {
     setSearched(true);
     setLoading(true);
     try {
-      const params = new URLSearchParams({
-        province,
-        property_type: propertyType,
-        year,
-      });
+      const params = new URLSearchParams();
 
-      if (region) {
-        params.append("region", region);
-      }
+      if (province && province !== "All Provinces") params.append("province", province);
+      if (region && region !== "All Regions") params.append("region", region);
+      if (year && year !== "All Years") params.append("year", year);
+      if (propertyType && propertyType !== "All Property Types") params.append("property_type", propertyType);
 
       const results = await apiClient.get(`/trends/housing?${params}`);
       setData(results);
@@ -109,8 +106,8 @@ export default function HousingTrendsPage() {
               label="Province"
               onChange={(e) => setProvince(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Provinces">
+                <em>All Provinces</em>
               </MenuItem>
               {provinces.map((p) => (
                 <MenuItem key={p} value={p}>
@@ -131,8 +128,8 @@ export default function HousingTrendsPage() {
               label="Region"
               onChange={(e) => setRegion(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Regions">
+                <em>All Regions</em>
               </MenuItem>
               {regions.map((r) => (
                 <MenuItem key={r} value={r}>
@@ -149,8 +146,8 @@ export default function HousingTrendsPage() {
               label="Year"
               onChange={(e) => setYear(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Years">
+                <em>All Years</em>
               </MenuItem>
               {years.map((y) => (
                 <MenuItem key={y} value={y}>
@@ -167,8 +164,8 @@ export default function HousingTrendsPage() {
               label="Property Type"
               onChange={(e) => setPropertyType(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Property Types">
+                <em>All Property Types</em>
               </MenuItem>
               {propertyTypes.map((pt) => (
                 <MenuItem key={pt} value={pt}>
