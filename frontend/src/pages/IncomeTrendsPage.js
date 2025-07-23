@@ -62,8 +62,10 @@ export default function IncomeTrendsPage() {
     setSearched(true);
     setLoading(true);
     try {
-      const params = new URLSearchParams({ province, year });
-      if (region) params.append("region", region);
+      const params = new URLSearchParams();
+      if (province && province !== "All Provinces") params.append("province", province);
+      if (region && region !== "All Regions") params.append("region", region);
+      if (year && year !== "All Years") params.append("year", year);
       const results = await apiClient.get(
         `/trends/income?${params.toString()}`
       );
@@ -99,8 +101,8 @@ export default function IncomeTrendsPage() {
               label="Province"
               onChange={(e) => setProvince(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Provinces">
+                <em>All Provinces</em>
               </MenuItem>
               {provinces.map((p) => (
                 <MenuItem key={p} value={p}>
@@ -121,8 +123,8 @@ export default function IncomeTrendsPage() {
               label="Region"
               onChange={(e) => setRegion(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Regions">
+                <em>All Regions</em>
               </MenuItem>
               {regions.map((r) => (
                 <MenuItem key={r} value={r}>
@@ -139,8 +141,8 @@ export default function IncomeTrendsPage() {
               label="Year"
               onChange={(e) => setYear(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Years">
+                <em>All Years</em>
               </MenuItem>
               {years.map((y) => (
                 <MenuItem key={y} value={y}>

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 import time
 import logging
@@ -165,10 +165,10 @@ def create_housing_price(
 # FEATURE 1a
 @app.get("/trends/housing")
 def housing_trends(
-    province: str,
-    property_type: str,
-    year: int,
-    region: Optional[str] = None,
+    province: Optional[str] = Query(None),
+    property_type: Optional[str] = Query(None),
+    year: Optional[int] = Query(None),
+    region: Optional[str] = Query(None),
     db: Session = Depends(get_db)
 ):
     """
@@ -187,13 +187,15 @@ def housing_trends(
         .join(Region, Property.region_id == Region.region_id)
     )
 
-    filters = [
-        Region.province == province,
-        Property.type   == property_type,
-        HousingPrice.year == year,
-    ]
+    filters = []
+    if province:
+        filters.append(Region.province == province)
     if region:
         filters.append(Region.name == region)
+    if year:
+        filters.append(HousingPrice.year == year)
+    if property_type:
+        filters.append(Property.type == property_type)
 
     q = (
         base_q
@@ -251,11 +253,16 @@ def where_can_i_live(
 
 # FEATURE 4
 @app.get("/hai-rankings/")
-def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
+def hai_rankings(year: Optional[int] = Query(None), property_type: Optional[str] = Query(None), db: Session = Depends(get_db)):
     hai_expr = cast(
         IncomeData.avg_income / func.avg(HousingPrice.avg_price) * 100,
         Numeric
     )
+    filters = []
+    if year:
+        filters.append(HousingPrice.year == year)
+    if property_type:
+        filters.append(Property.type == property_type)
     q = (
         db.query(
             Region.region_id,
@@ -269,10 +276,7 @@ def hai_rankings(year: int, property_type: str, db: Session = Depends(get_db)):
             (IncomeData.region_id == Region.region_id) &
             (IncomeData.year == HousingPrice.year)
         )
-        .filter(
-            HousingPrice.year == year,
-            Property.type == property_type,
-        )
+        .filter(*filters)
         .group_by(
             Region.region_id,
             Region.name,
@@ -329,14 +333,20 @@ def data_gap_finder(
 # FEATURE 1b
 @app.get("/trends/income")
 def income_trends(
-    province: str,
-    year: int,
+    province: Optional[str] = Query(None),
+    year: Optional[int] = Query(None),
     db: Session = Depends(get_db)
 ):
     """
     Returns the average income for each region in the given
     province and year.
     """
+    filters = []
+    if province:
+        filters.append(Region.province == province)
+    if year:
+        filters.append(IncomeData.year == year)
+
     q = (
         db.query(
             Region.name.label("region"),
@@ -345,10 +355,7 @@ def income_trends(
             func.avg(IncomeData.avg_income).label("avg_income"),
         )
         .join(Region, IncomeData.region_id == Region.region_id)
-        .filter(
-            Region.province == province,
-            IncomeData.year == year,
-        )
+        .filter(*filters)
         .group_by(Region.name, Region.province, IncomeData.year)
         .order_by(Region.name)
     )

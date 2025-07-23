@@ -40,7 +40,9 @@ export default function AffordabilityRankingPage() {
     setLoading(true);
     setResults([]);
     try {
-      const params = new URLSearchParams({ year, property_type: propertyType });
+      const params = new URLSearchParams();
+      if (year && year !== "All Years") params.append("year", year);
+      if (propertyType && propertyType !== "All Property Types") params.append("property_type", propertyType)
       const res = await apiClient.get(`/hai-rankings/?${params}`);
       setResults(res);
     } catch (err) {
@@ -79,8 +81,8 @@ export default function AffordabilityRankingPage() {
               label="Year"
               onChange={(e) => setYear(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Years">
+                <em>All Years</em>
               </MenuItem>
               {years.map((y) => (
                 <MenuItem key={y} value={y}>
@@ -97,8 +99,8 @@ export default function AffordabilityRankingPage() {
               label="Property Type"
               onChange={(e) => setPropertyType(e.target.value)}
             >
-              <MenuItem value="">
-                <em>None</em>
+              <MenuItem value="All Property Types">
+                <em>All Property Types</em>
               </MenuItem>
               {propertyTypes.map((pt) => (
                 <MenuItem key={pt} value={pt}>
