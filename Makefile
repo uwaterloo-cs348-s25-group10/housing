@@ -9,9 +9,7 @@ run-sample:
 
 run-prod:
 	DB_ENV=production docker compose -f docker-compose.yml -f docker-compose.production.yml --env-file .env.production up --build
-	sleep 10
-	docker compose exec backend python app/import_data.py
-
+	
 clean-sample:
 	docker compose -f docker-compose.yml -f docker-compose.sample.yml down --volumes --remove-orphans
 
@@ -43,8 +41,8 @@ run-index-test:
 	docker compose exec -T db psql -U cs348 -d housing_db < test-production-sql-without-index.sql > test-production-sql-without-index.out
 	docker compose exec -T db psql -U cs348 -d housing_db < test-production-sql-with-index.sql > test-production-sql-with-index.out
 
-import-prod-data:
+import-data:
 	docker compose exec backend python app/import_data.py
 
-seed-sample-data:
+seed-data:
 	docker compose exec backend python app/seed_data.py
