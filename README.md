@@ -37,6 +37,7 @@ cd housing
 3. Build and run the Docker container
 ```
 make run-prod
+make import-prod-data # import data
 ```
 4. Now you can access to the service
 * Frontend: http://localhost:3000
