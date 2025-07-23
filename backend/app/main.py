@@ -414,3 +414,108 @@ async def show_data(size: int = 5, random: bool = True):
     except Exception as e:
         logging.error(f"Data import failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
+
+@app.get("/income-growth-analysis")
+def income_growth_analysis(
+    years: int = Query(3, description="Minimum number of consecutive years for income growth"),
+    db: Session = Depends(get_db)
+):
+    """
+        curl -X GET "http://localhost:8000/income-growth-analysis?years=3"
+    """
+    try:
+        sql = text("""
+                    CREATE TEMP TABLE IncomeGrowthResult (
+                        region_id INT,
+                        region_name TEXT,
+                        max_consecutive_growth INT
+                    );
+
+                    DO $$
+                    DECLARE
+                        reg RECORD;
+                        irow RECORD;
+                        prev_income FLOAT;
+                        prev_year INT;
+                        curr_growth INT;
+                        max_growth INT;
+                        minimum_y INT := :years;
+                    BEGIN
+
+                        FOR reg IN
+                            SELECT DISTINCT r.region_id, r.name
+                            FROM Region r
+                            JOIN income_data i ON r.region_id = i.region_id
+                        LOOP
+                            prev_income := NULL;
+                            prev_year := NULL;
+                            curr_growth := 0;
+                            max_growth := 0;
+
+
+                            FOR irow IN
+                                SELECT year, avg_income
+                                FROM income_data
+                                WHERE region_id = reg.region_id
+                                ORDER BY year
+                            LOOP
+                                IF prev_income IS NULL THEN
+                                    prev_income := irow.avg_income;
+                                    prev_year := irow.year;
+                                ELSE
+                                    IF irow.year > prev_year AND irow.avg_income > prev_income THEN
+                                        curr_growth := curr_growth + 1;
+                                    ELSE
+                                        curr_growth := 0;
+                                    END IF;
+
+
+                                    IF curr_growth > max_growth THEN
+                                        max_growth := curr_growth;
+                                    END IF;
+
+
+                                    prev_income := irow.avg_income;
+                                    prev_year := irow.year;
+                                END IF;
+                            END LOOP;
+
+
+                            IF max_growth + 1 >= minimum_y THEN
+                                INSERT INTO IncomeGrowthResult(region_id, region_name, max_consecutive_growth)
+                                VALUES (reg.region_id, reg.name, max_growth + 1);
+                            END IF;
+                        END LOOP;
+                    END $$;""")
+        db.execute(sql, {"years": years})
+
+        result_sql = text("""
+            SELECT
+                t.region_id,
+                t.region_name,
+                t.max_consecutive_growth,
+                r.province
+            FROM IncomeGrowthResult t
+            JOIN region r ON t.region_id = r.region_id
+            ORDER BY t.max_consecutive_growth DESC, t.region_name;
+        """)
+
+        result = db.execute(result_sql).fetchall()
+
+        return {
+            "years": years,
+            "total_regions": len(result),
+            "regions": [
+                {
+                    "region_id": row.region_id,
+                    "region_name": row.region_name,
+                    "max_consecutive_growth": row.max_consecutive_growth,
+                    "province": row.province
+                } 
+                for row in result
+            ]
+        }
+    except Exception as e:
+        logging.error(f"Income growth analysis failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Income growth analysis failed: {str(e)}")
+    
