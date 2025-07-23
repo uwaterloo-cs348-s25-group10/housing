@@ -334,6 +334,7 @@ def data_gap_finder(
 @app.get("/trends/income")
 def income_trends(
     province: Optional[str] = Query(None),
+    region: Optional[str] = Query(None),
     year: Optional[int] = Query(None),
     db: Session = Depends(get_db)
 ):
@@ -344,6 +345,8 @@ def income_trends(
     filters = []
     if province:
         filters.append(Region.province == province)
+    if region:
+        filters.append(Region.name == region)
     if year:
         filters.append(IncomeData.year == year)
 
