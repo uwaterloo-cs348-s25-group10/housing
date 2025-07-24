@@ -1,5 +1,4 @@
 -- INDEXING
-CREATE INDEX IF NOT EXISTS idx_region_province ON region(province);
 CREATE INDEX IF NOT EXISTS idx_region_province_name ON region(province, name);
 
 CREATE INDEX IF NOT EXISTS idx_property_region_id ON property(region_id);
@@ -7,13 +6,11 @@ CREATE INDEX IF NOT EXISTS idx_property_type ON property(type);
 CREATE INDEX IF NOT EXISTS idx_property_type_region ON property(type, region_id);
 CREATE INDEX IF NOT EXISTS idx_property_region_type ON property(region_id, type);
 
-CREATE INDEX IF NOT EXISTS idx_housing_year ON housing_price(year);
-CREATE INDEX IF NOT EXISTS idx_housing_avg_price ON housing_price(avg_price);
 CREATE INDEX IF NOT EXISTS idx_housing_year_property ON housing_price(year, property_id);
 CREATE INDEX IF NOT EXISTS idx_housing_avg_price ON housing_price(year, avg_price);
 
 CREATE INDEX IF NOT EXISTS idx_income_year ON income_data(year);
-CREATE INDEX IF NOT EXISTS idx_income_year_region ON housing_price(year, region_id);
+CREATE INDEX IF NOT EXISTS idx_income_year_region ON income_data(year, region_id);
 
 \echo '== Enabling psql timing =='
 \timing on
