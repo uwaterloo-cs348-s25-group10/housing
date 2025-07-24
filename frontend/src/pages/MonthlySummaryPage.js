@@ -23,7 +23,10 @@ export default function MonthlySummaryPage() {
   useEffect(() => {
     setLoading(true);
     apiClient
-      .get("/monthly-summary")
+      .post("/monthly-summary/refresh?reset=True")
+    
+    apiClient
+      .get("/monthly-summary/all")
       .then((res) => setData(res))
       .catch(console.error)
       .finally(() => setLoading(false));

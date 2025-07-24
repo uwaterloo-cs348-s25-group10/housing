@@ -6,7 +6,7 @@ import { apiClient } from "../config/api";
 const Home = () => {
   const handleImportData = async () => {
     try {
-      await apiClient.post('/import-data/')
+      await apiClient.post('/import-data?random_year=True')
     } catch (err) {
       console.error(err);
     }

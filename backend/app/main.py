@@ -715,77 +715,6 @@ def income_growth(
         logging.error(f"Income growth analysis failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Income growth analysis failed: {str(e)}")
 
-@app.get("/income-growth/{region_id}")
-def income_growth_analysis(
-    region_id: int,
-    db: Session = Depends(get_db)
-):
-    try:
-        sql = text("""
-            WITH hai_data AS (
-                SELECT 
-                    hp.year,
-                    (i.avg_income / AVG(hp.avg_price) * 100) as hai_value,
-                    i.avg_income,
-                    AVG(hp.avg_price) as avg_price,
-                    r.name as region_name,
-                    r.province
-                FROM income_data i
-                JOIN region r ON i.region_id = r.region_id
-                JOIN property p ON r.region_id = p.region_id
-                JOIN housing_price hp ON p.property_id = hp.property_id
-                WHERE i.region_id = :region_id 
-                  AND i.year = hp.year
-                  AND hp.avg_price > 0
-                GROUP BY hp.year, i.avg_income, r.name, r.province
-                ORDER BY hp.year
-            )
-            SELECT 
-                year,
-                hai_value,
-                avg_income,
-                avg_price,
-                LAG(hai_value) OVER (ORDER BY year) as prev_hai,
-                CASE 
-                    WHEN LAG(hai_value) OVER (ORDER BY year) IS NULL THEN NULL
-                    WHEN hai_value > LAG(hai_value) OVER (ORDER BY year) THEN true
-                    ELSE false
-                END as is_growth,
-                region_name,
-                province
-            FROM hai_data
-            ORDER BY year;
-        """)
-        
-        results = db.execute(sql, {"region_id": region_id}).fetchall()
-        
-        if not results:
-            raise HTTPException(status_code=404, detail="No HAI data found for this region")
-        
-        return {
-            "region_id": region_id,
-            "region_name": results[0].region_name,
-            "province": results[0].province,
-            "yearly_data": [
-                {
-                    "year": row.year,
-                    "hai_value": round(float(row.hai_value), 2),
-                    "avg_income": float(row.avg_income),
-                    "avg_price": round(float(row.avg_price), 2),
-                    "prev_hai": round(float(row.prev_hai), 2) if row.prev_hai else None,
-                    "is_growth": row.is_growth,
-                    "growth_rate": round(((row.hai_value - row.prev_hai) / row.prev_hai * 100), 2) 
-                                 if row.prev_hai else None
-                }
-                for row in results
-            ]
-        }
-        
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Detail query error: {str(e)}")
-
 @app.get("/monthly-summary")
 def monthly_summary(db: Session = Depends(get_db)):
     """
@@ -833,7 +762,8 @@ def monthly_summary(db: Session = Depends(get_db)):
 def monthly_summary(reset: bool = False, db: Session = Depends(get_db)):
     """
         curl -X POST "http://localhost:8000/monthly-summary/refresh"
-        curl -X POST "http://localhost:8000/monthly-summary/refresh?reset=True" if you want to reset
+        curl -X POST "http://localhost:8000/monthly-summary/refresh?reset=True" 
+            if you want to reset
 
     """
     
