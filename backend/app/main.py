@@ -559,6 +559,58 @@ async def show_data(size: int = 5, random: bool = True):
         logging.error(f"Data import failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
 
+
+@app.get("/downpayment-simulator/")
+def downpayment_simulator(
+    year: int = Query(..., ge=1900),
+    property_type: str = Query(...),
+    down_pct: float = Query(..., ge=0, le=1),
+    save_pct: float = Query(..., ge=0, le=1),
+    db: Session = Depends(get_db),
+):
+    q = (
+        db.query(
+            Region.region_id,
+            Region.name.label("region"),
+            func.round(
+                cast(func.avg(HousingPrice.avg_price) * down_pct, Numeric),
+                2
+            ).label("down_payment"),
+            func.round(
+                cast(func.avg(IncomeData.avg_income) * save_pct, Numeric),
+                2
+            ).label("annual_savings"),
+            func.ceil(
+                (func.avg(HousingPrice.avg_price) * down_pct)
+                / (func.avg(IncomeData.avg_income) * save_pct)
+            ).label("years_to_goal"),
+        )
+        .join(Property, Property.region_id == Region.region_id)
+        .join(HousingPrice, HousingPrice.property_id == Property.property_id)
+        .join(
+            IncomeData,
+            (IncomeData.region_id == Region.region_id) &
+            (IncomeData.year      == HousingPrice.year)
+        )
+        .filter(
+            HousingPrice.year == year,
+            Property.type == property_type,
+        )
+        .group_by(Region.region_id, Region.name)
+        .order_by(text("years_to_goal ASC"))
+    )
+
+    return [
+        {
+            "region_id":      rid,
+            "region":         region,
+            "down_payment":   float(dp),
+            "annual_savings": float(sav),
+            "years_to_goal":  int(yrs),
+        }
+        for rid, region, dp, sav, yrs in q.all()
+    ]
+
 @app.get("/income-growth")
 def income_growth(
     years: int = Query(3, description="Minimum number of consecutive years for income growth"),
@@ -823,4 +875,3 @@ def monthly_summary(reset: bool = False, db: Session = Depends(get_db)):
         db.execute(text("""SELECT refresh_monthly_hai();"""))
     db.commit()
     return {"ok": True}
-    
