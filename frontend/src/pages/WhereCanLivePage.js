@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Typography,
@@ -7,9 +7,9 @@ import {
   Stack,
   TextField,
   FormControl,
-  RadioGroup,
-  FormControlLabel,
-  Radio,
+  InputLabel,
+  Select,
+  MenuItem,
   Button,
   TableContainer,
   Table,
@@ -17,67 +17,72 @@ import {
   TableRow,
   TableCell,
   TableBody,
+  CircularProgress,
 } from "@mui/material";
-
-const YEARS = Array.from({ length: 21 }, (_, i) => 2000 + i);
-const PROPERTY_TYPES = ["House", "Condo", "Apartment"];
-const REGIONS = [
-  "Toronto",
-  "Vancouver",
-  "Montreal",
-  "Calgary",
-  "Ottawa",
-  "Halifax",
-];
-
-// Dummy data
-const DUMMY_RESULTS = [
-  { region: "Calgary", hai: 30.53 },
-  { region: "Ottawa", hai: 29.0 },
-  { region: "Montreal", hai: 27.62 },
-  { region: "Vancouver", hai: 26.36 },
-  { region: "Halifax", hai: 25.0 },
-];
+import { apiClient } from "../config/api";
 
 export default function WhereCanLivePage() {
   const [started, setStarted] = useState(false);
+
   const [income, setIncome] = useState("");
   const [year, setYear] = useState("");
   const [propertyType, setPropertyType] = useState("");
-  const [region, setRegion] = useState("");
+
+  const [years, setYears] = useState([]);
+  const [propertyTypes, setPropertyTypes] = useState([]);
+
   const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-  const startQuiz = () => {
-    setStarted(true);
-    setResults([]); // clear
-  };
+  // Fetch metadata on mount
+  useEffect(() => {
+    apiClient.get("/meta/housing").then((res) => {
+      setYears(res.years || []);
+      setPropertyTypes(res.property_types || []);
+    });
+  }, []);
 
-  const handleFind = () => {
-    // Immediately show dummy data:
-    setResults(DUMMY_RESULTS);
+  const handleFind = async () => {
+    if (!income || !year || !propertyType) {
+      setError("Please fill in all required fields.");
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+    setResults([]);
+
+    try {
+      const params = new URLSearchParams();
+      params.append("income", parseFloat(income));
+      params.append("year", parseInt(year));
+      params.append("property_type", propertyType);
+
+      const res = await apiClient.get(`/where-can-i-live?${params.toString()}`);
+      setResults(res);
+    } catch (e) {
+      console.error(e);
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <Container maxWidth="lg" sx={{ pt: 4, pb: 4 }}>
-      {/* Header */}
-      <Typography variant="h4" gutterBottom align="left">
+      <Typography variant="h4" gutterBottom>
         Find Out Where You Could Have Afforded to Live
       </Typography>
-      <Typography
-        variant="subtitle1"
-        color="text.secondary"
-        gutterBottom
-        align="left"
-      >
-        Based on your income, family size, and housing preferences, we’ll
-        recommend affordable regions in Canada using historical HAI data.
+      <Typography variant="subtitle1" color="text.secondary" gutterBottom>
+        Based on your income and housing preferences, we’ll recommend affordable
+        regions using historical HAI data.
       </Typography>
 
-      {/* Start Button */}
       {!started && (
-        <Box mb={4} sx={{ textAlign: "left" }}>
+        <Box mb={4}>
           <Button
-            onClick={startQuiz}
+            onClick={() => setStarted(true)}
             sx={{
               background: "linear-gradient(to right, #6a11cb, #2575fc)",
               color: "white",
@@ -90,76 +95,40 @@ export default function WhereCanLivePage() {
         </Box>
       )}
 
-      {/* Quiz Form */}
       {started && (
         <Paper elevation={2} sx={{ p: 4, mb: 4 }}>
-          <Stack spacing={3} alignItems="flex-start">
+          <Stack spacing={3}>
             <TextField
-              label="What was your total annual income (in CAD)?"
+              label="Your total annual income (CAD)"
               type="number"
               fullWidth
               value={income}
               onChange={(e) => setIncome(e.target.value)}
             />
 
-            <FormControl component="fieldset">
-              <Typography variant="subtitle2" gutterBottom>
-                Which year are you interested in?
-              </Typography>
-              <RadioGroup
-                row
-                value={year}
-                onChange={(e) => setYear(e.target.value)}
-              >
-                {YEARS.map((y) => (
-                  <FormControlLabel
-                    key={y}
-                    value={String(y)}
-                    control={<Radio />}
-                    label={String(y)}
-                  />
+            <FormControl fullWidth>
+              <InputLabel>Year</InputLabel>
+              <Select value={year} onChange={(e) => setYear(e.target.value)}>
+                {years.map((y) => (
+                  <MenuItem key={y} value={y}>
+                    {y}
+                  </MenuItem>
                 ))}
-              </RadioGroup>
+              </Select>
             </FormControl>
 
-            <FormControl component="fieldset">
-              <Typography variant="subtitle2" gutterBottom>
-                What kind of housing were you interested in?
-              </Typography>
-              <RadioGroup
-                row
+            <FormControl fullWidth>
+              <InputLabel>Property Type</InputLabel>
+              <Select
                 value={propertyType}
                 onChange={(e) => setPropertyType(e.target.value)}
               >
-                {PROPERTY_TYPES.map((pt) => (
-                  <FormControlLabel
-                    key={pt}
-                    value={pt}
-                    control={<Radio />}
-                    label={pt}
-                  />
+                {propertyTypes.map((pt) => (
+                  <MenuItem key={pt} value={pt}>
+                    {pt}
+                  </MenuItem>
                 ))}
-              </RadioGroup>
-            </FormControl>
-
-            <FormControl component="fieldset">
-              <Typography variant="subtitle2" gutterBottom>
-                Do you have a preferred region?
-              </Typography>
-              <RadioGroup
-                row
-                value={region}
-                onChange={(e) => setRegion(e.target.value)}
-              >
-                {REGIONS.map((r) => (
-                  <FormControlLabel
-                    key={r}
-                    value={r}
-                    control={<Radio />}
-                    label={r}
-                  />
-                ))}
-              </RadioGroup>
+              </Select>
             </FormControl>
 
             <Button
@@ -170,14 +139,26 @@ export default function WhereCanLivePage() {
                 px: 3,
                 py: 1.5,
               }}
+              disabled={loading}
             >
-              Find Affordable Regions
+              {loading ? "Finding..." : "Find Affordable Regions"}
             </Button>
+
+            {error && (
+              <Typography variant="body2" color="error">
+                {error}
+              </Typography>
+            )}
           </Stack>
         </Paper>
       )}
 
-      {/* Results */}
+      {loading && (
+        <Box sx={{ display: "flex", justifyContent: "center", py: 2 }}>
+          <CircularProgress />
+        </Box>
+      )}
+
       {results.length > 0 && (
         <Paper elevation={1}>
           <TableContainer sx={{ maxHeight: 300 }}>
@@ -192,7 +173,9 @@ export default function WhereCanLivePage() {
                 {results.map((row, i) => (
                   <TableRow key={i} hover>
                     <TableCell>{row.region}</TableCell>
-                    <TableCell align="right">{row.hai.toFixed(2)}</TableCell>
+                    <TableCell align="right">
+                      {row.user_hai.toFixed(2)}
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
