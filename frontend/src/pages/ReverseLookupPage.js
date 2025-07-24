@@ -16,7 +16,6 @@ import {
   TableRow,
   TableCell,
   TableBody,
-  Box,
   CircularProgress,
 } from "@mui/material";
 import { apiClient } from "../config/api";
