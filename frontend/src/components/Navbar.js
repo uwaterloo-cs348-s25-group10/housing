@@ -11,6 +11,7 @@ const Navbar = () => {
         <Link to="/">Home</Link>
         <Link to="/housing">Search Historical Housing</Link>
         <Link to="/income">Search Historical Income</Link>
+        <Link to="/income-growth">Income Growth Analysis</Link>
         <Link to="/reverse-lookup">Reverse Lookup</Link>
         <Link to="/ranking">Affordability Ranking</Link>
       </nav>
