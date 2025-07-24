@@ -9,6 +9,7 @@ import ReverseLookupPage from "./pages/ReverseLookupPage";
 import AffordabilityRankingPage from "./pages/AffordabilityRankingPage";
 import HeatmapPage from "./pages/HeatmapPage";
 import DataGapsPage from "./pages/DataGapsPage";
+import DownPaymentSimulatorPage from "./pages/DownpaymentPage";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/ranking" element={<AffordabilityRankingPage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />
         <Route path="/data-gaps" element={<DataGapsPage />} />
+        <Route path="/simulator" element={<DownPaymentSimulatorPage />} />
+        {/* Add more routes like /quiz or /ranking later */}
       </Routes>
     </div>
   );
