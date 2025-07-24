@@ -25,7 +25,6 @@ function App() {
         <Route path="/heatmap" element={<HeatmapPage />} />
         <Route path="/data-gaps" element={<DataGapsPage />} />
         <Route path="/simulator" element={<DownPaymentSimulatorPage />} />
-        {/* Add more routes like /quiz or /ranking later */}
       </Routes>
     </div>
   );

@@ -21,8 +21,7 @@ import {
 } from "@mui/material";
 import { apiClient } from "../config/api";
 
-// Static options
-const YEARS = Array.from({ length: 10 }, (_, i) => 2015 + i); // [2015, ..., 2024]
+const YEARS = Array.from({ length: 10 }, (_, i) => 2015 + i); 
 const PROPERTY_TYPES = ["Condo", "Single Family", "Duplex"];
 
 export default function DownPaymentSimulatorPage() {

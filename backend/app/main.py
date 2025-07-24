@@ -511,11 +511,11 @@ async def show_data(size: int = 5, random: bool = True):
 
 @app.get("/downpayment-simulator/")
 def downpayment_simulator(
-    year: int                = Query(..., ge=1900),
-    property_type: str       = Query(...),
-    down_pct: float          = Query(..., ge=0, le=1),
-    save_pct: float          = Query(..., ge=0, le=1),
-    db: Session              = Depends(get_db),
+    year: int = Query(..., ge=1900),
+    property_type: str = Query(...),
+    down_pct: float = Query(..., ge=0, le=1),
+    save_pct: float = Query(..., ge=0, le=1),
+    db: Session = Depends(get_db),
 ):
     q = (
         db.query(
@@ -534,7 +534,7 @@ def downpayment_simulator(
                 / (func.avg(IncomeData.avg_income) * save_pct)
             ).label("years_to_goal"),
         )
-        .join(Property,     Property.region_id    == Region.region_id)
+        .join(Property, Property.region_id == Region.region_id)
         .join(HousingPrice, HousingPrice.property_id == Property.property_id)
         .join(
             IncomeData,
@@ -542,8 +542,8 @@ def downpayment_simulator(
             (IncomeData.year      == HousingPrice.year)
         )
         .filter(
-            HousingPrice.year  == year,
-            Property.type      == property_type,
+            HousingPrice.year == year,
+            Property.type == property_type,
         )
         .group_by(Region.region_id, Region.name)
         .order_by(text("years_to_goal ASC"))
