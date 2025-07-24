@@ -28,6 +28,9 @@ const Home = () => {
         <a href="/data-gaps" style={{ textDecoration: "none" }}>
           <button className="explore-button" style={{ marginLeft: "1rem" }}>Find Data Gaps</button>
         </a>
+        <a href="/monthly-summary" style={{ textDecoration: "none" }}>
+          <button className="explore-button" style={{ marginLeft: "1rem" }}>Monthly Summary</button>
+        </a>
       </div>
 
       <div className="home-image">
