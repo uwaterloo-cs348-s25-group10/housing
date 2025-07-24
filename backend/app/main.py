@@ -8,11 +8,13 @@ from typing import Optional
 from sqlalchemy import func, text, create_engine, distinct
 from sqlalchemy import func, cast, Numeric, text
 
+import csv
 import app.models
 from app.models import Apartment, Property, HousingPrice, Region, IncomeData
 from app.db.db_prod import SessionLocal, engine
 from app.db.base import Base
 from app.import_data import full_reset, load_csv_data, verify_data
+from fastapi.responses import JSONResponse
 
 import os
 import pandas as pd
@@ -398,49 +400,94 @@ async def import_data(reset: bool = True, random_year: bool = False):
         logging.error(f"Data import failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
 
-from fastapi.responses import JSONResponse
-
-# Advanced Feature 2
 @app.get("/heatmap")
-async def get_heatmap(grid_size: float = 0.1, price_threshold: float = 0):
+async def get_heatmap(grid_size: float = 0.1, price_threshold: float = 0, db: Session = Depends(get_db)):
     """
-    Returns grid-aggregated points from CSV in GeoJSON format for Mapbox.
-    Each feature represents a grid cell with a centroid, count of sales, and avg price.
+    Advanced Feature:
+    Returns clustered housing price points in GeoJSON format using data from cleaned_canada.csv
     """
-    df = pd.read_csv("/app/dataset/original_dataset/cleaned_canada.csv")
-    df = df.dropna(subset=["Latitude", "Longitude", "Price"])
-    df = df[df["Price"] > price_threshold]
 
-    df["lat_bin"] = (df["Latitude"] // grid_size) * grid_size + grid_size / 2
-    df["lon_bin"] = (df["Longitude"] // grid_size) * grid_size + grid_size / 2
+    try:
+        db.execute(text("DROP TABLE IF EXISTS CsvPoints"))
+        db.execute(text("""
+            CREATE TEMP TABLE CsvPoints (
+                city TEXT,
+                province TEXT,
+                latitude DOUBLE PRECISION,
+                longitude DOUBLE PRECISION,
+                price DOUBLE PRECISION
+            );
+        """))
 
-    grouped = (
-        df.groupby(["lat_bin", "lon_bin"])
-        .agg(count=("Price", "size"), avg_price=("Price", "mean"))
-        .reset_index()
-    )
+        with open("/app/dataset/original_dataset/cleaned_canada.csv", newline="") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                try:
+                    lat = float(row["Latitude"])
+                    lon = float(row["Longitude"])
+                    price = float(row["Price"])
+                    city = row["City"]
+                    province = row["Province"]
 
-    features = [
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [row["lon_bin"], row["lat_bin"]],
-            },
-            "properties": {
-                "count": int(row["count"]),
-                "avg_price": float(row["avg_price"]),
-            },
-        }
-        for _, row in grouped.iterrows()
-    ]
+                    db.execute(text("""
+                        INSERT INTO CsvPoints (city, province, latitude, longitude, price)
+                        VALUES (:city, :province, :lat, :lon, :price);
+                    """), {
+                        "city": city,
+                        "province": province,
+                        "lat": lat,
+                        "lon": lon,
+                        "price": price,
+                    })
+                except Exception as row_err:
+                    logging.warning(f"Skipping row due to error: {row_err}")
+        db.commit()
 
-    geojson = {
-        "type": "FeatureCollection",
-        "features": features,
-    }
+        db.execute(text("DROP TABLE IF EXISTS RegionPriceCentroids"))
+        db.execute(text("""
+            CREATE TEMP TABLE RegionPriceCentroids AS
+            SELECT 
+                city AS region_name,
+                province,
+                AVG(latitude) AS lat,
+                AVG(longitude) AS lon,
+                COUNT(*) AS num_sales,
+                ROUND(AVG(price)::NUMERIC, 2) AS avg_price
+            FROM CsvPoints
+            WHERE price > :price_threshold
+            GROUP BY city, province;
+        """), {"price_threshold": price_threshold})
 
-    return JSONResponse(content=geojson)
+        rows = db.execute(text("""
+            SELECT region_name, province, lat, lon, num_sales, avg_price
+            FROM RegionPriceCentroids;
+        """)).fetchall()
+
+        features = [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [row.lon, row.lat],
+                },
+                "properties": {
+                    "region": row.region_name,
+                    "province": row.province,
+                    "count": row.num_sales,
+                    "avg_price": float(row.avg_price),
+                },
+            }
+            for row in rows
+        ]
+
+        return JSONResponse(content={
+            "type": "FeatureCollection",
+            "features": features,
+        })
+
+    except Exception as e:
+        logging.error(f"Heatmap generation failed: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Heatmap generation failed: {str(e)}")
 
 @app.post("/show-data")
 async def show_data(size: int = 5, random: bool = True):
