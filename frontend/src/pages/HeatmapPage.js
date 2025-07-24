@@ -18,6 +18,26 @@ export default function HeatmapPage() {
   const [loading, setLoading] = useState(true);
   const [geojson, setGeojson] = useState(null);
 
+  // 🔄 Fun facts to show while loading
+  const funFacts = [
+    "🏠 The average home price in Toronto exceeds $1 million!",
+    "🌇 Vancouver is one of the least affordable cities in the world.",
+    "📈 Housing prices in Canada grew over 50% in the last decade.",
+    "🛠️ In some cities, laneway homes are used to add affordable housing.",
+    "🌍 Canada's population has grown rapidly due to immigration, affecting housing demand.",
+    "📊 The Housing Affordability Index compares income to mortgage cost.",
+    "🏗️ The CMHC helps finance affordable housing across Canada.",
+  ];
+
+  const [factIndex, setFactIndex] = useState(0);
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setFactIndex((prevIndex) => (prevIndex + 1) % funFacts.length);
+      }, 3000); // rotate every 3s
+      return () => clearInterval(interval);
+    }, []);
+
   useEffect(() => {
     apiClient
       .get("/heatmap?grid_size=0.1&price_threshold=300000")
@@ -116,12 +136,24 @@ export default function HeatmapPage() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              flexDirection: "column",
               zIndex: 1000,
               backdropFilter: "blur(2px)",
               backgroundColor: "rgba(255,255,255,0.4)",
+              textAlign: "center",
+              px: 2,
             }}
           >
             <CircularProgress />
+            <Box sx={{ mt: 2 }}>
+              <Typography
+                variant="body2"
+                color="text.secondary"
+                sx={{ maxWidth: 300 }}
+              >
+                {funFacts[factIndex]}
+              </Typography>
+            </Box>
           </Box>
         )}
 

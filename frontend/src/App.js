@@ -7,6 +7,7 @@ import IncomeTrendsPage from "./pages/IncomeTrendsPage";
 import WhereCanLivePage from "./pages/WhereCanLivePage";
 import ReverseLookupPage from "./pages/ReverseLookupPage";
 import AffordabilityRankingPage from "./pages/AffordabilityRankingPage";
+import IncomeGrowthPage from "./pages/IncomeGrowthPage";
 import HeatmapPage from "./pages/HeatmapPage";
 import DataGapsPage from "./pages/DataGapsPage";
 import DownPaymentSimulatorPage from "./pages/DownpaymentPage";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/quiz" element={<WhereCanLivePage />} />
         <Route path="/reverse-lookup" element={<ReverseLookupPage />} />
         <Route path="/ranking" element={<AffordabilityRankingPage />} />
+        <Route path="/income-growth" element={<IncomeGrowthPage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />
         <Route path="/data-gaps" element={<DataGapsPage />} />
         <Route path="/simulator" element={<DownPaymentSimulatorPage />} />
