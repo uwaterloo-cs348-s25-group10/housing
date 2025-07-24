@@ -12,5 +12,4 @@ RUN apt-get update \
  && apt-get install -y postgresql-17-cron \
  && rm -rf /var/lib/apt/lists/*
 
-RUN echo "shared_preload_libraries = 'pg_cron'" \
-      >> "$PGDATA"/postgresql.conf
+CMD ["postgres", "-c", "shared_preload_libraries=pg_cron", "-c", "cron.database_name=housing_db"]

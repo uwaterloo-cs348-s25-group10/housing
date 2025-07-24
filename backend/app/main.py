@@ -37,17 +37,7 @@ async def startup_event():
     for attempt in range(max_retries):
         try:
             Base.metadata.create_all(bind=engine)
-            with engine.begin() as conn:
-                conn.execute(text("""
-                CREATE TABLE IF NOT EXISTS monthly_hai_summary (
-                  summary_month DATE,
-                  region_id     INT,
-                  hai           FLOAT,
-                  rank_type     TEXT,
-                  PRIMARY KEY(summary_month, region_id, rank_type)
-                );
-                """))
-                
+            with engine.begin() as conn:                
                 conn.execute(text("CREATE EXTENSION IF NOT EXISTS pg_cron;"))
 
                 conn.execute(text("""
@@ -86,13 +76,18 @@ async def startup_event():
                 $$ LANGUAGE plpgsql;
                 """))
 
-                conn.execute(text("""
-                SELECT cron.schedule(
-                  'monthly_hai_job',
-                  '0 2 1 * *',
-                  $$SELECT refresh_monthly_hai();$$
-                );
-                """))
+                job_exists = conn.execute(text("""
+                    SELECT COUNT(*) FROM cron.job WHERE jobname = 'monthly_hai_job';
+                """)).scalar()
+
+                if job_exists == 0:
+                    conn.execute(text("""
+                    SELECT cron.schedule(
+                      'monthly_hai_job',
+                      '0 2 1 * *',
+                      $$SELECT refresh_monthly_hai();$$
+                    );
+                    """))
             logging.info("Database connected successfully!")
             break
         except OperationalError as e:
