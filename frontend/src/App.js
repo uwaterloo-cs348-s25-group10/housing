@@ -10,6 +10,7 @@ import AffordabilityRankingPage from "./pages/AffordabilityRankingPage";
 import IncomeGrowthPage from "./pages/IncomeGrowthPage";
 import HeatmapPage from "./pages/HeatmapPage";
 import DataGapsPage from "./pages/DataGapsPage";
+import DownPaymentSimulatorPage from "./pages/DownpaymentPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/income-growth" element={<IncomeGrowthPage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />
         <Route path="/data-gaps" element={<DataGapsPage />} />
+        <Route path="/simulator" element={<DownPaymentSimulatorPage />} />
       </Routes>
     </div>
   );
