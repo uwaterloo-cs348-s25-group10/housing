@@ -14,6 +14,9 @@ from app.db.db_prod import SessionLocal, engine
 from app.db.base import Base
 from app.import_data import full_reset, load_csv_data, verify_data
 
+import os
+import pandas as pd
+
 app = FastAPI()
 
 app.add_middleware(
@@ -394,7 +397,51 @@ async def import_data(reset: bool = True, random_year: bool = False):
     except Exception as e:
         logging.error(f"Data import failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
-    
+
+from fastapi.responses import JSONResponse
+
+# Advanced Feature 2
+@app.get("/heatmap")
+async def get_heatmap(grid_size: float = 0.1, price_threshold: float = 0):
+    """
+    Returns grid-aggregated points from CSV in GeoJSON format for Mapbox.
+    Each feature represents a grid cell with a centroid, count of sales, and avg price.
+    """
+    df = pd.read_csv("/app/dataset/original_dataset/cleaned_canada.csv")
+    df = df.dropna(subset=["Latitude", "Longitude", "Price"])
+    df = df[df["Price"] > price_threshold]
+
+    df["lat_bin"] = (df["Latitude"] // grid_size) * grid_size + grid_size / 2
+    df["lon_bin"] = (df["Longitude"] // grid_size) * grid_size + grid_size / 2
+
+    grouped = (
+        df.groupby(["lat_bin", "lon_bin"])
+        .agg(count=("Price", "size"), avg_price=("Price", "mean"))
+        .reset_index()
+    )
+
+    features = [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row["lon_bin"], row["lat_bin"]],
+            },
+            "properties": {
+                "count": int(row["count"]),
+                "avg_price": float(row["avg_price"]),
+            },
+        }
+        for _, row in grouped.iterrows()
+    ]
+
+    geojson = {
+        "type": "FeatureCollection",
+        "features": features,
+    }
+
+    return JSONResponse(content=geojson)
+
 @app.post("/show-data")
 async def show_data(size: int = 5, random: bool = True):
     """

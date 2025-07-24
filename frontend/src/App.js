@@ -7,6 +7,7 @@ import IncomeTrendsPage from "./pages/IncomeTrendsPage";
 import WhereCanLivePage from "./pages/WhereCanLivePage";
 import ReverseLookupPage from "./pages/ReverseLookupPage";
 import AffordabilityRankingPage from "./pages/AffordabilityRankingPage";
+import HeatmapPage from "./pages/HeatmapPage";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/quiz" element={<WhereCanLivePage />} />
         <Route path="/reverse-lookup" element={<ReverseLookupPage />} />
         <Route path="/ranking" element={<AffordabilityRankingPage />} />
-        {/* Add more routes like /quiz or /ranking later */}
+        <Route path="/heatmap" element={<HeatmapPage />} />
       </Routes>
     </div>
   );
