@@ -3,3 +3,4 @@ from .property_model import Property
 from .housing_price_model import HousingPrice
 from .region_model import Region 
 from .income_data import IncomeData
+from .monthly_hai_summary_model import MonthlyHAISummary

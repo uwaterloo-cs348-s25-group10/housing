@@ -132,7 +132,7 @@ def load_csv_data(random_year: bool = False):
                     property_id = property_lookup.get(region_key)
                     
                     if property_id:
-                        year = random.randrange(2000, 2026) if random_year else int(row['year'])
+                        year = random.randrange(2020, 2026) if random_year else int(row['year'])
                         key = (property_id, year)
                         
                         if key in seen_keys:
@@ -214,7 +214,7 @@ def load_csv_data(random_year: bool = False):
             region_id = region_mapping.get(region_key)
 
             if region_id and pd.notna(row['avg_income']):
-                year = random.randrange(2000, 2026) if random_year else int(row['year'])
+                year = random.randrange(2020, 2026) if random_year else int(row['year'])
                 key = (region_id, year)
 
                 if key in seen_keys:
@@ -288,5 +288,5 @@ def verify_data(sample_size: int = 5, random: bool = True):
 
 if __name__ == "__main__":
     full_reset()
-    load_csv_data(random_year=False)
+    load_csv_data(random_year=True)
     verify_data()

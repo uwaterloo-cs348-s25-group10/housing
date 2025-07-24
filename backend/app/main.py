@@ -9,8 +9,7 @@ from sqlalchemy import func, text, create_engine, distinct
 from sqlalchemy import func, cast, Numeric, text
 
 import csv
-import app.models
-from app.models import Apartment, Property, HousingPrice, Region, IncomeData
+from app.models import Apartment, Property, HousingPrice, Region, IncomeData, MonthlyHAISummary
 from app.db.db_prod import SessionLocal, engine
 from app.db.base import Base
 from app.import_data import full_reset, load_csv_data, verify_data
@@ -735,8 +734,12 @@ def income_growth_analysis(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Detail query error: {str(e)}")
 
-@app.get("/monthly-summary/")
+@app.get("/monthly-summary")
 def monthly_summary(db: Session = Depends(get_db)):
+    """
+        curl -X GET "http://localhost:8000/monthly-summary"
+    """
+       
     rows = db.execute(text("""
       SELECT summary_month, region_id, hai, rank_type
         FROM monthly_hai_summary
@@ -753,3 +756,71 @@ def monthly_summary(db: Session = Depends(get_db)):
       }
       for r in rows
     ]
+
+@app.get("/monthly-summary/all")
+def monthly_summary(db: Session = Depends(get_db)):
+    """
+        curl -X GET "http://localhost:8000/monthly-summary/all"
+    """
+       
+    rows = db.execute(text("""
+        SELECT * FROM monthly_hai_summary;
+    """)).fetchall()
+
+    return [
+      {
+        "month":     r.summary_month.isoformat(),
+        "region_id": r.region_id,
+        "hai":       float(r.hai),
+        "rank_type": r.rank_type
+      }
+      for r in rows
+    ]
+
+@app.post("/monthly-summary/refresh")
+def monthly_summary(reset: bool = False, db: Session = Depends(get_db)):
+    """
+        curl -X POST "http://localhost:8000/monthly-summary/refresh"
+        curl -X POST "http://localhost:8000/monthly-summary/refresh?reset=True" if you want to reset
+
+    """
+    
+    if reset:
+        db.execute(text("""
+        DO $$
+        DECLARE
+            y INT;
+        BEGIN
+            FOR y IN SELECT DISTINCT year FROM housing_price LOOP
+                DELETE FROM monthly_hai_summary WHERE summary_month = make_date(y, EXTRACT(MONTH FROM CURRENT_DATE)::INT, 1);
+
+                WITH hai_vals AS (
+                    SELECT
+                    r.region_id,
+                    (i.avg_income / h.avg_price) * 100 AS hai
+                    FROM housing_price AS h
+                    JOIN property     AS p ON h.property_id = p.property_id
+                    JOIN region       AS r ON p.region_id   = r.region_id
+                    JOIN income_data  AS i ON i.region_id   = r.region_id
+                                        AND i.year        = h.year
+                    WHERE h.year = y
+                ),
+                ranked AS (
+                    SELECT region_id, hai, ROW_NUMBER() OVER (ORDER BY hai DESC) AS rn
+                    FROM hai_vals
+                )
+                INSERT INTO monthly_hai_summary(summary_month, region_id, hai, rank_type)
+                SELECT make_date(y, EXTRACT(MONTH FROM CURRENT_DATE)::INT, 1),
+                    region_id,
+                    hai,
+                    'TOP'
+                FROM ranked
+                WHERE rn <= 5;
+            END LOOP;
+        END $$;
+        """))
+    else:
+        db.execute(text("""SELECT refresh_monthly_hai();"""))
+    db.commit()
+    return {"ok": True}
+    
