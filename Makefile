@@ -9,6 +9,7 @@ run-sample:
 
 run-prod:
 	DB_ENV=production docker compose -f docker-compose.yml -f docker-compose.production.yml --env-file .env.production up --build
+	docker compose exec backend python app/import_data.py
 	
 clean-sample:
 	docker compose -f docker-compose.yml -f docker-compose.sample.yml down --volumes --remove-orphans
