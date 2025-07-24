@@ -8,6 +8,7 @@ import WhereCanLivePage from "./pages/WhereCanLivePage";
 import ReverseLookupPage from "./pages/ReverseLookupPage";
 import AffordabilityRankingPage from "./pages/AffordabilityRankingPage";
 import HeatmapPage from "./pages/HeatmapPage";
+import DataGapsPage from "./pages/DataGapsPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/reverse-lookup" element={<ReverseLookupPage />} />
         <Route path="/ranking" element={<AffordabilityRankingPage />} />
         <Route path="/heatmap" element={<HeatmapPage />} />
+        <Route path="/data-gaps" element={<DataGapsPage />} />
       </Routes>
     </div>
   );
