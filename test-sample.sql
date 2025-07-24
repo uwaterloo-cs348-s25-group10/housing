@@ -95,24 +95,3 @@ SELECT R.region_id, R.name
 FROM income_data I
 JOIN region R ON I.region_id = R.region_id
 WHERE I.year = 2019;
-
-\echo 'FEATURE 5 - Advanced: Down Payment Simulator — 15% down, 25% savings, year=2021, type=Condo'
-SELECT
-  r.region_id,
-  r.name       AS region,
-  ROUND(AVG(hp.avg_price) * 0.15, 2) AS down_payment,
-  ROUND(AVG(i.avg_income) * 0.25, 2) AS annual_savings,
-  CEIL((AVG(hp.avg_price) * 0.15) / (AVG(i.avg_income) * 0.25)) AS years_to_goal
-FROM region  AS r
-JOIN property     AS p  ON p.region_id = r.region_id
-JOIN housing_price AS hp ON hp.property_id = p.property_id
-JOIN income_data   AS i  ON i.region_id = r.region_id AND i.year = hp.year
-WHERE
-  hp.year = 2021
-  AND p.type = 'Condo'
-GROUP BY
-  r.region_id,
-  r.name
-ORDER BY
-  years_to_goal
-LIMIT 10;
