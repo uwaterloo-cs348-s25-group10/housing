@@ -19,7 +19,7 @@ from fastapi.responses import JSONResponse
 import os
 import pandas as pd
 
-app = FastAPI(debug=True)
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
