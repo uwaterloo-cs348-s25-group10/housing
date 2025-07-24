@@ -5,6 +5,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        REACT_APP_MAPBOX_TOKEN: ${REACT_APP_MAPBOX_TOKEN}
     ports:
       - "3000:3000"
     volumes:
