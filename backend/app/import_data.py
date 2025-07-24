@@ -1,4 +1,5 @@
 import pandas as pd
+from sqlalchemy import text
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 from app.db.db_prod import SessionLocal, engine
@@ -15,6 +16,46 @@ import random
 
 def full_reset():
     Base.metadata.drop_all(bind=engine)
+
+def add_data_constraints(db: Session):
+    """Adds tuple-based data integrity constraints to housing_price and income_data tables."""
+
+    print("Adding data integrity constraints...")
+
+    constraints = [
+        # HousingPrice constraints
+        """
+        ALTER TABLE housing_price
+        ADD CONSTRAINT chk_price_positive CHECK (avg_price > 0)
+        """,
+        """
+        ALTER TABLE housing_price
+        ADD CONSTRAINT chk_year_range CHECK (year BETWEEN 1900 AND 2100)
+        """,
+
+        # IncomeData constraints
+        """
+        ALTER TABLE income_data
+        ADD CONSTRAINT chk_income_min CHECK (avg_income >= 5000)
+        """,
+        """
+        ALTER TABLE income_data
+        ADD CONSTRAINT chk_income_year_range CHECK (year BETWEEN 1900 AND 2100)
+        """,
+    ]
+
+    for sql in constraints:
+        try:
+            db.execute(text(sql))
+            print(f"Executed: {sql.strip().splitlines()[0]}")
+        except Exception as e:
+            if "already exists" in str(e):
+                print(f"Constraint already exists, skipping.")
+            else:
+                print(f"Failed to execute constraint:\n{sql}\nError: {e}")
+
+    db.commit()
+    print("All constraints added.")
 
 def load_csv_data(random_year: bool = False):
     Base.metadata.create_all(bind=engine)
@@ -200,6 +241,7 @@ def load_csv_data(random_year: bool = False):
 
         print("Income Inserted")
         print("CSV Sync done")
+        add_data_constraints(db)
 
     except Exception as e:
         print(f"Error: {e}")

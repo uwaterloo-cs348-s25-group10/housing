@@ -17,6 +17,9 @@ const Home = () => {
           and find affordable regions tailored to you.
         </p>
         <button className="explore-button">Start Exploring</button>
+        <a href="/data-gaps" style={{ textDecoration: "none" }}>
+          <button className="explore-button" style={{ marginLeft: "1rem" }}>Find Data Gaps</button>
+        </a>
       </div>
 
       <div className="home-image">
