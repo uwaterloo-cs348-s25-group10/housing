@@ -128,13 +128,47 @@ def load_csv_data(random_year: bool = False):
                         db.rollback()
         print("Housing Inserted")
 
-        print("IncomeData...")
-        income_df = pd.read_csv('/app/dataset/IncomeData.csv')
-
-        income_data = []
+        print("IncomeData2...")
+        income_df = pd.read_csv('/app/dataset/IncomeData2.csv')
+        income_data1 = []
         region_mapping = {(str(r.name), str(r.province)): r.region_id for r in regions}
         seen_keys = set()
+        lastIdx = 0
         for idx, row in income_df.iterrows():
+            region_key = (str(row['region_name']), str(row['province']))
+            region_id = region_mapping.get(region_key)
+
+            if region_id and pd.notna(row['avg_income']):
+                year = int(row['year'])
+                key = (region_id, year)
+
+                if key in seen_keys:
+                    continue
+                seen_keys.add(key)
+                
+                income_data1.append(IncomeData(
+                    income_id=idx+1,
+                    region_id = region_id,
+                    year=year,
+                    avg_income=float(row['avg_income'])
+                ))
+                lastIdx = idx + 1
+            else:
+                if not region_id:
+                    print(f"Region not found: {region_key}")       
+                else:
+                    print("Something Happened")
+        
+        db.add_all(income_data1)
+        db.commit()
+        print("IncomeData2 Inserted")
+
+        print("IncomeData1...")
+        income_df2 = pd.read_csv('/app/dataset/IncomeData1.csv')
+        income_data2 = []
+        region_mapping = {(str(r.name), str(r.province)): r.region_id for r in regions}
+        # seen_keys = set()
+        for idx, row in income_df2.iterrows():
             region_key = (str(row['region_name']), str(row['province']))
             region_id = region_mapping.get(region_key)
 
@@ -146,20 +180,24 @@ def load_csv_data(random_year: bool = False):
                     continue
                 seen_keys.add(key)
                 
-                income_data.append(IncomeData(
-                    income_id=idx+1,
+                income_data2.append(IncomeData(
+                    income_id=lastIdx+1,
                     region_id = region_id,
                     year=year,
                     avg_income=float(row['avg_income'])
                 ))
+                lastIdx += 1 
             else:
                 if not region_id:
                     print(f"Region not found: {region_key}")       
                 else:
                     print("Something Happened")
 
-        db.add_all(income_data)
+        db.add_all(income_data2)
         db.commit()
+        print("IncomeData1 Inserted")
+
+
         print("Income Inserted")
         print("CSV Sync done")
 
@@ -208,5 +246,5 @@ def verify_data(sample_size: int = 5, random: bool = True):
 
 if __name__ == "__main__":
     full_reset()
-    load_csv_data(random_year=True)
+    load_csv_data(random_year=False)
     verify_data()
