@@ -15,7 +15,7 @@
 | **Feature 2** | Personalized affordability quiz (“Where Can I Live?”) | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [frontend/src/pages/WhereCanLivePage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/WhereCanLivePage.js)<br><sub>*Currently uses dummy data; API integrated and tested*</sub> |
 | **Feature 3** | Reverse price lookup | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [`frontend/src/pages/ReverseLookupPage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/ReverseLookupPage.js) |
 | **Feature 4** | Affordability index ranking by region | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py) | [`frontend/src/pages/AffordabilityRankingPage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/AffordabilityRankingPage.js) |
-| **Feature 5** | Data gap finder | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py)| *Not implemented in frontend yet* |
+| **Feature 5** | Data gap finder | [`app/main.py`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/backend/app/main.py)| [`frontend/src/pages/DataGapsPage.js`](https://github.com/uwaterloo-cs348-s25-group10/housing/blob/main/frontend/src/pages/DataGapsPage.js) |
 
 
 ## 🔧 Tech Stack
