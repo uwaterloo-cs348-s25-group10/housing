@@ -15,6 +15,7 @@ const Navbar = () => {
         <Link to="/reverse-lookup">Reverse Lookup</Link>
         <Link to="/ranking">Affordability Ranking</Link>
         <Link to="/heatmap">Heatmap</Link>
+        <Link to="/simulator">Down Payment Simulator</Link>
       </nav>
 
       <Link to="/quiz">
