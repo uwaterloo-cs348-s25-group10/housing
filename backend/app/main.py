@@ -19,7 +19,7 @@ from fastapi.responses import JSONResponse
 import os
 import pandas as pd
 
-app = FastAPI()
+app = FastAPI(debug=True)
 
 app.add_middleware(
     CORSMiddleware,
@@ -511,72 +511,51 @@ async def show_data(size: int = 5, random: bool = True):
 
 @app.get("/downpayment-simulator/")
 def downpayment_simulator(
-    year: int,
-    property_type: str,
-    down_pct: float = Query(..., ge=0, le=1),
-    save_pct: float = Query(..., ge=0, le=1),
-    max_years: int = Query(20, ge=1),
-    db: Session = Depends(get_db),
+    year: int                = Query(..., ge=1900),
+    property_type: str       = Query(...),
+    down_pct: float          = Query(..., ge=0, le=1),
+    save_pct: float          = Query(..., ge=0, le=1),
+    db: Session              = Depends(get_db),
 ):
-    sql = text("""
-    WITH config AS (
-      SELECT
-        :down_pct::numeric AS down_pct,
-        :save_pct::numeric AS save_pct
-    ),
-    params AS (
-      SELECT
-        r.region_id,
-        ROUND(AVG(hp.avg_price) * config.down_pct, 2)   AS down_payment,
-        ROUND(i.avg_income  * config.save_pct, 2)        AS annual_savings
-      FROM region       AS r
-      JOIN property     AS p  ON p.region_id    = r.region_id
-      JOIN housing_price AS hp ON hp.property_id = p.property_id
-      JOIN income_data   AS i  ON i.region_id     = r.region_id
-                            AND i.year          = hp.year
-      CROSS JOIN config
-      WHERE
-        hp.year    = :year
-        AND p.type  = :ptype
-      GROUP BY
-        r.region_id,
-        i.avg_income,
-        config.down_pct,
-        config.save_pct
-    ),
-    sim AS (
-      SELECT
-        p.region_id,
-        p.down_payment,
-        p.annual_savings,
-        gs.year,
-        SUM(p.annual_savings)
-          OVER (PARTITION BY p.region_id ORDER BY gs.year) AS cumulative_saved
-      FROM params AS p
-      JOIN LATERAL generate_series(1, :max_years) AS gs(year) ON TRUE
+    q = (
+        db.query(
+            Region.region_id,
+            Region.name.label("region"),
+            func.round(
+                cast(func.avg(HousingPrice.avg_price) * down_pct, Numeric),
+                2
+            ).label("down_payment"),
+            func.round(
+                cast(func.avg(IncomeData.avg_income) * save_pct, Numeric),
+                2
+            ).label("annual_savings"),
+            func.ceil(
+                (func.avg(HousingPrice.avg_price) * down_pct)
+                / (func.avg(IncomeData.avg_income) * save_pct)
+            ).label("years_to_goal"),
+        )
+        .join(Property,     Property.region_id    == Region.region_id)
+        .join(HousingPrice, HousingPrice.property_id == Property.property_id)
+        .join(
+            IncomeData,
+            (IncomeData.region_id == Region.region_id) &
+            (IncomeData.year      == HousingPrice.year)
+        )
+        .filter(
+            HousingPrice.year  == year,
+            Property.type      == property_type,
+        )
+        .group_by(Region.region_id, Region.name)
+        .order_by(text("years_to_goal ASC"))
     )
-    SELECT
-      region_id,
-      down_payment,
-      annual_savings,
-      MIN(year) FILTER (WHERE cumulative_saved >= down_payment) AS years_to_goal
-    FROM sim
-    GROUP BY region_id, down_payment, annual_savings
-    ORDER BY years_to_goal;
-    """)
 
-    # bind parameters by name
-    result = db.execute(
-        sql,
+    return [
         {
-            "down_pct":     down_pct,
-            "save_pct":     save_pct,
-            "year":         year,
-            "ptype":        property_type,
-            "max_years":    max_years,
-        },
-    )
-
-    records = result.mappings().all()
-
-    return records
+            "region_id":      rid,
+            "region":         region,
+            "down_payment":   float(dp),
+            "annual_savings": float(sav),
+            "years_to_goal":  int(yrs),
+        }
+        for rid, region, dp, sav, yrs in q.all()
+    ]
