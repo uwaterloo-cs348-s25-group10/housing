@@ -36,7 +36,7 @@ def add_data_constraints(db: Session):
         # IncomeData constraints
         """
         ALTER TABLE income_data
-        ADD CONSTRAINT chk_income_min CHECK (avg_income >= 5000)
+        ADD CONSTRAINT chk_income_min CHECK (avg_income >= 3000)
         """,
         """
         ALTER TABLE income_data
@@ -250,6 +250,43 @@ def load_csv_data(random_year: bool = False):
     finally:
         db.close()
 
+def create_temp_tables():
+        db = SessionLocal()
+        df = pd.read_csv('/app/dataset/original_dataset/cleaned_canada.csv')
+
+        db.execute(text("DROP TABLE IF EXISTS CsvPoints"))
+        db.execute(text("""
+            CREATE TABLE CsvPoints (
+                city TEXT,
+                province TEXT,
+                latitude DOUBLE PRECISION,
+                longitude DOUBLE PRECISION,
+                price DOUBLE PRECISION
+            );
+        """))
+
+        for idx, row in df.iterrows():
+            try:
+                lat = float(row["Latitude"])
+                lon = float(row["Longitude"])
+                price = float(row["Price"])
+                city = row["City"]
+                province = row["Province"]
+
+                db.execute(text("""
+                        INSERT INTO CsvPoints (city, province, latitude, longitude, price)
+                        VALUES (:city, :province, :lat, :lon, :price);
+                """), {
+                    "city": city,
+                    "province": province,
+                    "lat": lat,
+                    "lon": lon,
+                    "price": price,
+                })
+            except Exception as row_err:
+                print(f"Skipping row due to error at {idx}: {row_err}")
+        db.commit()
+
 def verify_data(sample_size: int = 5, random: bool = True):
     db = SessionLocal()
     try:
@@ -289,4 +326,5 @@ def verify_data(sample_size: int = 5, random: bool = True):
 if __name__ == "__main__":
     full_reset()
     load_csv_data(random_year=True)
+    create_temp_tables()
     verify_data()

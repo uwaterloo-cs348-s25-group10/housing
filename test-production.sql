@@ -1,3 +1,7 @@
+-- EXTENSION
+CREATE EXTENSION postgis;
+CREATE EXTENSION pg_cron;
+
 -- INDEXING
 CREATE INDEX IF NOT EXISTS idx_region_province_name ON region(province, name);
 
@@ -209,3 +213,23 @@ BEGIN
 END $$;
 
 SELECT * FROM IncomeGrowthResult ORDER BY max_consecutive_growth DESC;
+
+-- Advanced Feature 2: Heatmap
+\echo 'Advanced Feature 2: Heatmap'
+WITH pts AS (
+  SELECT 
+    ST_Transform(ST_SetSRID(ST_MakePoint(longitude, latitude), 4326), 3857) AS geom_3857
+  FROM CsvPoints
+),
+clusters AS (
+  SELECT 
+    ST_ClusterKMeans(geom_3857, 10) OVER () AS cid, 
+    geom_3857
+  FROM pts
+)
+SELECT 
+  cid,
+  ST_AsText(ST_Centroid(ST_Collect(geom_3857))) AS center,
+  COUNT(*) AS count
+FROM clusters
+GROUP BY cid;
