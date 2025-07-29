@@ -637,7 +637,6 @@ def income_growth(
                         max_growth INT;
                         minimum_y INT := :years;
                     BEGIN
-
                         FOR reg IN
                             SELECT DISTINCT r.region_id, r.name
                             FROM Region r

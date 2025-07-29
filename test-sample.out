@@ -1,11 +1,11 @@
-FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region
+== FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region ==
  region  | province | year | property_type | avg_price 
 ---------+----------+------+---------------+-----------
  Ottawa  | ON       | 2020 | Condo         |    500000
  Toronto | ON       | 2020 | Condo         |    625000
 (2 rows)
 
-FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020
+== FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 ==
  region  | province | year | avg_income 
 ---------+----------+------+------------
  Ottawa  | ON       | 2020 |     105000
@@ -37,9 +37,18 @@ FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos
          3 | Toronto   |     19.20
 (5 rows)
 
-FEATURE 5: Regions that contain housing data but not income data for condos in 2019
- region_id |  region
+FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos
+ region_id |  region   
 -----------+-----------
-         1 | Vancouver
          2 | Calgary
+         1 | Vancouver
 (2 rows)
+
+Advanced Feature 1: Find region that has minimum x consecutive Income Growth (by default, x = 3) 
+CREATE TABLE
+DO
+ region_id | region_name | max_consecutive_growth 
+-----------+-------------+------------------------
+         5 | Montreal    |                      3
+(1 row)
+

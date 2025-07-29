@@ -208,4 +208,4 @@ BEGIN
  END LOOP;
 END $$;
 
-SELECT * FROM IncomeGrowthResult;
+SELECT * FROM IncomeGrowthResult ORDER BY max_consecutive_growth DESC;

@@ -8,131 +8,192 @@ CREATE INDEX
 CREATE INDEX
 CREATE INDEX
 == FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region (Limit 10)==
-      region      | province | year | property_type | avg_price 
-------------------+----------+------+---------------+-----------
- Ancaster         | ON       | 2020 | Condo         |   1999990
- Brampton         | ON       | 2020 | Condo         |    845000
- Dundas           | ON       | 2020 | Condo         |   1849900
- Innisfil         | ON       | 2020 | Condo         |    230000
- Lakeshore        | ON       | 2020 | Condo         |    799900
- Mississauga      | ON       | 2020 | Condo         |    659900
- Oakville         | ON       | 2020 | Condo         |    531000
- Oro-Medonte      | ON       | 2020 | Condo         |    799000
- Sault Ste Marie  | ON       | 2020 | Condo         |   2999000
- Sault Ste. Marie | ON       | 2020 | Condo         |    479900
+   region    | province | year | property_type | avg_price 
+-------------+----------+------+---------------+-----------
+ Ancaster    | ON       | 2020 | Condo         |    829900
+ Aurora      | ON       | 2020 | Condo         |    639000
+ Ayr         | ON       | 2020 | Condo         |    449900
+ Beamsville  | ON       | 2020 | Condo         |    749900
+ Brampton    | ON       | 2020 | Condo         |    799000
+ Collingwood | ON       | 2020 | Condo         |   1399000
+ Dundas      | ON       | 2020 | Condo         |   1395000
+ Elora       | ON       | 2020 | Condo         |    989000
+ Innisfil    | ON       | 2020 | Condo         |    924990
+ Kenora      | ON       | 2020 | Condo         |    299900
 (10 rows)
 
 == FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 (Limit 10) ==
-     region      | province | year | avg_income 
------------------+----------+------+------------
- Collingwood     | ON       | 2020 |      82000
- Elliot Lake     | ON       | 2020 |      50000
- Greater Sudbury | ON       | 2020 |      84000
- Hamilton        | ON       | 2020 |      82000
- Orillia         | ON       | 2020 |      60400
- Oshawa          | ON       | 2020 |     102000
- Wasaga Beach    | ON       | 2020 |      76000
-(7 rows)
+      region       | province | year | avg_income 
+-------------------+----------+------+------------
+ Barrie            | ON       | 2020 |      48910
+ Brantford         | ON       | 2020 |      35440
+ Centre Wellington | ON       | 2020 |       7660
+ Collingwood       | ON       | 2020 |       5730
+ Cornwall          | ON       | 2020 |      15650
+ Elliot Lake       | ON       | 2020 |       2730
+ Greater Sudbury   | ON       | 2020 |      38790
+ Guelph            | ON       | 2020 |      39860
+ Hamilton          | ON       | 2020 |     181390
+ Kawartha Lakes    | ON       | 2020 |      17560
+(10 rows)
 
 FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos (Limit 10)
         region        | user_hai 
 ----------------------+----------
- Athabasca            |   134.26
+ Osoyoos              |   264.12
+ Meadow Lake          |   243.70
+ Indian Head          |   161.29
+ Miramichi            |   161.29
+ Rocky Mountain House |   145.15
+ Esterhazy            |   122.36
  St.John's            |   120.83
  Emma Lake            |   102.18
- Quesnel              |    98.71
- Stony Plain          |    85.29
- Saint John           |    77.17
- Meadow Lake          |    66.21
- Rocky Mountain House |    65.94
- Innisfil             |    63.04
- Miramichi            |    58.02
+ Rosetown             |    87.88
+ Bathurst             |    85.34
 (10 rows)
 
 FEATURE 3: Reverse Lookup – Where Did This Price Exist? (±$25,000 around 600000) (Limit 10)
-    region     | property_type | year | avg_price 
----------------+---------------+------+-----------
- Sorrento      | Single Family | 2003 |    609000
- Powell River  | Condo         | 2018 |    599900
- Cherryville   | Single Family | 2022 |    599900
- Barriere      | Single Family | 2007 |    595000
- Barriere      | Single Family | 2015 |    580000
- Big White     | Condo         | 2004 |    599900
- Merritt       | Single Family | 2010 |    599000
- Merritt       | Single Family | 2018 |    579000
- Salmon Arm    | Single Family | 2017 |    599000
- Prince George | MultiFamily   | 2001 |    599900
+    region    | property_type | year | avg_price 
+--------------+---------------+------+-----------
+ Sorrento     | Single Family | 2020 |    609000
+ Powell River | Condo         | 2024 |    599900
+ Cherryville  | Single Family | 2023 |    599900
+ Barriere     | Single Family | 2020 |    595000
+ Barriere     | Single Family | 2025 |    580000
+ Big White    | Condo         | 2020 |    599900
+ Merritt      | Single Family | 2021 |    579000
+ Chase        | Single Family | 2022 |    615000
+ Chase        | Single Family | 2025 |    598000
+ Halfmoon Bay | Single Family | 2022 |    599000
 (10 rows)
 
 FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos (Limit 10)
- region_id |     name     | hai_index 
------------+--------------+-----------
-      1081 | Saint John   |     36.72
-      1041 | Wasaga Beach |      3.66
-(2 rows)
+ region_id |    name     | hai_index 
+-----------+-------------+-----------
+      3052 | Oshawa      |     13.01
+      1081 | Saint John  |     10.54
+      1025 | Thunder Bay |      8.52
+      1245 | Miramichi   |      7.35
+      1127 | Bathurst    |      4.84
+(5 rows)
 
 FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos
- region_id |         region          
------------+-------------------------
-      1448 | Orleans
-      1431 | West Royalty
-      3052 | Oshawa
-      1282 | Bouctouche
-      1127 | Bathurst
-      3050 | Oakville
-      1021 | Sault Ste. Marie
-        33 | Quesnel
-      1280 | Hampton
-      2331 | ST. JOHN'S
-      3093 | Dundas
-      2427 | St. Johns
-      3072 | Ancaster
-      1168 | Bridgewater
-       207 | Strathmore
-      3155 | Puslinch
-      2292 | Paradise
-      1159 | Fredericton
-       311 | Crossfield
-      2308 | Port Severn
-      1025 | Thunder Bay
-       575 | Emma Lake
-      1066 | Stratford
-        94 | Cochrane
-       203 | Lacombe
-       573 | Candle Lake
-       388 | Osoyoos
-       218 | Hinton
-      3080 | Mississauga
-      2955 | High Level
-       264 | No City Value
-      1090 | Shediac
-        42 | Summerland
-       538 | La Ronge
-      2299 | St.John's
-       408 | Chemainus
-       137 | St. Albert
-      2365 | Penetanguishene
-       177 | Meadow Lake
-      1245 | Miramichi
-      1027 | Creston
-        77 | Rural Rocky View County
-      2286 | St John's
-      1111 | Hammonds Plains
-      1020 | Brampton
-      1104 | Dartmouth
-       651 | Carlyle
-       134 | Chestermere
-       526 | Esterhazy
-        36 | Lake Country
-       202 | Warman
-       476 | Steinbach
-      1081 | Saint John
-(53 rows)
+ region_id | region 
+-----------+--------
+(0 rows)
+
+FEATURE 5- Advanced: Down Payment Simulator (15% down, 25% save, 2015 condos)
+ region_id | region | down_payment | annual_savings | years_to_goal 
+-----------+--------+--------------+----------------+---------------
+(0 rows)
 
 Advanced Feature 1: Find region that has minimum x consecutive Income Growth (by default, x = 3) 
 CREATE TABLE
 DO
- region_id | region_name | max_consecutive_growth 
------------+-------------+------------------------
-(0 rows)
+ region_id |     region_name     | max_consecutive_growth 
+-----------+---------------------+------------------------
+      2483 | Kawartha Lakes      |                      3
+      1478 | Grand Falls-Windsor |                      3
+       835 | Thompson            |                      3
+      1160 | Corner Brook        |                      3
+      1026 | Elliot Lake         |                      3
+       481 | Kenora              |                      3
+        35 | Fort St. John       |                      4
+      1096 | Edmundston          |                      4
+      1614 | Cornwall            |                      4
+      1127 | Bathurst            |                      4
+      1128 | Truro               |                      4
+       393 | Ladysmith           |                      4
+      1047 | Midland             |                      4
+      2487 | Essa                |                      4
+      1245 | Miramichi           |                      4
+       399 | Trail               |                      4
+      1025 | Thunder Bay         |                      4
+       119 | North Battleford    |                      4
+       178 | High River          |                      4
+       101 | Brooks              |                      4
+      2337 | Peterborough        |                      4
+       144 | Sylvan Lake         |                      4
+      3111 | Sarnia              |                      4
+       145 | Cold Lake           |                      4
+        20 | Grande Prairie      |                      4
+       207 | Strathmore          |                      4
+        64 | Williams Lake       |                      5
+      1191 | New Glasgow         |                      5
+      3081 | Leamington          |                      5
+       471 | Weyburn             |                      5
+        33 | Quesnel             |                      5
+      2400 | Owen Sound          |                      5
+        82 | Dawson Creek        |                      5
+      1081 | Saint John          |                      5
+      1075 | Summerside          |                      5
+      1021 | Sault Ste. Marie    |                      5
+      1074 | Charlottetown       |                      5
+      1536 | Pembroke            |                      6
+       230 | Swift Current       |                      6
+       203 | Lacombe             |                      6
+       444 | Yorkton             |                      6
+       386 | Prince Rupert       |                      6
+      1108 | Kentville           |                      6
+        17 | Medicine Hat        |                      6
+      2312 | Gander              |                      6
+        34 | Powell River        |                      6
+        93 | Port Alberni        |                      6
+       476 | Steinbach           |                      7
+      2949 | Yellowknife         |                      7
+        13 | Red Deer            |                      7
+       445 | Estevan             |                      7
+        71 | Courtenay           |                      7
+      3018 | North Bay           |                      7
+        51 | Penticton           |                      7
+      1028 | Orillia             |                      7
+         7 | Camrose             |                      7
+        44 | Salmon Arm          |                      7
+        55 | Nelson              |                      7
+      1041 | Wasaga Beach        |                      7
+       105 | Parksville          |                      7
+      1060 | Greater Sudbury     |                      7
+      2302 | Bay Roberts         |                      7
+        16 | Okotoks             |                      8
+      1036 | Collingwood         |                      8
+      3057 | Windsor             |                      8
+       396 | Terrace             |                      9
+        79 | Cranbrook           |                      9
+        99 | Prince Albert       |                      9
+      3108 | Woodstock           |                      9
+      2953 | Whitehorse          |                      9
+        91 | Chilliwack          |                      9
+      3077 | Tillsonburg         |                      9
+       439 | Moose Jaw           |                      9
+      1029 | Centre Wellington   |                      9
+        14 | Lethbridge          |                     10
+      1017 | Barrie              |                     10
+        41 | Prince George       |                     10
+        84 | Squamish            |                     13
+       480 | Brandon             |                     13
+        11 | Campbell River      |                     13
+      2053 | Kingston            |                     13
+        48 | Vernon              |                     13
+      3055 | London              |                     14
+        45 | Kamloops            |                     15
+      3090 | Brantford           |                     15
+      2287 | St. John's          |                     16
+      1159 | Fredericton         |                     17
+        59 | Canmore             |                     17
+        22 | Nanaimo             |                     17
+       440 | Regina              |                     18
+      1085 | Moncton             |                     18
+      3084 | Guelph              |                     18
+      3051 | Hamilton            |                     19
+         4 | Kelowna             |                     20
+      3052 | Oshawa              |                     22
+       419 | Victoria            |                     22
+       465 | Winnipeg            |                     24
+      1088 | Halifax             |                     24
+        15 | Vancouver           |                     24
+      3066 | Toronto             |                     24
+         6 | Calgary             |                     24
+        78 | Edmonton            |                     24
+        10 | Saskatoon           |                     25
+(103 rows)
 
