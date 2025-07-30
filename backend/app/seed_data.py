@@ -27,11 +27,11 @@ def seed():
 
         # Properties
         properties = [
-            Property(property_id=1, region_id=1, type="Condo", subtype="High-rise"),
-            Property(property_id=2, region_id=2, type="Condo", subtype="Low-rise"),
-            Property(property_id=3, region_id=3, type="Condo", subtype="Low-rise"),
-            Property(property_id=4, region_id=4, type="Condo", subtype="High-rise"),
-            Property(property_id=5, region_id=5, type="Condo", subtype="Low-rise"),
+            Property(property_id=1, region_id=1, type="Condo"),
+            Property(property_id=2, region_id=2, type="Condo"),
+            Property(property_id=3, region_id=3, type="Condo"),
+            Property(property_id=4, region_id=4, type="Condo"),
+            Property(property_id=5, region_id=5, type="Condo"),
         ]
         db.add_all(properties)
         db.commit()

@@ -84,7 +84,7 @@ def load_csv_data(random_year: bool = False):
         region_mapping = {(str(r.name), str(r.province)): r.region_id for r in regions}
         property_df = pd.read_csv('/app/dataset/Property.csv')
 
-        property_df = property_df.drop_duplicates(subset=['region_name', 'province', 'type', 'subtype'])
+        property_df = property_df.drop_duplicates(subset=['region_name', 'province', 'type'])
 
         properties = []
         property_mapping = {}
@@ -96,14 +96,12 @@ def load_csv_data(random_year: bool = False):
 
                 if region_id:
                     property_id = idx + 1
-                    subtype = str(row['subtype']) if pd.notna(row['subtype']) else ''
-                    prop_key = (str(row['region_name']), str(row['province']), str(row['type']), subtype)
+                    prop_key = (str(row['region_name']), str(row['province']), str(row['type']))
                     property_mapping[prop_key] = property_id
                     properties.append(Property(
                         property_id=property_id,
                         region_id=region_id, 
                         type = str(row['type']),
-                        subtype=subtype
                     ))
                 else:
                     print(f"No region for: {region_key}")
@@ -302,9 +300,9 @@ def verify_data(sample_size: int = 5, random: bool = True):
             print(f"{r.region_id:<5} {r.name:<20} {r.province:<15}")
 
         print("\nProperty Sample:")
-        print(f"{'ID':<5} {'Type':<15} {'Subtype':<15} {'RegionID':<10}")
+        print(f"{'ID':<5} {'Type':<15} {'RegionID':<10}")
         for p in db.query(Property).order_by(func.random() if random else "property_id").limit(sample_size):
-            print(f"{p.property_id:<5} {p.type:<15} {p.subtype:<15} {p.region_id:<10}")
+            print(f"{p.property_id:<5} {p.type:<15} {p.region_id:<10}")
 
         print("\nHousingPrice Sample:")
         print(f"{'ID':<5} {'PropertyID':<12} {'Year':<6} {'AvgPrice':<10}")

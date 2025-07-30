@@ -1,13 +1,13 @@
 '''
 Aurthor: Minjae Lee
 
-Property(property_id Int, region_id Int, type String, subtype String)
+Property(property_id Int, region_id Int, type String)
 '''
 
 from sqlalchemy import Column, Integer, String, Float, ForeignKey
 from app.db.base import Base
 
-# Property(property_id, region_id, type, subtype) (Minjae Lee)
+# Property(property_id, region_id, type) (Minjae Lee)
 
 
 class Property(Base):
@@ -16,4 +16,3 @@ class Property(Base):
     property_id = Column(Integer, primary_key=True, index=True)
     region_id = Column(Integer, ForeignKey("region.region_id"))
     type = Column(String)
-    subtype = Column(String)
