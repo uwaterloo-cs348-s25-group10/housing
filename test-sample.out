@@ -52,3 +52,13 @@ DO
          5 | Montreal    |                      3
 (1 row)
 
+FEATURE 5- Advanced: Down Payment Simulator (15% down, 25% save, 2020 condos)
+ region_id |  region   | down_payment | annual_savings | years_to_goal 
+-----------+-----------+--------------+----------------+---------------
+         1 | Vancouver |     82500.00 |       30000.00 |             3
+         2 | Calgary   |     71250.00 |       23750.00 |             3
+         4 | Ottawa    |     75000.00 |       26250.00 |             3
+         5 | Montreal  |     78750.00 |       28750.00 |             3
+         3 | Toronto   |     93750.00 |       30000.00 |             4
+(5 rows)
+

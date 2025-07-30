@@ -166,3 +166,27 @@ BEGIN
 END $$;
 
 SELECT * FROM IncomeGrowthResult;
+
+-- FEATURE 5 - Advanced: Down Payment Simulator
+\echo 'FEATURE 5- Advanced: Down Payment Simulator (15% down, 25% save, 2020 condos)'
+SELECT
+  r.region_id,
+  r.name AS region,
+  ROUND(
+    CAST(AVG(hp.avg_price) * 0.15 AS numeric), 2) AS down_payment,
+  ROUND(CAST(AVG(i.avg_income) * 0.25 AS numeric), 2) AS annual_savings,
+  CEIL((AVG(hp.avg_price) * 0.15) / (AVG(i.avg_income) * 0.25)) AS years_to_goal
+FROM region AS r
+JOIN property AS p ON p.region_id = r.region_id
+JOIN housing_price AS hp ON hp.property_id = p.property_id
+JOIN income_data AS i ON i.region_id = r.region_id
+AND i.year = hp.year
+WHERE
+  hp.year = 2020
+  AND p.type = 'Condo'
+GROUP BY
+  r.region_id,
+  r.name
+ORDER BY
+  years_to_goal ASC
+LIMIT 10;
