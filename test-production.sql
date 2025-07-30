@@ -218,18 +218,35 @@ SELECT * FROM IncomeGrowthResult ORDER BY max_consecutive_growth DESC;
 \echo 'Advanced Feature 2: Heatmap'
 WITH pts AS (
   SELECT 
-    ST_Transform(ST_SetSRID(ST_MakePoint(longitude, latitude), 4326), 3857) AS geom_3857
+    ST_Transform(
+      ST_SetSRID(
+        ST_MakePoint(longitude, latitude),
+      4326),
+    3857)      AS geom_3857,
+    price
   FROM CsvPoints
 ),
 clusters AS (
   SELECT 
     ST_ClusterKMeans(geom_3857, 10) OVER () AS cid, 
-    geom_3857
+    geom_3857,
+    price
   FROM pts
 )
 SELECT 
   cid,
   ST_AsText(ST_Centroid(ST_Collect(geom_3857))) AS center,
-  COUNT(*) AS count
+  COUNT(*)                                  AS count,
+  ROUND(AVG(price)::NUMERIC, 2)             AS avg_price
 FROM clusters
 GROUP BY cid;
+
+-- Advanced Feature 3: Data Integrity Constraints
+SELECT
+  constraint_type,
+  table_name,
+  constraint_name
+FROM information_schema.table_constraints
+WHERE table_name IN ('region', 'property', 'housing_price', 'income_data')
+  AND constraint_type IN ('PRIMARY KEY','FOREIGN KEY','UNIQUE','CHECK')
+ORDER BY table_name, constraint_type;
