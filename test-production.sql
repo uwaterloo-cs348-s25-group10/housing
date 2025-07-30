@@ -251,3 +251,19 @@ GROUP BY
 ORDER BY
   years_to_goal ASC
 LIMIT 10;
+
+-- Advanced Feature 4a: Invoke refresh_monthly_hai()
+\echo 'Advanced Feature 4a: Invoke refresh_monthly_hai()'
+SELECT refresh_monthly_hai();
+
+-- Advanced Feature 4b: Monthly HAI Summary (post‑refresh)
+\echo 'Advanced Feature 4b: Monthly HAI Summary'
+SELECT
+  summary_month,
+  region_id,
+  hai,
+  rank_type
+FROM monthly_hai_summary
+WHERE summary_month = date_trunc('month', CURRENT_DATE)::date
+ORDER BY hai DESC
+LIMIT 10;
