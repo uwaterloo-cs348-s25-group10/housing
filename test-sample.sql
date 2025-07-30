@@ -95,3 +95,98 @@ SELECT R.region_id, R.name
 FROM income_data I
 JOIN region R ON I.region_id = R.region_id
 WHERE I.year = 2019;
+
+-- Advanced Feature 1: Find region that has at least x consecutive Income Growth
+\echo 'Advanced Feature 1: Find region that has minimum x consecutive Income Growth (by default, x = 3) '
+CREATE TEMP TABLE IncomeGrowthResult (
+ region_id INT,
+ region_name TEXT,
+ max_consecutive_growth INT
+);
+
+DO $$
+DECLARE
+ reg RECORD;
+ irow RECORD;
+ prev_income FLOAT;
+ prev_year INT;
+ curr_growth INT;
+ max_growth INT;
+ target_n INT := 3;
+BEGIN
+ DELETE FROM IncomeGrowthResult;
+
+
+ FOR reg IN
+   SELECT DISTINCT r.region_id, r.name
+   FROM Region r
+   JOIN income_data i ON r.region_id = i.region_id
+ LOOP
+   prev_income := NULL;
+   prev_year := NULL;
+   curr_growth := 0;
+   max_growth := 0;
+
+
+   FOR irow IN
+     SELECT year, avg_income
+     FROM income_data
+     WHERE region_id = reg.region_id
+     ORDER BY year
+   LOOP
+     IF prev_income IS NULL THEN
+       prev_income := irow.avg_income;
+       prev_year := irow.year;
+     ELSE
+       IF irow.year > prev_year AND irow.avg_income > prev_income THEN
+         curr_growth := curr_growth + 1;
+       ELSE
+         curr_growth := 0;
+       END IF;
+
+
+       IF curr_growth > max_growth THEN
+         max_growth := curr_growth;
+       END IF;
+
+
+       prev_income := irow.avg_income;
+       prev_year := irow.year;
+     END IF;
+   END LOOP;
+
+
+   IF max_growth + 1 >= target_n THEN
+     INSERT INTO IncomeGrowthResult(region_id, region_name, max_consecutive_growth)
+     VALUES (reg.region_id, reg.name, max_growth + 1);
+   END IF;
+
+
+ END LOOP;
+END $$;
+
+SELECT * FROM IncomeGrowthResult;
+
+-- Advanced Feature 5: Down Payment Simulator
+\echo 'Advanced Feature 5: Down Payment Simulator (15% down, 25% save, 2020 condos)'
+SELECT
+  r.region_id,
+  r.name AS region,
+  ROUND(
+    CAST(AVG(hp.avg_price) * 0.15 AS numeric), 2) AS down_payment,
+  ROUND(CAST(AVG(i.avg_income) * 0.25 AS numeric), 2) AS annual_savings,
+  CEIL((AVG(hp.avg_price) * 0.15) / (AVG(i.avg_income) * 0.25)) AS years_to_goal
+FROM region AS r
+JOIN property AS p ON p.region_id = r.region_id
+JOIN housing_price AS hp ON hp.property_id = p.property_id
+JOIN income_data AS i ON i.region_id = r.region_id
+AND i.year = hp.year
+WHERE
+  hp.year = 2020
+  AND p.type = 'Condo'
+GROUP BY
+  r.region_id,
+  r.name
+ORDER BY
+  years_to_goal ASC
+LIMIT 10;

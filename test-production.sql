@@ -1,3 +1,7 @@
+-- EXTENSION
+CREATE EXTENSION postgis;
+CREATE EXTENSION pg_cron;
+
 -- INDEXING
 CREATE INDEX IF NOT EXISTS idx_region_province_name ON region(province, name);
 
@@ -11,6 +15,7 @@ CREATE INDEX IF NOT EXISTS idx_housing_year_price ON housing_price(year, avg_pri
 
 CREATE INDEX IF NOT EXISTS idx_income_year ON income_data(year);
 CREATE INDEX IF NOT EXISTS idx_income_year_region ON income_data(year, region_id);
+CREATE INDEX IF NOT EXISTS idx_income_region_year_income ON income_data(region_id, year, avg_income);
 
 -- FEATURE 1a EXPLORE HOUSING PRICES
 -- This query returns the average price of Ontario (“ON”) condos in 2020, broken down by region.
@@ -115,30 +120,6 @@ WHERE I.year = 2019;
 
 -- ADVANCED FEATURES
 
--- FEATURE 5 - Advanced: Down Payment Simulator
-\echo 'FEATURE 5- Advanced: Down Payment Simulator (15% down, 25% save, 2015 condos)'
-SELECT
-  r.region_id,
-  r.name AS region,
-  ROUND(
-    CAST(AVG(hp.avg_price) * 0.15 AS numeric), 2) AS down_payment,
-  ROUND(CAST(AVG(i.avg_income) * 0.25 AS numeric), 2) AS annual_savings,
-  CEIL((AVG(hp.avg_price) * 0.15) / (AVG(i.avg_income) * 0.25)) AS years_to_goal
-FROM region AS r
-JOIN property AS p ON p.region_id = r.region_id
-JOIN housing_price AS hp ON hp.property_id = p.property_id
-JOIN income_data AS i ON i.region_id = r.region_id
-AND i.year = hp.year
-WHERE
-  hp.year = 2015
-  AND p.type = 'Condo'
-GROUP BY
-  r.region_id,
-  r.name
-ORDER BY
-  years_to_goal ASC
-LIMIT 10;
-
 -- Advanced Feature 1: Find region that has at least x consecutive Income Growth
 \echo 'Advanced Feature 1: Find region that has minimum x consecutive Income Growth (by default, x = 3) '
 CREATE TEMP TABLE IncomeGrowthResult (
@@ -208,4 +189,65 @@ BEGIN
  END LOOP;
 END $$;
 
-SELECT * FROM IncomeGrowthResult;
+SELECT * FROM IncomeGrowthResult ORDER BY max_consecutive_growth DESC;
+
+-- Advanced Feature 2: Heatmap
+\echo 'Advanced Feature 2: Heatmap'
+WITH pts AS (
+  SELECT 
+    ST_Transform(
+      ST_SetSRID(
+        ST_MakePoint(longitude, latitude),
+      4326),
+    3857)      AS geom_3857,
+    price
+  FROM CsvPoints
+),
+clusters AS (
+  SELECT 
+    ST_ClusterKMeans(geom_3857, 10) OVER () AS cid, 
+    geom_3857,
+    price
+  FROM pts
+)
+SELECT 
+  cid,
+  ST_AsText(ST_Centroid(ST_Collect(geom_3857))) AS center,
+  COUNT(*)                                  AS count,
+  ROUND(AVG(price)::NUMERIC, 2)             AS avg_price
+FROM clusters
+GROUP BY cid;
+
+-- Advanced Feature 3: Data Integrity Constraints
+SELECT
+  constraint_type,
+  table_name,
+  constraint_name
+FROM information_schema.table_constraints
+WHERE table_name IN ('region', 'property', 'housing_price', 'income_data')
+  AND constraint_type IN ('PRIMARY KEY','FOREIGN KEY','UNIQUE','CHECK')
+ORDER BY table_name, constraint_type;
+
+-- Advanced Feature 5: Down Payment Simulator
+\echo 'Advanced Feature 5: Down Payment Simulator (15% down, 25% save, 2023 condos)'
+SELECT
+  r.region_id,
+  r.name AS region,
+  ROUND(
+    CAST(AVG(hp.avg_price) * 0.15 AS numeric), 2) AS down_payment,
+  ROUND(CAST(AVG(i.avg_income) * 0.25 AS numeric), 2) AS annual_savings,
+  CEIL((AVG(hp.avg_price) * 0.15) / (AVG(i.avg_income) * 0.25)) AS years_to_goal
+FROM region AS r
+JOIN property AS p ON p.region_id = r.region_id
+JOIN housing_price AS hp ON hp.property_id = p.property_id
+JOIN income_data AS i ON i.region_id = r.region_id
+AND i.year = hp.year
+WHERE
+  hp.year = 2023
+  AND p.type = 'Condo'
+GROUP BY
+  r.region_id,
+  r.name
+ORDER BY
+  years_to_goal ASC
+LIMIT 10;

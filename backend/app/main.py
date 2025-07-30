@@ -127,8 +127,8 @@ def read_property(db: Session = Depends(get_db)):
     return properties
 
 @app.post("/property/")
-def create_apartments(type: str, subtype: str, region_id: int, db: Session = Depends(get_db)):
-    property = Property(type=type, subtype=subtype, region_id=region_id)
+def create_apartments(type: str, region_id: int, db: Session = Depends(get_db)):
+    property = Property(type=type, region_id=region_id)
     db.add(property)
     db.commit()
     db.refresh(property)
@@ -645,7 +645,6 @@ def income_growth(
                         max_growth INT;
                         minimum_y INT := :years;
                     BEGIN
-
                         FOR reg IN
                             SELECT DISTINCT r.region_id, r.name
                             FROM Region r

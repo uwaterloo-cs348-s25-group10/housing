@@ -36,7 +36,7 @@ def add_data_constraints(db: Session):
         # IncomeData constraints
         """
         ALTER TABLE income_data
-        ADD CONSTRAINT chk_income_min CHECK (avg_income >= 5000)
+        ADD CONSTRAINT chk_income_min CHECK (avg_income >= 3000)
         """,
         """
         ALTER TABLE income_data
@@ -84,7 +84,7 @@ def load_csv_data(random_year: bool = False):
         region_mapping = {(str(r.name), str(r.province)): r.region_id for r in regions}
         property_df = pd.read_csv('/app/dataset/Property.csv')
 
-        property_df = property_df.drop_duplicates(subset=['region_name', 'province', 'type', 'subtype'])
+        property_df = property_df.drop_duplicates(subset=['region_name', 'province', 'type'])
 
         properties = []
         property_mapping = {}
@@ -96,14 +96,12 @@ def load_csv_data(random_year: bool = False):
 
                 if region_id:
                     property_id = idx + 1
-                    subtype = str(row['subtype']) if pd.notna(row['subtype']) else ''
-                    prop_key = (str(row['region_name']), str(row['province']), str(row['type']), subtype)
+                    prop_key = (str(row['region_name']), str(row['province']), str(row['type']))
                     property_mapping[prop_key] = property_id
                     properties.append(Property(
                         property_id=property_id,
                         region_id=region_id, 
                         type = str(row['type']),
-                        subtype=subtype
                     ))
                 else:
                     print(f"No region for: {region_key}")
@@ -250,6 +248,43 @@ def load_csv_data(random_year: bool = False):
     finally:
         db.close()
 
+def create_temp_tables():
+        db = SessionLocal()
+        df = pd.read_csv('/app/dataset/original_dataset/cleaned_canada.csv')
+
+        db.execute(text("DROP TABLE IF EXISTS CsvPoints"))
+        db.execute(text("""
+            CREATE TABLE CsvPoints (
+                city TEXT,
+                province TEXT,
+                latitude DOUBLE PRECISION,
+                longitude DOUBLE PRECISION,
+                price DOUBLE PRECISION
+            );
+        """))
+
+        for idx, row in df.iterrows():
+            try:
+                lat = float(row["Latitude"])
+                lon = float(row["Longitude"])
+                price = float(row["Price"])
+                city = row["City"]
+                province = row["Province"]
+
+                db.execute(text("""
+                        INSERT INTO CsvPoints (city, province, latitude, longitude, price)
+                        VALUES (:city, :province, :lat, :lon, :price);
+                """), {
+                    "city": city,
+                    "province": province,
+                    "lat": lat,
+                    "lon": lon,
+                    "price": price,
+                })
+            except Exception as row_err:
+                print(f"Skipping row due to error at {idx}: {row_err}")
+        db.commit()
+
 def verify_data(sample_size: int = 5, random: bool = True):
     db = SessionLocal()
     try:
@@ -265,9 +300,9 @@ def verify_data(sample_size: int = 5, random: bool = True):
             print(f"{r.region_id:<5} {r.name:<20} {r.province:<15}")
 
         print("\nProperty Sample:")
-        print(f"{'ID':<5} {'Type':<15} {'Subtype':<15} {'RegionID':<10}")
+        print(f"{'ID':<5} {'Type':<15} {'RegionID':<10}")
         for p in db.query(Property).order_by(func.random() if random else "property_id").limit(sample_size):
-            print(f"{p.property_id:<5} {p.type:<15} {p.subtype:<15} {p.region_id:<10}")
+            print(f"{p.property_id:<5} {p.type:<15} {p.region_id:<10}")
 
         print("\nHousingPrice Sample:")
         print(f"{'ID':<5} {'PropertyID':<12} {'Year':<6} {'AvgPrice':<10}")
@@ -289,4 +324,5 @@ def verify_data(sample_size: int = 5, random: bool = True):
 if __name__ == "__main__":
     full_reset()
     load_csv_data(random_year=True)
+    create_temp_tables()
     verify_data()

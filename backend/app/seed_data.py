@@ -27,11 +27,11 @@ def seed():
 
         # Properties
         properties = [
-            Property(property_id=1, region_id=1, type="Condo", subtype="High-rise"),
-            Property(property_id=2, region_id=2, type="Condo", subtype="Low-rise"),
-            Property(property_id=3, region_id=3, type="Condo", subtype="Low-rise"),
-            Property(property_id=4, region_id=4, type="Condo", subtype="High-rise"),
-            Property(property_id=5, region_id=5, type="Condo", subtype="Low-rise"),
+            Property(property_id=1, region_id=1, type="Condo"),
+            Property(property_id=2, region_id=2, type="Condo"),
+            Property(property_id=3, region_id=3, type="Condo"),
+            Property(property_id=4, region_id=4, type="Condo"),
+            Property(property_id=5, region_id=5, type="Condo"),
         ]
         db.add_all(properties)
         db.commit()
@@ -56,6 +56,11 @@ def seed():
             IncomeData(income_id=3, region_id=3, year=2020, avg_income=120000),
             IncomeData(income_id=4, region_id=4, year=2020, avg_income=105000),
             IncomeData(income_id=5, region_id=5, year=2020, avg_income=115000),
+            IncomeData(income_id=6, region_id=5, year=2021, avg_income=120000),
+            IncomeData(income_id=7, region_id=5, year=2022, avg_income=125000),
+            IncomeData(income_id=8, region_id=4, year=2021, avg_income=125000),
+            IncomeData(income_id=9, region_id=3, year=2024, avg_income=150000),
+            IncomeData(income_id=10, region_id=1, year=2021, avg_income=100000),
         ]
         db.add_all(income_data)
         db.commit()

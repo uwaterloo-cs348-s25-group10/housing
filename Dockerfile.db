@@ -9,7 +9,11 @@ RUN apt-get update \
       > /etc/apt/sources.list.d/pgdg.list
 
 RUN apt-get update \
- && apt-get install -y postgresql-17-cron \
+ && apt-get install -y \ 
+      postgresql-17-cron \
+      postgresql-17-postgis-3 \
+      postgresql-17-postgis-3-scripts \ 
  && rm -rf /var/lib/apt/lists/*
 
 CMD ["postgres", "-c", "shared_preload_libraries=pg_cron", "-c", "cron.database_name=housing_db"]
+
