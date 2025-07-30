@@ -31,12 +31,12 @@ export default function HeatmapPage() {
 
   const [factIndex, setFactIndex] = useState(0);
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setFactIndex((prevIndex) => (prevIndex + 1) % funFacts.length);
-      }, 3000); // rotate every 3s
-      return () => clearInterval(interval);
-    }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFactIndex((prevIndex) => (prevIndex + 1) % funFacts.length);
+    }, 3000); // rotate every 3s
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     apiClient
@@ -70,11 +70,13 @@ export default function HeatmapPage() {
           "circle-radius": [
             "interpolate",
             ["linear"],
-            ["get", "count"],
-            1,
+            ["log10", ["+", ["get", "count"], 1]],
+            2,
+            8, // ~100 listings → small dot
+            3,
+            20, // ~1 000 listings → medium dot
             4,
-            20,
-            16,
+            48, // ~10 000 listings → large dot
           ],
           "circle-color": [
             "interpolate",

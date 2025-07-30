@@ -451,93 +451,101 @@ async def import_data(reset: bool = True, random_year: bool = False):
         raise HTTPException(status_code=500, detail=f"Data import failed: {str(e)}")
 
 @app.get("/heatmap")
-async def get_heatmap(grid_size: float = 0.1, price_threshold: float = 0, db: Session = Depends(get_db)):
+async def get_heatmap(
+    num_clusters: int = Query(100, ge=1, le=100),
+    db: Session = Depends(get_db),
+):
     """
-    Advanced Feature:
-    Returns clustered housing price points in GeoJSON format using data from cleaned_canada.csv
+    Advanced Feature 2: Heatmap with PostGIS clustering and avg_price
     """
-
     try:
-        db.execute(text("DROP TABLE IF EXISTS CsvPoints"))
+        db.execute(text("CREATE EXTENSION IF NOT EXISTS postgis;"))
+        db.execute(text("DROP TABLE IF EXISTS CsvPoints;"))
         db.execute(text("""
             CREATE TEMP TABLE CsvPoints (
-                city TEXT,
-                province TEXT,
-                latitude DOUBLE PRECISION,
+                city      TEXT,
+                province  TEXT,
+                latitude  DOUBLE PRECISION,
                 longitude DOUBLE PRECISION,
-                price DOUBLE PRECISION
+                price     DOUBLE PRECISION
             );
         """))
-
         with open("/app/dataset/original_dataset/cleaned_canada.csv", newline="") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 try:
-                    lat = float(row["Latitude"])
-                    lon = float(row["Longitude"])
-                    price = float(row["Price"])
-                    city = row["City"]
-                    province = row["Province"]
-
                     db.execute(text("""
                         INSERT INTO CsvPoints (city, province, latitude, longitude, price)
                         VALUES (:city, :province, :lat, :lon, :price);
                     """), {
-                        "city": city,
-                        "province": province,
-                        "lat": lat,
-                        "lon": lon,
-                        "price": price,
+                        "city":     row["City"],
+                        "province": row["Province"],
+                        "lat":      float(row["Latitude"]),
+                        "lon":      float(row["Longitude"]),
+                        "price":    float(row["Price"]),
                     })
                 except Exception as row_err:
                     logging.warning(f"Skipping row due to error: {row_err}")
         db.commit()
 
-        db.execute(text("DROP TABLE IF EXISTS RegionPriceCentroids"))
-        db.execute(text("""
-            CREATE TEMP TABLE RegionPriceCentroids AS
-            SELECT 
-                city AS region_name,
-                province,
-                AVG(latitude) AS lat,
-                AVG(longitude) AS lon,
-                COUNT(*) AS num_sales,
-                ROUND(AVG(price)::NUMERIC, 2) AS avg_price
-            FROM CsvPoints
-            WHERE price > :price_threshold
-            GROUP BY city, province;
-        """), {"price_threshold": price_threshold})
-
-        rows = db.execute(text("""
-            SELECT region_name, province, lat, lon, num_sales, avg_price
-            FROM RegionPriceCentroids;
-        """)).fetchall()
+        clustering_sql = text("""
+        WITH pts AS (
+          SELECT
+            ST_Transform(
+              ST_SetSRID(
+                ST_MakePoint(longitude, latitude),
+              4326),
+            3857) AS geom_3857,
+            price
+          FROM CsvPoints
+        ),
+        clusters AS (
+          SELECT
+            ST_ClusterKMeans(geom_3857, :k) OVER () AS cid,
+            geom_3857,
+            price
+          FROM pts
+        )
+        SELECT
+          cid,
+          ST_X(
+            ST_Transform(ST_Centroid(ST_Collect(geom_3857)), 4326)
+          ) AS lon,
+          ST_Y(
+            ST_Transform(ST_Centroid(ST_Collect(geom_3857)), 4326)
+          ) AS lat,
+          COUNT(*) AS count,
+          ROUND(AVG(price)::NUMERIC, 2) AS avg_price
+        FROM clusters
+        GROUP BY cid
+        ORDER BY cid;
+        """)
+        rows = db.execute(clustering_sql, {"k": num_clusters}).fetchall()
 
         features = [
             {
                 "type": "Feature",
                 "geometry": {
                     "type": "Point",
-                    "coordinates": [row.lon, row.lat],
+                    "coordinates": [r.lon, r.lat],
                 },
                 "properties": {
-                    "region": row.region_name,
-                    "province": row.province,
-                    "count": row.num_sales,
-                    "avg_price": float(row.avg_price),
+                    "cluster_id": r.cid,
+                    "count":      r.count,
+                    "avg_price":  float(r.avg_price),
                 },
             }
-            for row in rows
+            for r in rows
         ]
 
-        return JSONResponse(content={
+        return JSONResponse({
             "type": "FeatureCollection",
             "features": features,
         })
 
     except Exception as e:
-        logging.error(f"Heatmap generation failed: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Heatmap generation failed: {str(e)}")
+        logging.error(f"Heatmap clustering failed: {e}")
+        raise HTTPException(status_code=500, detail="Heatmap generation failed")
 
 @app.post("/show-data")
 async def show_data(size: int = 5, random: bool = True):
