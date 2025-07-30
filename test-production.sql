@@ -227,8 +227,8 @@ WHERE table_name IN ('region', 'property', 'housing_price', 'income_data')
   AND constraint_type IN ('PRIMARY KEY','FOREIGN KEY','UNIQUE','CHECK')
 ORDER BY table_name, constraint_type;
 
--- FEATURE 5 - Advanced: Down Payment Simulator
-\echo 'FEATURE 5- Advanced: Down Payment Simulator (15% down, 25% save, 2023 condos)'
+-- Advanced Feature 5: Down Payment Simulator
+\echo 'Advanced Feature 5: Down Payment Simulator (15% down, 25% save, 2023 condos)'
 SELECT
   r.region_id,
   r.name AS region,
