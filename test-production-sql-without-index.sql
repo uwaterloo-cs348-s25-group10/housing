@@ -1,3 +1,17 @@
+DROP INDEX idx_region_province_name;
+
+DROP INDEX idx_property_region_id;
+DROP INDEX idx_property_type;
+DROP INDEX idx_property_type_region;
+DROP INDEX idx_property_region_type;
+
+DROP INDEX idx_housing_year_property;
+DROP INDEX idx_housing_avg_price;
+
+DROP INDEX idx_income_year;
+DROP INDEX idx_income_year_region;
+DROP INDEX idx_income_region_year_income;
+
 \echo '== Enabling psql timing =='
 \timing on
 
@@ -107,3 +121,74 @@ SELECT R.region_id, R.name
 FROM income_data I
 JOIN region R ON I.region_id = R.region_id
 WHERE I.year = 2019;
+
+-- Advanced Feature 1: Find region that has at least x consecutive Income Growth
+\echo 'Advanced Feature 1: Find region that has minimum x consecutive Income Growth (by default, x = 3) '
+CREATE TEMP TABLE IncomeGrowthResult (
+ region_id INT,
+ region_name TEXT,
+ max_consecutive_growth INT
+);
+
+DO $$
+DECLARE
+ reg RECORD;
+ irow RECORD;
+ prev_income FLOAT;
+ prev_year INT;
+ curr_growth INT;
+ max_growth INT;
+ target_n INT := 3;
+BEGIN
+ DELETE FROM IncomeGrowthResult;
+
+
+ FOR reg IN
+   SELECT DISTINCT r.region_id, r.name
+   FROM Region r
+   JOIN income_data i ON r.region_id = i.region_id
+ LOOP
+   prev_income := NULL;
+   prev_year := NULL;
+   curr_growth := 0;
+   max_growth := 0;
+
+
+   FOR irow IN
+     SELECT year, avg_income
+     FROM income_data
+     WHERE region_id = reg.region_id
+     ORDER BY year
+   LOOP
+     IF prev_income IS NULL THEN
+       prev_income := irow.avg_income;
+       prev_year := irow.year;
+     ELSE
+       IF irow.year > prev_year AND irow.avg_income > prev_income THEN
+         curr_growth := curr_growth + 1;
+       ELSE
+         curr_growth := 0;
+       END IF;
+
+
+       IF curr_growth > max_growth THEN
+         max_growth := curr_growth;
+       END IF;
+
+
+       prev_income := irow.avg_income;
+       prev_year := irow.year;
+     END IF;
+   END LOOP;
+
+
+   IF max_growth + 1 >= target_n THEN
+     INSERT INTO IncomeGrowthResult(region_id, region_name, max_consecutive_growth)
+     VALUES (reg.region_id, reg.name, max_growth + 1);
+   END IF;
+
+
+ END LOOP;
+END $$;
+
+SELECT * FROM IncomeGrowthResult ORDER BY max_consecutive_growth DESC;

@@ -1,3271 +1,3271 @@
 year,region_name,avg_income,province
-2000,Canada,7118340.0,
-2000,Newfoundland and Labrador,131750.0,
-2000,St. John's,39990.0,NL
-2000,Prince Edward Island,31390.0,
-2000,Nova Scotia,214300.0,
-2000,Halifax,79400.0,NS
-2000,New Brunswick,180280.0,
-2000,Saint John,29040.0,NB
-2000,Quebec,1714530.0,
-2000,Saguenay,38600.0,QC
-2000,Québec,161390.0,QC
-2000,Sherbrooke,34640.0,QC
-2000,Trois-Rivières,32450.0,QC
-2000,Montréal,786850.0,QC
-2000,Ottawa-Gatineau,59540.0,
-2000,Ontario,2725440.0,
-2000,Ottawa-Gatineau,189760.0,
-2000,Oshawa,70130.0,ON
-2000,Toronto,1097590.0,ON
-2000,Hamilton,155750.0,ON
-2000,St. Catharines-Niagara,92960.0,ON
-2000,Kitchener-Cambridge-Waterloo,100250.0,ON
-2000,London,95480.0,ON
-2000,Windsor,70700.0,ON
-2000,Greater Sudbury,37010.0,ON
-2000,Thunder Bay,28080.0,ON
-2000,Manitoba,257060.0,
-2000,Winnipeg,152700.0,MB
-2000,Saskatchewan,225110.0,
-2000,Regina,43100.0,SK
-2000,Saskatoon,50850.0,SK
-2000,Alberta,700830.0,
-2000,Calgary,225270.0,AB
-2000,Edmonton,215850.0,AB
-2000,British Columbia,919060.0,
-2000,Vancouver,460800.0,BC
-2000,Victoria,72450.0,BC
-2000,Yukon,6150.0,
-2000,Northwest Territories,7740.0,
-2000,Nunavut,4700.0,
-2001,Canada,7187680.0,
-2001,Newfoundland and Labrador,130900.0,
-2001,St. John's,40170.0,NL
-2001,Prince Edward Island,31410.0,
-2001,Nova Scotia,214220.0,
-2001,Halifax,82930.0,NS
-2001,New Brunswick,180160.0,
-2001,Saint John,29000.0,NB
-2001,Quebec,1725700.0,
-2001,Saguenay,38250.0,QC
-2001,Québec,164010.0,QC
-2001,Sherbrooke,35510.0,QC
-2001,Trois-Rivières,32570.0,QC
-2001,Montréal,795240.0,QC
-2001,Ottawa-Gatineau,60480.0,
-2001,Ontario,2766660.0,
-2001,Ottawa-Gatineau,189140.0,
-2001,Kingston,34520.0,ON
-2001,Oshawa,71430.0,ON
-2001,Toronto,1129170.0,ON
-2001,Hamilton,158480.0,ON
-2001,St. Catharines-Niagara,92850.0,ON
-2001,Kitchener-Cambridge-Waterloo,102150.0,ON
-2001,London,101870.0,ON
-2001,Windsor,72980.0,ON
-2001,Greater Sudbury,37380.0,ON
-2001,Thunder Bay,28490.0,ON
-2001,Manitoba,257100.0,
-2001,Winnipeg,153600.0,MB
-2001,Saskatchewan,223340.0,
-2001,Regina,42860.0,SK
-2001,Saskatoon,50940.0,SK
-2001,Alberta,711600.0,
-2001,Calgary,230890.0,AB
-2001,Edmonton,218320.0,AB
-2001,British Columbia,927880.0,
-2001,Abbotsford-Mission,35120.0,BC
-2001,Vancouver,469990.0,BC
-2001,Victoria,72710.0,BC
-2001,Yukon,6070.0,
-2001,Northwest Territories,7860.0,
-2001,Nunavut,4770.0,
-2002,Canada,7249010.0,
-2002,Newfoundland and Labrador,130890.0,
-2002,St. John's,40360.0,NL
-2002,Prince Edward Island,31420.0,
-2002,Nova Scotia,214450.0,
-2002,Halifax,83410.0,NS
-2002,New Brunswick,180160.0,
-2002,Saint John,29000.0,NB
-2002,Quebec,1728810.0,
-2002,Saguenay,38040.0,QC
-2002,Québec,163800.0,QC
-2002,Sherbrooke,35640.0,QC
-2002,Trois-Rivières,32310.0,QC
-2002,Montréal,802050.0,QC
-2002,Ottawa-Gatineau,60690.0,
-2002,Ontario,2804720.0,
-2002,Ottawa-Gatineau,191860.0,
-2002,Kingston,34670.0,ON
-2002,Oshawa,71390.0,ON
-2002,Toronto,1162940.0,ON
-2002,Hamilton,158940.0,ON
-2002,St. Catharines-Niagara,92760.0,ON
-2002,Kitchener-Cambridge-Waterloo,102980.0,ON
-2002,London,102460.0,ON
-2002,Windsor,73860.0,ON
-2002,Greater Sudbury,37270.0,ON
-2002,Thunder Bay,28530.0,ON
-2002,Manitoba,257900.0,
-2002,Winnipeg,154090.0,MB
-2002,Saskatchewan,222900.0,
-2002,Regina,42840.0,SK
-2002,Saskatoon,51070.0,SK
-2002,Alberta,719830.0,
-2002,Calgary,235010.0,AB
-2002,Edmonton,220610.0,AB
-2002,British Columbia,938750.0,
-2002,Abbotsford-Mission,35670.0,BC
-2002,Vancouver,480070.0,BC
-2002,Victoria,72690.0,BC
-2002,Yukon,6180.0,
-2002,Northwest Territories,8050.0,
-2002,Nunavut,4960.0,
-2003,Canada,7319570.0,
-2003,Newfoundland and Labrador,130530.0,
-2003,St. John's,41000.0,NL
-2003,Prince Edward Island,31790.0,
-2003,Nova Scotia,214540.0,
-2003,Halifax,84140.0,NS
-2003,New Brunswick,180150.0,
-2003,Saint John,29030.0,NB
-2003,Quebec,1754150.0,
-2003,Saguenay,38140.0,QC
-2003,Québec,167930.0,QC
-2003,Sherbrooke,36420.0,QC
-2003,Trois-Rivières,32780.0,QC
-2003,Montréal,808870.0,QC
-2003,Ottawa-Gatineau,62560.0,
-2003,Ontario,2830190.0,
-2003,Ottawa-Gatineau,191800.0,
-2003,Kingston,35080.0,ON
-2003,Oshawa,74600.0,ON
-2003,Toronto,1169690.0,ON
-2003,Hamilton,160390.0,ON
-2003,St. Catharines-Niagara,93090.0,ON
-2003,Kitchener-Cambridge-Waterloo,105170.0,ON
-2003,London,103450.0,ON
-2003,Windsor,74260.0,ON
-2003,Greater Sudbury,37290.0,ON
-2003,Thunder Bay,28530.0,ON
-2003,Manitoba,258570.0,
-2003,Winnipeg,154720.0,MB
-2003,Saskatchewan,221980.0,
-2003,Regina,42910.0,SK
-2003,Saskatoon,51710.0,SK
-2003,Alberta,730520.0,
-2003,Calgary,238590.0,AB
-2003,Edmonton,224370.0,AB
-2003,British Columbia,947710.0,
-2003,Abbotsford-Mission,36170.0,BC
-2003,Vancouver,483010.0,BC
-2003,Victoria,73450.0,BC
-2003,Yukon,6260.0,
-2003,Northwest Territories,8160.0,
-2003,Nunavut,5020.0,
-2004,Canada,7449160.0,
-2004,Newfoundland and Labrador,130650.0,
-2004,St. John's,41680.0,NL
-2004,Prince Edward Island,31980.0,
-2004,Nova Scotia,215640.0,
-2004,Halifax,85060.0,NS
-2004,New Brunswick,182020.0,
-2004,Saint John,29230.0,NB
-2004,Quebec,1778740.0,
-2004,Saguenay,38280.0,QC
-2004,Québec,170230.0,QC
-2004,Sherbrooke,37040.0,QC
-2004,Trois-Rivières,33250.0,QC
-2004,Montréal,819930.0,QC
-2004,Ottawa-Gatineau,64250.0,
-2004,Ontario,2883680.0,
-2004,Ottawa-Gatineau,195000.0,
-2004,Kingston,35500.0,ON
-2004,Oshawa,76990.0,ON
-2004,Toronto,1198880.0,ON
-2004,Hamilton,161870.0,ON
-2004,St. Catharines-Niagara,94190.0,ON
-2004,Kitchener-Cambridge-Waterloo,107660.0,ON
-2004,London,105290.0,ON
-2004,Windsor,74900.0,ON
-2004,Greater Sudbury,38230.0,ON
-2004,Thunder Bay,28590.0,ON
-2004,Manitoba,260270.0,
-2004,Winnipeg,156110.0,MB
-2004,Saskatchewan,221900.0,
-2004,Regina,43280.0,SK
-2004,Saskatoon,52220.0,SK
-2004,Alberta,755880.0,
-2004,Calgary,248720.0,AB
-2004,Edmonton,232090.0,AB
-2004,British Columbia,968810.0,
-2004,Abbotsford-Mission,36840.0,BC
-2004,Vancouver,495180.0,BC
-2004,Victoria,74990.0,BC
-2004,Yukon,6320.0,
-2004,Northwest Territories,8200.0,
-2004,Nunavut,5060.0,
-2005,Canada,7486160.0,
-2005,Newfoundland and Labrador,129540.0,
-2005,St. John's,41750.0,NL
-2005,Prince Edward Island,32070.0,
-2005,Nova Scotia,214870.0,
-2005,Halifax,85190.0,NS
-2005,New Brunswick,181730.0,
-2005,Saint John,29120.0,NB
-2005,Quebec,1784680.0,
-2005,Saguenay,38150.0,QC
-2005,Québec,171050.0,QC
-2005,Sherbrooke,37220.0,QC
-2005,Trois-Rivières,33550.0,QC
-2005,Montréal,821360.0,QC
-2005,Ottawa-Gatineau,64610.0,
-2005,Ontario,2891660.0,
-2005,Ottawa-Gatineau,195640.0,
-2005,Kingston,35570.0,ON
-2005,Oshawa,77810.0,ON
-2005,Toronto,1204870.0,ON
-2005,Hamilton,161640.0,ON
-2005,St. Catharines-Niagara,93590.0,ON
-2005,Kitchener-Cambridge-Waterloo,108320.0,ON
-2005,London,105380.0,ON
-2005,Windsor,74200.0,ON
-2005,Greater Sudbury,38270.0,ON
-2005,Thunder Bay,28260.0,ON
-2005,Manitoba,260530.0,
-2005,Winnipeg,156150.0,MB
-2005,Saskatchewan,221170.0,
-2005,Regina,43320.0,SK
-2005,Saskatoon,52400.0,SK
-2005,Alberta,771640.0,
-2005,Calgary,254540.0,AB
-2005,Edmonton,236510.0,AB
-2005,British Columbia,978570.0,
-2005,Abbotsford-Mission,37070.0,BC
-2005,Vancouver,500010.0,BC
-2005,Victoria,75520.0,BC
-2005,Yukon,6520.0,
-2005,Northwest Territories,8110.0,
-2005,Nunavut,5080.0,
-2006,Canada,7629330.0,
-2006,Newfoundland and Labrador,129220.0,
-2006,St. John's,42200.0,NL
-2006,Prince Edward Island,32310.0,
-2006,Nova Scotia,215870.0,
-2006,Halifax,86530.0,NS
-2006,New Brunswick,182760.0,
-2006,Moncton,31640.0,NB
-2006,Saint John,29320.0,NB
-2006,Quebec,1804340.0,
-2006,Saguenay,38300.0,QC
-2006,Québec,173520.0,QC
-2006,Sherbrooke,43790.0,QC
-2006,Trois-Rivières,33680.0,QC
-2006,Montréal,837600.0,QC
-2006,Ottawa-Gatineau,67110.0,
-2006,Ontario,2952140.0,
-2006,Ottawa-Gatineau,200130.0,
-2006,Kingston,36000.0,ON
-2006,Peterborough,28300.0,ON
-2006,Oshawa,79150.0,ON
-2006,Toronto,1244430.0,ON
-2006,Hamilton,162500.0,ON
-2006,St. Catharines-Niagara,93690.0,ON
-2006,Kitchener-Cambridge-Waterloo,110070.0,ON
-2006,Brantford,30080.0,ON
-2006,Guelph,31850.0,ON
-2006,London,107880.0,ON
-2006,Windsor,74220.0,ON
-2006,Barrie,42800.0,ON
-2006,Greater Sudbury,38620.0,ON
-2006,Thunder Bay,28470.0,ON
-2006,Manitoba,263280.0,
-2006,Winnipeg,158730.0,MB
-2006,Saskatchewan,224080.0,
-2006,Regina,44990.0,SK
-2006,Saskatoon,53620.0,SK
-2006,Alberta,800750.0,
-2006,Calgary,263840.0,AB
-2006,Edmonton,244790.0,AB
-2006,British Columbia,1004470.0,
-2006,Kelowna,41710.0,BC
-2006,Abbotsford-Mission,38210.0,BC
-2006,Vancouver,515350.0,BC
-2006,Victoria,76580.0,BC
-2006,Yukon,6630.0,
-2006,Northwest Territories,8310.0,
-2006,Nunavut,5170.0,
-2007,Canada,7727870.0,
-2007,Newfoundland and Labrador,129900.0,
-2007,St. John's,43130.0,NL
-2007,Prince Edward Island,32630.0,
-2007,Nova Scotia,216430.0,
-2007,Halifax,87280.0,NS
-2007,New Brunswick,183590.0,
-2007,Moncton,32180.0,NB
-2007,Saint John,29570.0,NB
-2007,Quebec,1818710.0,
-2007,Saguenay,38290.0,QC
-2007,Québec,175730.0,QC
-2007,Sherbrooke,44150.0,QC
-2007,Trois-Rivières,34030.0,QC
-2007,Montréal,843590.0,QC
-2007,Ottawa-Gatineau,67790.0,
-2007,Ontario,2983620.0,
-2007,Ottawa-Gatineau,203080.0,
-2007,Kingston,36140.0,ON
-2007,Peterborough,28400.0,ON
-2007,Oshawa,80030.0,ON
-2007,Toronto,1265760.0,ON
-2007,Hamilton,162880.0,ON
-2007,St. Catharines-Niagara,93540.0,ON
-2007,Kitchener-Cambridge-Waterloo,111090.0,ON
-2007,Brantford,30190.0,ON
-2007,Guelph,32350.0,ON
-2007,London,108650.0,ON
-2007,Windsor,73790.0,ON
-2007,Barrie,43320.0,ON
-2007,Greater Sudbury,38890.0,ON
-2007,Thunder Bay,28400.0,ON
-2007,Manitoba,266880.0,
-2007,Winnipeg,160150.0,MB
-2007,Saskatchewan,227800.0,
-2007,Regina,45650.0,SK
-2007,Saskatoon,55890.0,SK
-2007,Alberta,821670.0,
-2007,Calgary,272260.0,AB
-2007,Edmonton,251070.0,AB
-2007,British Columbia,1026430.0,
-2007,Kelowna,42900.0,BC
-2007,Abbotsford-Mission,39060.0,BC
-2007,Vancouver,527830.0,BC
-2007,Victoria,78060.0,BC
-2007,Yukon,6750.0,
-2007,Northwest Territories,8270.0,
-2007,Nunavut,5190.0,
-2008,Canada,7832060.0,
-2008,Newfoundland and Labrador,131230.0,
-2008,St. John's,44120.0,NL
-2008,Bay Roberts,2880.0,NL
-2008,Grand Falls-Windsor,3710.0,NL
-2008,Corner Brook,7260.0,NL
-2008,Non CMA-CA,73260.0,NL
-2008,Prince Edward Island,32950.0,
-2008,Charlottetown,14270.0,PE
-2008,Summerside,4570.0,PE
-2008,Non CMA-CA,14110.0,PE
-2008,Nova Scotia,217210.0,
-2008,Halifax,88070.0,NS
-2008,Kentville,6480.0,NS
-2008,Truro,10610.0,NS
-2008,New Glasgow,8810.0,NS
-2008,Cape Breton,22710.0,NS
-2008,Non CMA-CA,80520.0,NS
-2008,New Brunswick,184820.0,
-2008,Moncton,32800.0,NB
-2008,Saint John,29830.0,NB
-2008,Fredericton,22160.0,NB
-2008,Bathurst,8370.0,NB
-2008,Miramichi,6030.0,NB
-2008,Campbellton,3410.0,
-2008,Edmundston,5710.0,NB
-2008,Non CMA-CA,76520.0,NB
-2008,Quebec,1835730.0,
-2008,Campbellton,530.0,
-2008,Matane,4100.0,QC
-2008,Rimouski,11560.0,QC
-2008,Rivière-du-loup,6350.0,QC
-2008,Baie-Comeau,7490.0,QC
-2008,Saguenay,38350.0,QC
-2008,Alma,8440.0,QC
-2008,Dolbeau-Mistassini,3690.0,QC
-2008,Sept-Îles,6410.0,QC
-2008,Québec,177930.0,QC
-2008,Saint-Georges,7580.0,QC
-2008,Thetford Mines,6650.0,QC
-2008,Sherbrooke,44670.0,QC
-2008,Cowansville,3040.0,QC
-2008,Victoriaville,12470.0,QC
-2008,Trois-Rivières,34260.0,QC
-2008,Shawinigan,13250.0,QC
-2008,La Tuque,3480.0,QC
-2008,Drummondville,19730.0,QC
-2008,Granby,17520.0,QC
-2008,Saint-Hyacinthe,13520.0,QC
-2008,Sorel-Tracy,12670.0,QC
-2008,Joliette,10540.0,QC
-2008,Saint-Jean-sur-Richelieu,21950.0,QC
-2008,Montréal,853140.0,QC
-2008,Salaberry-de-Valleyfield,9360.0,QC
-2008,Lachute,2990.0,QC
-2008,Val-d'Or,7810.0,QC
-2008,Amos,4820.0,QC
-2008,Rouyn-Noranda,9700.0,QC
-2008,Hawkesbury,410.0,
-2008,Ottawa-Gatineau,68870.0,
-2008,Non CMA-CA,392500.0,QC
-2008,Ontario,3017330.0,
-2008,Cornwall,15630.0,ON
-2008,Hawkesbury,2460.0,
-2008,Ottawa-Gatineau,206360.0,
-2008,Brockville,8690.0,ON
-2008,Pembroke,6720.0,ON
-2008,Petawawa,3330.0,ON
-2008,Kingston,36600.0,ON
-2008,Belleville-Quinte West,23540.0,ON
-2008,Cobourg,4750.0,ON
-2008,Port Hope,4130.0,ON
-2008,Peterborough,28820.0,ON
-2008,Kawartha Lakes,19440.0,ON
-2008,Centre Wellington,6420.0,ON
-2008,Oshawa,81070.0,ON
-2008,Ingersoll,3380.0,ON
-2008,Toronto,1287680.0,ON
-2008,Hamilton,163410.0,ON
-2008,St. Catharines-Niagara,93680.0,ON
-2008,Kitchener-Cambridge-Waterloo,112360.0,ON
-2008,Brantford,30410.0,ON
-2008,Woodstock,10080.0,ON
-2008,Tillsonburg,4740.0,ON
-2008,Norfolk,15840.0,ON
-2008,Guelph,32710.0,ON
-2008,Stratford,7830.0,ON
-2008,London,109390.0,ON
-2008,Chatham-Kent,26750.0,ON
-2008,Leamington,17530.0,ON
-2008,Windsor,73380.0,ON
-2008,Sarnia,21680.0,ON
-2008,Owen Sound,7510.0,ON
-2008,Collingwood,4750.0,ON
-2008,Barrie,43650.0,ON
-2008,Orillia,10580.0,ON
-2008,Midland,8840.0,ON
-2008,North Bay,15780.0,ON
-2008,Greater Sudbury,39000.0,ON
-2008,Elliot Lake,3080.0,ON
-2008,Temiskaming Shores,3440.0,ON
-2008,Timmins,10510.0,ON
-2008,Sault Ste. Marie,19160.0,ON
-2008,Thunder Bay,28250.0,ON
-2008,Kenora,3330.0,ON
-2008,Non CMA-CA,360670.0,ON
-2008,Manitoba,270220.0,
-2008,Winnipeg,162080.0,MB
-2008,Portage la Prairie,4960.0,MB
-2008,Brandon,13140.0,MB
-2008,Thompson,2970.0,MB
-2008,Non CMA-CA,87070.0,MB
-2008,Saskatchewan,232570.0,
-2008,Regina,46650.0,SK
-2008,Yorkton,4500.0,SK
-2008,Moose Jaw,8080.0,SK
-2008,Swift Current,4900.0,SK
-2008,Saskatoon,56690.0,SK
-2008,North Battleford,4500.0,SK
-2008,Prince Albert,8550.0,SK
-2008,Estevan,3050.0,SK
-2008,Lloydminster,3300.0,
-2008,Non CMA-CA,92360.0,SK
-2008,Alberta,846200.0,
-2008,Medicine Hat,18180.0,AB
-2008,Brooks,6100.0,AB
-2008,Lethbridge,25840.0,AB
-2008,Okotoks,6590.0,AB
-2008,Calgary,282210.0,AB
-2008,Canmore,2990.0,AB
-2008,Red Deer,21440.0,AB
-2008,Camrose,4650.0,AB
-2008,Edmonton,259780.0,AB
-2008,Lloydminster,4580.0,
-2008,Cold Lake,3910.0,AB
-2008,Grande Prairie,19340.0,AB
-2008,Wood Buffalo,16020.0,AB
-2008,Wetaskiwin,3690.0,AB
-2008,Non CMA-CA,170870.0,AB
-2008,British Columbia,1043320.0,
-2008,Cranbrook,6580.0,BC
-2008,Penticton,10800.0,BC
-2008,Kelowna,43670.0,BC
-2008,Vernon,14910.0,BC
-2008,Salmon Arm,4620.0,BC
-2008,Kamloops,24880.0,BC
-2008,Chilliwack,21500.0,BC
-2008,Abbotsford-Mission,39560.0,BC
-2008,Vancouver,540530.0,BC
-2008,Squamish,3780.0,BC
-2008,Victoria,79450.0,BC
-2008,Duncan,10390.0,BC
-2008,Nanaimo,23120.0,BC
-2008,Parksville,8140.0,BC
-2008,Port Alberni,6260.0,BC
-2008,Courtenay,13880.0,BC
-2008,Campbell River,9220.0,BC
-2008,Powell River,4260.0,BC
-2008,Williams Lake,4590.0,BC
-2008,Quesnel,5830.0,BC
-2008,Prince Rupert,2800.0,BC
-2008,Kitimat,2250.0,BC
-2008,Terrace,4270.0,BC
-2008,Prince George,19690.0,BC
-2008,Dawson Creek,3340.0,BC
-2008,Fort St. John,6760.0,BC
-2008,Non CMA-CA,128250.0,BC
-2008,Yukon,6840.0,
-2008,Whitehorse,5470.0,YT
-2008,Non CMA-CA,1380.0,YT
-2008,Northwest Territories,8330.0,
-2008,Yellowknife,4250.0,NT
-2008,Non CMA-CA,4080.0,NT
-2008,Nunavut,5300.0,
-2008,Campbellton,3950.0,
-2008,Hawkesbury,2860.0,
-2008,Ottawa - Gatineau,275220.0,
-2008,Lloydminster,7880.0,
-2009,Canada,7926210.0,
-2009,Newfoundland and Labrador,132170.0,
-2009,St. John's,44970.0,NL
-2009,Bay Roberts,2900.0,NL
-2009,Grand Falls-Windsor,3710.0,NL
-2009,Corner Brook,7290.0,NL
-2009,Non CMA-CA,73300.0,NL
-2009,Prince Edward Island,33310.0,
-2009,Charlottetown,14570.0,PE
-2009,Summerside,4620.0,PE
-2009,Non CMA-CA,14120.0,PE
-2009,Nova Scotia,218170.0,
-2009,Halifax,88460.0,NS
-2009,Kentville,6480.0,NS
-2009,Truro,10680.0,NS
-2009,New Glasgow,8790.0,NS
-2009,Cape Breton,22580.0,NS
-2009,Non CMA-CA,81180.0,NS
-2009,New Brunswick,186180.0,
-2009,Moncton,33420.0,NB
-2009,Saint John,30020.0,NB
-2009,Fredericton,22470.0,NB
-2009,Bathurst,8320.0,NB
-2009,Miramichi,5990.0,NB
-2009,Campbellton,3440.0,
-2009,Edmundston,5710.0,NB
-2009,Non CMA-CA,76800.0,NB
-2009,Quebec,1854770.0,
-2009,Campbellton,530.0,
-2009,Matane,4060.0,QC
-2009,Rimouski,11710.0,QC
-2009,Rivière-du-loup,6360.0,QC
-2009,Baie-Comeau,7490.0,QC
-2009,Saguenay,38450.0,QC
-2009,Alma,8410.0,QC
-2009,Dolbeau-Mistassini,3680.0,QC
-2009,Sept-Îles,6570.0,QC
-2009,Québec,180240.0,QC
-2009,Saint-Georges,7680.0,QC
-2009,Thetford Mines,6620.0,QC
-2009,Sherbrooke,45270.0,QC
-2009,Cowansville,3050.0,QC
-2009,Victoriaville,12740.0,QC
-2009,Trois-Rivières,34660.0,QC
-2009,Shawinigan,13190.0,QC
-2009,La Tuque,3470.0,QC
-2009,Drummondville,19920.0,QC
-2009,Granby,17940.0,QC
-2009,Saint-Hyacinthe,13560.0,QC
-2009,Sorel-Tracy,12670.0,QC
-2009,Joliette,10870.0,QC
-2009,Saint-Jean-sur-Richelieu,22140.0,QC
-2009,Montréal,862070.0,QC
-2009,Salaberry-de-Valleyfield,9380.0,QC
-2009,Lachute,3020.0,QC
-2009,Val-d'Or,7830.0,QC
-2009,Amos,4860.0,QC
-2009,Rouyn-Noranda,9860.0,QC
-2009,Hawkesbury,410.0,
-2009,Ottawa-Gatineau,70310.0,
-2009,Non CMA-CA,395780.0,QC
-2009,Ontario,3057010.0,
-2009,Cornwall,14450.0,ON
-2009,Hawkesbury,2420.0,
-2009,Ottawa-Gatineau,210350.0,
-2009,Brockville,8640.0,ON
-2009,Pembroke,6770.0,ON
-2009,Petawawa,3370.0,ON
-2009,Kingston,37150.0,ON
-2009,Belleville-Quinte West,23210.0,ON
-2009,Cobourg,4820.0,ON
-2009,Port Hope,4150.0,ON
-2009,Peterborough,29250.0,ON
-2009,Kawartha Lakes,19270.0,ON
-2009,Centre Wellington,6440.0,ON
-2009,Oshawa,82600.0,ON
-2009,Ingersoll,3360.0,ON
-2009,Toronto,1309490.0,ON
-2009,Hamilton,165570.0,ON
-2009,St. Catharines-Niagara,94320.0,ON
-2009,Kitchener-Cambridge-Waterloo,113630.0,ON
-2009,Brantford,30790.0,ON
-2009,Woodstock,10490.0,ON
-2009,Tillsonburg,4790.0,ON
-2009,Norfolk,15870.0,ON
-2009,Guelph,33360.0,ON
-2009,Stratford,7870.0,ON
-2009,London,110610.0,ON
-2009,Chatham-Kent,26650.0,ON
-2009,Leamington,17890.0,ON
-2009,Windsor,73530.0,ON
-2009,Sarnia,21660.0,ON
-2009,Owen Sound,7570.0,ON
-2009,Collingwood,4680.0,ON
-2009,Barrie,44240.0,ON
-2009,Orillia,10710.0,ON
-2009,Midland,8540.0,ON
-2009,North Bay,15810.0,ON
-2009,Greater Sudbury,38960.0,ON
-2009,Elliot Lake,3080.0,ON
-2009,Temiskaming Shores,3480.0,ON
-2009,Timmins,10590.0,ON
-2009,Sault Ste. Marie,19330.0,ON
-2009,Thunder Bay,28440.0,ON
-2009,Kenora,3360.0,ON
-2009,Non CMA-CA,365500.0,ON
-2009,Manitoba,273430.0,
-2009,Winnipeg,164420.0,MB
-2009,Portage la Prairie,4990.0,MB
-2009,Brandon,13190.0,MB
-2009,Thompson,2990.0,MB
-2009,Non CMA-CA,87850.0,MB
-2009,Saskatchewan,236080.0,
-2009,Regina,47710.0,SK
-2009,Yorkton,4580.0,SK
-2009,Moose Jaw,8170.0,SK
-2009,Swift Current,5000.0,SK
-2009,Saskatoon,58260.0,SK
-2009,North Battleford,4510.0,SK
-2009,Prince Albert,8650.0,SK
-2009,Estevan,3190.0,SK
-2009,Lloydminster,3390.0,
-2009,Non CMA-CA,92640.0,SK
-2009,Alberta,857770.0,
-2009,Medicine Hat,17970.0,AB
-2009,Brooks,6350.0,AB
-2009,Lethbridge,26350.0,AB
-2009,Okotoks,6930.0,AB
-2009,Calgary,286490.0,AB
-2009,Canmore,3060.0,AB
-2009,Red Deer,21620.0,AB
-2009,Camrose,4670.0,AB
-2009,Edmonton,264420.0,AB
-2009,Lloydminster,4630.0,
-2009,Cold Lake,4000.0,AB
-2009,Grande Prairie,19470.0,AB
-2009,Wood Buffalo,16730.0,AB
-2009,Wetaskiwin,3670.0,AB
-2009,Non CMA-CA,171410.0,AB
-2009,British Columbia,1056430.0,
-2009,Cranbrook,6590.0,BC
-2009,Penticton,10890.0,BC
-2009,Kelowna,44250.0,BC
-2009,Vernon,15050.0,BC
-2009,Salmon Arm,4620.0,BC
-2009,Kamloops,24900.0,BC
-2009,Chilliwack,21870.0,BC
-2009,Abbotsford-Mission,39900.0,BC
-2009,Vancouver,550590.0,BC
-2009,Squamish,3910.0,BC
-2009,Victoria,80340.0,BC
-2009,Duncan,10530.0,BC
-2009,Nanaimo,23290.0,BC
-2009,Parksville,8210.0,BC
-2009,Port Alberni,6250.0,BC
-2009,Courtenay,13620.0,BC
-2009,Campbell River,9320.0,BC
-2009,Powell River,4290.0,BC
-2009,Williams Lake,4530.0,BC
-2009,Quesnel,5780.0,BC
-2009,Prince Rupert,2810.0,BC
-2009,Kitimat,2170.0,BC
-2009,Terrace,4240.0,BC
-2009,Prince George,19540.0,BC
-2009,Dawson Creek,3340.0,BC
-2009,Fort St. John,6760.0,BC
-2009,Non CMA-CA,128870.0,BC
-2009,Yukon,7020.0,
-2009,Whitehorse,5650.0,YT
-2009,Non CMA-CA,1370.0,YT
-2009,Northwest Territories,8470.0,
-2009,Yellowknife,4320.0,NT
-2009,Non CMA-CA,4150.0,NT
-2009,Nunavut,5410.0,
-2009,Campbellton,3970.0,
-2009,Hawkesbury,2830.0,
-2009,Ottawa - Gatineau,280670.0,
-2009,Lloydminster,8020.0,
-2010,Canada,7989380.0,
-2010,Newfoundland and Labrador,132340.0,
-2010,St. John's,45570.0,NL
-2010,Bay Roberts,2910.0,NL
-2010,Grand Falls-Windsor,3700.0,NL
-2010,Corner Brook,7280.0,NL
-2010,Non CMA-CA,72880.0,NL
-2010,Prince Edward Island,33560.0,
-2010,Charlottetown,14770.0,PE
-2010,Summerside,4640.0,PE
-2010,Non CMA-CA,14150.0,PE
-2010,Nova Scotia,218130.0,
-2010,Halifax,88980.0,NS
-2010,Kentville,6480.0,NS
-2010,Truro,10670.0,NS
-2010,New Glasgow,8150.0,NS
-2010,Cape Breton,22340.0,NS
-2010,Non CMA-CA,81510.0,NS
-2010,New Brunswick,186650.0,
-2010,Moncton,33930.0,NB
-2010,Saint John,30000.0,NB
-2010,Fredericton,22760.0,NB
-2010,Bathurst,8220.0,NB
-2010,Miramichi,5990.0,NB
-2010,Campbellton,3420.0,
-2010,Edmundston,5690.0,NB
-2010,Non CMA-CA,76650.0,NB
-2010,Quebec,1871780.0,
-2010,Campbellton,530.0,
-2010,Matane,4060.0,QC
-2010,Rimouski,11820.0,QC
-2010,Rivière-du-loup,6410.0,QC
-2010,Baie-Comeau,7460.0,QC
-2010,Saguenay,38700.0,QC
-2010,Alma,8450.0,QC
-2010,Dolbeau-Mistassini,3660.0,QC
-2010,Sept-Îles,6670.0,QC
-2010,Québec,182400.0,QC
-2010,Saint-Georges,7870.0,QC
-2010,Thetford Mines,6600.0,QC
-2010,Sherbrooke,45820.0,QC
-2010,Cowansville,3080.0,QC
-2010,Victoriaville,12940.0,QC
-2010,Trois-Rivières,34880.0,QC
-2010,Shawinigan,13170.0,QC
-2010,La Tuque,3460.0,QC
-2010,Drummondville,20110.0,QC
-2010,Granby,18170.0,QC
-2010,Saint-Hyacinthe,13680.0,QC
-2010,Sorel-Tracy,12740.0,QC
-2010,Joliette,11010.0,QC
-2010,Saint-Jean-sur-Richelieu,22200.0,QC
-2010,Montréal,870530.0,QC
-2010,Salaberry-de-Valleyfield,9410.0,QC
-2010,Lachute,3050.0,QC
-2010,Val-d'Or,7860.0,QC
-2010,Amos,4870.0,QC
-2010,Rouyn-Noranda,9910.0,QC
-2010,Hawkesbury,400.0,
-2010,Ottawa-Gatineau,71330.0,
-2010,Non CMA-CA,398550.0,QC
-2010,Ontario,3073980.0,
-2010,Cornwall,14380.0,ON
-2010,Hawkesbury,2410.0,
-2010,Ottawa-Gatineau,212360.0,
-2010,Brockville,8540.0,ON
-2010,Pembroke,6710.0,ON
-2010,Petawawa,3420.0,ON
-2010,Kingston,36850.0,ON
-2010,Belleville-Quinte West,23090.0,ON
-2010,Cobourg,4870.0,ON
-2010,Port Hope,4100.0,ON
-2010,Peterborough,29160.0,ON
-2010,Kawartha Lakes,19170.0,ON
-2010,Centre Wellington,6510.0,ON
-2010,Oshawa,82970.0,ON
-2010,Ingersoll,3370.0,ON
-2010,Toronto,1325490.0,ON
-2010,Hamilton,166280.0,ON
-2010,St. Catharines-Niagara,93830.0,ON
-2010,Kitchener-Cambridge-Waterloo,114580.0,ON
-2010,Brantford,30750.0,ON
-2010,Woodstock,10620.0,ON
-2010,Tillsonburg,4810.0,ON
-2010,Norfolk,15750.0,ON
-2010,Guelph,33500.0,ON
-2010,Stratford,7870.0,ON
-2010,London,110490.0,ON
-2010,Chatham-Kent,26530.0,ON
-2010,Leamington,18570.0,ON
-2010,Windsor,73080.0,ON
-2010,Sarnia,21450.0,ON
-2010,Owen Sound,7470.0,ON
-2010,Collingwood,4790.0,ON
-2010,Barrie,44170.0,ON
-2010,Orillia,10610.0,ON
-2010,Midland,8550.0,ON
-2010,North Bay,15660.0,ON
-2010,Greater Sudbury,38690.0,ON
-2010,Elliot Lake,3060.0,ON
-2010,Temiskaming Shores,3440.0,ON
-2010,Timmins,10520.0,ON
-2010,Sault Ste. Marie,19550.0,ON
-2010,Thunder Bay,28030.0,ON
-2010,Kenora,3330.0,ON
-2010,Non CMA-CA,364600.0,ON
-2010,Manitoba,275680.0,
-2010,Winnipeg,166460.0,MB
-2010,Portage la Prairie,4980.0,MB
-2010,Brandon,13250.0,MB
-2010,Thompson,2920.0,MB
-2010,Non CMA-CA,88080.0,MB
-2010,Saskatchewan,239200.0,
-2010,Regina,48680.0,SK
-2010,Yorkton,4630.0,SK
-2010,Moose Jaw,8250.0,SK
-2010,Swift Current,4970.0,SK
-2010,Saskatoon,59770.0,SK
-2010,North Battleford,4590.0,SK
-2010,Prince Albert,8690.0,SK
-2010,Estevan,3210.0,SK
-2010,Lloydminster,3470.0,
-2010,Non CMA-CA,92940.0,SK
-2010,Alberta,869550.0,
-2010,Medicine Hat,18010.0,AB
-2010,Brooks,6220.0,AB
-2010,Lethbridge,26470.0,AB
-2010,Okotoks,7200.0,AB
-2010,Calgary,291890.0,AB
-2010,Canmore,3110.0,AB
-2010,Red Deer,21810.0,AB
-2010,Camrose,4680.0,AB
-2010,Edmonton,268770.0,AB
-2010,Lloydminster,4730.0,
-2010,Cold Lake,4070.0,AB
-2010,Grande Prairie,19860.0,AB
-2010,Wood Buffalo,17570.0,AB
-2010,Wetaskiwin,3650.0,AB
-2010,Non CMA-CA,171530.0,AB
-2010,British Columbia,1067260.0,
-2010,Cranbrook,6530.0,BC
-2010,Penticton,11120.0,BC
-2010,Kelowna,44670.0,BC
-2010,Vernon,15120.0,BC
-2010,Salmon Arm,4590.0,BC
-2010,Kamloops,24660.0,BC
-2010,Chilliwack,22410.0,BC
-2010,Abbotsford-Mission,40460.0,BC
-2010,Vancouver,558950.0,BC
-2010,Squamish,4020.0,BC
-2010,Victoria,80720.0,BC
-2010,Duncan,10620.0,BC
-2010,Nanaimo,23410.0,BC
-2010,Parksville,8230.0,BC
-2010,Port Alberni,6150.0,BC
-2010,Courtenay,13740.0,BC
-2010,Campbell River,9310.0,BC
-2010,Powell River,4310.0,BC
-2010,Williams Lake,4470.0,BC
-2010,Quesnel,5740.0,BC
-2010,Prince Rupert,2750.0,BC
-2010,Kitimat,2100.0,BC
-2010,Terrace,4180.0,BC
-2010,Prince George,19500.0,BC
-2010,Dawson Creek,3340.0,BC
-2010,Fort St. John,6820.0,BC
-2010,Non CMA-CA,129340.0,BC
-2010,Yukon,7210.0,
-2010,Whitehorse,5840.0,YT
-2010,Non CMA-CA,1370.0,YT
-2010,Northwest Territories,8530.0,
-2010,Yellowknife,4360.0,NT
-2010,Non CMA-CA,4170.0,NT
-2010,Nunavut,5510.0,
-2010,Campbellton,3950.0,
-2010,Hawkesbury,2800.0,
-2010,Ottawa - Gatineau,283690.0,
-2010,Lloydminster,8200.0,
-2011,Canada,8091960.0,
-2011,Newfoundland and Labrador,133280.0,
-2011,St. John's,46410.0,NL
-2011,Bay Roberts,2930.0,NL
-2011,Grand Falls-Windsor,3740.0,NL
-2011,Corner Brook,7260.0,NL
-2011,Non CMA-CA,72940.0,NL
-2011,Prince Edward Island,33960.0,
-2011,Charlottetown,14890.0,PE
-2011,Summerside,4640.0,PE
-2011,Non CMA-CA,14430.0,PE
-2011,Nova Scotia,219280.0,
-2011,Halifax,90060.0,NS
-2011,Kentville,6480.0,NS
-2011,Truro,10730.0,NS
-2011,New Glasgow,8150.0,NS
-2011,Cape Breton,22260.0,NS
-2011,Non CMA-CA,81600.0,NS
-2011,New Brunswick,187480.0,
-2011,Moncton,34340.0,NB
-2011,Saint John,30110.0,NB
-2011,Fredericton,23060.0,NB
-2011,Bathurst,8230.0,NB
-2011,Miramichi,5970.0,NB
-2011,Campbellton,3410.0,
-2011,Edmundston,5660.0,NB
-2011,Non CMA-CA,76710.0,NB
-2011,Quebec,1891390.0,
-2011,Campbellton,560.0,
-2011,Matane,4070.0,QC
-2011,Rimouski,12010.0,QC
-2011,Rivière-du-loup,6450.0,QC
-2011,Baie-Comeau,7470.0,QC
-2011,Saguenay,38930.0,QC
-2011,Alma,8490.0,QC
-2011,Dolbeau-Mistassini,3660.0,QC
-2011,Sept-Îles,6690.0,QC
-2011,Québec,184610.0,QC
-2011,Saint-Georges,7960.0,QC
-2011,Thetford Mines,6530.0,QC
-2011,Sherbrooke,46240.0,QC
-2011,Cowansville,3100.0,QC
-2011,Victoriaville,13060.0,QC
-2011,Trois-Rivières,35170.0,QC
-2011,Shawinigan,13170.0,QC
-2011,La Tuque,3460.0,QC
-2011,Drummondville,20420.0,QC
-2011,Granby,18470.0,QC
-2011,Saint-Hyacinthe,13790.0,QC
-2011,Sorel-Tracy,12890.0,QC
-2011,Joliette,11140.0,QC
-2011,Saint-Jean-sur-Richelieu,22340.0,QC
-2011,Montréal,880860.0,QC
-2011,Salaberry-de-Valleyfield,9410.0,QC
-2011,Lachute,3050.0,QC
-2011,Val-d'Or,7990.0,QC
-2011,Amos,4910.0,QC
-2011,Rouyn-Noranda,10060.0,QC
-2011,Hawkesbury,390.0,
-2011,Ottawa-Gatineau,72320.0,
-2011,Non CMA-CA,401720.0,QC
-2011,Ontario,3104350.0,
-2011,Cornwall,14290.0,ON
-2011,Hawkesbury,2370.0,
-2011,Ottawa-Gatineau,215620.0,
-2011,Brockville,8520.0,ON
-2011,Pembroke,6720.0,ON
-2011,Petawawa,3460.0,ON
-2011,Kingston,36860.0,ON
-2011,Belleville-Quinte West,22990.0,ON
-2011,Cobourg,4980.0,ON
-2011,Port Hope,4100.0,ON
-2011,Peterborough,29080.0,ON
-2011,Kawartha Lakes,19250.0,ON
-2011,Centre Wellington,6600.0,ON
-2011,Oshawa,84220.0,ON
-2011,Ingersoll,3360.0,ON
-2011,Toronto,1345230.0,ON
-2011,Hamilton,167800.0,ON
-2011,St. Catharines-Niagara,93960.0,ON
-2011,Kitchener-Cambridge-Waterloo,115550.0,ON
-2011,Brantford,31040.0,ON
-2011,Woodstock,10810.0,ON
-2011,Tillsonburg,4890.0,ON
-2011,Norfolk,15760.0,ON
-2011,Guelph,33900.0,ON
-2011,Stratford,7870.0,ON
-2011,London,110900.0,ON
-2011,Chatham-Kent,26360.0,ON
-2011,Leamington,19060.0,ON
-2011,Windsor,73240.0,ON
-2011,Sarnia,21370.0,ON
-2011,Owen Sound,7390.0,ON
-2011,Collingwood,4920.0,ON
-2011,Barrie,44570.0,ON
-2011,Orillia,10640.0,ON
-2011,Midland,8720.0,ON
-2011,North Bay,15630.0,ON
-2011,Greater Sudbury,38700.0,ON
-2011,Elliot Lake,2990.0,ON
-2011,Temiskaming Shores,3400.0,ON
-2011,Timmins,10480.0,ON
-2011,Sault Ste. Marie,19370.0,ON
-2011,Thunder Bay,27830.0,ON
-2011,Kenora,3290.0,ON
-2011,Non CMA-CA,366250.0,ON
-2011,Manitoba,279950.0,
-2011,Winnipeg,169810.0,MB
-2011,Portage la Prairie,4990.0,MB
-2011,Brandon,13270.0,MB
-2011,Thompson,2900.0,MB
-2011,Non CMA-CA,88990.0,MB
-2011,Saskatchewan,244340.0,
-2011,Regina,50310.0,SK
-2011,Yorkton,4660.0,SK
-2011,Moose Jaw,8360.0,SK
-2011,Swift Current,5040.0,SK
-2011,Saskatoon,62150.0,SK
-2011,North Battleford,4680.0,SK
-2011,Prince Albert,8760.0,SK
-2011,Estevan,3270.0,SK
-2011,Lloydminster,3670.0,
-2011,Non CMA-CA,93450.0,SK
-2011,Alberta,893710.0,
-2011,Medicine Hat,18220.0,AB
-2011,Brooks,6200.0,AB
-2011,Lethbridge,26940.0,AB
-2011,Okotoks,7520.0,AB
-2011,Calgary,301980.0,AB
-2011,Canmore,3250.0,AB
-2011,Red Deer,22630.0,AB
-2011,Camrose,4790.0,AB
-2011,Edmonton,277040.0,AB
-2011,Lloydminster,4870.0,
-2011,Cold Lake,4190.0,AB
-2011,Grande Prairie,20730.0,AB
-2011,Wood Buffalo,18370.0,AB
-2011,Wetaskiwin,3680.0,AB
-2011,Non CMA-CA,173310.0,AB
-2011,British Columbia,1082540.0,
-2011,Cranbrook,6630.0,BC
-2011,Penticton,11230.0,BC
-2011,Kelowna,45420.0,BC
-2011,Vernon,15290.0,BC
-2011,Salmon Arm,4600.0,BC
-2011,Kamloops,24860.0,BC
-2011,Chilliwack,22890.0,BC
-2011,Abbotsford-Mission,41220.0,BC
-2011,Vancouver,568730.0,BC
-2011,Squamish,4130.0,BC
-2011,Victoria,81960.0,BC
-2011,Duncan,10650.0,BC
-2011,Nanaimo,23580.0,BC
-2011,Parksville,8340.0,BC
-2011,Port Alberni,6120.0,BC
-2011,Courtenay,13890.0,BC
-2011,Campbell River,9390.0,BC
-2011,Powell River,4360.0,BC
-2011,Williams Lake,4490.0,BC
-2011,Quesnel,5730.0,BC
-2011,Prince Rupert,2740.0,BC
-2011,Kitimat,2100.0,BC
-2011,Terrace,4240.0,BC
-2011,Prince George,19640.0,BC
-2011,Dawson Creek,3360.0,BC
-2011,Fort St. John,7040.0,BC
-2011,Non CMA-CA,129930.0,BC
-2011,Yukon,7490.0,
-2011,Whitehorse,6090.0,YT
-2011,Non CMA-CA,1400.0,YT
-2011,Northwest Territories,8570.0,
-2011,Yellowknife,4420.0,NT
-2011,Non CMA-CA,4150.0,NT
-2011,Nunavut,5640.0,
-2011,Campbellton,3970.0,
-2011,Hawkesbury,2760.0,
-2011,Ottawa - Gatineau,287940.0,
-2011,Lloydminster,8540.0,
-2012,Canada,8169080.0,
-2012,Newfoundland and Labrador,133660.0,
-2012,St. John's,47140.0,NL
-2012,Bay Roberts,2950.0,NL
-2012,Grand Falls-Windsor,3720.0,NL
-2012,Corner Brook,7210.0,NL
-2012,Non CMA-CA,72650.0,NL
-2012,Prince Edward Island,34080.0,
-2012,Charlottetown,15790.0,PE
-2012,Summerside,4630.0,PE
-2012,Non CMA-CA,13660.0,PE
-2012,Nova Scotia,219030.0,
-2012,Halifax,90360.0,NS
-2012,Kentville,6480.0,NS
-2012,Truro,10480.0,NS
-2012,New Glasgow,8160.0,NS
-2012,Cape Breton,22120.0,NS
-2012,Non CMA-CA,81440.0,NS
-2012,New Brunswick,187480.0,
-2012,Moncton,34700.0,NB
-2012,Saint John,29990.0,NB
-2012,Fredericton,23480.0,NB
-2012,Bathurst,8920.0,NB
-2012,Miramichi,6940.0,NB
-2012,Campbellton,3420.0,
-2012,Edmundston,5770.0,NB
-2012,Non CMA-CA,74260.0,NB
-2012,Quebec,1902890.0,
-2012,Campbellton,590.0,
-2012,Matane,4680.0,QC
-2012,Rimouski,12660.0,QC
-2012,Rivière-du-loup,7060.0,QC
-2012,Baie-Comeau,7390.0,QC
-2012,Saguenay,40490.0,QC
-2012,Alma,8300.0,QC
-2012,Dolbeau-Mistassini,4160.0,QC
-2012,Sept-Îles,6730.0,QC
-2012,Québec,187450.0,QC
-2012,Saint-Georges,8450.0,QC
-2012,Thetford Mines,6490.0,QC
-2012,Sherbrooke,48010.0,QC
-2012,Cowansville,2980.0,QC
-2012,Victoriaville,11690.0,QC
-2012,Trois-Rivières,36120.0,QC
-2012,Shawinigan,13110.0,QC
-2012,Drummondville,21770.0,QC
-2012,Granby,19480.0,QC
-2012,Saint-Hyacinthe,13550.0,QC
-2012,Sorel-Tracy,12460.0,QC
-2012,Joliette,11270.0,QC
-2012,Saint-Jean-sur-Richelieu,22430.0,QC
-2012,Montréal,887310.0,QC
-2012,Salaberry-de-Valleyfield,9460.0,QC
-2012,Lachute,3020.0,QC
-2012,Val-d'Or,8050.0,QC
-2012,Amos,3870.0,QC
-2012,Rouyn-Noranda,10330.0,QC
-2012,Hawkesbury,390.0,
-2012,Ottawa-Gatineau,73430.0,
-2012,Non CMA-CA,399740.0,QC
-2012,Ontario,3125810.0,
-2012,Cornwall,14340.0,ON
-2012,Hawkesbury,2370.0,
-2012,Ottawa-Gatineau,217090.0,
-2012,Brockville,8450.0,ON
-2012,Pembroke,6690.0,ON
-2012,Petawawa,3480.0,ON
-2012,Kingston,36220.0,ON
-2012,Belleville-Quinte West,21920.0,ON
-2012,Cobourg,5550.0,ON
-2012,Port Hope,4080.0,ON
-2012,Peterborough,28630.0,ON
-2012,Kawartha Lakes,18820.0,ON
-2012,Centre Wellington,6670.0,ON
-2012,Oshawa,85080.0,ON
-2012,Ingersoll,3340.0,ON
-2012,Toronto,1362740.0,ON
-2012,Hamilton,168720.0,ON
-2012,St. Catharines-Niagara,93950.0,ON
-2012,Kitchener-Cambridge-Waterloo,116020.0,ON
-2012,Brantford,31330.0,ON
-2012,Woodstock,10560.0,ON
-2012,Tillsonburg,4900.0,ON
-2012,Norfolk,15410.0,ON
-2012,Guelph,35410.0,ON
-2012,Stratford,7770.0,ON
-2012,London,110930.0,ON
-2012,Chatham-Kent,23030.0,ON
-2012,Leamington,20800.0,ON
-2012,Windsor,75120.0,ON
-2012,Sarnia,21240.0,ON
-2012,Owen Sound,7370.0,ON
-2012,Collingwood,4970.0,ON
-2012,Barrie,45130.0,ON
-2012,Orillia,10730.0,ON
-2012,Midland,8600.0,ON
-2012,North Bay,15530.0,ON
-2012,Greater Sudbury,38540.0,ON
-2012,Elliot Lake,2870.0,ON
-2012,Temiskaming Shores,3440.0,ON
-2012,Timmins,10410.0,ON
-2012,Sault Ste. Marie,18960.0,ON
-2012,Thunder Bay,27840.0,ON
-2012,Kenora,3270.0,ON
-2012,Non CMA-CA,367510.0,ON
-2012,Manitoba,282860.0,
-2012,Winnipeg,171350.0,MB
-2012,Steinbach,5110.0,MB
-2012,Portage la Prairie,3880.0,MB
-2012,Brandon,13430.0,MB
-2012,Thompson,2940.0,MB
-2012,Non CMA-CA,86160.0,MB
-2012,Saskatchewan,248900.0,
-2012,Regina,51560.0,SK
-2012,Yorkton,4710.0,SK
-2012,Moose Jaw,8420.0,SK
-2012,Swift Current,5300.0,SK
-2012,Saskatoon,64260.0,SK
-2012,North Battleford,4620.0,SK
-2012,Prince Albert,8960.0,SK
-2012,Estevan,3630.0,SK
-2012,Lloydminster,3860.0,
-2012,Non CMA-CA,93580.0,SK
-2012,Alberta,921610.0,
-2012,Medicine Hat,18580.0,AB
-2012,Brooks,6190.0,AB
-2012,Lethbridge,26950.0,AB
-2012,Okotoks,7820.0,AB
-2012,High River,3950.0,AB
-2012,Calgary,313450.0,AB
-2012,Strathmore,3910.0,AB
-2012,Canmore,3360.0,AB
-2012,Red Deer,23020.0,AB
-2012,Sylvan Lake,3380.0,AB
-2012,Lacombe,3910.0,AB
-2012,Camrose,4870.0,AB
-2012,Edmonton,286020.0,AB
-2012,Lloydminster,5110.0,
-2012,Cold Lake,4180.0,AB
-2012,Grande Prairie,15640.0,AB
-2012,Wood Buffalo,19370.0,AB
-2012,Wetaskiwin,3710.0,AB
-2012,Non CMA-CA,168200.0,AB
-2012,British Columbia,1090980.0,
-2012,Cranbrook,6650.0,BC
-2012,Penticton,10700.0,BC
-2012,Kelowna,45810.0,BC
-2012,Vernon,15300.0,BC
-2012,Salmon Arm,4650.0,BC
-2012,Kamloops,25150.0,BC
-2012,Chilliwack,23530.0,BC
-2012,Abbotsford-Mission,41610.0,BC
-2012,Vancouver,575610.0,BC
-2012,Squamish,4270.0,BC
-2012,Victoria,82740.0,BC
-2012,Duncan,10570.0,BC
-2012,Nanaimo,23690.0,BC
-2012,Parksville,8320.0,BC
-2012,Port Alberni,6100.0,BC
-2012,Courtenay,14300.0,BC
-2012,Campbell River,9120.0,BC
-2012,Powell River,4370.0,BC
-2012,Williams Lake,4320.0,BC
-2012,Quesnel,5460.0,BC
-2012,Prince Rupert,2710.0,BC
-2012,Terrace,3650.0,BC
-2012,Prince George,19700.0,BC
-2012,Dawson Creek,3000.0,BC
-2012,Fort St. John,6230.0,BC
-2012,Non CMA-CA,133400.0,BC
-2012,Yukon,7500.0,
-2012,Whitehorse,6020.0,YT
-2012,Non CMA-CA,1480.0,YT
-2012,Northwest Territories,8540.0,
-2012,Yellowknife,4390.0,NT
-2012,Non CMA-CA,4150.0,NT
-2012,Nunavut,5750.0,
-2012,Campbellton,4000.0,
-2012,Hawkesbury,2760.0,
-2012,Ottawa - Gatineau,290520.0,
-2012,Lloydminster,8970.0,
-2013,Canada,8273180.0,
-2013,Newfoundland and Labrador,134350.0,
-2013,St. John's,48040.0,NL
-2013,Bay Roberts,2980.0,NL
-2013,Grand Falls-Windsor,3770.0,NL
-2013,Corner Brook,7170.0,NL
-2013,Non CMA-CA,72390.0,NL
-2013,Prince Edward Island,34110.0,
-2013,Charlottetown,15790.0,PE
-2013,Summerside,4570.0,PE
-2013,Non CMA-CA,13750.0,PE
-2013,Nova Scotia,219340.0,
-2013,Halifax,91170.0,NS
-2013,Kentville,6520.0,NS
-2013,Truro,10730.0,NS
-2013,New Glasgow,8190.0,NS
-2013,Cape Breton,21990.0,NS
-2013,Non CMA-CA,80750.0,NS
-2013,New Brunswick,187070.0,
-2013,Moncton,34810.0,NB
-2013,Saint John,29840.0,NB
-2013,Fredericton,23520.0,NB
-2013,Bathurst,8870.0,NB
-2013,Miramichi,6870.0,NB
-2013,Campbellton,3380.0,
-2013,Edmundston,5750.0,NB
-2013,Non CMA-CA,74040.0,NB
-2013,Quebec,1916540.0,
-2013,Campbellton,610.0,
-2013,Matane,4640.0,QC
-2013,Rimouski,12710.0,QC
-2013,Rivière-du-loup,7090.0,QC
-2013,Baie-Comeau,7370.0,QC
-2013,Saguenay,40560.0,QC
-2013,Alma,8260.0,QC
-2013,Dolbeau-Mistassini,4150.0,QC
-2013,Sept-Îles,6720.0,QC
-2013,Québec,188880.0,QC
-2013,Saint-Georges,8510.0,QC
-2013,Thetford Mines,6450.0,QC
-2013,Sherbrooke,48540.0,QC
-2013,Cowansville,3080.0,QC
-2013,Victoriaville,11800.0,QC
-2013,Trois-Rivières,36300.0,QC
-2013,Shawinigan,13080.0,QC
-2013,Drummondville,22040.0,QC
-2013,Granby,19820.0,QC
-2013,Saint-Hyacinthe,13590.0,QC
-2013,Sorel-Tracy,12580.0,QC
-2013,Joliette,11400.0,QC
-2013,Saint-Jean-sur-Richelieu,22660.0,QC
-2013,Montréal,895250.0,QC
-2013,Salaberry-de-Valleyfield,9450.0,QC
-2013,Lachute,3010.0,QC
-2013,Val-d'Or,8120.0,QC
-2013,Amos,3920.0,QC
-2013,Rouyn-Noranda,10390.0,QC
-2013,Hawkesbury,380.0,
-2013,Ottawa-Gatineau,73760.0,
-2013,Non CMA-CA,401440.0,QC
-2013,Ontario,3156030.0,
-2013,Cornwall,14430.0,ON
-2013,Hawkesbury,2370.0,
-2013,Ottawa-Gatineau,219590.0,
-2013,Brockville,8400.0,ON
-2013,Pembroke,6570.0,ON
-2013,Petawawa,3580.0,ON
-2013,Kingston,36360.0,ON
-2013,Belleville-Quinte West,22130.0,ON
-2013,Cobourg,5650.0,ON
-2013,Port Hope,4140.0,ON
-2013,Peterborough,28750.0,ON
-2013,Kawartha Lakes,18860.0,ON
-2013,Centre Wellington,6700.0,ON
-2013,Oshawa,86280.0,ON
-2013,Ingersoll,3340.0,ON
-2013,Toronto,1379950.0,ON
-2013,Hamilton,170360.0,ON
-2013,St. Catharines-Niagara,94590.0,ON
-2013,Kitchener-Cambridge-Waterloo,116790.0,ON
-2013,Brantford,31780.0,ON
-2013,Woodstock,10790.0,ON
-2013,Tillsonburg,4920.0,ON
-2013,Norfolk,15530.0,ON
-2013,Guelph,35760.0,ON
-2013,Stratford,7830.0,ON
-2013,London,111480.0,ON
-2013,Chatham-Kent,24360.0,ON
-2013,Leamington,19910.0,ON
-2013,Windsor,75510.0,ON
-2013,Sarnia,21210.0,ON
-2013,Owen Sound,7400.0,ON
-2013,Collingwood,5100.0,ON
-2013,Barrie,45580.0,ON
-2013,Orillia,10880.0,ON
-2013,Midland,8630.0,ON
-2013,North Bay,15530.0,ON
-2013,Greater Sudbury,38390.0,ON
-2013,Elliot Lake,2820.0,ON
-2013,Temiskaming Shores,3400.0,ON
-2013,Timmins,10350.0,ON
-2013,Sault Ste. Marie,18790.0,ON
-2013,Thunder Bay,28030.0,ON
-2013,Kenora,3250.0,ON
-2013,Non CMA-CA,369970.0,ON
-2013,Manitoba,286500.0,
-2013,Winnipeg,174360.0,MB
-2013,Steinbach,5110.0,MB
-2013,Portage la Prairie,3930.0,MB
-2013,Brandon,13600.0,MB
-2013,Thompson,2920.0,MB
-2013,Non CMA-CA,86590.0,MB
-2013,Saskatchewan,253270.0,
-2013,Regina,52960.0,SK
-2013,Yorkton,4750.0,SK
-2013,Moose Jaw,8490.0,SK
-2013,Swift Current,5320.0,SK
-2013,Saskatoon,66150.0,SK
-2013,North Battleford,4670.0,SK
-2013,Prince Albert,9030.0,SK
-2013,Estevan,3710.0,SK
-2013,Lloydminster,4070.0,
-2013,Non CMA-CA,94140.0,SK
-2013,Alberta,955400.0,
-2013,Medicine Hat,18690.0,AB
-2013,Brooks,6300.0,AB
-2013,Lethbridge,27640.0,AB
-2013,Okotoks,8190.0,AB
-2013,High River,3810.0,AB
-2013,Calgary,327140.0,AB
-2013,Strathmore,4000.0,AB
-2013,Canmore,3520.0,AB
-2013,Red Deer,23670.0,AB
-2013,Sylvan Lake,3500.0,AB
-2013,Lacombe,4020.0,AB
-2013,Camrose,4990.0,AB
-2013,Edmonton,298940.0,AB
-2013,Lloydminster,5380.0,
-2013,Cold Lake,4300.0,AB
-2013,Grande Prairie,16380.0,AB
-2013,Wood Buffalo,20260.0,AB
-2013,Wetaskiwin,3780.0,AB
-2013,Non CMA-CA,170910.0,AB
-2013,British Columbia,1108360.0,
-2013,Cranbrook,6690.0,BC
-2013,Penticton,10970.0,BC
-2013,Kelowna,46880.0,BC
-2013,Vernon,15500.0,BC
-2013,Salmon Arm,4690.0,BC
-2013,Kamloops,25400.0,BC
-2013,Chilliwack,23850.0,BC
-2013,Abbotsford-Mission,42200.0,BC
-2013,Vancouver,585040.0,BC
-2013,Squamish,4400.0,BC
-2013,Victoria,83930.0,BC
-2013,Duncan,10660.0,BC
-2013,Nanaimo,23980.0,BC
-2013,Parksville,8370.0,BC
-2013,Port Alberni,6130.0,BC
-2013,Courtenay,14400.0,BC
-2013,Campbell River,9230.0,BC
-2013,Powell River,4390.0,BC
-2013,Williams Lake,4330.0,BC
-2013,Quesnel,5420.0,BC
-2013,Prince Rupert,2720.0,BC
-2013,Terrace,3700.0,BC
-2013,Prince George,19760.0,BC
-2013,Dawson Creek,3040.0,BC
-2013,Fort St. John,6410.0,BC
-2013,Non CMA-CA,136260.0,BC
-2013,Yukon,7650.0,
-2013,Whitehorse,6140.0,YT
-2013,Non CMA-CA,1510.0,YT
-2013,Northwest Territories,8670.0,
-2013,Yellowknife,4460.0,NT
-2013,Non CMA-CA,4210.0,NT
-2013,Nunavut,5890.0,
-2013,Campbellton,3990.0,
-2013,Hawkesbury,2750.0,
-2013,Ottawa - Gatineau,293350.0,
-2013,Lloydminster,9450.0,
-2014,Canada,8382120.0,
-2014,Newfoundland and Labrador,135120.0,
-2014,St. John's,48780.0,NL
-2014,Bay Roberts,3000.0,NL
-2014,Grand Falls-Windsor,3810.0,NL
-2014,Corner Brook,7140.0,NL
-2014,Non CMA-CA,72400.0,NL
-2014,Prince Edward Island,34510.0,
-2014,Charlottetown,16090.0,PE
-2014,Summerside,4610.0,PE
-2014,Non CMA-CA,13820.0,PE
-2014,Nova Scotia,219920.0,
-2014,Halifax,91510.0,NS
-2014,Kentville,6490.0,NS
-2014,Truro,10710.0,NS
-2014,New Glasgow,8060.0,NS
-2014,Cape Breton,21890.0,NS
-2014,Non CMA-CA,81270.0,NS
-2014,New Brunswick,187580.0,
-2014,Moncton,35020.0,NB
-2014,Saint John,29940.0,NB
-2014,Fredericton,23790.0,NB
-2014,Bathurst,8910.0,NB
-2014,Miramichi,6860.0,NB
-2014,Campbellton,3380.0,
-2014,Edmundston,5710.0,NB
-2014,Non CMA-CA,73980.0,NB
-2014,Quebec,1930260.0,
-2014,Campbellton,590.0,
-2014,Matane,4590.0,QC
-2014,Rimouski,12860.0,QC
-2014,Rivière-du-loup,7100.0,QC
-2014,Baie-Comeau,7270.0,QC
-2014,Saguenay,40570.0,QC
-2014,Alma,8280.0,QC
-2014,Dolbeau-Mistassini,4130.0,QC
-2014,Sept-Îles,6640.0,QC
-2014,Québec,190510.0,QC
-2014,Saint-Georges,8560.0,QC
-2014,Thetford Mines,6420.0,QC
-2014,Sherbrooke,49020.0,QC
-2014,Cowansville,3120.0,QC
-2014,Victoriaville,11810.0,QC
-2014,Trois-Rivières,36560.0,QC
-2014,Shawinigan,13090.0,QC
-2014,Drummondville,22230.0,QC
-2014,Granby,20080.0,QC
-2014,Saint-Hyacinthe,13670.0,QC
-2014,Sorel-Tracy,12600.0,QC
-2014,Joliette,11470.0,QC
-2014,Saint-Jean-sur-Richelieu,22690.0,QC
-2014,Montréal,903900.0,QC
-2014,Salaberry-de-Valleyfield,9500.0,QC
-2014,Lachute,3040.0,QC
-2014,Val-d'Or,8160.0,QC
-2014,Amos,3880.0,QC
-2014,Rouyn-Noranda,10470.0,QC
-2014,Hawkesbury,390.0,
-2014,Ottawa-Gatineau,74210.0,
-2014,Non CMA-CA,402870.0,QC
-2014,Ontario,3192230.0,
-2014,Cornwall,14540.0,ON
-2014,Hawkesbury,2370.0,
-2014,Ottawa-Gatineau,222730.0,
-2014,Brockville,8470.0,ON
-2014,Pembroke,6460.0,ON
-2014,Petawawa,3590.0,ON
-2014,Kingston,36590.0,ON
-2014,Belleville-Quinte West,22210.0,ON
-2014,Cobourg,5790.0,ON
-2014,Port Hope,4200.0,ON
-2014,Peterborough,28860.0,ON
-2014,Kawartha Lakes,19080.0,ON
-2014,Centre Wellington,6780.0,ON
-2014,Oshawa,87570.0,ON
-2014,Ingersoll,3420.0,ON
-2014,Toronto,1400550.0,ON
-2014,Hamilton,172040.0,ON
-2014,St. Catharines-Niagara,95590.0,ON
-2014,Kitchener-Cambridge-Waterloo,118280.0,ON
-2014,Brantford,32290.0,ON
-2014,Woodstock,10970.0,ON
-2014,Tillsonburg,4960.0,ON
-2014,Norfolk,15800.0,ON
-2014,Guelph,36230.0,ON
-2014,Stratford,7860.0,ON
-2014,London,112260.0,ON
-2014,Chatham-Kent,24320.0,ON
-2014,Leamington,20220.0,ON
-2014,Windsor,76040.0,ON
-2014,Sarnia,21320.0,ON
-2014,Owen Sound,7390.0,ON
-2014,Collingwood,5270.0,ON
-2014,Barrie,46240.0,ON
-2014,Orillia,10770.0,ON
-2014,Midland,8720.0,ON
-2014,North Bay,15500.0,ON
-2014,Greater Sudbury,38300.0,ON
-2014,Elliot Lake,2800.0,ON
-2014,Temiskaming Shores,3380.0,ON
-2014,Timmins,10260.0,ON
-2014,Sault Ste. Marie,18720.0,ON
-2014,Thunder Bay,28120.0,ON
-2014,Kenora,3290.0,ON
-2014,Non CMA-CA,372090.0,ON
-2014,Manitoba,290230.0,
-2014,Winnipeg,176670.0,MB
-2014,Steinbach,4850.0,MB
-2014,Portage la Prairie,3830.0,MB
-2014,Brandon,13820.0,MB
-2014,Thompson,2930.0,MB
-2014,Non CMA-CA,88140.0,MB
-2014,Saskatchewan,256670.0,
-2014,Regina,54300.0,SK
-2014,Yorkton,4740.0,SK
-2014,Moose Jaw,8530.0,SK
-2014,Swift Current,5090.0,SK
-2014,Saskatoon,67830.0,SK
-2014,North Battleford,4740.0,SK
-2014,Prince Albert,9060.0,SK
-2014,Estevan,3730.0,SK
-2014,Lloydminster,4180.0,
-2014,Non CMA-CA,94450.0,SK
-2014,Alberta,983840.0,
-2014,Medicine Hat,19070.0,AB
-2014,Brooks,6530.0,AB
-2014,Lethbridge,27360.0,AB
-2014,Okotoks,8430.0,AB
-2014,High River,3930.0,AB
-2014,Calgary,338050.0,AB
-2014,Strathmore,4110.0,AB
-2014,Canmore,3640.0,AB
-2014,Red Deer,23780.0,AB
-2014,Sylvan Lake,3640.0,AB
-2014,Lacombe,4120.0,AB
-2014,Camrose,5120.0,AB
-2014,Edmonton,310720.0,AB
-2014,Lloydminster,5490.0,
-2014,Cold Lake,4360.0,AB
-2014,Grande Prairie,17090.0,AB
-2014,Wood Buffalo,20480.0,AB
-2014,Wetaskiwin,3790.0,AB
-2014,Non CMA-CA,174160.0,AB
-2014,British Columbia,1129320.0,
-2014,Cranbrook,6800.0,BC
-2014,Penticton,11310.0,BC
-2014,Kelowna,48560.0,BC
-2014,Vernon,15850.0,BC
-2014,Salmon Arm,4880.0,BC
-2014,Kamloops,25840.0,BC
-2014,Chilliwack,24430.0,BC
-2014,Abbotsford-Mission,43480.0,BC
-2014,Vancouver,595740.0,BC
-2014,Squamish,4610.0,BC
-2014,Victoria,85720.0,BC
-2014,Duncan,10860.0,BC
-2014,Nanaimo,24460.0,BC
-2014,Parksville,8560.0,BC
-2014,Port Alberni,6110.0,BC
-2014,Courtenay,14680.0,BC
-2014,Campbell River,9440.0,BC
-2014,Powell River,4390.0,BC
-2014,Williams Lake,4340.0,BC
-2014,Quesnel,5450.0,BC
-2014,Prince Rupert,2740.0,BC
-2014,Terrace,3760.0,BC
-2014,Prince George,19950.0,BC
-2014,Dawson Creek,3090.0,BC
-2014,Fort St. John,7030.0,BC
-2014,Non CMA-CA,137230.0,BC
-2014,Yukon,7740.0,
-2014,Whitehorse,6250.0,YT
-2014,Non CMA-CA,1500.0,YT
-2014,Northwest Territories,8700.0,
-2014,Yellowknife,4550.0,NT
-2014,Non CMA-CA,4150.0,NT
-2014,Nunavut,5990.0,
-2014,Campbellton,3970.0,
-2014,Hawkesbury,2770.0,
-2014,Ottawa - Gatineau,296940.0,
-2014,Lloydminster,9670.0,
-2015,Canada,8441770.0,
-2015,Newfoundland and Labrador,134880.0,
-2015,St. John's,49080.0,NL
-2015,Bay Roberts,2970.0,NL
-2015,Grand Falls-Windsor,3780.0,NL
-2015,Corner Brook,7100.0,NL
-2015,Non CMA-CA,71960.0,NL
-2015,Prince Edward Island,34810.0,
-2015,Charlottetown,16310.0,PE
-2015,Summerside,4620.0,PE
-2015,Non CMA-CA,13870.0,PE
-2015,Nova Scotia,220150.0,
-2015,Halifax,92200.0,NS
-2015,Kentville,6520.0,NS
-2015,Truro,10700.0,NS
-2015,New Glasgow,8010.0,NS
-2015,Cape Breton,21600.0,NS
-2015,Non CMA-CA,81120.0,NS
-2015,New Brunswick,187160.0,
-2015,Moncton,35130.0,NB
-2015,Saint John,29950.0,NB
-2015,Fredericton,23840.0,NB
-2015,Bathurst,8850.0,NB
-2015,Miramichi,6830.0,NB
-2015,Campbellton,3520.0,
-2015,Edmundston,5640.0,NB
-2015,Non CMA-CA,73410.0,NB
-2015,Quebec,1936130.0,
-2015,Campbellton,530.0,
-2015,Matane,4560.0,QC
-2015,Rimouski,12880.0,QC
-2015,Rivière-du-loup,7040.0,QC
-2015,Baie-Comeau,7170.0,QC
-2015,Saguenay,40420.0,QC
-2015,Alma,8260.0,QC
-2015,Dolbeau-Mistassini,4080.0,QC
-2015,Sept-Îles,6520.0,QC
-2015,Québec,191230.0,QC
-2015,Saint-Georges,8620.0,QC
-2015,Thetford Mines,6350.0,QC
-2015,Sherbrooke,49170.0,QC
-2015,Cowansville,3160.0,QC
-2015,Victoriaville,11880.0,QC
-2015,Trois-Rivières,36630.0,QC
-2015,Shawinigan,12980.0,QC
-2015,Drummondville,22450.0,QC
-2015,Granby,20100.0,QC
-2015,Saint-Hyacinthe,13720.0,QC
-2015,Sorel-Tracy,12610.0,QC
-2015,Joliette,11410.0,QC
-2015,Saint-Jean-sur-Richelieu,22730.0,QC
-2015,Montréal,907620.0,QC
-2015,Salaberry-de-Valleyfield,9530.0,QC
-2015,Lachute,3030.0,QC
-2015,Val-d'Or,8110.0,QC
-2015,Amos,3870.0,QC
-2015,Rouyn-Noranda,10430.0,QC
-2015,Hawkesbury,400.0,
-2015,Ottawa-Gatineau,74650.0,
-2015,Non CMA-CA,404010.0,QC
-2015,Ontario,3218890.0,
-2015,Cornwall,14480.0,ON
-2015,Hawkesbury,2320.0,
-2015,Ottawa-Gatineau,225400.0,
-2015,Brockville,8730.0,ON
-2015,Pembroke,6470.0,ON
-2015,Petawawa,3610.0,ON
-2015,Kingston,36600.0,ON
-2015,Belleville-Quinte West,22400.0,ON
-2015,Cobourg,5710.0,ON
-2015,Port Hope,4260.0,ON
-2015,Peterborough,29150.0,ON
-2015,Kawartha Lakes,17050.0,ON
-2015,Centre Wellington,6970.0,ON
-2015,Oshawa,88810.0,ON
-2015,Ingersoll,3500.0,ON
-2015,Toronto,1414960.0,ON
-2015,Hamilton,172200.0,ON
-2015,St. Catharines-Niagara,96880.0,ON
-2015,Kitchener-Cambridge-Waterloo,119800.0,ON
-2015,Brantford,32660.0,ON
-2015,Woodstock,11250.0,ON
-2015,Tillsonburg,5010.0,ON
-2015,Norfolk,15880.0,ON
-2015,Guelph,36850.0,ON
-2015,Stratford,7910.0,ON
-2015,London,113260.0,ON
-2015,Chatham-Kent,24340.0,ON
-2015,Leamington,20610.0,ON
-2015,Windsor,76810.0,ON
-2015,Sarnia,21220.0,ON
-2015,Owen Sound,7340.0,ON
-2015,Collingwood,5410.0,ON
-2015,Barrie,45530.0,ON
-2015,Orillia,9200.0,ON
-2015,Midland,8820.0,ON
-2015,North Bay,15400.0,ON
-2015,Greater Sudbury,38100.0,ON
-2015,Elliot Lake,2770.0,ON
-2015,Temiskaming Shores,3400.0,ON
-2015,Timmins,10120.0,ON
-2015,Sault Ste. Marie,18470.0,ON
-2015,Thunder Bay,27790.0,ON
-2015,Kenora,4160.0,ON
-2015,Non CMA-CA,377290.0,ON
-2015,Manitoba,293590.0,
-2015,Winnipeg,179990.0,MB
-2015,Steinbach,4920.0,MB
-2015,Portage la Prairie,3900.0,MB
-2015,Brandon,13870.0,MB
-2015,Thompson,2950.0,MB
-2015,Non CMA-CA,87960.0,MB
-2015,Saskatchewan,258360.0,
-2015,Regina,55080.0,SK
-2015,Yorkton,4760.0,SK
-2015,Moose Jaw,8560.0,SK
-2015,Swift Current,5100.0,SK
-2015,Saskatoon,68970.0,SK
-2015,North Battleford,4740.0,SK
-2015,Prince Albert,9090.0,SK
-2015,Estevan,3650.0,SK
-2015,Lloydminster,3490.0,
-2015,Non CMA-CA,94910.0,SK
-2015,Alberta,987360.0,
-2015,Medicine Hat,18880.0,AB
-2015,Brooks,6490.0,AB
-2015,Lethbridge,27580.0,AB
-2015,Okotoks,7980.0,AB
-2015,High River,3880.0,AB
-2015,Calgary,342020.0,AB
-2015,Strathmore,4130.0,AB
-2015,Canmore,3700.0,AB
-2015,Red Deer,23570.0,AB
-2015,Sylvan Lake,3610.0,AB
-2015,Lacombe,4030.0,AB
-2015,Camrose,5100.0,AB
-2015,Edmonton,316110.0,AB
-2015,Lloydminster,5160.0,
-2015,Cold Lake,4370.0,AB
-2015,Grande Prairie,15290.0,AB
-2015,Wood Buffalo,19100.0,AB
-2015,Wetaskiwin,3170.0,AB
-2015,Non CMA-CA,173190.0,AB
-2015,British Columbia,1147740.0,
-2015,Cranbrook,6790.0,BC
-2015,Penticton,11580.0,BC
-2015,Kelowna,49970.0,BC
-2015,Vernon,16240.0,BC
-2015,Salmon Arm,4830.0,BC
-2015,Kamloops,26270.0,BC
-2015,Chilliwack,25290.0,BC
-2015,Abbotsford-Mission,44710.0,BC
-2015,Vancouver,605080.0,BC
-2015,Squamish,4770.0,BC
-2015,Victoria,87250.0,BC
-2015,Duncan,11090.0,BC
-2015,Nanaimo,24910.0,BC
-2015,Parksville,8820.0,BC
-2015,Port Alberni,6160.0,BC
-2015,Courtenay,15020.0,BC
-2015,Campbell River,9530.0,BC
-2015,Powell River,4470.0,BC
-2015,Williams Lake,4450.0,BC
-2015,Quesnel,5710.0,BC
-2015,Prince Rupert,2730.0,BC
-2015,Terrace,3740.0,BC
-2015,Prince George,20160.0,BC
-2015,Dawson Creek,2650.0,BC
-2015,Fort St. John,6990.0,BC
-2015,Non CMA-CA,138530.0,BC
-2015,Yukon,7880.0,
-2015,Whitehorse,6360.0,YT
-2015,Non CMA-CA,1520.0,YT
-2015,Northwest Territories,8780.0,
-2015,Yellowknife,4610.0,NT
-2015,Non CMA-CA,4170.0,NT
-2015,Nunavut,6030.0,
-2015,Campbellton,4040.0,
-2015,Hawkesbury,2720.0,
-2015,Ottawa - Gatineau,300050.0,
-2015,Lloydminster,8660.0,
-2016,Canada,8524950.0,
-2016,Newfoundland and Labrador,134190.0,
-2016,St. John's,49030.0,NL
-2016,Bay Roberts,2970.0,NL
-2016,Grand Falls-Windsor,3750.0,NL
-2016,Gander,3620.0,NL
-2016,Corner Brook,8220.0,NL
-2016,Non CMA-CA,66600.0,NL
-2016,Prince Edward Island,35440.0,
-2016,Charlottetown,16320.0,PE
-2016,Summerside,4390.0,PE
-2016,Non CMA-CA,14730.0,PE
-2016,Nova Scotia,221650.0,
-2016,Halifax,93780.0,NS
-2016,Kentville,6290.0,NS
-2016,Truro,10770.0,NS
-2016,New Glasgow,7930.0,NS
-2016,Cape Breton,21310.0,NS
-2016,Non CMA-CA,81580.0,NS
-2016,New Brunswick,187840.0,
-2016,Moncton,35600.0,NB
-2016,Saint John,30440.0,NB
-2016,Fredericton,25000.0,NB
-2016,Bathurst,8340.0,NB
-2016,Miramichi,6830.0,NB
-2016,Campbellton,3340.0,
-2016,Edmundston,6090.0,NB
-2016,Non CMA-CA,72210.0,NB
-2016,Quebec,1950110.0,
-2016,Campbellton,510.0,
-2016,Matane,4510.0,QC
-2016,Rimouski,13650.0,QC
-2016,Rivière-du-loup,7380.0,QC
-2016,Baie-Comeau,7010.0,QC
-2016,Saguenay,40590.0,QC
-2016,Alma,8220.0,QC
-2016,Dolbeau-Mistassini,3960.0,QC
-2016,Sept-Îles,6480.0,QC
-2016,Québec,193100.0,QC
-2016,Sainte-Marie,3410.0,QC
-2016,Saint-Georges,7670.0,QC
-2016,Thetford Mines,6600.0,QC
-2016,Sherbrooke,49790.0,QC
-2016,Cowansville,3220.0,QC
-2016,Victoriaville,11940.0,QC
-2016,Trois-Rivières,36840.0,QC
-2016,Shawinigan,12930.0,QC
-2016,Drummondville,23670.0,QC
-2016,Granby,21470.0,QC
-2016,Saint-Hyacinthe,13820.0,QC
-2016,Sorel-Tracy,10450.0,QC
-2016,Joliette,11540.0,QC
-2016,Montréal,943940.0,QC
-2016,Salaberry-de-Valleyfield,9590.0,QC
-2016,Lachute,2880.0,QC
-2016,Val-d'Or,8140.0,QC
-2016,Rouyn-Noranda,10250.0,QC
-2016,Hawkesbury,410.0,
-2016,Ottawa-Gatineau,76550.0,
-2016,Non CMA-CA,399590.0,QC
-2016,Ontario,3260160.0,
-2016,Cornwall,14900.0,ON
-2016,Hawkesbury,2320.0,
-2016,Ottawa-Gatineau,234020.0,
-2016,Arnprior,4050.0,ON
-2016,Carleton Place,5960.0,ON
-2016,Brockville,8110.0,ON
-2016,Pembroke,6320.0,ON
-2016,Petawawa,3760.0,ON
-2016,Kingston,37500.0,ON
-2016,Belleville-Quinte West,25580.0,ON
-2016,Cobourg,5500.0,ON
-2016,Port Hope,4360.0,ON
-2016,Peterborough,26750.0,ON
-2016,Kawartha Lakes,17490.0,ON
-2016,Centre Wellington,7780.0,ON
-2016,Oshawa,89910.0,ON
-2016,Ingersoll,3160.0,ON
-2016,Toronto,1431290.0,ON
-2016,Hamilton,174590.0,ON
-2016,St. Catharines-Niagara,97910.0,ON
-2016,Kitchener-Cambridge-Waterloo,127160.0,ON
-2016,Brantford,33810.0,ON
-2016,Woodstock,10100.0,ON
-2016,Tillsonburg,4120.0,ON
-2016,Norfolk,16660.0,ON
-2016,Guelph,37790.0,ON
-2016,Stratford,8010.0,ON
-2016,London,115220.0,ON
-2016,Chatham-Kent,24360.0,ON
-2016,Leamington,20180.0,ON
-2016,Windsor,78170.0,ON
-2016,Sarnia,23570.0,ON
-2016,Wasaga Beach,6060.0,ON
-2016,Owen Sound,7430.0,ON
-2016,Collingwood,5570.0,ON
-2016,Barrie,46370.0,ON
-2016,Orillia,6950.0,ON
-2016,Midland,8480.0,ON
-2016,North Bay,17020.0,ON
-2016,Greater Sudbury,39290.0,ON
-2016,Elliot Lake,2800.0,ON
-2016,Timmins,10020.0,ON
-2016,Sault Ste. Marie,18330.0,ON
-2016,Thunder Bay,27650.0,ON
-2016,Kenora,3320.0,ON
-2016,Non CMA-CA,360490.0,ON
-2016,Manitoba,296610.0,
-2016,Winnipeg,182470.0,MB
-2016,Winkler,7770.0,MB
-2016,Steinbach,4970.0,MB
-2016,Portage la Prairie,3900.0,MB
-2016,Brandon,14210.0,MB
-2016,Thompson,2890.0,MB
-2016,Non CMA-CA,80410.0,MB
-2016,Saskatchewan,259910.0,
-2016,Regina,55520.0,SK
-2016,Yorkton,4740.0,SK
-2016,Moose Jaw,8590.0,SK
-2016,Swift Current,5110.0,SK
-2016,Saskatoon,70600.0,SK
-2016,North Battleford,4670.0,SK
-2016,Prince Albert,9520.0,SK
-2016,Estevan,3560.0,SK
-2016,Weyburn,3110.0,SK
-2016,Lloydminster,3430.0,
-2016,Non CMA-CA,91060.0,SK
-2016,Alberta,989840.0,
-2016,Medicine Hat,18820.0,AB
-2016,Brooks,6440.0,AB
-2016,Lethbridge,27780.0,AB
-2016,Okotoks,8100.0,AB
-2016,High River,3870.0,AB
-2016,Calgary,344340.0,AB
-2016,Strathmore,4130.0,AB
-2016,Canmore,3780.0,AB
-2016,Red Deer,23040.0,AB
-2016,Sylvan Lake,3580.0,AB
-2016,Lacombe,4050.0,AB
-2016,Camrose,5050.0,AB
-2016,Edmonton,317800.0,AB
-2016,Lloydminster,5070.0,
-2016,Cold Lake,4300.0,AB
-2016,Grande Prairie,14800.0,AB
-2016,Wood Buffalo,18490.0,AB
-2016,Wetaskiwin,3130.0,AB
-2016,Non CMA-CA,173290.0,AB
-2016,British Columbia,1166230.0,
-2016,Cranbrook,6770.0,BC
-2016,Nelson,4240.0,BC
-2016,Penticton,11690.0,BC
-2016,Kelowna,51190.0,BC
-2016,Vernon,16480.0,BC
-2016,Salmon Arm,4830.0,BC
-2016,Kamloops,26460.0,BC
-2016,Chilliwack,26080.0,BC
-2016,Abbotsford-Mission,46010.0,BC
-2016,Vancouver,613930.0,BC
-2016,Squamish,4890.0,BC
-2016,Victoria,88810.0,BC
-2016,Duncan,11310.0,BC
-2016,Nanaimo,25460.0,BC
-2016,Parksville,8950.0,BC
-2016,Port Alberni,6200.0,BC
-2016,Courtenay,14490.0,BC
-2016,Campbell River,9910.0,BC
-2016,Powell River,4490.0,BC
-2016,Williams Lake,4380.0,BC
-2016,Quesnel,5850.0,BC
-2016,Prince Rupert,2760.0,BC
-2016,Terrace,3570.0,BC
-2016,Prince George,20270.0,BC
-2016,Dawson Creek,2630.0,BC
-2016,Fort St. John,7480.0,BC
-2016,Non CMA-CA,137130.0,BC
-2016,Yukon,8130.0,
-2016,Whitehorse,6600.0,YT
-2016,Non CMA-CA,1530.0,YT
-2016,Northwest Territories,8730.0,
-2016,Yellowknife,4620.0,NT
-2016,Non CMA-CA,4110.0,NT
-2016,Nunavut,6130.0,
-2016,Campbellton,3840.0,
-2016,Hawkesbury,2730.0,
-2016,Ottawa - Gatineau,310570.0,
-2016,Lloydminster,8500.0,
-2017,Canada,8582740.0,
-2017,Newfoundland and Labrador,133010.0,
-2017,St. John's,48860.0,NL
-2017,Bay Roberts,3570.0,NL
-2017,Grand Falls-Windsor,3750.0,NL
-2017,Gander,3610.0,NL
-2017,Corner Brook,8180.0,NL
-2017,Non CMA-CA,65040.0,NL
-2017,Prince Edward Island,35970.0,
-2017,Charlottetown,18260.0,PE
-2017,Summerside,4440.0,PE
-2017,Non CMA-CA,13280.0,PE
-2017,Nova Scotia,222490.0,
-2017,Halifax,94850.0,NS
-2017,Kentville,6340.0,NS
-2017,Truro,10780.0,NS
-2017,New Glasgow,7880.0,NS
-2017,Cape Breton,21170.0,NS
-2017,Non CMA-CA,81480.0,NS
-2017,New Brunswick,187770.0,
-2017,Moncton,35960.0,NB
-2017,Saint John,30430.0,NB
-2017,Fredericton,25150.0,NB
-2017,Bathurst,8320.0,NB
-2017,Miramichi,6720.0,NB
-2017,Campbellton,3320.0,
-2017,Edmundston,6040.0,NB
-2017,Non CMA-CA,71840.0,NB
-2017,Quebec,1962650.0,
-2017,Campbellton,500.0,
-2017,Matane,4450.0,QC
-2017,Rimouski,13610.0,QC
-2017,Rivière-du-loup,7440.0,QC
-2017,Baie-Comeau,6910.0,QC
-2017,Saguenay,40560.0,QC
-2017,Alma,8170.0,QC
-2017,Dolbeau-Mistassini,3930.0,QC
-2017,Sept-Îles,6400.0,QC
-2017,Québec,194700.0,QC
-2017,Sainte-Marie,3450.0,QC
-2017,Saint-Georges,7740.0,QC
-2017,Thetford Mines,6600.0,QC
-2017,Sherbrooke,50230.0,QC
-2017,Cowansville,3230.0,QC
-2017,Victoriaville,12000.0,QC
-2017,Trois-Rivières,36890.0,QC
-2017,Shawinigan,12850.0,QC
-2017,Drummondville,23910.0,QC
-2017,Granby,21830.0,QC
-2017,Saint-Hyacinthe,13800.0,QC
-2017,Sorel-Tracy,10370.0,QC
-2017,Joliette,11630.0,QC
-2017,Montréal,951880.0,QC
-2017,Salaberry-de-Valleyfield,9620.0,QC
-2017,Lachute,2880.0,QC
-2017,Val-d'Or,8160.0,QC
-2017,Rouyn-Noranda,10230.0,QC
-2017,Hawkesbury,410.0,
-2017,Ottawa-Gatineau,76950.0,
-2017,Non CMA-CA,401310.0,QC
-2017,Ontario,3285990.0,
-2017,Cornwall,15810.0,ON
-2017,Hawkesbury,2820.0,
-2017,Ottawa-Gatineau,238130.0,
-2017,Arnprior,4330.0,ON
-2017,Carleton Place,6340.0,ON
-2017,Brockville,8130.0,ON
-2017,Pembroke,6360.0,ON
-2017,Petawawa,3780.0,ON
-2017,Kingston,37630.0,ON
-2017,Belleville-Quinte West,25770.0,ON
-2017,Cobourg,5290.0,ON
-2017,Port Hope,4230.0,ON
-2017,Peterborough,26920.0,ON
-2017,Kawartha Lakes,17590.0,ON
-2017,Centre Wellington,7310.0,ON
-2017,Oshawa,90480.0,ON
-2017,Ingersoll,3220.0,ON
-2017,Toronto,1441700.0,ON
-2017,Hamilton,175700.0,ON
-2017,St. Catharines-Niagara,98640.0,ON
-2017,Kitchener-Cambridge-Waterloo,129400.0,ON
-2017,Brantford,34320.0,ON
-2017,Woodstock,10320.0,ON
-2017,Tillsonburg,4200.0,ON
-2017,Norfolk,16350.0,ON
-2017,Guelph,38070.0,ON
-2017,Stratford,8270.0,ON
-2017,London,117850.0,ON
-2017,Chatham-Kent,24320.0,ON
-2017,Leamington,20120.0,ON
-2017,Windsor,78690.0,ON
-2017,Sarnia,23790.0,ON
-2017,Wasaga Beach,6140.0,ON
-2017,Owen Sound,7190.0,ON
-2017,Collingwood,5490.0,ON
-2017,Barrie,46610.0,ON
-2017,Orillia,7190.0,ON
-2017,Midland,8220.0,ON
-2017,North Bay,17010.0,ON
-2017,Greater Sudbury,39130.0,ON
-2017,Elliot Lake,2820.0,ON
-2017,Timmins,9950.0,ON
-2017,Sault Ste. Marie,18420.0,ON
-2017,Thunder Bay,27610.0,ON
-2017,Kenora,3280.0,ON
-2017,Non CMA-CA,361080.0,ON
-2017,Manitoba,298300.0,
-2017,Winnipeg,183970.0,MB
-2017,Winkler,7890.0,MB
-2017,Steinbach,4980.0,MB
-2017,Portage la Prairie,3890.0,MB
-2017,Brandon,14320.0,MB
-2017,Thompson,2810.0,MB
-2017,Non CMA-CA,80440.0,MB
-2017,Saskatchewan,259460.0,
-2017,Regina,56630.0,SK
-2017,Yorkton,4730.0,SK
-2017,Moose Jaw,8520.0,SK
-2017,Swift Current,5110.0,SK
-2017,Saskatoon,71550.0,SK
-2017,North Battleford,4570.0,SK
-2017,Prince Albert,9410.0,SK
-2017,Estevan,3500.0,SK
-2017,Weyburn,3060.0,SK
-2017,Lloydminster,3420.0,
-2017,Non CMA-CA,88960.0,SK
-2017,Alberta,993630.0,
-2017,Medicine Hat,18800.0,AB
-2017,Brooks,6450.0,AB
-2017,Lethbridge,28090.0,AB
-2017,Okotoks,8630.0,AB
-2017,High River,4300.0,AB
-2017,Calgary,346350.0,AB
-2017,Strathmore,4160.0,AB
-2017,Canmore,3820.0,AB
-2017,Red Deer,22940.0,AB
-2017,Sylvan Lake,3790.0,AB
-2017,Lacombe,4090.0,AB
-2017,Camrose,5030.0,AB
-2017,Edmonton,320900.0,AB
-2017,Lloydminster,5010.0,
-2017,Cold Lake,4230.0,AB
-2017,Grande Prairie,15410.0,AB
-2017,Wood Buffalo,18480.0,AB
-2017,Wetaskiwin,3050.0,AB
-2017,Non CMA-CA,170080.0,AB
-2017,British Columbia,1180250.0,
-2017,Cranbrook,6800.0,BC
-2017,Nelson,4330.0,BC
-2017,Penticton,11730.0,BC
-2017,Kelowna,51980.0,BC
-2017,Vernon,16680.0,BC
-2017,Salmon Arm,4940.0,BC
-2017,Kamloops,27170.0,BC
-2017,Chilliwack,25960.0,BC
-2017,Abbotsford-Mission,47160.0,BC
-2017,Vancouver,620860.0,BC
-2017,Squamish,5050.0,BC
-2017,Victoria,90090.0,BC
-2017,Duncan,11670.0,BC
-2017,Nanaimo,25820.0,BC
-2017,Parksville,9050.0,BC
-2017,Port Alberni,6270.0,BC
-2017,Courtenay,14500.0,BC
-2017,Campbell River,10100.0,BC
-2017,Powell River,4500.0,BC
-2017,Williams Lake,4390.0,BC
-2017,Quesnel,5870.0,BC
-2017,Prince Rupert,2740.0,BC
-2017,Terrace,3600.0,BC
-2017,Prince George,20410.0,BC
-2017,Dawson Creek,2620.0,BC
-2017,Fort St. John,7510.0,BC
-2017,Non CMA-CA,138460.0,BC
-2017,Yukon,8280.0,
-2017,Whitehorse,6730.0,YT
-2017,Non CMA-CA,1550.0,YT
-2017,Northwest Territories,8710.0,
-2017,Yellowknife,4640.0,NT
-2017,Non CMA-CA,4070.0,NT
-2017,Nunavut,6220.0,
-2017,Campbellton,3820.0,
-2017,Hawkesbury,3240.0,
-2017,Ottawa - Gatineau,315080.0,
-2017,Lloydminster,8430.0,
-2018,Canada,8695360.0,
-2018,Newfoundland and Labrador,131830.0,
-2018,St. John's,48910.0,NL
-2018,Bay Roberts,3550.0,NL
-2018,Grand Falls-Windsor,3700.0,NL
-2018,Gander,3390.0,NL
-2018,Corner Brook,8060.0,NL
-2018,Non CMA-CA,64220.0,NL
-2018,Prince Edward Island,36430.0,
-2018,Charlottetown,17840.0,PE
-2018,Summerside,4480.0,PE
-2018,Non CMA-CA,14110.0,PE
-2018,Nova Scotia,222970.0,
-2018,Halifax,96300.0,NS
-2018,Kentville,6340.0,NS
-2018,Truro,11260.0,NS
-2018,New Glasgow,7790.0,NS
-2018,Cape Breton,21110.0,NS
-2018,Non CMA-CA,80180.0,NS
-2018,New Brunswick,188410.0,
-2018,Moncton,36510.0,NB
-2018,Saint John,30600.0,NB
-2018,Fredericton,25410.0,NB
-2018,Bathurst,8290.0,NB
-2018,Miramichi,6670.0,NB
-2018,Campbellton,3300.0,
-2018,Edmundston,5940.0,NB
-2018,Non CMA-CA,71700.0,NB
-2018,Quebec,1972740.0,
-2018,Campbellton,510.0,
-2018,Matane,4370.0,QC
-2018,Rimouski,13570.0,QC
-2018,Rivière-du-loup,7380.0,QC
-2018,Baie-Comeau,6810.0,QC
-2018,Saguenay,40310.0,QC
-2018,Alma,8140.0,QC
-2018,Dolbeau-Mistassini,3880.0,QC
-2018,Sept-Îles,6330.0,QC
-2018,Québec,195220.0,QC
-2018,Sainte-Marie,3470.0,QC
-2018,Saint-Georges,7780.0,QC
-2018,Thetford Mines,6600.0,QC
-2018,Sherbrooke,50540.0,QC
-2018,Cowansville,3180.0,QC
-2018,Victoriaville,11900.0,QC
-2018,Trois-Rivières,36750.0,QC
-2018,Shawinigan,12730.0,QC
-2018,Drummondville,23750.0,QC
-2018,Granby,21760.0,QC
-2018,Saint-Hyacinthe,13780.0,QC
-2018,Sorel-Tracy,10270.0,QC
-2018,Joliette,11530.0,QC
-2018,Montréal,964300.0,QC
-2018,Salaberry-de-Valleyfield,9500.0,QC
-2018,Lachute,2850.0,QC
-2018,Val-d'Or,8110.0,QC
-2018,Rouyn-Noranda,10220.0,QC
-2018,Hawkesbury,420.0,
-2018,Ottawa-Gatineau,77330.0,
-2018,Non CMA-CA,399450.0,QC
-2018,Ontario,3347850.0,
-2018,Cornwall,15710.0,ON
-2018,Hawkesbury,2800.0,
-2018,Ottawa-Gatineau,242420.0,
-2018,Arnprior,3820.0,ON
-2018,Carleton Place,5740.0,ON
-2018,Brockville,8530.0,ON
-2018,Pembroke,6280.0,ON
-2018,Petawawa,3800.0,ON
-2018,Kingston,37680.0,ON
-2018,Belleville-Quinte West,25400.0,ON
-2018,Cobourg,5280.0,ON
-2018,Port Hope,4220.0,ON
-2018,Peterborough,27010.0,ON
-2018,Kawartha Lakes,17550.0,ON
-2018,Centre Wellington,7380.0,ON
-2018,Oshawa,91630.0,ON
-2018,Ingersoll,3220.0,ON
-2018,Toronto,1485110.0,ON
-2018,Hamilton,177350.0,ON
-2018,St. Catharines-Niagara,99530.0,ON
-2018,Kitchener-Cambridge-Waterloo,132310.0,ON
-2018,Brantford,34570.0,ON
-2018,Woodstock,10390.0,ON
-2018,Tillsonburg,4230.0,ON
-2018,Norfolk,16420.0,ON
-2018,Guelph,38600.0,ON
-2018,Stratford,8300.0,ON
-2018,London,119700.0,ON
-2018,Chatham-Kent,24300.0,ON
-2018,Leamington,20970.0,ON
-2018,Windsor,78170.0,ON
-2018,Sarnia,22830.0,ON
-2018,Wasaga Beach,6110.0,ON
-2018,Owen Sound,7150.0,ON
-2018,Collingwood,5510.0,ON
-2018,Barrie,47390.0,ON
-2018,Orillia,7190.0,ON
-2018,Midland,8230.0,ON
-2018,North Bay,15920.0,ON
-2018,Greater Sudbury,38780.0,ON
-2018,Elliot Lake,2770.0,ON
-2018,Timmins,9950.0,ON
-2018,Sault Ste. Marie,18400.0,ON
-2018,Thunder Bay,27670.0,ON
-2018,Kenora,3260.0,ON
-2018,Non CMA-CA,368310.0,ON
-2018,Manitoba,302670.0,
-2018,Winnipeg,187970.0,MB
-2018,Winkler,7960.0,MB
-2018,Steinbach,4960.0,MB
-2018,Portage la Prairie,3890.0,MB
-2018,Brandon,14440.0,MB
-2018,Thompson,2800.0,MB
-2018,Non CMA-CA,80650.0,MB
-2018,Saskatchewan,263010.0,
-2018,Regina,57790.0,SK
-2018,Yorkton,4750.0,SK
-2018,Moose Jaw,8580.0,SK
-2018,Swift Current,5100.0,SK
-2018,Saskatoon,73370.0,SK
-2018,North Battleford,4540.0,SK
-2018,Prince Albert,9580.0,SK
-2018,Estevan,3520.0,SK
-2018,Weyburn,2570.0,SK
-2018,Lloydminster,3450.0,
-2018,Non CMA-CA,89770.0,SK
-2018,Alberta,1003860.0,
-2018,Medicine Hat,18780.0,AB
-2018,Brooks,6540.0,AB
-2018,Lethbridge,28380.0,AB
-2018,Okotoks,8710.0,AB
-2018,High River,4250.0,AB
-2018,Calgary,352170.0,AB
-2018,Strathmore,4110.0,AB
-2018,Canmore,3900.0,AB
-2018,Red Deer,22930.0,AB
-2018,Sylvan Lake,3790.0,AB
-2018,Lacombe,4110.0,AB
-2018,Camrose,5040.0,AB
-2018,Edmonton,324930.0,AB
-2018,Lloydminster,4990.0,
-2018,Cold Lake,4230.0,AB
-2018,Grande Prairie,15620.0,AB
-2018,Wood Buffalo,18690.0,AB
-2018,Wetaskiwin,3030.0,AB
-2018,Non CMA-CA,169670.0,AB
-2018,British Columbia,1202220.0,
-2018,Cranbrook,6860.0,BC
-2018,Nelson,4280.0,BC
-2018,Penticton,11740.0,BC
-2018,Kelowna,52540.0,BC
-2018,Vernon,16840.0,BC
-2018,Salmon Arm,4920.0,BC
-2018,Kamloops,27370.0,BC
-2018,Chilliwack,26150.0,BC
-2018,Abbotsford-Mission,48240.0,BC
-2018,Vancouver,637380.0,BC
-2018,Squamish,5210.0,BC
-2018,Victoria,91390.0,BC
-2018,Duncan,11710.0,BC
-2018,Nanaimo,26230.0,BC
-2018,Parksville,9040.0,BC
-2018,Port Alberni,6240.0,BC
-2018,Courtenay,14500.0,BC
-2018,Campbell River,10190.0,BC
-2018,Powell River,4480.0,BC
-2018,Williams Lake,4380.0,BC
-2018,Quesnel,5850.0,BC
-2018,Prince Rupert,2760.0,BC
-2018,Terrace,3650.0,BC
-2018,Prince George,20630.0,BC
-2018,Dawson Creek,2670.0,BC
-2018,Fort St. John,7600.0,BC
-2018,Non CMA-CA,139390.0,BC
-2018,Yukon,8450.0,
-2018,Whitehorse,6880.0,YT
-2018,Non CMA-CA,1580.0,YT
-2018,Northwest Territories,8650.0,
-2018,Yellowknife,4660.0,NT
-2018,Non CMA-CA,3990.0,NT
-2018,Nunavut,6270.0,
-2018,Campbellton,3800.0,
-2018,Hawkesbury,3210.0,
-2018,Ottawa - Gatineau,319750.0,
-2018,Lloydminster,8450.0,
-2019,Canada,8798970.0,
-2019,Newfoundland and Labrador,129860.0,
-2019,St. John's,48530.0,NL
-2019,Bay Roberts,3500.0,NL
-2019,Grand Falls-Windsor,3640.0,NL
-2019,Gander,3380.0,NL
-2019,Corner Brook,7950.0,NL
-2019,Non CMA-CA,62860.0,NL
-2019,Prince Edward Island,36800.0,
-2019,Charlottetown,18840.0,PE
-2019,Summerside,4500.0,PE
-2019,Non CMA-CA,13460.0,PE
-2019,Nova Scotia,224570.0,
-2019,Halifax,98340.0,NS
-2019,Kentville,6340.0,NS
-2019,Truro,11250.0,NS
-2019,New Glasgow,7740.0,NS
-2019,Cape Breton,21060.0,NS
-2019,Non CMA-CA,79840.0,NS
-2019,New Brunswick,188620.0,
-2019,Moncton,37090.0,NB
-2019,Saint John,30580.0,NB
-2019,Fredericton,25470.0,NB
-2019,Bathurst,8250.0,NB
-2019,Miramichi,6660.0,NB
-2019,Campbellton,3240.0,
-2019,Edmundston,5920.0,NB
-2019,Non CMA-CA,71400.0,NB
-2019,Quebec,1988120.0,
-2019,Campbellton,500.0,
-2019,Matane,4330.0,QC
-2019,Rimouski,13530.0,QC
-2019,Rivière-du-loup,7410.0,QC
-2019,Baie-Comeau,6690.0,QC
-2019,Saguenay,40260.0,QC
-2019,Alma,8120.0,QC
-2019,Dolbeau-Mistassini,3890.0,QC
-2019,Sept-Îles,6200.0,QC
-2019,Québec,197130.0,QC
-2019,Sainte-Marie,3370.0,QC
-2019,Saint-Georges,7820.0,QC
-2019,Thetford Mines,6570.0,QC
-2019,Sherbrooke,51140.0,QC
-2019,Cowansville,3280.0,QC
-2019,Victoriaville,12000.0,QC
-2019,Trois-Rivières,36940.0,QC
-2019,Shawinigan,12710.0,QC
-2019,Drummondville,24010.0,QC
-2019,Granby,22190.0,QC
-2019,Saint-Hyacinthe,13970.0,QC
-2019,Sorel-Tracy,10180.0,QC
-2019,Joliette,11730.0,QC
-2019,Montréal,973700.0,QC
-2019,Salaberry-de-Valleyfield,9640.0,QC
-2019,Lachute,2900.0,QC
-2019,Val-d'Or,8170.0,QC
-2019,Rouyn-Noranda,10200.0,QC
-2019,Hawkesbury,410.0,
-2019,Ottawa-Gatineau,77940.0,
-2019,Non CMA-CA,401210.0,QC
-2019,Ontario,3397070.0,
-2019,Cornwall,15700.0,ON
-2019,Hawkesbury,2790.0,
-2019,Ottawa-Gatineau,247550.0,
-2019,Arnprior,3900.0,ON
-2019,Carleton Place,5870.0,ON
-2019,Brockville,8470.0,ON
-2019,Pembroke,6250.0,ON
-2019,Petawawa,3830.0,ON
-2019,Kingston,37760.0,ON
-2019,Belleville-Quinte West,25560.0,ON
-2019,Cobourg,5220.0,ON
-2019,Port Hope,4150.0,ON
-2019,Peterborough,26850.0,ON
-2019,Kawartha Lakes,17390.0,ON
-2019,Centre Wellington,7450.0,ON
-2019,Oshawa,93490.0,ON
-2019,Ingersoll,3240.0,ON
-2019,Toronto,1514960.0,ON
-2019,Hamilton,180010.0,ON
-2019,St. Catharines-Niagara,100710.0,ON
-2019,Kitchener-Cambridge-Waterloo,135260.0,ON
-2019,Brantford,35160.0,ON
-2019,Woodstock,10700.0,ON
-2019,Tillsonburg,4840.0,ON
-2019,Norfolk,16510.0,ON
-2019,Guelph,39310.0,ON
-2019,Stratford,8320.0,ON
-2019,London,121450.0,ON
-2019,Chatham-Kent,26040.0,ON
-2019,Leamington,20740.0,ON
-2019,Windsor,78920.0,ON
-2019,Sarnia,22840.0,ON
-2019,Wasaga Beach,6200.0,ON
-2019,Owen Sound,7130.0,ON
-2019,Collingwood,5610.0,ON
-2019,Barrie,47960.0,ON
-2019,Orillia,7320.0,ON
-2019,Midland,8290.0,ON
-2019,North Bay,16940.0,ON
-2019,Greater Sudbury,38710.0,ON
-2019,Elliot Lake,2750.0,ON
-2019,Timmins,9840.0,ON
-2019,Sault Ste. Marie,18300.0,ON
-2019,Thunder Bay,27330.0,ON
-2019,Kenora,3220.0,ON
-2019,Non CMA-CA,366220.0,ON
-2019,Manitoba,304200.0,
-2019,Winnipeg,189630.0,MB
-2019,Winkler,8120.0,MB
-2019,Steinbach,5060.0,MB
-2019,Portage la Prairie,3900.0,MB
-2019,Brandon,14500.0,MB
-2019,Thompson,2660.0,MB
-2019,Non CMA-CA,80320.0,MB
-2019,Saskatchewan,262280.0,
-2019,Regina,58010.0,SK
-2019,Yorkton,4700.0,SK
-2019,Moose Jaw,8540.0,SK
-2019,Swift Current,5020.0,SK
-2019,Saskatoon,74240.0,SK
-2019,North Battleford,4520.0,SK
-2019,Prince Albert,9430.0,SK
-2019,Estevan,3440.0,SK
-2019,Weyburn,2550.0,SK
-2019,Lloydminster,3380.0,
-2019,Non CMA-CA,88460.0,SK
-2019,Alberta,1015940.0,
-2019,Medicine Hat,18770.0,AB
-2019,Brooks,6540.0,AB
-2019,Lethbridge,28650.0,AB
-2019,Okotoks,8840.0,AB
-2019,High River,4280.0,AB
-2019,Calgary,359680.0,AB
-2019,Strathmore,4130.0,AB
-2019,Canmore,4030.0,AB
-2019,Red Deer,22890.0,AB
-2019,Sylvan Lake,3770.0,AB
-2019,Lacombe,4130.0,AB
-2019,Camrose,4970.0,AB
-2019,Edmonton,330520.0,AB
-2019,Lloydminster,5020.0,
-2019,Cold Lake,4190.0,AB
-2019,Grande Prairie,15750.0,AB
-2019,Wood Buffalo,18410.0,AB
-2019,Wetaskiwin,2980.0,AB
-2019,Non CMA-CA,168400.0,AB
-2019,British Columbia,1228450.0,
-2019,Cranbrook,6910.0,BC
-2019,Nelson,4380.0,BC
-2019,Penticton,11550.0,BC
-2019,Kelowna,53950.0,BC
-2019,Vernon,17190.0,BC
-2019,Salmon Arm,4970.0,BC
-2019,Kamloops,27610.0,BC
-2019,Chilliwack,26740.0,BC
-2019,Abbotsford-Mission,49640.0,BC
-2019,Vancouver,654950.0,BC
-2019,Squamish,5460.0,BC
-2019,Victoria,93440.0,BC
-2019,Duncan,11850.0,BC
-2019,Nanaimo,26630.0,BC
-2019,Parksville,9170.0,BC
-2019,Port Alberni,6270.0,BC
-2019,Courtenay,14770.0,BC
-2019,Campbell River,10320.0,BC
-2019,Powell River,4520.0,BC
-2019,Williams Lake,4370.0,BC
-2019,Quesnel,5760.0,BC
-2019,Prince Rupert,2730.0,BC
-2019,Terrace,3720.0,BC
-2019,Prince George,20830.0,BC
-2019,Dawson Creek,2680.0,BC
-2019,Fort St. John,7580.0,BC
-2019,Non CMA-CA,140470.0,BC
-2019,Yukon,8520.0,
-2019,Whitehorse,6980.0,YT
-2019,Non CMA-CA,1530.0,YT
-2019,Northwest Territories,8500.0,
-2019,Yellowknife,4630.0,NT
-2019,Non CMA-CA,3870.0,NT
-2019,Nunavut,6050.0,
-2019,Campbellton,3740.0,
-2019,Hawkesbury,3200.0,
-2019,Ottawa - Gatineau,325490.0,
-2019,Lloydminster,8410.0,
-2020,Canada,8858700.0,
-2020,Newfoundland and Labrador,128870.0,
-2020,St. John's,48440.0,NL
-2020,Bay Roberts,3440.0,NL
-2020,Grand Falls-Windsor,3600.0,NL
-2020,Gander,3390.0,NL
-2020,Corner Brook,7930.0,NL
-2020,Non CMA-CA,62060.0,NL
-2020,Prince Edward Island,37330.0,
-2020,Charlottetown,19170.0,PE
-2020,Summerside,4490.0,PE
-2020,Non CMA-CA,13670.0,PE
-2020,Nova Scotia,226860.0,
-2020,Halifax,100620.0,NS
-2020,Kentville,6470.0,NS
-2020,Truro,11270.0,NS
-2020,New Glasgow,7730.0,NS
-2020,Cape Breton,20720.0,NS
-2020,Non CMA-CA,80050.0,NS
-2020,New Brunswick,189270.0,
-2020,Moncton,37820.0,NB
-2020,Saint John,30560.0,NB
-2020,Fredericton,25580.0,NB
-2020,Bathurst,8230.0,NB
-2020,Miramichi,6610.0,NB
-2020,Campbellton,3180.0,
-2020,Edmundston,5890.0,NB
-2020,Non CMA-CA,71420.0,NB
-2020,Quebec,1997480.0,
-2020,Campbellton,490.0,
-2020,Matane,4330.0,QC
-2020,Rimouski,13540.0,QC
-2020,Rivière-du-loup,7420.0,QC
-2020,Baie-Comeau,6600.0,QC
-2020,Saguenay,40370.0,QC
-2020,Alma,8120.0,QC
-2020,Dolbeau-Mistassini,3850.0,QC
-2020,Sept-Îles,6090.0,QC
-2020,Québec,198980.0,QC
-2020,Sainte-Marie,3340.0,QC
-2020,Saint-Georges,7810.0,QC
-2020,Thetford Mines,6560.0,QC
-2020,Sherbrooke,51910.0,QC
-2020,Cowansville,3400.0,QC
-2020,Victoriaville,12090.0,QC
-2020,Trois-Rivières,37180.0,QC
-2020,Shawinigan,12770.0,QC
-2020,Drummondville,24200.0,QC
-2020,Granby,22560.0,QC
-2020,Saint-Hyacinthe,14070.0,QC
-2020,Sorel-Tracy,10200.0,QC
-2020,Joliette,11930.0,QC
-2020,Montréal,975190.0,QC
-2020,Salaberry-de-Valleyfield,9770.0,QC
-2020,Lachute,2920.0,QC
-2020,Val-d'Or,8090.0,QC
-2020,Rouyn-Noranda,10210.0,QC
-2020,Hawkesbury,400.0,
-2020,Ottawa-Gatineau,78680.0,
-2020,Non CMA-CA,404430.0,QC
-2020,Ontario,3427660.0,
-2020,Cornwall,15650.0,ON
-2020,Hawkesbury,2750.0,
-2020,Ottawa-Gatineau,251220.0,
-2020,Arnprior,3980.0,ON
-2020,Carleton Place,6020.0,ON
-2020,Brockville,8450.0,ON
-2020,Pembroke,6270.0,ON
-2020,Petawawa,3860.0,ON
-2020,Kingston,38150.0,ON
-2020,Belleville-Quinte West,25900.0,ON
-2020,Cobourg,5300.0,ON
-2020,Port Hope,4230.0,ON
-2020,Peterborough,26850.0,ON
-2020,Kawartha Lakes,17560.0,ON
-2020,Centre Wellington,7660.0,ON
-2020,Oshawa,95590.0,ON
-2020,Ingersoll,3310.0,ON
-2020,Toronto,1523720.0,ON
-2020,Hamilton,181390.0,ON
-2020,St. Catharines-Niagara,102040.0,ON
-2020,Kitchener-Cambridge-Waterloo,137560.0,ON
-2020,Brantford,35440.0,ON
-2020,Woodstock,10940.0,ON
-2020,Tillsonburg,4970.0,ON
-2020,Norfolk,16720.0,ON
-2020,Guelph,39860.0,ON
-2020,Stratford,8400.0,ON
-2020,London,123720.0,ON
-2020,Chatham-Kent,26260.0,ON
-2020,Leamington,20260.0,ON
-2020,Windsor,79170.0,ON
-2020,Sarnia,22780.0,ON
-2020,Wasaga Beach,6380.0,ON
-2020,Owen Sound,7080.0,ON
-2020,Collingwood,5730.0,ON
-2020,Barrie,48910.0,ON
-2020,Orillia,7410.0,ON
-2020,Midland,8360.0,ON
-2020,North Bay,17020.0,ON
-2020,Greater Sudbury,38790.0,ON
-2020,Elliot Lake,2730.0,ON
-2020,Timmins,9690.0,ON
-2020,Sault Ste. Marie,18190.0,ON
-2020,Thunder Bay,27250.0,ON
-2020,Kenora,3250.0,ON
-2020,Non CMA-CA,370890.0,ON
-2020,Manitoba,304750.0,
-2020,Winnipeg,190500.0,MB
-2020,Winkler,8170.0,MB
-2020,Steinbach,5070.0,MB
-2020,Portage la Prairie,3880.0,MB
-2020,Brandon,14530.0,MB
-2020,Thompson,2620.0,MB
-2020,Non CMA-CA,79980.0,MB
-2020,Saskatchewan,261230.0,
-2020,Regina,57970.0,SK
-2020,Yorkton,4610.0,SK
-2020,Moose Jaw,8490.0,SK
-2020,Swift Current,5020.0,SK
-2020,Saskatoon,74420.0,SK
-2020,North Battleford,4480.0,SK
-2020,Prince Albert,9360.0,SK
-2020,Estevan,3370.0,SK
-2020,Weyburn,2490.0,SK
-2020,Lloydminster,3330.0,
-2020,Non CMA-CA,87690.0,SK
-2020,Alberta,1017150.0,
-2020,Medicine Hat,18540.0,AB
-2020,Brooks,6460.0,AB
-2020,Lethbridge,28690.0,AB
-2020,Okotoks,8990.0,AB
-2020,High River,4280.0,AB
-2020,Calgary,362500.0,AB
-2020,Strathmore,4100.0,AB
-2020,Canmore,4050.0,AB
-2020,Red Deer,22580.0,AB
-2020,Sylvan Lake,3770.0,AB
-2020,Lacombe,4090.0,AB
-2020,Camrose,4960.0,AB
-2020,Edmonton,331450.0,AB
-2020,Lloydminster,4930.0,
-2020,Cold Lake,4160.0,AB
-2020,Grande Prairie,15280.0,AB
-2020,Wood Buffalo,18170.0,AB
-2020,Wetaskiwin,2940.0,AB
-2020,Non CMA-CA,167240.0,AB
-2020,British Columbia,1245010.0,
-2020,Cranbrook,6940.0,BC
-2020,Nelson,4420.0,BC
-2020,Penticton,11600.0,BC
-2020,Kelowna,54670.0,BC
-2020,Vernon,17550.0,BC
-2020,Salmon Arm,5020.0,BC
-2020,Kamloops,27840.0,BC
-2020,Chilliwack,27100.0,BC
-2020,Abbotsford-Mission,50660.0,BC
-2020,Vancouver,665550.0,BC
-2020,Squamish,5700.0,BC
-2020,Victoria,94460.0,BC
-2020,Duncan,11970.0,BC
-2020,Nanaimo,26840.0,BC
-2020,Parksville,9300.0,BC
-2020,Port Alberni,6310.0,BC
-2020,Courtenay,15040.0,BC
-2020,Campbell River,10450.0,BC
-2020,Powell River,4540.0,BC
-2020,Williams Lake,4370.0,BC
-2020,Quesnel,5710.0,BC
-2020,Prince Rupert,2760.0,BC
-2020,Terrace,3770.0,BC
-2020,Prince George,20830.0,BC
-2020,Dawson Creek,2630.0,BC
-2020,Fort St. John,7500.0,BC
-2020,Non CMA-CA,141470.0,BC
-2020,Yukon,8680.0,
-2020,Whitehorse,7170.0,YT
-2020,Non CMA-CA,1510.0,YT
-2020,Northwest Territories,8400.0,
-2020,Yellowknife,4640.0,NT
-2020,Non CMA-CA,3760.0,NT
-2020,Nunavut,6030.0,
-2020,Campbellton,3670.0,
-2020,Hawkesbury,3140.0,
-2020,Ottawa - Gatineau,329900.0,
-2020,Lloydminster,8260.0,
-2021,Canada,8980830.0,
-2021,Newfoundland and Labrador,130800.0,
-2021,St. John's,51070.0,NL
-2021,Grand Falls-Windsor,3640.0,NL
-2021,Gander,3540.0,NL
-2021,Corner Brook,8080.0,NL
-2021,Non CMA-CA,64460.0,NL
-2021,Prince Edward Island,38490.0,
-2021,Charlottetown,19080.0,PE
-2021,Summerside,4950.0,PE
-2021,Non CMA-CA,14460.0,PE
-2021,Nova Scotia,231880.0,
-2021,Halifax,110260.0,NS
-2021,Kentville,6830.0,NS
-2021,Truro,10910.0,NS
-2021,New Glasgow,7790.0,NS
-2021,Cape Breton,21120.0,NS
-2021,Non CMA-CA,74980.0,NS
-2021,New Brunswick,193250.0,
-2021,Moncton,39020.0,NB
-2021,Saint John,31130.0,NB
-2021,Fredericton,26490.0,NB
-2021,Bathurst,8420.0,NB
-2021,Miramichi,6620.0,NB
-2021,Campbellton,2750.0,
-2021,Edmundston,5500.0,NB
-2021,Non CMA-CA,73330.0,NB
-2021,Quebec,2024180.0,
-2021,Campbellton,490.0,
-2021,Matane,4510.0,QC
-2021,Rimouski,13250.0,QC
-2021,Rivière-du-loup,7460.0,QC
-2021,Baie-Comeau,6580.0,QC
-2021,Saguenay,40980.0,QC
-2021,Alma,7660.0,QC
-2021,Dolbeau-Mistassini,3950.0,QC
-2021,Sept-Îles,6260.0,QC
-2021,Québec,204790.0,QC
-2021,Sainte-Marie,3460.0,QC
-2021,Saint-Georges,8310.0,QC
-2021,Thetford Mines,7130.0,QC
-2021,Sherbrooke,53150.0,QC
-2021,Cowansville,3660.0,QC
-2021,Victoriaville,12860.0,QC
-2021,Trois-Rivières,37980.0,QC
-2021,Shawinigan,11680.0,QC
-2021,Drummondville,25140.0,QC
-2021,Granby,23350.0,QC
-2021,Saint-Hyacinthe,13930.0,QC
-2021,Sorel-Tracy,10390.0,QC
-2021,Joliette,12260.0,QC
-2021,Montréal,981670.0,QC
-2021,Salaberry-de-Valleyfield,9970.0,QC
-2021,Sainte-Agathe-des-Monts,4960.0,QC
-2021,Lachute,3060.0,QC
-2021,Val-d'Or,8120.0,QC
-2021,Amos,4500.0,QC
-2021,Rouyn-Noranda,10160.0,QC
-2021,Hawkesbury,410.0,
-2021,Ottawa-Gatineau,79870.0,
-2021,Non CMA-CA,402250.0,QC
-2021,Ontario,3471160.0,
-2021,Cornwall,15000.0,ON
-2021,Hawkesbury,2830.0,
-2021,Ottawa-Gatineau,269680.0,
-2021,Brockville,7320.0,ON
-2021,Pembroke,6340.0,ON
-2021,Petawawa,3880.0,ON
-2021,Kingston,38610.0,ON
-2021,Belleville-Quinte West,27060.0,ON
-2021,Cobourg,6780.0,ON
-2021,Port Hope,4470.0,ON
-2021,Peterborough,30380.0,ON
-2021,Kawartha Lakes,21140.0,ON
-2021,Centre Wellington,7860.0,ON
-2021,Oshawa,98380.0,ON
-2021,Ingersoll,3800.0,ON
-2021,Toronto,1527460.0,ON
-2021,Hamilton,183220.0,ON
-2021,St. Catharines-Niagara,104500.0,ON
-2021,Kitchener-Cambridge-Waterloo,141260.0,ON
-2021,Brantford,36630.0,ON
-2021,Woodstock,12910.0,ON
-2021,Tillsonburg,5590.0,ON
-2021,Norfolk,17440.0,ON
-2021,Guelph,40590.0,ON
-2021,Stratford,8540.0,ON
-2021,London,126760.0,ON
-2021,Chatham-Kent,26810.0,ON
-2021,Windsor,108300.0,ON
-2021,Sarnia,23500.0,ON
-2021,Essa,5460.0,ON
-2021,Wasaga Beach,6570.0,ON
-2021,Owen Sound,7480.0,ON
-2021,Collingwood,6170.0,ON
-2021,Barrie,50810.0,ON
-2021,Orillia,7470.0,ON
-2021,Midland,6890.0,ON
-2021,North Bay,17630.0,ON
-2021,Greater Sudbury,39610.0,ON
-2021,Elliot Lake,2780.0,ON
-2021,Timmins,9670.0,ON
-2021,Sault Ste. Marie,18420.0,ON
-2021,Thunder Bay,28050.0,ON
-2021,Kenora,4050.0,ON
-2021,Non CMA-CA,353070.0,ON
-2021,Manitoba,307390.0,
-2021,Winnipeg,193150.0,MB
-2021,Winkler,8290.0,MB
-2021,Steinbach,5380.0,MB
-2021,Portage la Prairie,4240.0,MB
-2021,Brandon,13940.0,MB
-2021,Thompson,2590.0,MB
-2021,Non CMA-CA,79810.0,MB
-2021,Saskatchewan,262900.0,
-2021,Regina,58950.0,SK
-2021,Yorkton,4970.0,SK
-2021,Moose Jaw,8590.0,SK
-2021,Swift Current,5050.0,SK
-2021,Saskatoon,75190.0,SK
-2021,North Battleford,4620.0,SK
-2021,Prince Albert,9210.0,SK
-2021,Estevan,3280.0,SK
-2021,Weyburn,3020.0,SK
-2021,Lloydminster,3840.0,
-2021,Non CMA-CA,86190.0,SK
-2021,Alberta,1028550.0,
-2021,Medicine Hat,18640.0,AB
-2021,Brooks,4600.0,AB
-2021,Lethbridge,29220.0,AB
-2021,Okotoks,9140.0,AB
-2021,High River,4330.0,AB
-2021,Calgary,369780.0,AB
-2021,Strathmore,3870.0,AB
-2021,Canmore,4190.0,AB
-2021,Red Deer,24090.0,AB
-2021,Sylvan Lake,3760.0,AB
-2021,Lacombe,4520.0,AB
-2021,Camrose,4960.0,AB
-2021,Edmonton,333960.0,AB
-2021,Lloydminster,5040.0,
-2021,Grande Prairie,14610.0,AB
-2021,Wood Buffalo,17900.0,AB
-2021,Wetaskiwin,3410.0,AB
-2021,Non CMA-CA,172530.0,AB
-2021,British Columbia,1269070.0,
-2021,Cranbrook,7080.0,BC
-2021,Nelson,4600.0,BC
-2021,Trail,3600.0,BC
-2021,Penticton,11890.0,BC
-2021,Kelowna,56690.0,BC
-2021,Vernon,17540.0,BC
-2021,Salmon Arm,5220.0,BC
-2021,Kamloops,27870.0,BC
-2021,Chilliwack,28220.0,BC
-2021,Abbotsford-Mission,51810.0,BC
-2021,Vancouver,678320.0,BC
-2021,Squamish,3500.0,BC
-2021,Victoria,96620.0,BC
-2021,Ladysmith,4210.0,BC
-2021,Duncan,12750.0,BC
-2021,Nanaimo,27510.0,BC
-2021,Parksville,9500.0,BC
-2021,Port Alberni,6330.0,BC
-2021,Courtenay,16770.0,BC
-2021,Campbell River,10710.0,BC
-2021,Powell River,4760.0,BC
-2021,Williams Lake,4920.0,BC
-2021,Quesnel,5590.0,BC
-2021,Prince Rupert,2870.0,BC
-2021,Terrace,4590.0,BC
-2021,Prince George,21030.0,BC
-2021,Dawson Creek,4190.0,BC
-2021,Fort St. John,7280.0,BC
-2021,Non CMA-CA,133110.0,BC
-2021,Yukon,8780.0,
-2021,Whitehorse,7080.0,YT
-2021,Non CMA-CA,1690.0,YT
-2021,Northwest Territories,8400.0,
-2021,Yellowknife,4680.0,NT
-2021,Non CMA-CA,3720.0,NT
-2021,Nunavut,5980.0,
-2021,Campbellton,3240.0,
-2021,Hawkesbury,3230.0,
-2021,Ottawa - Gatineau,349550.0,
-2021,Lloydminster,8870.0,
-2022,Canada,9210400.0,
-2022,Newfoundland and Labrador,131010.0,
-2022,St. John's,51660.0,NL
-2022,Grand Falls-Windsor,3600.0,NL
-2022,Gander,3570.0,NL
-2022,Corner Brook,8030.0,NL
-2022,Non CMA-CA,64160.0,NL
-2022,Prince Edward Island,39750.0,
-2022,Charlottetown,19710.0,PE
-2022,Summerside,5140.0,PE
-2022,Non CMA-CA,14900.0,PE
-2022,Nova Scotia,238780.0,
-2022,Halifax,114520.0,NS
-2022,Kentville,6990.0,NS
-2022,Truro,11240.0,NS
-2022,New Glasgow,7880.0,NS
-2022,Cape Breton,21870.0,NS
-2022,Non CMA-CA,76280.0,NS
-2022,New Brunswick,197980.0,
-2022,Moncton,41120.0,NB
-2022,Saint John,31970.0,NB
-2022,Fredericton,27170.0,NB
-2022,Bathurst,8440.0,NB
-2022,Miramichi,6790.0,NB
-2022,Campbellton,2720.0,
-2022,Edmundston,5590.0,NB
-2022,Non CMA-CA,74180.0,NB
-2022,Quebec,2043950.0,
-2022,Campbellton,470.0,
-2022,Matane,4570.0,QC
-2022,Rimouski,13240.0,QC
-2022,Rivière-du-loup,7510.0,QC
-2022,Baie-Comeau,6520.0,QC
-2022,Saguenay,41130.0,QC
-2022,Alma,7700.0,QC
-2022,Dolbeau-Mistassini,3900.0,QC
-2022,Sept-Îles,6070.0,QC
-2022,Québec,207360.0,QC
-2022,Sainte-Marie,3510.0,QC
-2022,Saint-Georges,8400.0,QC
-2022,Thetford Mines,7140.0,QC
-2022,Sherbrooke,54120.0,QC
-2022,Cowansville,3740.0,QC
-2022,Victoriaville,12970.0,QC
-2022,Trois-Rivières,38270.0,QC
-2022,Shawinigan,11750.0,QC
-2022,Drummondville,25540.0,QC
-2022,Granby,23720.0,QC
-2022,Saint-Hyacinthe,14140.0,QC
-2022,Sorel-Tracy,10500.0,QC
-2022,Joliette,12320.0,QC
-2022,Montréal,990470.0,QC
-2022,Salaberry-de-Valleyfield,10110.0,QC
-2022,Sainte-Agathe-des-Monts,5020.0,QC
-2022,Lachute,3190.0,QC
-2022,Val-d'Or,8080.0,QC
-2022,Amos,4510.0,QC
-2022,Rouyn-Noranda,10070.0,QC
-2022,Hawkesbury,400.0,
-2022,Ottawa-Gatineau,80450.0,
-2022,Non CMA-CA,407080.0,QC
-2022,Ontario,3577520.0,
-2022,Cornwall,15030.0,ON
-2022,Hawkesbury,2620.0,
-2022,Ottawa-Gatineau,277960.0,
-2022,Brockville,7390.0,ON
-2022,Pembroke,6440.0,ON
-2022,Petawawa,3910.0,ON
-2022,Kingston,39480.0,ON
-2022,Belleville-Quinte West,27380.0,ON
-2022,Cobourg,5820.0,ON
-2022,Port Hope,4560.0,ON
-2022,Peterborough,30100.0,ON
-2022,Kawartha Lakes,20990.0,ON
-2022,Centre Wellington,7990.0,ON
-2022,Oshawa,101970.0,ON
-2022,Ingersoll,3880.0,ON
-2022,Toronto,1584980.0,ON
-2022,Hamilton,187140.0,ON
-2022,St. Catharines-Niagara,107220.0,ON
-2022,Kitchener-Cambridge-Waterloo,147310.0,ON
-2022,Brantford,38550.0,ON
-2022,Woodstock,13370.0,ON
-2022,Tillsonburg,5740.0,ON
-2022,Norfolk,17600.0,ON
-2022,Guelph,41560.0,ON
-2022,Stratford,8690.0,ON
-2022,London,131840.0,ON
-2022,Chatham-Kent,27050.0,ON
-2022,Windsor,112000.0,ON
-2022,Sarnia,24280.0,ON
-2022,Essa,5600.0,ON
-2022,Wasaga Beach,6660.0,ON
-2022,Owen Sound,7580.0,ON
-2022,Collingwood,6340.0,ON
-2022,Barrie,51690.0,ON
-2022,Orillia,7620.0,ON
-2022,Midland,6600.0,ON
-2022,North Bay,17980.0,ON
-2022,Greater Sudbury,40290.0,ON
-2022,Elliot Lake,2760.0,ON
-2022,Timmins,9810.0,ON
-2022,Sault Ste. Marie,18490.0,ON
-2022,Thunder Bay,27860.0,ON
-2022,Kenora,4010.0,ON
-2022,Non CMA-CA,361380.0,ON
-2022,Manitoba,314480.0,
-2022,Winnipeg,198910.0,MB
-2022,Winkler,8570.0,MB
-2022,Steinbach,5590.0,MB
-2022,Portage la Prairie,4260.0,MB
-2022,Brandon,14310.0,MB
-2022,Thompson,2510.0,MB
-2022,Non CMA-CA,80340.0,MB
-2022,Saskatchewan,266960.0,
-2022,Regina,60400.0,SK
-2022,Yorkton,4990.0,SK
-2022,Moose Jaw,8810.0,SK
-2022,Swift Current,5090.0,SK
-2022,Saskatoon,78090.0,SK
-2022,North Battleford,4620.0,SK
-2022,Prince Albert,9240.0,SK
-2022,Estevan,3310.0,SK
-2022,Weyburn,3030.0,SK
-2022,Lloydminster,3820.0,
-2022,Non CMA-CA,85570.0,SK
-2022,Alberta,1068250.0,
-2022,Medicine Hat,18850.0,AB
-2022,Brooks,4620.0,AB
-2022,Lethbridge,29900.0,AB
-2022,Okotoks,9430.0,AB
-2022,High River,4460.0,AB
-2022,Calgary,391680.0,AB
-2022,Strathmore,3720.0,AB
-2022,Canmore,4320.0,AB
-2022,Red Deer,23500.0,AB
-2022,Sylvan Lake,3870.0,AB
-2022,Lacombe,4620.0,AB
-2022,Camrose,5070.0,AB
-2022,Edmonton,346620.0,AB
-2022,Lloydminster,5110.0,
-2022,Grande Prairie,15010.0,AB
-2022,Wood Buffalo,18210.0,AB
-2022,Wetaskiwin,3440.0,AB
-2022,Non CMA-CA,175830.0,AB
-2022,British Columbia,1308580.0,
-2022,Cranbrook,7240.0,BC
-2022,Nelson,4870.0,BC
-2022,Trail,3640.0,BC
-2022,Penticton,11950.0,BC
-2022,Kelowna,58160.0,BC
-2022,Vernon,17940.0,BC
-2022,Salmon Arm,5250.0,BC
-2022,Kamloops,29220.0,BC
-2022,Chilliwack,29150.0,BC
-2022,Abbotsford-Mission,53320.0,BC
-2022,Vancouver,706310.0,BC
-2022,Squamish,6100.0,BC
-2022,Victoria,98980.0,BC
-2022,Ladysmith,4310.0,BC
-2022,Duncan,12310.0,BC
-2022,Nanaimo,28140.0,BC
-2022,Parksville,9530.0,BC
-2022,Port Alberni,6390.0,BC
-2022,Courtenay,17090.0,BC
-2022,Campbell River,10770.0,BC
-2022,Powell River,4640.0,BC
-2022,Williams Lake,5740.0,BC
-2022,Quesnel,5690.0,BC
-2022,Prince Rupert,2890.0,BC
-2022,Terrace,4670.0,BC
-2022,Prince George,21420.0,BC
-2022,Dawson Creek,4230.0,BC
-2022,Fort St. John,7140.0,BC
-2022,Non CMA-CA,131510.0,BC
-2022,Yukon,9060.0,
-2022,Whitehorse,7510.0,YT
-2022,Non CMA-CA,1560.0,YT
-2022,Northwest Territories,8250.0,
-2022,Yellowknife,4680.0,NT
-2022,Non CMA-CA,3560.0,NT
-2022,Nunavut,5840.0,
-2022,Campbellton,3190.0,
-2022,Hawkesbury,3020.0,
-2022,Ottawa - Gatineau,358410.0,
-2022,Lloydminster,8930.0,
-2023,Canada,9510660.0,
-2023,Newfoundland and Labrador,132670.0,
-2023,St. John's,53420.0,NL
-2023,Grand Falls-Windsor,3600.0,NL
-2023,Gander,3640.0,NL
-2023,Corner Brook,8170.0,NL
-2023,Non CMA-CA,63850.0,NL
-2023,Prince Edward Island,41020.0,
-2023,Charlottetown,20540.0,PE
-2023,Summerside,5310.0,PE
-2023,Non CMA-CA,15160.0,PE
-2023,Nova Scotia,247350.0,
-2023,Halifax,120570.0,NS
-2023,Kentville,7190.0,NS
-2023,Truro,11600.0,NS
-2023,New Glasgow,8010.0,NS
-2023,Cape Breton,22590.0,NS
-2023,Non CMA-CA,77390.0,NS
-2023,New Brunswick,204110.0,
-2023,Moncton,43980.0,NB
-2023,Saint John,33070.0,NB
-2023,Fredericton,28290.0,NB
-2023,Bathurst,8460.0,NB
-2023,Miramichi,6970.0,NB
-2023,Campbellton,2740.0,
-2023,Edmundston,5660.0,NB
-2023,Non CMA-CA,74950.0,NB
-2023,Quebec,2078330.0,
-2023,Campbellton,490.0,
-2023,Matane,4540.0,QC
-2023,Rimouski,13280.0,QC
-2023,Rivière-du-loup,7630.0,QC
-2023,Baie-Comeau,6530.0,QC
-2023,Saguenay,41480.0,QC
-2023,Alma,7690.0,QC
-2023,Dolbeau-Mistassini,3920.0,QC
-2023,Sept-Îles,6070.0,QC
-2023,Québec,211710.0,QC
-2023,Sainte-Marie,3580.0,QC
-2023,Saint-Georges,8550.0,QC
-2023,Thetford Mines,7250.0,QC
-2023,Sherbrooke,54990.0,QC
-2023,Cowansville,3840.0,QC
-2023,Victoriaville,13110.0,QC
-2023,Trois-Rivières,38860.0,QC
-2023,Shawinigan,11850.0,QC
-2023,Drummondville,26250.0,QC
-2023,Granby,24220.0,QC
-2023,Saint-Hyacinthe,14700.0,QC
-2023,Sorel-Tracy,10600.0,QC
-2023,Joliette,12550.0,QC
-2023,Montréal,1009940.0,QC
-2023,Salaberry-de-Valleyfield,10370.0,QC
-2023,Sainte-Agathe-des-Monts,5120.0,QC
-2023,Lachute,3210.0,QC
-2023,Val-d'Or,8110.0,QC
-2023,Amos,4570.0,QC
-2023,Rouyn-Noranda,10140.0,QC
-2023,Hawkesbury,410.0,
-2023,Ottawa-Gatineau,81600.0,
-2023,Non CMA-CA,411180.0,QC
-2023,Ontario,3707800.0,
-2023,Cornwall,15430.0,ON
-2023,Hawkesbury,2670.0,
-2023,Ottawa-Gatineau,288970.0,
-2023,Brockville,7460.0,ON
-2023,Pembroke,6450.0,ON
-2023,Petawawa,3970.0,ON
-2023,Kingston,40380.0,ON
-2023,Belleville-Quinte West,27920.0,ON
-2023,Cobourg,5920.0,ON
-2023,Port Hope,4600.0,ON
-2023,Peterborough,30970.0,ON
-2023,Kawartha Lakes,21210.0,ON
-2023,Centre Wellington,8230.0,ON
-2023,Oshawa,106240.0,ON
-2023,Ingersoll,3900.0,ON
-2023,Toronto,1650560.0,ON
-2023,Hamilton,193200.0,ON
-2023,St. Catharines-Niagara,111180.0,ON
-2023,Kitchener-Cambridge-Waterloo,156040.0,ON
-2023,Brantford,41440.0,ON
-2023,Woodstock,13920.0,ON
-2023,Tillsonburg,5940.0,ON
-2023,Norfolk,18040.0,ON
-2023,Guelph,42700.0,ON
-2023,Stratford,8870.0,ON
-2023,London,137120.0,ON
-2023,Chatham-Kent,27570.0,ON
-2023,Windsor,115840.0,ON
-2023,Sarnia,24740.0,ON
-2023,Essa,5760.0,ON
-2023,Wasaga Beach,6890.0,ON
-2023,Owen Sound,7690.0,ON
-2023,Collingwood,6450.0,ON
-2023,Barrie,53930.0,ON
-2023,Orillia,7830.0,ON
-2023,Midland,6690.0,ON
-2023,North Bay,18500.0,ON
-2023,Greater Sudbury,41830.0,ON
-2023,Elliot Lake,2730.0,ON
-2023,Timmins,10030.0,ON
-2023,Sault Ste. Marie,19140.0,ON
-2023,Thunder Bay,28510.0,ON
-2023,Kenora,4020.0,ON
-2023,Non CMA-CA,366340.0,ON
-2023,Manitoba,323740.0,
-2023,Winnipeg,206800.0,MB
-2023,Winkler,8840.0,MB
-2023,Steinbach,5790.0,MB
-2023,Portage la Prairie,4350.0,MB
-2023,Brandon,14610.0,MB
-2023,Thompson,2480.0,MB
-2023,Non CMA-CA,80870.0,MB
-2023,Saskatchewan,273480.0,
-2023,Regina,63010.0,SK
-2023,Yorkton,5100.0,SK
-2023,Moose Jaw,9100.0,SK
-2023,Swift Current,5180.0,SK
-2023,Saskatoon,81310.0,SK
-2023,North Battleford,4730.0,SK
-2023,Prince Albert,9440.0,SK
-2023,Estevan,3360.0,SK
-2023,Weyburn,3120.0,SK
-2023,Lloydminster,3870.0,
-2023,Non CMA-CA,85280.0,SK
-2023,Alberta,1126540.0,
-2023,Medicine Hat,19330.0,AB
-2023,Brooks,4930.0,AB
-2023,Lethbridge,30950.0,AB
-2023,Okotoks,9140.0,AB
-2023,High River,4590.0,AB
-2023,Calgary,419240.0,AB
-2023,Strathmore,3820.0,AB
-2023,Canmore,4560.0,AB
-2023,Red Deer,24670.0,AB
-2023,Sylvan Lake,4020.0,AB
-2023,Lacombe,4760.0,AB
-2023,Camrose,5160.0,AB
-2023,Edmonton,367470.0,AB
-2023,Lloydminster,5220.0,
-2023,Grande Prairie,15800.0,AB
-2023,Wood Buffalo,19000.0,AB
-2023,Wetaskiwin,3570.0,AB
-2023,Non CMA-CA,180310.0,AB
-2023,British Columbia,1351920.0,
-2023,Cranbrook,7330.0,BC
-2023,Nelson,4950.0,BC
-2023,Trail,3680.0,BC
-2023,Penticton,12030.0,BC
-2023,Kelowna,59690.0,BC
-2023,Vernon,18280.0,BC
-2023,Salmon Arm,5340.0,BC
-2023,Kamloops,30000.0,BC
-2023,Chilliwack,31860.0,BC
-2023,Abbotsford-Mission,53820.0,BC
-2023,Vancouver,736290.0,BC
-2023,Squamish,6410.0,BC
-2023,Victoria,101640.0,BC
-2023,Ladysmith,4360.0,BC
-2023,Duncan,12500.0,BC
-2023,Nanaimo,28770.0,BC
-2023,Parksville,9580.0,BC
-2023,Port Alberni,6410.0,BC
-2023,Courtenay,17540.0,BC
-2023,Campbell River,11030.0,BC
-2023,Powell River,4670.0,BC
-2023,Williams Lake,5760.0,BC
-2023,Quesnel,5690.0,BC
-2023,Prince Rupert,2930.0,BC
-2023,Terrace,4730.0,BC
-2023,Prince George,21830.0,BC
-2023,Dawson Creek,4350.0,BC
-2023,Fort St. John,7310.0,BC
-2023,Non CMA-CA,133170.0,BC
-2023,Yukon,9500.0,
-2023,Whitehorse,7930.0,YT
-2023,Non CMA-CA,1570.0,YT
-2023,Northwest Territories,8360.0,
-2023,Yellowknife,4840.0,NT
-2023,Non CMA-CA,3530.0,NT
-2023,Nunavut,5830.0,
-2023,Campbellton,3220.0,
-2023,Hawkesbury,3080.0,
-2023,Ottawa - Gatineau,370560.0,
-2023,Lloydminster,9090.0,
+2000,Canada,7118340,
+2000,Newfoundland and Labrador,131750,
+2000,St. John's,39990,NL
+2000,Prince Edward Island,31390,
+2000,Nova Scotia,214300,
+2000,Halifax,79400,NS
+2000,New Brunswick,180280,
+2000,Saint John,29040,NB
+2000,Quebec,1714530,
+2000,Saguenay,38600,QC
+2000,Québec,161390,QC
+2000,Sherbrooke,34640,QC
+2000,Trois-Rivières,32450,QC
+2000,Montréal,786850,QC
+2000,Ottawa-Gatineau,59540,
+2000,Ontario,2725440,
+2000,Ottawa-Gatineau,189760,
+2000,Oshawa,70130,ON
+2000,Toronto,1097590,ON
+2000,Hamilton,155750,ON
+2000,St. Catharines-Niagara,92960,ON
+2000,Kitchener-Cambridge-Waterloo,100250,ON
+2000,London,95480,ON
+2000,Windsor,70700,ON
+2000,Greater Sudbury,37010,ON
+2000,Thunder Bay,28080,ON
+2000,Manitoba,257060,
+2000,Winnipeg,152700,MB
+2000,Saskatchewan,225110,
+2000,Regina,43100,SK
+2000,Saskatoon,50850,SK
+2000,Alberta,700830,
+2000,Calgary,225270,AB
+2000,Edmonton,215850,AB
+2000,British Columbia,919060,
+2000,Vancouver,460800,BC
+2000,Victoria,72450,BC
+2000,Yukon,6150,
+2000,Northwest Territories,7740,
+2000,Nunavut,4700,
+2001,Canada,7187680,
+2001,Newfoundland and Labrador,130900,
+2001,St. John's,40170,NL
+2001,Prince Edward Island,31410,
+2001,Nova Scotia,214220,
+2001,Halifax,82930,NS
+2001,New Brunswick,180160,
+2001,Saint John,29000,NB
+2001,Quebec,1725700,
+2001,Saguenay,38250,QC
+2001,Québec,164010,QC
+2001,Sherbrooke,35510,QC
+2001,Trois-Rivières,32570,QC
+2001,Montréal,795240,QC
+2001,Ottawa-Gatineau,60480,
+2001,Ontario,2766660,
+2001,Ottawa-Gatineau,189140,
+2001,Kingston,34520,ON
+2001,Oshawa,71430,ON
+2001,Toronto,1129170,ON
+2001,Hamilton,158480,ON
+2001,St. Catharines-Niagara,92850,ON
+2001,Kitchener-Cambridge-Waterloo,102150,ON
+2001,London,101870,ON
+2001,Windsor,72980,ON
+2001,Greater Sudbury,37380,ON
+2001,Thunder Bay,28490,ON
+2001,Manitoba,257100,
+2001,Winnipeg,153600,MB
+2001,Saskatchewan,223340,
+2001,Regina,42860,SK
+2001,Saskatoon,50940,SK
+2001,Alberta,711600,
+2001,Calgary,230890,AB
+2001,Edmonton,218320,AB
+2001,British Columbia,927880,
+2001,Abbotsford-Mission,35120,BC
+2001,Vancouver,469990,BC
+2001,Victoria,72710,BC
+2001,Yukon,6070,
+2001,Northwest Territories,7860,
+2001,Nunavut,4770,
+2002,Canada,7249010,
+2002,Newfoundland and Labrador,130890,
+2002,St. John's,40360,NL
+2002,Prince Edward Island,31420,
+2002,Nova Scotia,214450,
+2002,Halifax,83410,NS
+2002,New Brunswick,180160,
+2002,Saint John,29000,NB
+2002,Quebec,1728810,
+2002,Saguenay,38040,QC
+2002,Québec,163800,QC
+2002,Sherbrooke,35640,QC
+2002,Trois-Rivières,32310,QC
+2002,Montréal,802050,QC
+2002,Ottawa-Gatineau,60690,
+2002,Ontario,2804720,
+2002,Ottawa-Gatineau,191860,
+2002,Kingston,34670,ON
+2002,Oshawa,71390,ON
+2002,Toronto,1162940,ON
+2002,Hamilton,158940,ON
+2002,St. Catharines-Niagara,92760,ON
+2002,Kitchener-Cambridge-Waterloo,102980,ON
+2002,London,102460,ON
+2002,Windsor,73860,ON
+2002,Greater Sudbury,37270,ON
+2002,Thunder Bay,28530,ON
+2002,Manitoba,257900,
+2002,Winnipeg,154090,MB
+2002,Saskatchewan,222900,
+2002,Regina,42840,SK
+2002,Saskatoon,51070,SK
+2002,Alberta,719830,
+2002,Calgary,235010,AB
+2002,Edmonton,220610,AB
+2002,British Columbia,938750,
+2002,Abbotsford-Mission,35670,BC
+2002,Vancouver,480070,BC
+2002,Victoria,72690,BC
+2002,Yukon,6180,
+2002,Northwest Territories,8050,
+2002,Nunavut,4960,
+2003,Canada,7319570,
+2003,Newfoundland and Labrador,130530,
+2003,St. John's,41000,NL
+2003,Prince Edward Island,31790,
+2003,Nova Scotia,214540,
+2003,Halifax,84140,NS
+2003,New Brunswick,180150,
+2003,Saint John,29030,NB
+2003,Quebec,1754150,
+2003,Saguenay,38140,QC
+2003,Québec,167930,QC
+2003,Sherbrooke,36420,QC
+2003,Trois-Rivières,32780,QC
+2003,Montréal,808870,QC
+2003,Ottawa-Gatineau,62560,
+2003,Ontario,2830190,
+2003,Ottawa-Gatineau,191800,
+2003,Kingston,35080,ON
+2003,Oshawa,74600,ON
+2003,Toronto,1169690,ON
+2003,Hamilton,160390,ON
+2003,St. Catharines-Niagara,93090,ON
+2003,Kitchener-Cambridge-Waterloo,105170,ON
+2003,London,103450,ON
+2003,Windsor,74260,ON
+2003,Greater Sudbury,37290,ON
+2003,Thunder Bay,28530,ON
+2003,Manitoba,258570,
+2003,Winnipeg,154720,MB
+2003,Saskatchewan,221980,
+2003,Regina,42910,SK
+2003,Saskatoon,51710,SK
+2003,Alberta,730520,
+2003,Calgary,238590,AB
+2003,Edmonton,224370,AB
+2003,British Columbia,947710,
+2003,Abbotsford-Mission,36170,BC
+2003,Vancouver,483010,BC
+2003,Victoria,73450,BC
+2003,Yukon,6260,
+2003,Northwest Territories,8160,
+2003,Nunavut,5020,
+2004,Canada,7449160,
+2004,Newfoundland and Labrador,130650,
+2004,St. John's,41680,NL
+2004,Prince Edward Island,31980,
+2004,Nova Scotia,215640,
+2004,Halifax,85060,NS
+2004,New Brunswick,182020,
+2004,Saint John,29230,NB
+2004,Quebec,1778740,
+2004,Saguenay,38280,QC
+2004,Québec,170230,QC
+2004,Sherbrooke,37040,QC
+2004,Trois-Rivières,33250,QC
+2004,Montréal,819930,QC
+2004,Ottawa-Gatineau,64250,
+2004,Ontario,2883680,
+2004,Ottawa-Gatineau,195000,
+2004,Kingston,35500,ON
+2004,Oshawa,76990,ON
+2004,Toronto,1198880,ON
+2004,Hamilton,161870,ON
+2004,St. Catharines-Niagara,94190,ON
+2004,Kitchener-Cambridge-Waterloo,107660,ON
+2004,London,105290,ON
+2004,Windsor,74900,ON
+2004,Greater Sudbury,38230,ON
+2004,Thunder Bay,28590,ON
+2004,Manitoba,260270,
+2004,Winnipeg,156110,MB
+2004,Saskatchewan,221900,
+2004,Regina,43280,SK
+2004,Saskatoon,52220,SK
+2004,Alberta,755880,
+2004,Calgary,248720,AB
+2004,Edmonton,232090,AB
+2004,British Columbia,968810,
+2004,Abbotsford-Mission,36840,BC
+2004,Vancouver,495180,BC
+2004,Victoria,74990,BC
+2004,Yukon,6320,
+2004,Northwest Territories,8200,
+2004,Nunavut,5060,
+2005,Canada,7486160,
+2005,Newfoundland and Labrador,129540,
+2005,St. John's,41750,NL
+2005,Prince Edward Island,32070,
+2005,Nova Scotia,214870,
+2005,Halifax,85190,NS
+2005,New Brunswick,181730,
+2005,Saint John,29120,NB
+2005,Quebec,1784680,
+2005,Saguenay,38150,QC
+2005,Québec,171050,QC
+2005,Sherbrooke,37220,QC
+2005,Trois-Rivières,33550,QC
+2005,Montréal,821360,QC
+2005,Ottawa-Gatineau,64610,
+2005,Ontario,2891660,
+2005,Ottawa-Gatineau,195640,
+2005,Kingston,35570,ON
+2005,Oshawa,77810,ON
+2005,Toronto,1204870,ON
+2005,Hamilton,161640,ON
+2005,St. Catharines-Niagara,93590,ON
+2005,Kitchener-Cambridge-Waterloo,108320,ON
+2005,London,105380,ON
+2005,Windsor,74200,ON
+2005,Greater Sudbury,38270,ON
+2005,Thunder Bay,28260,ON
+2005,Manitoba,260530,
+2005,Winnipeg,156150,MB
+2005,Saskatchewan,221170,
+2005,Regina,43320,SK
+2005,Saskatoon,52400,SK
+2005,Alberta,771640,
+2005,Calgary,254540,AB
+2005,Edmonton,236510,AB
+2005,British Columbia,978570,
+2005,Abbotsford-Mission,37070,BC
+2005,Vancouver,500010,BC
+2005,Victoria,75520,BC
+2005,Yukon,6520,
+2005,Northwest Territories,8110,
+2005,Nunavut,5080,
+2006,Canada,7629330,
+2006,Newfoundland and Labrador,129220,
+2006,St. John's,42200,NL
+2006,Prince Edward Island,32310,
+2006,Nova Scotia,215870,
+2006,Halifax,86530,NS
+2006,New Brunswick,182760,
+2006,Moncton,31640,NB
+2006,Saint John,29320,NB
+2006,Quebec,1804340,
+2006,Saguenay,38300,QC
+2006,Québec,173520,QC
+2006,Sherbrooke,43790,QC
+2006,Trois-Rivières,33680,QC
+2006,Montréal,837600,QC
+2006,Ottawa-Gatineau,67110,
+2006,Ontario,2952140,
+2006,Ottawa-Gatineau,200130,
+2006,Kingston,36000,ON
+2006,Peterborough,28300,ON
+2006,Oshawa,79150,ON
+2006,Toronto,1244430,ON
+2006,Hamilton,162500,ON
+2006,St. Catharines-Niagara,93690,ON
+2006,Kitchener-Cambridge-Waterloo,110070,ON
+2006,Brantford,30080,ON
+2006,Guelph,31850,ON
+2006,London,107880,ON
+2006,Windsor,74220,ON
+2006,Barrie,42800,ON
+2006,Greater Sudbury,38620,ON
+2006,Thunder Bay,28470,ON
+2006,Manitoba,263280,
+2006,Winnipeg,158730,MB
+2006,Saskatchewan,224080,
+2006,Regina,44990,SK
+2006,Saskatoon,53620,SK
+2006,Alberta,800750,
+2006,Calgary,263840,AB
+2006,Edmonton,244790,AB
+2006,British Columbia,1004470,
+2006,Kelowna,41710,BC
+2006,Abbotsford-Mission,38210,BC
+2006,Vancouver,515350,BC
+2006,Victoria,76580,BC
+2006,Yukon,6630,
+2006,Northwest Territories,8310,
+2006,Nunavut,5170,
+2007,Canada,7727870,
+2007,Newfoundland and Labrador,129900,
+2007,St. John's,43130,NL
+2007,Prince Edward Island,32630,
+2007,Nova Scotia,216430,
+2007,Halifax,87280,NS
+2007,New Brunswick,183590,
+2007,Moncton,32180,NB
+2007,Saint John,29570,NB
+2007,Quebec,1818710,
+2007,Saguenay,38290,QC
+2007,Québec,175730,QC
+2007,Sherbrooke,44150,QC
+2007,Trois-Rivières,34030,QC
+2007,Montréal,843590,QC
+2007,Ottawa-Gatineau,67790,
+2007,Ontario,2983620,
+2007,Ottawa-Gatineau,203080,
+2007,Kingston,36140,ON
+2007,Peterborough,28400,ON
+2007,Oshawa,80030,ON
+2007,Toronto,1265760,ON
+2007,Hamilton,162880,ON
+2007,St. Catharines-Niagara,93540,ON
+2007,Kitchener-Cambridge-Waterloo,111090,ON
+2007,Brantford,30190,ON
+2007,Guelph,32350,ON
+2007,London,108650,ON
+2007,Windsor,73790,ON
+2007,Barrie,43320,ON
+2007,Greater Sudbury,38890,ON
+2007,Thunder Bay,28400,ON
+2007,Manitoba,266880,
+2007,Winnipeg,160150,MB
+2007,Saskatchewan,227800,
+2007,Regina,45650,SK
+2007,Saskatoon,55890,SK
+2007,Alberta,821670,
+2007,Calgary,272260,AB
+2007,Edmonton,251070,AB
+2007,British Columbia,1026430,
+2007,Kelowna,42900,BC
+2007,Abbotsford-Mission,39060,BC
+2007,Vancouver,527830,BC
+2007,Victoria,78060,BC
+2007,Yukon,6750,
+2007,Northwest Territories,8270,
+2007,Nunavut,5190,
+2008,Canada,7832060,
+2008,Newfoundland and Labrador,131230,
+2008,St. John's,44120,NL
+2008,Bay Roberts,2880,NL
+2008,Grand Falls-Windsor,3710,NL
+2008,Corner Brook,7260,NL
+2008,Non CMA-CA,73260,NL
+2008,Prince Edward Island,32950,
+2008,Charlottetown,14270,PE
+2008,Summerside,4570,PE
+2008,Non CMA-CA,14110,PE
+2008,Nova Scotia,217210,
+2008,Halifax,88070,NS
+2008,Kentville,6480,NS
+2008,Truro,10610,NS
+2008,New Glasgow,8810,NS
+2008,Cape Breton,22710,NS
+2008,Non CMA-CA,80520,NS
+2008,New Brunswick,184820,
+2008,Moncton,32800,NB
+2008,Saint John,29830,NB
+2008,Fredericton,22160,NB
+2008,Bathurst,8370,NB
+2008,Miramichi,6030,NB
+2008,Campbellton,3410,
+2008,Edmundston,5710,NB
+2008,Non CMA-CA,76520,NB
+2008,Quebec,1835730,
+2008,Campbellton,530,
+2008,Matane,4100,QC
+2008,Rimouski,11560,QC
+2008,Rivière-du-loup,6350,QC
+2008,Baie-Comeau,7490,QC
+2008,Saguenay,38350,QC
+2008,Alma,8440,QC
+2008,Dolbeau-Mistassini,3690,QC
+2008,Sept-Îles,6410,QC
+2008,Québec,177930,QC
+2008,Saint-Georges,7580,QC
+2008,Thetford Mines,6650,QC
+2008,Sherbrooke,44670,QC
+2008,Cowansville,3040,QC
+2008,Victoriaville,12470,QC
+2008,Trois-Rivières,34260,QC
+2008,Shawinigan,13250,QC
+2008,La Tuque,3480,QC
+2008,Drummondville,19730,QC
+2008,Granby,17520,QC
+2008,Saint-Hyacinthe,13520,QC
+2008,Sorel-Tracy,12670,QC
+2008,Joliette,10540,QC
+2008,Saint-Jean-sur-Richelieu,21950,QC
+2008,Montréal,853140,QC
+2008,Salaberry-de-Valleyfield,9360,QC
+2008,Lachute,2990,QC
+2008,Val-d'Or,7810,QC
+2008,Amos,4820,QC
+2008,Rouyn-Noranda,9700,QC
+2008,Hawkesbury,410,
+2008,Ottawa-Gatineau,68870,
+2008,Non CMA-CA,392500,QC
+2008,Ontario,3017330,
+2008,Cornwall,15630,ON
+2008,Hawkesbury,2460,
+2008,Ottawa-Gatineau,206360,
+2008,Brockville,8690,ON
+2008,Pembroke,6720,ON
+2008,Petawawa,3330,ON
+2008,Kingston,36600,ON
+2008,Belleville-Quinte West,23540,ON
+2008,Cobourg,4750,ON
+2008,Port Hope,4130,ON
+2008,Peterborough,28820,ON
+2008,Kawartha Lakes,19440,ON
+2008,Centre Wellington,6420,ON
+2008,Oshawa,81070,ON
+2008,Ingersoll,3380,ON
+2008,Toronto,1287680,ON
+2008,Hamilton,163410,ON
+2008,St. Catharines-Niagara,93680,ON
+2008,Kitchener-Cambridge-Waterloo,112360,ON
+2008,Brantford,30410,ON
+2008,Woodstock,10080,ON
+2008,Tillsonburg,4740,ON
+2008,Norfolk,15840,ON
+2008,Guelph,32710,ON
+2008,Stratford,7830,ON
+2008,London,109390,ON
+2008,Chatham-Kent,26750,ON
+2008,Leamington,17530,ON
+2008,Windsor,73380,ON
+2008,Sarnia,21680,ON
+2008,Owen Sound,7510,ON
+2008,Collingwood,4750,ON
+2008,Barrie,43650,ON
+2008,Orillia,10580,ON
+2008,Midland,8840,ON
+2008,North Bay,15780,ON
+2008,Greater Sudbury,39000,ON
+2008,Elliot Lake,3080,ON
+2008,Temiskaming Shores,3440,ON
+2008,Timmins,10510,ON
+2008,Sault Ste. Marie,19160,ON
+2008,Thunder Bay,28250,ON
+2008,Kenora,3330,ON
+2008,Non CMA-CA,360670,ON
+2008,Manitoba,270220,
+2008,Winnipeg,162080,MB
+2008,Portage la Prairie,4960,MB
+2008,Brandon,13140,MB
+2008,Thompson,2970,MB
+2008,Non CMA-CA,87070,MB
+2008,Saskatchewan,232570,
+2008,Regina,46650,SK
+2008,Yorkton,4500,SK
+2008,Moose Jaw,8080,SK
+2008,Swift Current,4900,SK
+2008,Saskatoon,56690,SK
+2008,North Battleford,4500,SK
+2008,Prince Albert,8550,SK
+2008,Estevan,3050,SK
+2008,Lloydminster,3300,
+2008,Non CMA-CA,92360,SK
+2008,Alberta,846200,
+2008,Medicine Hat,18180,AB
+2008,Brooks,6100,AB
+2008,Lethbridge,25840,AB
+2008,Okotoks,6590,AB
+2008,Calgary,282210,AB
+2008,Canmore,2990,AB
+2008,Red Deer,21440,AB
+2008,Camrose,4650,AB
+2008,Edmonton,259780,AB
+2008,Lloydminster,4580,
+2008,Cold Lake,3910,AB
+2008,Grande Prairie,19340,AB
+2008,Wood Buffalo,16020,AB
+2008,Wetaskiwin,3690,AB
+2008,Non CMA-CA,170870,AB
+2008,British Columbia,1043320,
+2008,Cranbrook,6580,BC
+2008,Penticton,10800,BC
+2008,Kelowna,43670,BC
+2008,Vernon,14910,BC
+2008,Salmon Arm,4620,BC
+2008,Kamloops,24880,BC
+2008,Chilliwack,21500,BC
+2008,Abbotsford-Mission,39560,BC
+2008,Vancouver,540530,BC
+2008,Squamish,3780,BC
+2008,Victoria,79450,BC
+2008,Duncan,10390,BC
+2008,Nanaimo,23120,BC
+2008,Parksville,8140,BC
+2008,Port Alberni,6260,BC
+2008,Courtenay,13880,BC
+2008,Campbell River,9220,BC
+2008,Powell River,4260,BC
+2008,Williams Lake,4590,BC
+2008,Quesnel,5830,BC
+2008,Prince Rupert,2800,BC
+2008,Kitimat,2250,BC
+2008,Terrace,4270,BC
+2008,Prince George,19690,BC
+2008,Dawson Creek,3340,BC
+2008,Fort St. John,6760,BC
+2008,Non CMA-CA,128250,BC
+2008,Yukon,6840,
+2008,Whitehorse,5470,YT
+2008,Non CMA-CA,1380,YT
+2008,Northwest Territories,8330,
+2008,Yellowknife,4250,NT
+2008,Non CMA-CA,4080,NT
+2008,Nunavut,5300,
+2008,Campbellton,3950,
+2008,Hawkesbury,2860,
+2008,Ottawa - Gatineau,275220,
+2008,Lloydminster,7880,
+2009,Canada,7926210,
+2009,Newfoundland and Labrador,132170,
+2009,St. John's,44970,NL
+2009,Bay Roberts,2900,NL
+2009,Grand Falls-Windsor,3710,NL
+2009,Corner Brook,7290,NL
+2009,Non CMA-CA,73300,NL
+2009,Prince Edward Island,33310,
+2009,Charlottetown,14570,PE
+2009,Summerside,4620,PE
+2009,Non CMA-CA,14120,PE
+2009,Nova Scotia,218170,
+2009,Halifax,88460,NS
+2009,Kentville,6480,NS
+2009,Truro,10680,NS
+2009,New Glasgow,8790,NS
+2009,Cape Breton,22580,NS
+2009,Non CMA-CA,81180,NS
+2009,New Brunswick,186180,
+2009,Moncton,33420,NB
+2009,Saint John,30020,NB
+2009,Fredericton,22470,NB
+2009,Bathurst,8320,NB
+2009,Miramichi,5990,NB
+2009,Campbellton,3440,
+2009,Edmundston,5710,NB
+2009,Non CMA-CA,76800,NB
+2009,Quebec,1854770,
+2009,Campbellton,530,
+2009,Matane,4060,QC
+2009,Rimouski,11710,QC
+2009,Rivière-du-loup,6360,QC
+2009,Baie-Comeau,7490,QC
+2009,Saguenay,38450,QC
+2009,Alma,8410,QC
+2009,Dolbeau-Mistassini,3680,QC
+2009,Sept-Îles,6570,QC
+2009,Québec,180240,QC
+2009,Saint-Georges,7680,QC
+2009,Thetford Mines,6620,QC
+2009,Sherbrooke,45270,QC
+2009,Cowansville,3050,QC
+2009,Victoriaville,12740,QC
+2009,Trois-Rivières,34660,QC
+2009,Shawinigan,13190,QC
+2009,La Tuque,3470,QC
+2009,Drummondville,19920,QC
+2009,Granby,17940,QC
+2009,Saint-Hyacinthe,13560,QC
+2009,Sorel-Tracy,12670,QC
+2009,Joliette,10870,QC
+2009,Saint-Jean-sur-Richelieu,22140,QC
+2009,Montréal,862070,QC
+2009,Salaberry-de-Valleyfield,9380,QC
+2009,Lachute,3020,QC
+2009,Val-d'Or,7830,QC
+2009,Amos,4860,QC
+2009,Rouyn-Noranda,9860,QC
+2009,Hawkesbury,410,
+2009,Ottawa-Gatineau,70310,
+2009,Non CMA-CA,395780,QC
+2009,Ontario,3057010,
+2009,Cornwall,14450,ON
+2009,Hawkesbury,2420,
+2009,Ottawa-Gatineau,210350,
+2009,Brockville,8640,ON
+2009,Pembroke,6770,ON
+2009,Petawawa,3370,ON
+2009,Kingston,37150,ON
+2009,Belleville-Quinte West,23210,ON
+2009,Cobourg,4820,ON
+2009,Port Hope,4150,ON
+2009,Peterborough,29250,ON
+2009,Kawartha Lakes,19270,ON
+2009,Centre Wellington,6440,ON
+2009,Oshawa,82600,ON
+2009,Ingersoll,3360,ON
+2009,Toronto,1309490,ON
+2009,Hamilton,165570,ON
+2009,St. Catharines-Niagara,94320,ON
+2009,Kitchener-Cambridge-Waterloo,113630,ON
+2009,Brantford,30790,ON
+2009,Woodstock,10490,ON
+2009,Tillsonburg,4790,ON
+2009,Norfolk,15870,ON
+2009,Guelph,33360,ON
+2009,Stratford,7870,ON
+2009,London,110610,ON
+2009,Chatham-Kent,26650,ON
+2009,Leamington,17890,ON
+2009,Windsor,73530,ON
+2009,Sarnia,21660,ON
+2009,Owen Sound,7570,ON
+2009,Collingwood,4680,ON
+2009,Barrie,44240,ON
+2009,Orillia,10710,ON
+2009,Midland,8540,ON
+2009,North Bay,15810,ON
+2009,Greater Sudbury,38960,ON
+2009,Elliot Lake,3080,ON
+2009,Temiskaming Shores,3480,ON
+2009,Timmins,10590,ON
+2009,Sault Ste. Marie,19330,ON
+2009,Thunder Bay,28440,ON
+2009,Kenora,3360,ON
+2009,Non CMA-CA,365500,ON
+2009,Manitoba,273430,
+2009,Winnipeg,164420,MB
+2009,Portage la Prairie,4990,MB
+2009,Brandon,13190,MB
+2009,Thompson,2990,MB
+2009,Non CMA-CA,87850,MB
+2009,Saskatchewan,236080,
+2009,Regina,47710,SK
+2009,Yorkton,4580,SK
+2009,Moose Jaw,8170,SK
+2009,Swift Current,5000,SK
+2009,Saskatoon,58260,SK
+2009,North Battleford,4510,SK
+2009,Prince Albert,8650,SK
+2009,Estevan,3190,SK
+2009,Lloydminster,3390,
+2009,Non CMA-CA,92640,SK
+2009,Alberta,857770,
+2009,Medicine Hat,17970,AB
+2009,Brooks,6350,AB
+2009,Lethbridge,26350,AB
+2009,Okotoks,6930,AB
+2009,Calgary,286490,AB
+2009,Canmore,3060,AB
+2009,Red Deer,21620,AB
+2009,Camrose,4670,AB
+2009,Edmonton,264420,AB
+2009,Lloydminster,4630,
+2009,Cold Lake,4000,AB
+2009,Grande Prairie,19470,AB
+2009,Wood Buffalo,16730,AB
+2009,Wetaskiwin,3670,AB
+2009,Non CMA-CA,171410,AB
+2009,British Columbia,1056430,
+2009,Cranbrook,6590,BC
+2009,Penticton,10890,BC
+2009,Kelowna,44250,BC
+2009,Vernon,15050,BC
+2009,Salmon Arm,4620,BC
+2009,Kamloops,24900,BC
+2009,Chilliwack,21870,BC
+2009,Abbotsford-Mission,39900,BC
+2009,Vancouver,550590,BC
+2009,Squamish,3910,BC
+2009,Victoria,80340,BC
+2009,Duncan,10530,BC
+2009,Nanaimo,23290,BC
+2009,Parksville,8210,BC
+2009,Port Alberni,6250,BC
+2009,Courtenay,13620,BC
+2009,Campbell River,9320,BC
+2009,Powell River,4290,BC
+2009,Williams Lake,4530,BC
+2009,Quesnel,5780,BC
+2009,Prince Rupert,2810,BC
+2009,Kitimat,2170,BC
+2009,Terrace,4240,BC
+2009,Prince George,19540,BC
+2009,Dawson Creek,3340,BC
+2009,Fort St. John,6760,BC
+2009,Non CMA-CA,128870,BC
+2009,Yukon,7020,
+2009,Whitehorse,5650,YT
+2009,Non CMA-CA,1370,YT
+2009,Northwest Territories,8470,
+2009,Yellowknife,4320,NT
+2009,Non CMA-CA,4150,NT
+2009,Nunavut,5410,
+2009,Campbellton,3970,
+2009,Hawkesbury,2830,
+2009,Ottawa - Gatineau,280670,
+2009,Lloydminster,8020,
+2010,Canada,7989380,
+2010,Newfoundland and Labrador,132340,
+2010,St. John's,45570,NL
+2010,Bay Roberts,2910,NL
+2010,Grand Falls-Windsor,3700,NL
+2010,Corner Brook,7280,NL
+2010,Non CMA-CA,72880,NL
+2010,Prince Edward Island,33560,
+2010,Charlottetown,14770,PE
+2010,Summerside,4640,PE
+2010,Non CMA-CA,14150,PE
+2010,Nova Scotia,218130,
+2010,Halifax,88980,NS
+2010,Kentville,6480,NS
+2010,Truro,10670,NS
+2010,New Glasgow,8150,NS
+2010,Cape Breton,22340,NS
+2010,Non CMA-CA,81510,NS
+2010,New Brunswick,186650,
+2010,Moncton,33930,NB
+2010,Saint John,30000,NB
+2010,Fredericton,22760,NB
+2010,Bathurst,8220,NB
+2010,Miramichi,5990,NB
+2010,Campbellton,3420,
+2010,Edmundston,5690,NB
+2010,Non CMA-CA,76650,NB
+2010,Quebec,1871780,
+2010,Campbellton,530,
+2010,Matane,4060,QC
+2010,Rimouski,11820,QC
+2010,Rivière-du-loup,6410,QC
+2010,Baie-Comeau,7460,QC
+2010,Saguenay,38700,QC
+2010,Alma,8450,QC
+2010,Dolbeau-Mistassini,3660,QC
+2010,Sept-Îles,6670,QC
+2010,Québec,182400,QC
+2010,Saint-Georges,7870,QC
+2010,Thetford Mines,6600,QC
+2010,Sherbrooke,45820,QC
+2010,Cowansville,3080,QC
+2010,Victoriaville,12940,QC
+2010,Trois-Rivières,34880,QC
+2010,Shawinigan,13170,QC
+2010,La Tuque,3460,QC
+2010,Drummondville,20110,QC
+2010,Granby,18170,QC
+2010,Saint-Hyacinthe,13680,QC
+2010,Sorel-Tracy,12740,QC
+2010,Joliette,11010,QC
+2010,Saint-Jean-sur-Richelieu,22200,QC
+2010,Montréal,870530,QC
+2010,Salaberry-de-Valleyfield,9410,QC
+2010,Lachute,3050,QC
+2010,Val-d'Or,7860,QC
+2010,Amos,4870,QC
+2010,Rouyn-Noranda,9910,QC
+2010,Hawkesbury,400,
+2010,Ottawa-Gatineau,71330,
+2010,Non CMA-CA,398550,QC
+2010,Ontario,3073980,
+2010,Cornwall,14380,ON
+2010,Hawkesbury,2410,
+2010,Ottawa-Gatineau,212360,
+2010,Brockville,8540,ON
+2010,Pembroke,6710,ON
+2010,Petawawa,3420,ON
+2010,Kingston,36850,ON
+2010,Belleville-Quinte West,23090,ON
+2010,Cobourg,4870,ON
+2010,Port Hope,4100,ON
+2010,Peterborough,29160,ON
+2010,Kawartha Lakes,19170,ON
+2010,Centre Wellington,6510,ON
+2010,Oshawa,82970,ON
+2010,Ingersoll,3370,ON
+2010,Toronto,1325490,ON
+2010,Hamilton,166280,ON
+2010,St. Catharines-Niagara,93830,ON
+2010,Kitchener-Cambridge-Waterloo,114580,ON
+2010,Brantford,30750,ON
+2010,Woodstock,10620,ON
+2010,Tillsonburg,4810,ON
+2010,Norfolk,15750,ON
+2010,Guelph,33500,ON
+2010,Stratford,7870,ON
+2010,London,110490,ON
+2010,Chatham-Kent,26530,ON
+2010,Leamington,18570,ON
+2010,Windsor,73080,ON
+2010,Sarnia,21450,ON
+2010,Owen Sound,7470,ON
+2010,Collingwood,4790,ON
+2010,Barrie,44170,ON
+2010,Orillia,10610,ON
+2010,Midland,8550,ON
+2010,North Bay,15660,ON
+2010,Greater Sudbury,38690,ON
+2010,Elliot Lake,3060,ON
+2010,Temiskaming Shores,3440,ON
+2010,Timmins,10520,ON
+2010,Sault Ste. Marie,19550,ON
+2010,Thunder Bay,28030,ON
+2010,Kenora,3330,ON
+2010,Non CMA-CA,364600,ON
+2010,Manitoba,275680,
+2010,Winnipeg,166460,MB
+2010,Portage la Prairie,4980,MB
+2010,Brandon,13250,MB
+2010,Thompson,2920,MB
+2010,Non CMA-CA,88080,MB
+2010,Saskatchewan,239200,
+2010,Regina,48680,SK
+2010,Yorkton,4630,SK
+2010,Moose Jaw,8250,SK
+2010,Swift Current,4970,SK
+2010,Saskatoon,59770,SK
+2010,North Battleford,4590,SK
+2010,Prince Albert,8690,SK
+2010,Estevan,3210,SK
+2010,Lloydminster,3470,
+2010,Non CMA-CA,92940,SK
+2010,Alberta,869550,
+2010,Medicine Hat,18010,AB
+2010,Brooks,6220,AB
+2010,Lethbridge,26470,AB
+2010,Okotoks,7200,AB
+2010,Calgary,291890,AB
+2010,Canmore,3110,AB
+2010,Red Deer,21810,AB
+2010,Camrose,4680,AB
+2010,Edmonton,268770,AB
+2010,Lloydminster,4730,
+2010,Cold Lake,4070,AB
+2010,Grande Prairie,19860,AB
+2010,Wood Buffalo,17570,AB
+2010,Wetaskiwin,3650,AB
+2010,Non CMA-CA,171530,AB
+2010,British Columbia,1067260,
+2010,Cranbrook,6530,BC
+2010,Penticton,11120,BC
+2010,Kelowna,44670,BC
+2010,Vernon,15120,BC
+2010,Salmon Arm,4590,BC
+2010,Kamloops,24660,BC
+2010,Chilliwack,22410,BC
+2010,Abbotsford-Mission,40460,BC
+2010,Vancouver,558950,BC
+2010,Squamish,4020,BC
+2010,Victoria,80720,BC
+2010,Duncan,10620,BC
+2010,Nanaimo,23410,BC
+2010,Parksville,8230,BC
+2010,Port Alberni,6150,BC
+2010,Courtenay,13740,BC
+2010,Campbell River,9310,BC
+2010,Powell River,4310,BC
+2010,Williams Lake,4470,BC
+2010,Quesnel,5740,BC
+2010,Prince Rupert,2750,BC
+2010,Kitimat,2100,BC
+2010,Terrace,4180,BC
+2010,Prince George,19500,BC
+2010,Dawson Creek,3340,BC
+2010,Fort St. John,6820,BC
+2010,Non CMA-CA,129340,BC
+2010,Yukon,7210,
+2010,Whitehorse,5840,YT
+2010,Non CMA-CA,1370,YT
+2010,Northwest Territories,8530,
+2010,Yellowknife,4360,NT
+2010,Non CMA-CA,4170,NT
+2010,Nunavut,5510,
+2010,Campbellton,3950,
+2010,Hawkesbury,2800,
+2010,Ottawa - Gatineau,283690,
+2010,Lloydminster,8200,
+2011,Canada,8091960,
+2011,Newfoundland and Labrador,133280,
+2011,St. John's,46410,NL
+2011,Bay Roberts,2930,NL
+2011,Grand Falls-Windsor,3740,NL
+2011,Corner Brook,7260,NL
+2011,Non CMA-CA,72940,NL
+2011,Prince Edward Island,33960,
+2011,Charlottetown,14890,PE
+2011,Summerside,4640,PE
+2011,Non CMA-CA,14430,PE
+2011,Nova Scotia,219280,
+2011,Halifax,90060,NS
+2011,Kentville,6480,NS
+2011,Truro,10730,NS
+2011,New Glasgow,8150,NS
+2011,Cape Breton,22260,NS
+2011,Non CMA-CA,81600,NS
+2011,New Brunswick,187480,
+2011,Moncton,34340,NB
+2011,Saint John,30110,NB
+2011,Fredericton,23060,NB
+2011,Bathurst,8230,NB
+2011,Miramichi,5970,NB
+2011,Campbellton,3410,
+2011,Edmundston,5660,NB
+2011,Non CMA-CA,76710,NB
+2011,Quebec,1891390,
+2011,Campbellton,560,
+2011,Matane,4070,QC
+2011,Rimouski,12010,QC
+2011,Rivière-du-loup,6450,QC
+2011,Baie-Comeau,7470,QC
+2011,Saguenay,38930,QC
+2011,Alma,8490,QC
+2011,Dolbeau-Mistassini,3660,QC
+2011,Sept-Îles,6690,QC
+2011,Québec,184610,QC
+2011,Saint-Georges,7960,QC
+2011,Thetford Mines,6530,QC
+2011,Sherbrooke,46240,QC
+2011,Cowansville,3100,QC
+2011,Victoriaville,13060,QC
+2011,Trois-Rivières,35170,QC
+2011,Shawinigan,13170,QC
+2011,La Tuque,3460,QC
+2011,Drummondville,20420,QC
+2011,Granby,18470,QC
+2011,Saint-Hyacinthe,13790,QC
+2011,Sorel-Tracy,12890,QC
+2011,Joliette,11140,QC
+2011,Saint-Jean-sur-Richelieu,22340,QC
+2011,Montréal,880860,QC
+2011,Salaberry-de-Valleyfield,9410,QC
+2011,Lachute,3050,QC
+2011,Val-d'Or,7990,QC
+2011,Amos,4910,QC
+2011,Rouyn-Noranda,10060,QC
+2011,Hawkesbury,390,
+2011,Ottawa-Gatineau,72320,
+2011,Non CMA-CA,401720,QC
+2011,Ontario,3104350,
+2011,Cornwall,14290,ON
+2011,Hawkesbury,2370,
+2011,Ottawa-Gatineau,215620,
+2011,Brockville,8520,ON
+2011,Pembroke,6720,ON
+2011,Petawawa,3460,ON
+2011,Kingston,36860,ON
+2011,Belleville-Quinte West,22990,ON
+2011,Cobourg,4980,ON
+2011,Port Hope,4100,ON
+2011,Peterborough,29080,ON
+2011,Kawartha Lakes,19250,ON
+2011,Centre Wellington,6600,ON
+2011,Oshawa,84220,ON
+2011,Ingersoll,3360,ON
+2011,Toronto,1345230,ON
+2011,Hamilton,167800,ON
+2011,St. Catharines-Niagara,93960,ON
+2011,Kitchener-Cambridge-Waterloo,115550,ON
+2011,Brantford,31040,ON
+2011,Woodstock,10810,ON
+2011,Tillsonburg,4890,ON
+2011,Norfolk,15760,ON
+2011,Guelph,33900,ON
+2011,Stratford,7870,ON
+2011,London,110900,ON
+2011,Chatham-Kent,26360,ON
+2011,Leamington,19060,ON
+2011,Windsor,73240,ON
+2011,Sarnia,21370,ON
+2011,Owen Sound,7390,ON
+2011,Collingwood,4920,ON
+2011,Barrie,44570,ON
+2011,Orillia,10640,ON
+2011,Midland,8720,ON
+2011,North Bay,15630,ON
+2011,Greater Sudbury,38700,ON
+2011,Elliot Lake,2990,ON
+2011,Temiskaming Shores,3400,ON
+2011,Timmins,10480,ON
+2011,Sault Ste. Marie,19370,ON
+2011,Thunder Bay,27830,ON
+2011,Kenora,3290,ON
+2011,Non CMA-CA,366250,ON
+2011,Manitoba,279950,
+2011,Winnipeg,169810,MB
+2011,Portage la Prairie,4990,MB
+2011,Brandon,13270,MB
+2011,Thompson,2900,MB
+2011,Non CMA-CA,88990,MB
+2011,Saskatchewan,244340,
+2011,Regina,50310,SK
+2011,Yorkton,4660,SK
+2011,Moose Jaw,8360,SK
+2011,Swift Current,5040,SK
+2011,Saskatoon,62150,SK
+2011,North Battleford,4680,SK
+2011,Prince Albert,8760,SK
+2011,Estevan,3270,SK
+2011,Lloydminster,3670,
+2011,Non CMA-CA,93450,SK
+2011,Alberta,893710,
+2011,Medicine Hat,18220,AB
+2011,Brooks,6200,AB
+2011,Lethbridge,26940,AB
+2011,Okotoks,7520,AB
+2011,Calgary,301980,AB
+2011,Canmore,3250,AB
+2011,Red Deer,22630,AB
+2011,Camrose,4790,AB
+2011,Edmonton,277040,AB
+2011,Lloydminster,4870,
+2011,Cold Lake,4190,AB
+2011,Grande Prairie,20730,AB
+2011,Wood Buffalo,18370,AB
+2011,Wetaskiwin,3680,AB
+2011,Non CMA-CA,173310,AB
+2011,British Columbia,1082540,
+2011,Cranbrook,6630,BC
+2011,Penticton,11230,BC
+2011,Kelowna,45420,BC
+2011,Vernon,15290,BC
+2011,Salmon Arm,4600,BC
+2011,Kamloops,24860,BC
+2011,Chilliwack,22890,BC
+2011,Abbotsford-Mission,41220,BC
+2011,Vancouver,568730,BC
+2011,Squamish,4130,BC
+2011,Victoria,81960,BC
+2011,Duncan,10650,BC
+2011,Nanaimo,23580,BC
+2011,Parksville,8340,BC
+2011,Port Alberni,6120,BC
+2011,Courtenay,13890,BC
+2011,Campbell River,9390,BC
+2011,Powell River,4360,BC
+2011,Williams Lake,4490,BC
+2011,Quesnel,5730,BC
+2011,Prince Rupert,2740,BC
+2011,Kitimat,2100,BC
+2011,Terrace,4240,BC
+2011,Prince George,19640,BC
+2011,Dawson Creek,3360,BC
+2011,Fort St. John,7040,BC
+2011,Non CMA-CA,129930,BC
+2011,Yukon,7490,
+2011,Whitehorse,6090,YT
+2011,Non CMA-CA,1400,YT
+2011,Northwest Territories,8570,
+2011,Yellowknife,4420,NT
+2011,Non CMA-CA,4150,NT
+2011,Nunavut,5640,
+2011,Campbellton,3970,
+2011,Hawkesbury,2760,
+2011,Ottawa - Gatineau,287940,
+2011,Lloydminster,8540,
+2012,Canada,8169080,
+2012,Newfoundland and Labrador,133660,
+2012,St. John's,47140,NL
+2012,Bay Roberts,2950,NL
+2012,Grand Falls-Windsor,3720,NL
+2012,Corner Brook,7210,NL
+2012,Non CMA-CA,72650,NL
+2012,Prince Edward Island,34080,
+2012,Charlottetown,15790,PE
+2012,Summerside,4630,PE
+2012,Non CMA-CA,13660,PE
+2012,Nova Scotia,219030,
+2012,Halifax,90360,NS
+2012,Kentville,6480,NS
+2012,Truro,10480,NS
+2012,New Glasgow,8160,NS
+2012,Cape Breton,22120,NS
+2012,Non CMA-CA,81440,NS
+2012,New Brunswick,187480,
+2012,Moncton,34700,NB
+2012,Saint John,29990,NB
+2012,Fredericton,23480,NB
+2012,Bathurst,8920,NB
+2012,Miramichi,6940,NB
+2012,Campbellton,3420,
+2012,Edmundston,5770,NB
+2012,Non CMA-CA,74260,NB
+2012,Quebec,1902890,
+2012,Campbellton,590,
+2012,Matane,4680,QC
+2012,Rimouski,12660,QC
+2012,Rivière-du-loup,7060,QC
+2012,Baie-Comeau,7390,QC
+2012,Saguenay,40490,QC
+2012,Alma,8300,QC
+2012,Dolbeau-Mistassini,4160,QC
+2012,Sept-Îles,6730,QC
+2012,Québec,187450,QC
+2012,Saint-Georges,8450,QC
+2012,Thetford Mines,6490,QC
+2012,Sherbrooke,48010,QC
+2012,Cowansville,2980,QC
+2012,Victoriaville,11690,QC
+2012,Trois-Rivières,36120,QC
+2012,Shawinigan,13110,QC
+2012,Drummondville,21770,QC
+2012,Granby,19480,QC
+2012,Saint-Hyacinthe,13550,QC
+2012,Sorel-Tracy,12460,QC
+2012,Joliette,11270,QC
+2012,Saint-Jean-sur-Richelieu,22430,QC
+2012,Montréal,887310,QC
+2012,Salaberry-de-Valleyfield,9460,QC
+2012,Lachute,3020,QC
+2012,Val-d'Or,8050,QC
+2012,Amos,3870,QC
+2012,Rouyn-Noranda,10330,QC
+2012,Hawkesbury,390,
+2012,Ottawa-Gatineau,73430,
+2012,Non CMA-CA,399740,QC
+2012,Ontario,3125810,
+2012,Cornwall,14340,ON
+2012,Hawkesbury,2370,
+2012,Ottawa-Gatineau,217090,
+2012,Brockville,8450,ON
+2012,Pembroke,6690,ON
+2012,Petawawa,3480,ON
+2012,Kingston,36220,ON
+2012,Belleville-Quinte West,21920,ON
+2012,Cobourg,5550,ON
+2012,Port Hope,4080,ON
+2012,Peterborough,28630,ON
+2012,Kawartha Lakes,18820,ON
+2012,Centre Wellington,6670,ON
+2012,Oshawa,85080,ON
+2012,Ingersoll,3340,ON
+2012,Toronto,1362740,ON
+2012,Hamilton,168720,ON
+2012,St. Catharines-Niagara,93950,ON
+2012,Kitchener-Cambridge-Waterloo,116020,ON
+2012,Brantford,31330,ON
+2012,Woodstock,10560,ON
+2012,Tillsonburg,4900,ON
+2012,Norfolk,15410,ON
+2012,Guelph,35410,ON
+2012,Stratford,7770,ON
+2012,London,110930,ON
+2012,Chatham-Kent,23030,ON
+2012,Leamington,20800,ON
+2012,Windsor,75120,ON
+2012,Sarnia,21240,ON
+2012,Owen Sound,7370,ON
+2012,Collingwood,4970,ON
+2012,Barrie,45130,ON
+2012,Orillia,10730,ON
+2012,Midland,8600,ON
+2012,North Bay,15530,ON
+2012,Greater Sudbury,38540,ON
+2012,Elliot Lake,2870,ON
+2012,Temiskaming Shores,3440,ON
+2012,Timmins,10410,ON
+2012,Sault Ste. Marie,18960,ON
+2012,Thunder Bay,27840,ON
+2012,Kenora,3270,ON
+2012,Non CMA-CA,367510,ON
+2012,Manitoba,282860,
+2012,Winnipeg,171350,MB
+2012,Steinbach,5110,MB
+2012,Portage la Prairie,3880,MB
+2012,Brandon,13430,MB
+2012,Thompson,2940,MB
+2012,Non CMA-CA,86160,MB
+2012,Saskatchewan,248900,
+2012,Regina,51560,SK
+2012,Yorkton,4710,SK
+2012,Moose Jaw,8420,SK
+2012,Swift Current,5300,SK
+2012,Saskatoon,64260,SK
+2012,North Battleford,4620,SK
+2012,Prince Albert,8960,SK
+2012,Estevan,3630,SK
+2012,Lloydminster,3860,
+2012,Non CMA-CA,93580,SK
+2012,Alberta,921610,
+2012,Medicine Hat,18580,AB
+2012,Brooks,6190,AB
+2012,Lethbridge,26950,AB
+2012,Okotoks,7820,AB
+2012,High River,3950,AB
+2012,Calgary,313450,AB
+2012,Strathmore,3910,AB
+2012,Canmore,3360,AB
+2012,Red Deer,23020,AB
+2012,Sylvan Lake,3380,AB
+2012,Lacombe,3910,AB
+2012,Camrose,4870,AB
+2012,Edmonton,286020,AB
+2012,Lloydminster,5110,
+2012,Cold Lake,4180,AB
+2012,Grande Prairie,15640,AB
+2012,Wood Buffalo,19370,AB
+2012,Wetaskiwin,3710,AB
+2012,Non CMA-CA,168200,AB
+2012,British Columbia,1090980,
+2012,Cranbrook,6650,BC
+2012,Penticton,10700,BC
+2012,Kelowna,45810,BC
+2012,Vernon,15300,BC
+2012,Salmon Arm,4650,BC
+2012,Kamloops,25150,BC
+2012,Chilliwack,23530,BC
+2012,Abbotsford-Mission,41610,BC
+2012,Vancouver,575610,BC
+2012,Squamish,4270,BC
+2012,Victoria,82740,BC
+2012,Duncan,10570,BC
+2012,Nanaimo,23690,BC
+2012,Parksville,8320,BC
+2012,Port Alberni,6100,BC
+2012,Courtenay,14300,BC
+2012,Campbell River,9120,BC
+2012,Powell River,4370,BC
+2012,Williams Lake,4320,BC
+2012,Quesnel,5460,BC
+2012,Prince Rupert,2710,BC
+2012,Terrace,3650,BC
+2012,Prince George,19700,BC
+2012,Dawson Creek,3000,BC
+2012,Fort St. John,6230,BC
+2012,Non CMA-CA,133400,BC
+2012,Yukon,7500,
+2012,Whitehorse,6020,YT
+2012,Non CMA-CA,1480,YT
+2012,Northwest Territories,8540,
+2012,Yellowknife,4390,NT
+2012,Non CMA-CA,4150,NT
+2012,Nunavut,5750,
+2012,Campbellton,4000,
+2012,Hawkesbury,2760,
+2012,Ottawa - Gatineau,290520,
+2012,Lloydminster,8970,
+2013,Canada,8273180,
+2013,Newfoundland and Labrador,134350,
+2013,St. John's,48040,NL
+2013,Bay Roberts,2980,NL
+2013,Grand Falls-Windsor,3770,NL
+2013,Corner Brook,7170,NL
+2013,Non CMA-CA,72390,NL
+2013,Prince Edward Island,34110,
+2013,Charlottetown,15790,PE
+2013,Summerside,4570,PE
+2013,Non CMA-CA,13750,PE
+2013,Nova Scotia,219340,
+2013,Halifax,91170,NS
+2013,Kentville,6520,NS
+2013,Truro,10730,NS
+2013,New Glasgow,8190,NS
+2013,Cape Breton,21990,NS
+2013,Non CMA-CA,80750,NS
+2013,New Brunswick,187070,
+2013,Moncton,34810,NB
+2013,Saint John,29840,NB
+2013,Fredericton,23520,NB
+2013,Bathurst,8870,NB
+2013,Miramichi,6870,NB
+2013,Campbellton,3380,
+2013,Edmundston,5750,NB
+2013,Non CMA-CA,74040,NB
+2013,Quebec,1916540,
+2013,Campbellton,610,
+2013,Matane,4640,QC
+2013,Rimouski,12710,QC
+2013,Rivière-du-loup,7090,QC
+2013,Baie-Comeau,7370,QC
+2013,Saguenay,40560,QC
+2013,Alma,8260,QC
+2013,Dolbeau-Mistassini,4150,QC
+2013,Sept-Îles,6720,QC
+2013,Québec,188880,QC
+2013,Saint-Georges,8510,QC
+2013,Thetford Mines,6450,QC
+2013,Sherbrooke,48540,QC
+2013,Cowansville,3080,QC
+2013,Victoriaville,11800,QC
+2013,Trois-Rivières,36300,QC
+2013,Shawinigan,13080,QC
+2013,Drummondville,22040,QC
+2013,Granby,19820,QC
+2013,Saint-Hyacinthe,13590,QC
+2013,Sorel-Tracy,12580,QC
+2013,Joliette,11400,QC
+2013,Saint-Jean-sur-Richelieu,22660,QC
+2013,Montréal,895250,QC
+2013,Salaberry-de-Valleyfield,9450,QC
+2013,Lachute,3010,QC
+2013,Val-d'Or,8120,QC
+2013,Amos,3920,QC
+2013,Rouyn-Noranda,10390,QC
+2013,Hawkesbury,380,
+2013,Ottawa-Gatineau,73760,
+2013,Non CMA-CA,401440,QC
+2013,Ontario,3156030,
+2013,Cornwall,14430,ON
+2013,Hawkesbury,2370,
+2013,Ottawa-Gatineau,219590,
+2013,Brockville,8400,ON
+2013,Pembroke,6570,ON
+2013,Petawawa,3580,ON
+2013,Kingston,36360,ON
+2013,Belleville-Quinte West,22130,ON
+2013,Cobourg,5650,ON
+2013,Port Hope,4140,ON
+2013,Peterborough,28750,ON
+2013,Kawartha Lakes,18860,ON
+2013,Centre Wellington,6700,ON
+2013,Oshawa,86280,ON
+2013,Ingersoll,3340,ON
+2013,Toronto,1379950,ON
+2013,Hamilton,170360,ON
+2013,St. Catharines-Niagara,94590,ON
+2013,Kitchener-Cambridge-Waterloo,116790,ON
+2013,Brantford,31780,ON
+2013,Woodstock,10790,ON
+2013,Tillsonburg,4920,ON
+2013,Norfolk,15530,ON
+2013,Guelph,35760,ON
+2013,Stratford,7830,ON
+2013,London,111480,ON
+2013,Chatham-Kent,24360,ON
+2013,Leamington,19910,ON
+2013,Windsor,75510,ON
+2013,Sarnia,21210,ON
+2013,Owen Sound,7400,ON
+2013,Collingwood,5100,ON
+2013,Barrie,45580,ON
+2013,Orillia,10880,ON
+2013,Midland,8630,ON
+2013,North Bay,15530,ON
+2013,Greater Sudbury,38390,ON
+2013,Elliot Lake,2820,ON
+2013,Temiskaming Shores,3400,ON
+2013,Timmins,10350,ON
+2013,Sault Ste. Marie,18790,ON
+2013,Thunder Bay,28030,ON
+2013,Kenora,3250,ON
+2013,Non CMA-CA,369970,ON
+2013,Manitoba,286500,
+2013,Winnipeg,174360,MB
+2013,Steinbach,5110,MB
+2013,Portage la Prairie,3930,MB
+2013,Brandon,13600,MB
+2013,Thompson,2920,MB
+2013,Non CMA-CA,86590,MB
+2013,Saskatchewan,253270,
+2013,Regina,52960,SK
+2013,Yorkton,4750,SK
+2013,Moose Jaw,8490,SK
+2013,Swift Current,5320,SK
+2013,Saskatoon,66150,SK
+2013,North Battleford,4670,SK
+2013,Prince Albert,9030,SK
+2013,Estevan,3710,SK
+2013,Lloydminster,4070,
+2013,Non CMA-CA,94140,SK
+2013,Alberta,955400,
+2013,Medicine Hat,18690,AB
+2013,Brooks,6300,AB
+2013,Lethbridge,27640,AB
+2013,Okotoks,8190,AB
+2013,High River,3810,AB
+2013,Calgary,327140,AB
+2013,Strathmore,4000,AB
+2013,Canmore,3520,AB
+2013,Red Deer,23670,AB
+2013,Sylvan Lake,3500,AB
+2013,Lacombe,4020,AB
+2013,Camrose,4990,AB
+2013,Edmonton,298940,AB
+2013,Lloydminster,5380,
+2013,Cold Lake,4300,AB
+2013,Grande Prairie,16380,AB
+2013,Wood Buffalo,20260,AB
+2013,Wetaskiwin,3780,AB
+2013,Non CMA-CA,170910,AB
+2013,British Columbia,1108360,
+2013,Cranbrook,6690,BC
+2013,Penticton,10970,BC
+2013,Kelowna,46880,BC
+2013,Vernon,15500,BC
+2013,Salmon Arm,4690,BC
+2013,Kamloops,25400,BC
+2013,Chilliwack,23850,BC
+2013,Abbotsford-Mission,42200,BC
+2013,Vancouver,585040,BC
+2013,Squamish,4400,BC
+2013,Victoria,83930,BC
+2013,Duncan,10660,BC
+2013,Nanaimo,23980,BC
+2013,Parksville,8370,BC
+2013,Port Alberni,6130,BC
+2013,Courtenay,14400,BC
+2013,Campbell River,9230,BC
+2013,Powell River,4390,BC
+2013,Williams Lake,4330,BC
+2013,Quesnel,5420,BC
+2013,Prince Rupert,2720,BC
+2013,Terrace,3700,BC
+2013,Prince George,19760,BC
+2013,Dawson Creek,3040,BC
+2013,Fort St. John,6410,BC
+2013,Non CMA-CA,136260,BC
+2013,Yukon,7650,
+2013,Whitehorse,6140,YT
+2013,Non CMA-CA,1510,YT
+2013,Northwest Territories,8670,
+2013,Yellowknife,4460,NT
+2013,Non CMA-CA,4210,NT
+2013,Nunavut,5890,
+2013,Campbellton,3990,
+2013,Hawkesbury,2750,
+2013,Ottawa - Gatineau,293350,
+2013,Lloydminster,9450,
+2014,Canada,8382120,
+2014,Newfoundland and Labrador,135120,
+2014,St. John's,48780,NL
+2014,Bay Roberts,3000,NL
+2014,Grand Falls-Windsor,3810,NL
+2014,Corner Brook,7140,NL
+2014,Non CMA-CA,72400,NL
+2014,Prince Edward Island,34510,
+2014,Charlottetown,16090,PE
+2014,Summerside,4610,PE
+2014,Non CMA-CA,13820,PE
+2014,Nova Scotia,219920,
+2014,Halifax,91510,NS
+2014,Kentville,6490,NS
+2014,Truro,10710,NS
+2014,New Glasgow,8060,NS
+2014,Cape Breton,21890,NS
+2014,Non CMA-CA,81270,NS
+2014,New Brunswick,187580,
+2014,Moncton,35020,NB
+2014,Saint John,29940,NB
+2014,Fredericton,23790,NB
+2014,Bathurst,8910,NB
+2014,Miramichi,6860,NB
+2014,Campbellton,3380,
+2014,Edmundston,5710,NB
+2014,Non CMA-CA,73980,NB
+2014,Quebec,1930260,
+2014,Campbellton,590,
+2014,Matane,4590,QC
+2014,Rimouski,12860,QC
+2014,Rivière-du-loup,7100,QC
+2014,Baie-Comeau,7270,QC
+2014,Saguenay,40570,QC
+2014,Alma,8280,QC
+2014,Dolbeau-Mistassini,4130,QC
+2014,Sept-Îles,6640,QC
+2014,Québec,190510,QC
+2014,Saint-Georges,8560,QC
+2014,Thetford Mines,6420,QC
+2014,Sherbrooke,49020,QC
+2014,Cowansville,3120,QC
+2014,Victoriaville,11810,QC
+2014,Trois-Rivières,36560,QC
+2014,Shawinigan,13090,QC
+2014,Drummondville,22230,QC
+2014,Granby,20080,QC
+2014,Saint-Hyacinthe,13670,QC
+2014,Sorel-Tracy,12600,QC
+2014,Joliette,11470,QC
+2014,Saint-Jean-sur-Richelieu,22690,QC
+2014,Montréal,903900,QC
+2014,Salaberry-de-Valleyfield,9500,QC
+2014,Lachute,3040,QC
+2014,Val-d'Or,8160,QC
+2014,Amos,3880,QC
+2014,Rouyn-Noranda,10470,QC
+2014,Hawkesbury,390,
+2014,Ottawa-Gatineau,74210,
+2014,Non CMA-CA,402870,QC
+2014,Ontario,3192230,
+2014,Cornwall,14540,ON
+2014,Hawkesbury,2370,
+2014,Ottawa-Gatineau,222730,
+2014,Brockville,8470,ON
+2014,Pembroke,6460,ON
+2014,Petawawa,3590,ON
+2014,Kingston,36590,ON
+2014,Belleville-Quinte West,22210,ON
+2014,Cobourg,5790,ON
+2014,Port Hope,4200,ON
+2014,Peterborough,28860,ON
+2014,Kawartha Lakes,19080,ON
+2014,Centre Wellington,6780,ON
+2014,Oshawa,87570,ON
+2014,Ingersoll,3420,ON
+2014,Toronto,1400550,ON
+2014,Hamilton,172040,ON
+2014,St. Catharines-Niagara,95590,ON
+2014,Kitchener-Cambridge-Waterloo,118280,ON
+2014,Brantford,32290,ON
+2014,Woodstock,10970,ON
+2014,Tillsonburg,4960,ON
+2014,Norfolk,15800,ON
+2014,Guelph,36230,ON
+2014,Stratford,7860,ON
+2014,London,112260,ON
+2014,Chatham-Kent,24320,ON
+2014,Leamington,20220,ON
+2014,Windsor,76040,ON
+2014,Sarnia,21320,ON
+2014,Owen Sound,7390,ON
+2014,Collingwood,5270,ON
+2014,Barrie,46240,ON
+2014,Orillia,10770,ON
+2014,Midland,8720,ON
+2014,North Bay,15500,ON
+2014,Greater Sudbury,38300,ON
+2014,Elliot Lake,2800,ON
+2014,Temiskaming Shores,3380,ON
+2014,Timmins,10260,ON
+2014,Sault Ste. Marie,18720,ON
+2014,Thunder Bay,28120,ON
+2014,Kenora,3290,ON
+2014,Non CMA-CA,372090,ON
+2014,Manitoba,290230,
+2014,Winnipeg,176670,MB
+2014,Steinbach,4850,MB
+2014,Portage la Prairie,3830,MB
+2014,Brandon,13820,MB
+2014,Thompson,2930,MB
+2014,Non CMA-CA,88140,MB
+2014,Saskatchewan,256670,
+2014,Regina,54300,SK
+2014,Yorkton,4740,SK
+2014,Moose Jaw,8530,SK
+2014,Swift Current,5090,SK
+2014,Saskatoon,67830,SK
+2014,North Battleford,4740,SK
+2014,Prince Albert,9060,SK
+2014,Estevan,3730,SK
+2014,Lloydminster,4180,
+2014,Non CMA-CA,94450,SK
+2014,Alberta,983840,
+2014,Medicine Hat,19070,AB
+2014,Brooks,6530,AB
+2014,Lethbridge,27360,AB
+2014,Okotoks,8430,AB
+2014,High River,3930,AB
+2014,Calgary,338050,AB
+2014,Strathmore,4110,AB
+2014,Canmore,3640,AB
+2014,Red Deer,23780,AB
+2014,Sylvan Lake,3640,AB
+2014,Lacombe,4120,AB
+2014,Camrose,5120,AB
+2014,Edmonton,310720,AB
+2014,Lloydminster,5490,
+2014,Cold Lake,4360,AB
+2014,Grande Prairie,17090,AB
+2014,Wood Buffalo,20480,AB
+2014,Wetaskiwin,3790,AB
+2014,Non CMA-CA,174160,AB
+2014,British Columbia,1129320,
+2014,Cranbrook,6800,BC
+2014,Penticton,11310,BC
+2014,Kelowna,48560,BC
+2014,Vernon,15850,BC
+2014,Salmon Arm,4880,BC
+2014,Kamloops,25840,BC
+2014,Chilliwack,24430,BC
+2014,Abbotsford-Mission,43480,BC
+2014,Vancouver,595740,BC
+2014,Squamish,4610,BC
+2014,Victoria,85720,BC
+2014,Duncan,10860,BC
+2014,Nanaimo,24460,BC
+2014,Parksville,8560,BC
+2014,Port Alberni,6110,BC
+2014,Courtenay,14680,BC
+2014,Campbell River,9440,BC
+2014,Powell River,4390,BC
+2014,Williams Lake,4340,BC
+2014,Quesnel,5450,BC
+2014,Prince Rupert,2740,BC
+2014,Terrace,3760,BC
+2014,Prince George,19950,BC
+2014,Dawson Creek,3090,BC
+2014,Fort St. John,7030,BC
+2014,Non CMA-CA,137230,BC
+2014,Yukon,7740,
+2014,Whitehorse,6250,YT
+2014,Non CMA-CA,1500,YT
+2014,Northwest Territories,8700,
+2014,Yellowknife,4550,NT
+2014,Non CMA-CA,4150,NT
+2014,Nunavut,5990,
+2014,Campbellton,3970,
+2014,Hawkesbury,2770,
+2014,Ottawa - Gatineau,296940,
+2014,Lloydminster,9670,
+2015,Canada,8441770,
+2015,Newfoundland and Labrador,134880,
+2015,St. John's,49080,NL
+2015,Bay Roberts,2970,NL
+2015,Grand Falls-Windsor,3780,NL
+2015,Corner Brook,7100,NL
+2015,Non CMA-CA,71960,NL
+2015,Prince Edward Island,34810,
+2015,Charlottetown,16310,PE
+2015,Summerside,4620,PE
+2015,Non CMA-CA,13870,PE
+2015,Nova Scotia,220150,
+2015,Halifax,92200,NS
+2015,Kentville,6520,NS
+2015,Truro,10700,NS
+2015,New Glasgow,8010,NS
+2015,Cape Breton,21600,NS
+2015,Non CMA-CA,81120,NS
+2015,New Brunswick,187160,
+2015,Moncton,35130,NB
+2015,Saint John,29950,NB
+2015,Fredericton,23840,NB
+2015,Bathurst,8850,NB
+2015,Miramichi,6830,NB
+2015,Campbellton,3520,
+2015,Edmundston,5640,NB
+2015,Non CMA-CA,73410,NB
+2015,Quebec,1936130,
+2015,Campbellton,530,
+2015,Matane,4560,QC
+2015,Rimouski,12880,QC
+2015,Rivière-du-loup,7040,QC
+2015,Baie-Comeau,7170,QC
+2015,Saguenay,40420,QC
+2015,Alma,8260,QC
+2015,Dolbeau-Mistassini,4080,QC
+2015,Sept-Îles,6520,QC
+2015,Québec,191230,QC
+2015,Saint-Georges,8620,QC
+2015,Thetford Mines,6350,QC
+2015,Sherbrooke,49170,QC
+2015,Cowansville,3160,QC
+2015,Victoriaville,11880,QC
+2015,Trois-Rivières,36630,QC
+2015,Shawinigan,12980,QC
+2015,Drummondville,22450,QC
+2015,Granby,20100,QC
+2015,Saint-Hyacinthe,13720,QC
+2015,Sorel-Tracy,12610,QC
+2015,Joliette,11410,QC
+2015,Saint-Jean-sur-Richelieu,22730,QC
+2015,Montréal,907620,QC
+2015,Salaberry-de-Valleyfield,9530,QC
+2015,Lachute,3030,QC
+2015,Val-d'Or,8110,QC
+2015,Amos,3870,QC
+2015,Rouyn-Noranda,10430,QC
+2015,Hawkesbury,400,
+2015,Ottawa-Gatineau,74650,
+2015,Non CMA-CA,404010,QC
+2015,Ontario,3218890,
+2015,Cornwall,14480,ON
+2015,Hawkesbury,2320,
+2015,Ottawa-Gatineau,225400,
+2015,Brockville,8730,ON
+2015,Pembroke,6470,ON
+2015,Petawawa,3610,ON
+2015,Kingston,36600,ON
+2015,Belleville-Quinte West,22400,ON
+2015,Cobourg,5710,ON
+2015,Port Hope,4260,ON
+2015,Peterborough,29150,ON
+2015,Kawartha Lakes,17050,ON
+2015,Centre Wellington,6970,ON
+2015,Oshawa,88810,ON
+2015,Ingersoll,3500,ON
+2015,Toronto,1414960,ON
+2015,Hamilton,172200,ON
+2015,St. Catharines-Niagara,96880,ON
+2015,Kitchener-Cambridge-Waterloo,119800,ON
+2015,Brantford,32660,ON
+2015,Woodstock,11250,ON
+2015,Tillsonburg,5010,ON
+2015,Norfolk,15880,ON
+2015,Guelph,36850,ON
+2015,Stratford,7910,ON
+2015,London,113260,ON
+2015,Chatham-Kent,24340,ON
+2015,Leamington,20610,ON
+2015,Windsor,76810,ON
+2015,Sarnia,21220,ON
+2015,Owen Sound,7340,ON
+2015,Collingwood,5410,ON
+2015,Barrie,45530,ON
+2015,Orillia,9200,ON
+2015,Midland,8820,ON
+2015,North Bay,15400,ON
+2015,Greater Sudbury,38100,ON
+2015,Elliot Lake,2770,ON
+2015,Temiskaming Shores,3400,ON
+2015,Timmins,10120,ON
+2015,Sault Ste. Marie,18470,ON
+2015,Thunder Bay,27790,ON
+2015,Kenora,4160,ON
+2015,Non CMA-CA,377290,ON
+2015,Manitoba,293590,
+2015,Winnipeg,179990,MB
+2015,Steinbach,4920,MB
+2015,Portage la Prairie,3900,MB
+2015,Brandon,13870,MB
+2015,Thompson,2950,MB
+2015,Non CMA-CA,87960,MB
+2015,Saskatchewan,258360,
+2015,Regina,55080,SK
+2015,Yorkton,4760,SK
+2015,Moose Jaw,8560,SK
+2015,Swift Current,5100,SK
+2015,Saskatoon,68970,SK
+2015,North Battleford,4740,SK
+2015,Prince Albert,9090,SK
+2015,Estevan,3650,SK
+2015,Lloydminster,3490,
+2015,Non CMA-CA,94910,SK
+2015,Alberta,987360,
+2015,Medicine Hat,18880,AB
+2015,Brooks,6490,AB
+2015,Lethbridge,27580,AB
+2015,Okotoks,7980,AB
+2015,High River,3880,AB
+2015,Calgary,342020,AB
+2015,Strathmore,4130,AB
+2015,Canmore,3700,AB
+2015,Red Deer,23570,AB
+2015,Sylvan Lake,3610,AB
+2015,Lacombe,4030,AB
+2015,Camrose,5100,AB
+2015,Edmonton,316110,AB
+2015,Lloydminster,5160,
+2015,Cold Lake,4370,AB
+2015,Grande Prairie,15290,AB
+2015,Wood Buffalo,19100,AB
+2015,Wetaskiwin,3170,AB
+2015,Non CMA-CA,173190,AB
+2015,British Columbia,1147740,
+2015,Cranbrook,6790,BC
+2015,Penticton,11580,BC
+2015,Kelowna,49970,BC
+2015,Vernon,16240,BC
+2015,Salmon Arm,4830,BC
+2015,Kamloops,26270,BC
+2015,Chilliwack,25290,BC
+2015,Abbotsford-Mission,44710,BC
+2015,Vancouver,605080,BC
+2015,Squamish,4770,BC
+2015,Victoria,87250,BC
+2015,Duncan,11090,BC
+2015,Nanaimo,24910,BC
+2015,Parksville,8820,BC
+2015,Port Alberni,6160,BC
+2015,Courtenay,15020,BC
+2015,Campbell River,9530,BC
+2015,Powell River,4470,BC
+2015,Williams Lake,4450,BC
+2015,Quesnel,5710,BC
+2015,Prince Rupert,2730,BC
+2015,Terrace,3740,BC
+2015,Prince George,20160,BC
+2015,Dawson Creek,2650,BC
+2015,Fort St. John,6990,BC
+2015,Non CMA-CA,138530,BC
+2015,Yukon,7880,
+2015,Whitehorse,6360,YT
+2015,Non CMA-CA,1520,YT
+2015,Northwest Territories,8780,
+2015,Yellowknife,4610,NT
+2015,Non CMA-CA,4170,NT
+2015,Nunavut,6030,
+2015,Campbellton,4040,
+2015,Hawkesbury,2720,
+2015,Ottawa - Gatineau,300050,
+2015,Lloydminster,8660,
+2016,Canada,8524950,
+2016,Newfoundland and Labrador,134190,
+2016,St. John's,49030,NL
+2016,Bay Roberts,2970,NL
+2016,Grand Falls-Windsor,3750,NL
+2016,Gander,3620,NL
+2016,Corner Brook,8220,NL
+2016,Non CMA-CA,66600,NL
+2016,Prince Edward Island,35440,
+2016,Charlottetown,16320,PE
+2016,Summerside,4390,PE
+2016,Non CMA-CA,14730,PE
+2016,Nova Scotia,221650,
+2016,Halifax,93780,NS
+2016,Kentville,6290,NS
+2016,Truro,10770,NS
+2016,New Glasgow,7930,NS
+2016,Cape Breton,21310,NS
+2016,Non CMA-CA,81580,NS
+2016,New Brunswick,187840,
+2016,Moncton,35600,NB
+2016,Saint John,30440,NB
+2016,Fredericton,25000,NB
+2016,Bathurst,8340,NB
+2016,Miramichi,6830,NB
+2016,Campbellton,3340,
+2016,Edmundston,6090,NB
+2016,Non CMA-CA,72210,NB
+2016,Quebec,1950110,
+2016,Campbellton,510,
+2016,Matane,4510,QC
+2016,Rimouski,13650,QC
+2016,Rivière-du-loup,7380,QC
+2016,Baie-Comeau,7010,QC
+2016,Saguenay,40590,QC
+2016,Alma,8220,QC
+2016,Dolbeau-Mistassini,3960,QC
+2016,Sept-Îles,6480,QC
+2016,Québec,193100,QC
+2016,Sainte-Marie,3410,QC
+2016,Saint-Georges,7670,QC
+2016,Thetford Mines,6600,QC
+2016,Sherbrooke,49790,QC
+2016,Cowansville,3220,QC
+2016,Victoriaville,11940,QC
+2016,Trois-Rivières,36840,QC
+2016,Shawinigan,12930,QC
+2016,Drummondville,23670,QC
+2016,Granby,21470,QC
+2016,Saint-Hyacinthe,13820,QC
+2016,Sorel-Tracy,10450,QC
+2016,Joliette,11540,QC
+2016,Montréal,943940,QC
+2016,Salaberry-de-Valleyfield,9590,QC
+2016,Lachute,2880,QC
+2016,Val-d'Or,8140,QC
+2016,Rouyn-Noranda,10250,QC
+2016,Hawkesbury,410,
+2016,Ottawa-Gatineau,76550,
+2016,Non CMA-CA,399590,QC
+2016,Ontario,3260160,
+2016,Cornwall,14900,ON
+2016,Hawkesbury,2320,
+2016,Ottawa-Gatineau,234020,
+2016,Arnprior,4050,ON
+2016,Carleton Place,5960,ON
+2016,Brockville,8110,ON
+2016,Pembroke,6320,ON
+2016,Petawawa,3760,ON
+2016,Kingston,37500,ON
+2016,Belleville-Quinte West,25580,ON
+2016,Cobourg,5500,ON
+2016,Port Hope,4360,ON
+2016,Peterborough,26750,ON
+2016,Kawartha Lakes,17490,ON
+2016,Centre Wellington,7780,ON
+2016,Oshawa,89910,ON
+2016,Ingersoll,3160,ON
+2016,Toronto,1431290,ON
+2016,Hamilton,174590,ON
+2016,St. Catharines-Niagara,97910,ON
+2016,Kitchener-Cambridge-Waterloo,127160,ON
+2016,Brantford,33810,ON
+2016,Woodstock,10100,ON
+2016,Tillsonburg,4120,ON
+2016,Norfolk,16660,ON
+2016,Guelph,37790,ON
+2016,Stratford,8010,ON
+2016,London,115220,ON
+2016,Chatham-Kent,24360,ON
+2016,Leamington,20180,ON
+2016,Windsor,78170,ON
+2016,Sarnia,23570,ON
+2016,Wasaga Beach,6060,ON
+2016,Owen Sound,7430,ON
+2016,Collingwood,5570,ON
+2016,Barrie,46370,ON
+2016,Orillia,6950,ON
+2016,Midland,8480,ON
+2016,North Bay,17020,ON
+2016,Greater Sudbury,39290,ON
+2016,Elliot Lake,2800,ON
+2016,Timmins,10020,ON
+2016,Sault Ste. Marie,18330,ON
+2016,Thunder Bay,27650,ON
+2016,Kenora,3320,ON
+2016,Non CMA-CA,360490,ON
+2016,Manitoba,296610,
+2016,Winnipeg,182470,MB
+2016,Winkler,7770,MB
+2016,Steinbach,4970,MB
+2016,Portage la Prairie,3900,MB
+2016,Brandon,14210,MB
+2016,Thompson,2890,MB
+2016,Non CMA-CA,80410,MB
+2016,Saskatchewan,259910,
+2016,Regina,55520,SK
+2016,Yorkton,4740,SK
+2016,Moose Jaw,8590,SK
+2016,Swift Current,5110,SK
+2016,Saskatoon,70600,SK
+2016,North Battleford,4670,SK
+2016,Prince Albert,9520,SK
+2016,Estevan,3560,SK
+2016,Weyburn,3110,SK
+2016,Lloydminster,3430,
+2016,Non CMA-CA,91060,SK
+2016,Alberta,989840,
+2016,Medicine Hat,18820,AB
+2016,Brooks,6440,AB
+2016,Lethbridge,27780,AB
+2016,Okotoks,8100,AB
+2016,High River,3870,AB
+2016,Calgary,344340,AB
+2016,Strathmore,4130,AB
+2016,Canmore,3780,AB
+2016,Red Deer,23040,AB
+2016,Sylvan Lake,3580,AB
+2016,Lacombe,4050,AB
+2016,Camrose,5050,AB
+2016,Edmonton,317800,AB
+2016,Lloydminster,5070,
+2016,Cold Lake,4300,AB
+2016,Grande Prairie,14800,AB
+2016,Wood Buffalo,18490,AB
+2016,Wetaskiwin,3130,AB
+2016,Non CMA-CA,173290,AB
+2016,British Columbia,1166230,
+2016,Cranbrook,6770,BC
+2016,Nelson,4240,BC
+2016,Penticton,11690,BC
+2016,Kelowna,51190,BC
+2016,Vernon,16480,BC
+2016,Salmon Arm,4830,BC
+2016,Kamloops,26460,BC
+2016,Chilliwack,26080,BC
+2016,Abbotsford-Mission,46010,BC
+2016,Vancouver,613930,BC
+2016,Squamish,4890,BC
+2016,Victoria,88810,BC
+2016,Duncan,11310,BC
+2016,Nanaimo,25460,BC
+2016,Parksville,8950,BC
+2016,Port Alberni,6200,BC
+2016,Courtenay,14490,BC
+2016,Campbell River,9910,BC
+2016,Powell River,4490,BC
+2016,Williams Lake,4380,BC
+2016,Quesnel,5850,BC
+2016,Prince Rupert,2760,BC
+2016,Terrace,3570,BC
+2016,Prince George,20270,BC
+2016,Dawson Creek,2630,BC
+2016,Fort St. John,7480,BC
+2016,Non CMA-CA,137130,BC
+2016,Yukon,8130,
+2016,Whitehorse,6600,YT
+2016,Non CMA-CA,1530,YT
+2016,Northwest Territories,8730,
+2016,Yellowknife,4620,NT
+2016,Non CMA-CA,4110,NT
+2016,Nunavut,6130,
+2016,Campbellton,3840,
+2016,Hawkesbury,2730,
+2016,Ottawa - Gatineau,310570,
+2016,Lloydminster,8500,
+2017,Canada,8582740,
+2017,Newfoundland and Labrador,133010,
+2017,St. John's,48860,NL
+2017,Bay Roberts,3570,NL
+2017,Grand Falls-Windsor,3750,NL
+2017,Gander,3610,NL
+2017,Corner Brook,8180,NL
+2017,Non CMA-CA,65040,NL
+2017,Prince Edward Island,35970,
+2017,Charlottetown,18260,PE
+2017,Summerside,4440,PE
+2017,Non CMA-CA,13280,PE
+2017,Nova Scotia,222490,
+2017,Halifax,94850,NS
+2017,Kentville,6340,NS
+2017,Truro,10780,NS
+2017,New Glasgow,7880,NS
+2017,Cape Breton,21170,NS
+2017,Non CMA-CA,81480,NS
+2017,New Brunswick,187770,
+2017,Moncton,35960,NB
+2017,Saint John,30430,NB
+2017,Fredericton,25150,NB
+2017,Bathurst,8320,NB
+2017,Miramichi,6720,NB
+2017,Campbellton,3320,
+2017,Edmundston,6040,NB
+2017,Non CMA-CA,71840,NB
+2017,Quebec,1962650,
+2017,Campbellton,500,
+2017,Matane,4450,QC
+2017,Rimouski,13610,QC
+2017,Rivière-du-loup,7440,QC
+2017,Baie-Comeau,6910,QC
+2017,Saguenay,40560,QC
+2017,Alma,8170,QC
+2017,Dolbeau-Mistassini,3930,QC
+2017,Sept-Îles,6400,QC
+2017,Québec,194700,QC
+2017,Sainte-Marie,3450,QC
+2017,Saint-Georges,7740,QC
+2017,Thetford Mines,6600,QC
+2017,Sherbrooke,50230,QC
+2017,Cowansville,3230,QC
+2017,Victoriaville,12000,QC
+2017,Trois-Rivières,36890,QC
+2017,Shawinigan,12850,QC
+2017,Drummondville,23910,QC
+2017,Granby,21830,QC
+2017,Saint-Hyacinthe,13800,QC
+2017,Sorel-Tracy,10370,QC
+2017,Joliette,11630,QC
+2017,Montréal,951880,QC
+2017,Salaberry-de-Valleyfield,9620,QC
+2017,Lachute,2880,QC
+2017,Val-d'Or,8160,QC
+2017,Rouyn-Noranda,10230,QC
+2017,Hawkesbury,410,
+2017,Ottawa-Gatineau,76950,
+2017,Non CMA-CA,401310,QC
+2017,Ontario,3285990,
+2017,Cornwall,15810,ON
+2017,Hawkesbury,2820,
+2017,Ottawa-Gatineau,238130,
+2017,Arnprior,4330,ON
+2017,Carleton Place,6340,ON
+2017,Brockville,8130,ON
+2017,Pembroke,6360,ON
+2017,Petawawa,3780,ON
+2017,Kingston,37630,ON
+2017,Belleville-Quinte West,25770,ON
+2017,Cobourg,5290,ON
+2017,Port Hope,4230,ON
+2017,Peterborough,26920,ON
+2017,Kawartha Lakes,17590,ON
+2017,Centre Wellington,7310,ON
+2017,Oshawa,90480,ON
+2017,Ingersoll,3220,ON
+2017,Toronto,1441700,ON
+2017,Hamilton,175700,ON
+2017,St. Catharines-Niagara,98640,ON
+2017,Kitchener-Cambridge-Waterloo,129400,ON
+2017,Brantford,34320,ON
+2017,Woodstock,10320,ON
+2017,Tillsonburg,4200,ON
+2017,Norfolk,16350,ON
+2017,Guelph,38070,ON
+2017,Stratford,8270,ON
+2017,London,117850,ON
+2017,Chatham-Kent,24320,ON
+2017,Leamington,20120,ON
+2017,Windsor,78690,ON
+2017,Sarnia,23790,ON
+2017,Wasaga Beach,6140,ON
+2017,Owen Sound,7190,ON
+2017,Collingwood,5490,ON
+2017,Barrie,46610,ON
+2017,Orillia,7190,ON
+2017,Midland,8220,ON
+2017,North Bay,17010,ON
+2017,Greater Sudbury,39130,ON
+2017,Elliot Lake,2820,ON
+2017,Timmins,9950,ON
+2017,Sault Ste. Marie,18420,ON
+2017,Thunder Bay,27610,ON
+2017,Kenora,3280,ON
+2017,Non CMA-CA,361080,ON
+2017,Manitoba,298300,
+2017,Winnipeg,183970,MB
+2017,Winkler,7890,MB
+2017,Steinbach,4980,MB
+2017,Portage la Prairie,3890,MB
+2017,Brandon,14320,MB
+2017,Thompson,2810,MB
+2017,Non CMA-CA,80440,MB
+2017,Saskatchewan,259460,
+2017,Regina,56630,SK
+2017,Yorkton,4730,SK
+2017,Moose Jaw,8520,SK
+2017,Swift Current,5110,SK
+2017,Saskatoon,71550,SK
+2017,North Battleford,4570,SK
+2017,Prince Albert,9410,SK
+2017,Estevan,3500,SK
+2017,Weyburn,3060,SK
+2017,Lloydminster,3420,
+2017,Non CMA-CA,88960,SK
+2017,Alberta,993630,
+2017,Medicine Hat,18800,AB
+2017,Brooks,6450,AB
+2017,Lethbridge,28090,AB
+2017,Okotoks,8630,AB
+2017,High River,4300,AB
+2017,Calgary,346350,AB
+2017,Strathmore,4160,AB
+2017,Canmore,3820,AB
+2017,Red Deer,22940,AB
+2017,Sylvan Lake,3790,AB
+2017,Lacombe,4090,AB
+2017,Camrose,5030,AB
+2017,Edmonton,320900,AB
+2017,Lloydminster,5010,
+2017,Cold Lake,4230,AB
+2017,Grande Prairie,15410,AB
+2017,Wood Buffalo,18480,AB
+2017,Wetaskiwin,3050,AB
+2017,Non CMA-CA,170080,AB
+2017,British Columbia,1180250,
+2017,Cranbrook,6800,BC
+2017,Nelson,4330,BC
+2017,Penticton,11730,BC
+2017,Kelowna,51980,BC
+2017,Vernon,16680,BC
+2017,Salmon Arm,4940,BC
+2017,Kamloops,27170,BC
+2017,Chilliwack,25960,BC
+2017,Abbotsford-Mission,47160,BC
+2017,Vancouver,620860,BC
+2017,Squamish,5050,BC
+2017,Victoria,90090,BC
+2017,Duncan,11670,BC
+2017,Nanaimo,25820,BC
+2017,Parksville,9050,BC
+2017,Port Alberni,6270,BC
+2017,Courtenay,14500,BC
+2017,Campbell River,10100,BC
+2017,Powell River,4500,BC
+2017,Williams Lake,4390,BC
+2017,Quesnel,5870,BC
+2017,Prince Rupert,2740,BC
+2017,Terrace,3600,BC
+2017,Prince George,20410,BC
+2017,Dawson Creek,2620,BC
+2017,Fort St. John,7510,BC
+2017,Non CMA-CA,138460,BC
+2017,Yukon,8280,
+2017,Whitehorse,6730,YT
+2017,Non CMA-CA,1550,YT
+2017,Northwest Territories,8710,
+2017,Yellowknife,4640,NT
+2017,Non CMA-CA,4070,NT
+2017,Nunavut,6220,
+2017,Campbellton,3820,
+2017,Hawkesbury,3240,
+2017,Ottawa - Gatineau,315080,
+2017,Lloydminster,8430,
+2018,Canada,8695360,
+2018,Newfoundland and Labrador,131830,
+2018,St. John's,48910,NL
+2018,Bay Roberts,3550,NL
+2018,Grand Falls-Windsor,3700,NL
+2018,Gander,3390,NL
+2018,Corner Brook,8060,NL
+2018,Non CMA-CA,64220,NL
+2018,Prince Edward Island,36430,
+2018,Charlottetown,17840,PE
+2018,Summerside,4480,PE
+2018,Non CMA-CA,14110,PE
+2018,Nova Scotia,222970,
+2018,Halifax,96300,NS
+2018,Kentville,6340,NS
+2018,Truro,11260,NS
+2018,New Glasgow,7790,NS
+2018,Cape Breton,21110,NS
+2018,Non CMA-CA,80180,NS
+2018,New Brunswick,188410,
+2018,Moncton,36510,NB
+2018,Saint John,30600,NB
+2018,Fredericton,25410,NB
+2018,Bathurst,8290,NB
+2018,Miramichi,6670,NB
+2018,Campbellton,3300,
+2018,Edmundston,5940,NB
+2018,Non CMA-CA,71700,NB
+2018,Quebec,1972740,
+2018,Campbellton,510,
+2018,Matane,4370,QC
+2018,Rimouski,13570,QC
+2018,Rivière-du-loup,7380,QC
+2018,Baie-Comeau,6810,QC
+2018,Saguenay,40310,QC
+2018,Alma,8140,QC
+2018,Dolbeau-Mistassini,3880,QC
+2018,Sept-Îles,6330,QC
+2018,Québec,195220,QC
+2018,Sainte-Marie,3470,QC
+2018,Saint-Georges,7780,QC
+2018,Thetford Mines,6600,QC
+2018,Sherbrooke,50540,QC
+2018,Cowansville,3180,QC
+2018,Victoriaville,11900,QC
+2018,Trois-Rivières,36750,QC
+2018,Shawinigan,12730,QC
+2018,Drummondville,23750,QC
+2018,Granby,21760,QC
+2018,Saint-Hyacinthe,13780,QC
+2018,Sorel-Tracy,10270,QC
+2018,Joliette,11530,QC
+2018,Montréal,964300,QC
+2018,Salaberry-de-Valleyfield,9500,QC
+2018,Lachute,2850,QC
+2018,Val-d'Or,8110,QC
+2018,Rouyn-Noranda,10220,QC
+2018,Hawkesbury,420,
+2018,Ottawa-Gatineau,77330,
+2018,Non CMA-CA,399450,QC
+2018,Ontario,3347850,
+2018,Cornwall,15710,ON
+2018,Hawkesbury,2800,
+2018,Ottawa-Gatineau,242420,
+2018,Arnprior,3820,ON
+2018,Carleton Place,5740,ON
+2018,Brockville,8530,ON
+2018,Pembroke,6280,ON
+2018,Petawawa,3800,ON
+2018,Kingston,37680,ON
+2018,Belleville-Quinte West,25400,ON
+2018,Cobourg,5280,ON
+2018,Port Hope,4220,ON
+2018,Peterborough,27010,ON
+2018,Kawartha Lakes,17550,ON
+2018,Centre Wellington,7380,ON
+2018,Oshawa,91630,ON
+2018,Ingersoll,3220,ON
+2018,Toronto,1485110,ON
+2018,Hamilton,177350,ON
+2018,St. Catharines-Niagara,99530,ON
+2018,Kitchener-Cambridge-Waterloo,132310,ON
+2018,Brantford,34570,ON
+2018,Woodstock,10390,ON
+2018,Tillsonburg,4230,ON
+2018,Norfolk,16420,ON
+2018,Guelph,38600,ON
+2018,Stratford,8300,ON
+2018,London,119700,ON
+2018,Chatham-Kent,24300,ON
+2018,Leamington,20970,ON
+2018,Windsor,78170,ON
+2018,Sarnia,22830,ON
+2018,Wasaga Beach,6110,ON
+2018,Owen Sound,7150,ON
+2018,Collingwood,5510,ON
+2018,Barrie,47390,ON
+2018,Orillia,7190,ON
+2018,Midland,8230,ON
+2018,North Bay,15920,ON
+2018,Greater Sudbury,38780,ON
+2018,Elliot Lake,2770,ON
+2018,Timmins,9950,ON
+2018,Sault Ste. Marie,18400,ON
+2018,Thunder Bay,27670,ON
+2018,Kenora,3260,ON
+2018,Non CMA-CA,368310,ON
+2018,Manitoba,302670,
+2018,Winnipeg,187970,MB
+2018,Winkler,7960,MB
+2018,Steinbach,4960,MB
+2018,Portage la Prairie,3890,MB
+2018,Brandon,14440,MB
+2018,Thompson,2800,MB
+2018,Non CMA-CA,80650,MB
+2018,Saskatchewan,263010,
+2018,Regina,57790,SK
+2018,Yorkton,4750,SK
+2018,Moose Jaw,8580,SK
+2018,Swift Current,5100,SK
+2018,Saskatoon,73370,SK
+2018,North Battleford,4540,SK
+2018,Prince Albert,9580,SK
+2018,Estevan,3520,SK
+2018,Weyburn,2570,SK
+2018,Lloydminster,3450,
+2018,Non CMA-CA,89770,SK
+2018,Alberta,1003860,
+2018,Medicine Hat,18780,AB
+2018,Brooks,6540,AB
+2018,Lethbridge,28380,AB
+2018,Okotoks,8710,AB
+2018,High River,4250,AB
+2018,Calgary,352170,AB
+2018,Strathmore,4110,AB
+2018,Canmore,3900,AB
+2018,Red Deer,22930,AB
+2018,Sylvan Lake,3790,AB
+2018,Lacombe,4110,AB
+2018,Camrose,5040,AB
+2018,Edmonton,324930,AB
+2018,Lloydminster,4990,
+2018,Cold Lake,4230,AB
+2018,Grande Prairie,15620,AB
+2018,Wood Buffalo,18690,AB
+2018,Wetaskiwin,3030,AB
+2018,Non CMA-CA,169670,AB
+2018,British Columbia,1202220,
+2018,Cranbrook,6860,BC
+2018,Nelson,4280,BC
+2018,Penticton,11740,BC
+2018,Kelowna,52540,BC
+2018,Vernon,16840,BC
+2018,Salmon Arm,4920,BC
+2018,Kamloops,27370,BC
+2018,Chilliwack,26150,BC
+2018,Abbotsford-Mission,48240,BC
+2018,Vancouver,637380,BC
+2018,Squamish,5210,BC
+2018,Victoria,91390,BC
+2018,Duncan,11710,BC
+2018,Nanaimo,26230,BC
+2018,Parksville,9040,BC
+2018,Port Alberni,6240,BC
+2018,Courtenay,14500,BC
+2018,Campbell River,10190,BC
+2018,Powell River,4480,BC
+2018,Williams Lake,4380,BC
+2018,Quesnel,5850,BC
+2018,Prince Rupert,2760,BC
+2018,Terrace,3650,BC
+2018,Prince George,20630,BC
+2018,Dawson Creek,2670,BC
+2018,Fort St. John,7600,BC
+2018,Non CMA-CA,139390,BC
+2018,Yukon,8450,
+2018,Whitehorse,6880,YT
+2018,Non CMA-CA,1580,YT
+2018,Northwest Territories,8650,
+2018,Yellowknife,4660,NT
+2018,Non CMA-CA,3990,NT
+2018,Nunavut,6270,
+2018,Campbellton,3800,
+2018,Hawkesbury,3210,
+2018,Ottawa - Gatineau,319750,
+2018,Lloydminster,8450,
+2019,Canada,8798970,
+2019,Newfoundland and Labrador,129860,
+2019,St. John's,48530,NL
+2019,Bay Roberts,3500,NL
+2019,Grand Falls-Windsor,3640,NL
+2019,Gander,3380,NL
+2019,Corner Brook,7950,NL
+2019,Non CMA-CA,62860,NL
+2019,Prince Edward Island,36800,
+2019,Charlottetown,18840,PE
+2019,Summerside,4500,PE
+2019,Non CMA-CA,13460,PE
+2019,Nova Scotia,224570,
+2019,Halifax,98340,NS
+2019,Kentville,6340,NS
+2019,Truro,11250,NS
+2019,New Glasgow,7740,NS
+2019,Cape Breton,21060,NS
+2019,Non CMA-CA,79840,NS
+2019,New Brunswick,188620,
+2019,Moncton,37090,NB
+2019,Saint John,30580,NB
+2019,Fredericton,25470,NB
+2019,Bathurst,8250,NB
+2019,Miramichi,6660,NB
+2019,Campbellton,3240,
+2019,Edmundston,5920,NB
+2019,Non CMA-CA,71400,NB
+2019,Quebec,1988120,
+2019,Campbellton,500,
+2019,Matane,4330,QC
+2019,Rimouski,13530,QC
+2019,Rivière-du-loup,7410,QC
+2019,Baie-Comeau,6690,QC
+2019,Saguenay,40260,QC
+2019,Alma,8120,QC
+2019,Dolbeau-Mistassini,3890,QC
+2019,Sept-Îles,6200,QC
+2019,Québec,197130,QC
+2019,Sainte-Marie,3370,QC
+2019,Saint-Georges,7820,QC
+2019,Thetford Mines,6570,QC
+2019,Sherbrooke,51140,QC
+2019,Cowansville,3280,QC
+2019,Victoriaville,12000,QC
+2019,Trois-Rivières,36940,QC
+2019,Shawinigan,12710,QC
+2019,Drummondville,24010,QC
+2019,Granby,22190,QC
+2019,Saint-Hyacinthe,13970,QC
+2019,Sorel-Tracy,10180,QC
+2019,Joliette,11730,QC
+2019,Montréal,973700,QC
+2019,Salaberry-de-Valleyfield,9640,QC
+2019,Lachute,2900,QC
+2019,Val-d'Or,8170,QC
+2019,Rouyn-Noranda,10200,QC
+2019,Hawkesbury,410,
+2019,Ottawa-Gatineau,77940,
+2019,Non CMA-CA,401210,QC
+2019,Ontario,3397070,
+2019,Cornwall,15700,ON
+2019,Hawkesbury,2790,
+2019,Ottawa-Gatineau,247550,
+2019,Arnprior,3900,ON
+2019,Carleton Place,5870,ON
+2019,Brockville,8470,ON
+2019,Pembroke,6250,ON
+2019,Petawawa,3830,ON
+2019,Kingston,37760,ON
+2019,Belleville-Quinte West,25560,ON
+2019,Cobourg,5220,ON
+2019,Port Hope,4150,ON
+2019,Peterborough,26850,ON
+2019,Kawartha Lakes,17390,ON
+2019,Centre Wellington,7450,ON
+2019,Oshawa,93490,ON
+2019,Ingersoll,3240,ON
+2019,Toronto,1514960,ON
+2019,Hamilton,180010,ON
+2019,St. Catharines-Niagara,100710,ON
+2019,Kitchener-Cambridge-Waterloo,135260,ON
+2019,Brantford,35160,ON
+2019,Woodstock,10700,ON
+2019,Tillsonburg,4840,ON
+2019,Norfolk,16510,ON
+2019,Guelph,39310,ON
+2019,Stratford,8320,ON
+2019,London,121450,ON
+2019,Chatham-Kent,26040,ON
+2019,Leamington,20740,ON
+2019,Windsor,78920,ON
+2019,Sarnia,22840,ON
+2019,Wasaga Beach,6200,ON
+2019,Owen Sound,7130,ON
+2019,Collingwood,5610,ON
+2019,Barrie,47960,ON
+2019,Orillia,7320,ON
+2019,Midland,8290,ON
+2019,North Bay,16940,ON
+2019,Greater Sudbury,38710,ON
+2019,Elliot Lake,2750,ON
+2019,Timmins,9840,ON
+2019,Sault Ste. Marie,18300,ON
+2019,Thunder Bay,27330,ON
+2019,Kenora,3220,ON
+2019,Non CMA-CA,366220,ON
+2019,Manitoba,304200,
+2019,Winnipeg,189630,MB
+2019,Winkler,8120,MB
+2019,Steinbach,5060,MB
+2019,Portage la Prairie,3900,MB
+2019,Brandon,14500,MB
+2019,Thompson,2660,MB
+2019,Non CMA-CA,80320,MB
+2019,Saskatchewan,262280,
+2019,Regina,58010,SK
+2019,Yorkton,4700,SK
+2019,Moose Jaw,8540,SK
+2019,Swift Current,5020,SK
+2019,Saskatoon,74240,SK
+2019,North Battleford,4520,SK
+2019,Prince Albert,9430,SK
+2019,Estevan,3440,SK
+2019,Weyburn,2550,SK
+2019,Lloydminster,3380,
+2019,Non CMA-CA,88460,SK
+2019,Alberta,1015940,
+2019,Medicine Hat,18770,AB
+2019,Brooks,6540,AB
+2019,Lethbridge,28650,AB
+2019,Okotoks,8840,AB
+2019,High River,4280,AB
+2019,Calgary,359680,AB
+2019,Strathmore,4130,AB
+2019,Canmore,4030,AB
+2019,Red Deer,22890,AB
+2019,Sylvan Lake,3770,AB
+2019,Lacombe,4130,AB
+2019,Camrose,4970,AB
+2019,Edmonton,330520,AB
+2019,Lloydminster,5020,
+2019,Cold Lake,4190,AB
+2019,Grande Prairie,15750,AB
+2019,Wood Buffalo,18410,AB
+2019,Wetaskiwin,2980,AB
+2019,Non CMA-CA,168400,AB
+2019,British Columbia,1228450,
+2019,Cranbrook,6910,BC
+2019,Nelson,4380,BC
+2019,Penticton,11550,BC
+2019,Kelowna,53950,BC
+2019,Vernon,17190,BC
+2019,Salmon Arm,4970,BC
+2019,Kamloops,27610,BC
+2019,Chilliwack,26740,BC
+2019,Abbotsford-Mission,49640,BC
+2019,Vancouver,654950,BC
+2019,Squamish,5460,BC
+2019,Victoria,93440,BC
+2019,Duncan,11850,BC
+2019,Nanaimo,26630,BC
+2019,Parksville,9170,BC
+2019,Port Alberni,6270,BC
+2019,Courtenay,14770,BC
+2019,Campbell River,10320,BC
+2019,Powell River,4520,BC
+2019,Williams Lake,4370,BC
+2019,Quesnel,5760,BC
+2019,Prince Rupert,2730,BC
+2019,Terrace,3720,BC
+2019,Prince George,20830,BC
+2019,Dawson Creek,2680,BC
+2019,Fort St. John,7580,BC
+2019,Non CMA-CA,140470,BC
+2019,Yukon,8520,
+2019,Whitehorse,6980,YT
+2019,Non CMA-CA,1530,YT
+2019,Northwest Territories,8500,
+2019,Yellowknife,4630,NT
+2019,Non CMA-CA,3870,NT
+2019,Nunavut,6050,
+2019,Campbellton,3740,
+2019,Hawkesbury,3200,
+2019,Ottawa - Gatineau,325490,
+2019,Lloydminster,8410,
+2020,Canada,8858700,
+2020,Newfoundland and Labrador,128870,
+2020,St. John's,48440,NL
+2020,Bay Roberts,3440,NL
+2020,Grand Falls-Windsor,3600,NL
+2020,Gander,3390,NL
+2020,Corner Brook,7930,NL
+2020,Non CMA-CA,62060,NL
+2020,Prince Edward Island,37330,
+2020,Charlottetown,19170,PE
+2020,Summerside,4490,PE
+2020,Non CMA-CA,13670,PE
+2020,Nova Scotia,226860,
+2020,Halifax,100620,NS
+2020,Kentville,6470,NS
+2020,Truro,11270,NS
+2020,New Glasgow,7730,NS
+2020,Cape Breton,20720,NS
+2020,Non CMA-CA,80050,NS
+2020,New Brunswick,189270,
+2020,Moncton,37820,NB
+2020,Saint John,30560,NB
+2020,Fredericton,25580,NB
+2020,Bathurst,8230,NB
+2020,Miramichi,6610,NB
+2020,Campbellton,3180,
+2020,Edmundston,5890,NB
+2020,Non CMA-CA,71420,NB
+2020,Quebec,1997480,
+2020,Campbellton,490,
+2020,Matane,4330,QC
+2020,Rimouski,13540,QC
+2020,Rivière-du-loup,7420,QC
+2020,Baie-Comeau,6600,QC
+2020,Saguenay,40370,QC
+2020,Alma,8120,QC
+2020,Dolbeau-Mistassini,3850,QC
+2020,Sept-Îles,6090,QC
+2020,Québec,198980,QC
+2020,Sainte-Marie,3340,QC
+2020,Saint-Georges,7810,QC
+2020,Thetford Mines,6560,QC
+2020,Sherbrooke,51910,QC
+2020,Cowansville,3400,QC
+2020,Victoriaville,12090,QC
+2020,Trois-Rivières,37180,QC
+2020,Shawinigan,12770,QC
+2020,Drummondville,24200,QC
+2020,Granby,22560,QC
+2020,Saint-Hyacinthe,14070,QC
+2020,Sorel-Tracy,10200,QC
+2020,Joliette,11930,QC
+2020,Montréal,975190,QC
+2020,Salaberry-de-Valleyfield,9770,QC
+2020,Lachute,2920,QC
+2020,Val-d'Or,8090,QC
+2020,Rouyn-Noranda,10210,QC
+2020,Hawkesbury,400,
+2020,Ottawa-Gatineau,78680,
+2020,Non CMA-CA,404430,QC
+2020,Ontario,3427660,
+2020,Cornwall,15650,ON
+2020,Hawkesbury,2750,
+2020,Ottawa-Gatineau,251220,
+2020,Arnprior,3980,ON
+2020,Carleton Place,6020,ON
+2020,Brockville,8450,ON
+2020,Pembroke,6270,ON
+2020,Petawawa,3860,ON
+2020,Kingston,38150,ON
+2020,Belleville-Quinte West,25900,ON
+2020,Cobourg,5300,ON
+2020,Port Hope,4230,ON
+2020,Peterborough,26850,ON
+2020,Kawartha Lakes,17560,ON
+2020,Centre Wellington,7660,ON
+2020,Oshawa,95590,ON
+2020,Ingersoll,3310,ON
+2020,Toronto,1523720,ON
+2020,Hamilton,181390,ON
+2020,St. Catharines-Niagara,102040,ON
+2020,Kitchener-Cambridge-Waterloo,137560,ON
+2020,Brantford,35440,ON
+2020,Woodstock,10940,ON
+2020,Tillsonburg,4970,ON
+2020,Norfolk,16720,ON
+2020,Guelph,39860,ON
+2020,Stratford,8400,ON
+2020,London,123720,ON
+2020,Chatham-Kent,26260,ON
+2020,Leamington,20260,ON
+2020,Windsor,79170,ON
+2020,Sarnia,22780,ON
+2020,Wasaga Beach,6380,ON
+2020,Owen Sound,7080,ON
+2020,Collingwood,5730,ON
+2020,Barrie,48910,ON
+2020,Orillia,7410,ON
+2020,Midland,8360,ON
+2020,North Bay,17020,ON
+2020,Greater Sudbury,38790,ON
+2020,Elliot Lake,2730,ON
+2020,Timmins,9690,ON
+2020,Sault Ste. Marie,18190,ON
+2020,Thunder Bay,27250,ON
+2020,Kenora,3250,ON
+2020,Non CMA-CA,370890,ON
+2020,Manitoba,304750,
+2020,Winnipeg,190500,MB
+2020,Winkler,8170,MB
+2020,Steinbach,5070,MB
+2020,Portage la Prairie,3880,MB
+2020,Brandon,14530,MB
+2020,Thompson,2620,MB
+2020,Non CMA-CA,79980,MB
+2020,Saskatchewan,261230,
+2020,Regina,57970,SK
+2020,Yorkton,4610,SK
+2020,Moose Jaw,8490,SK
+2020,Swift Current,5020,SK
+2020,Saskatoon,74420,SK
+2020,North Battleford,4480,SK
+2020,Prince Albert,9360,SK
+2020,Estevan,3370,SK
+2020,Weyburn,2490,SK
+2020,Lloydminster,3330,
+2020,Non CMA-CA,87690,SK
+2020,Alberta,1017150,
+2020,Medicine Hat,18540,AB
+2020,Brooks,6460,AB
+2020,Lethbridge,28690,AB
+2020,Okotoks,8990,AB
+2020,High River,4280,AB
+2020,Calgary,362500,AB
+2020,Strathmore,4100,AB
+2020,Canmore,4050,AB
+2020,Red Deer,22580,AB
+2020,Sylvan Lake,3770,AB
+2020,Lacombe,4090,AB
+2020,Camrose,4960,AB
+2020,Edmonton,331450,AB
+2020,Lloydminster,4930,
+2020,Cold Lake,4160,AB
+2020,Grande Prairie,15280,AB
+2020,Wood Buffalo,18170,AB
+2020,Wetaskiwin,2940,AB
+2020,Non CMA-CA,167240,AB
+2020,British Columbia,1245010,
+2020,Cranbrook,6940,BC
+2020,Nelson,4420,BC
+2020,Penticton,11600,BC
+2020,Kelowna,54670,BC
+2020,Vernon,17550,BC
+2020,Salmon Arm,5020,BC
+2020,Kamloops,27840,BC
+2020,Chilliwack,27100,BC
+2020,Abbotsford-Mission,50660,BC
+2020,Vancouver,665550,BC
+2020,Squamish,5700,BC
+2020,Victoria,94460,BC
+2020,Duncan,11970,BC
+2020,Nanaimo,26840,BC
+2020,Parksville,9300,BC
+2020,Port Alberni,6310,BC
+2020,Courtenay,15040,BC
+2020,Campbell River,10450,BC
+2020,Powell River,4540,BC
+2020,Williams Lake,4370,BC
+2020,Quesnel,5710,BC
+2020,Prince Rupert,2760,BC
+2020,Terrace,3770,BC
+2020,Prince George,20830,BC
+2020,Dawson Creek,2630,BC
+2020,Fort St. John,7500,BC
+2020,Non CMA-CA,141470,BC
+2020,Yukon,8680,
+2020,Whitehorse,7170,YT
+2020,Non CMA-CA,1510,YT
+2020,Northwest Territories,8400,
+2020,Yellowknife,4640,NT
+2020,Non CMA-CA,3760,NT
+2020,Nunavut,6030,
+2020,Campbellton,3670,
+2020,Hawkesbury,3140,
+2020,Ottawa - Gatineau,329900,
+2020,Lloydminster,8260,
+2021,Canada,8980830,
+2021,Newfoundland and Labrador,130800,
+2021,St. John's,51070,NL
+2021,Grand Falls-Windsor,3640,NL
+2021,Gander,3540,NL
+2021,Corner Brook,8080,NL
+2021,Non CMA-CA,64460,NL
+2021,Prince Edward Island,38490,
+2021,Charlottetown,19080,PE
+2021,Summerside,4950,PE
+2021,Non CMA-CA,14460,PE
+2021,Nova Scotia,231880,
+2021,Halifax,110260,NS
+2021,Kentville,6830,NS
+2021,Truro,10910,NS
+2021,New Glasgow,7790,NS
+2021,Cape Breton,21120,NS
+2021,Non CMA-CA,74980,NS
+2021,New Brunswick,193250,
+2021,Moncton,39020,NB
+2021,Saint John,31130,NB
+2021,Fredericton,26490,NB
+2021,Bathurst,8420,NB
+2021,Miramichi,6620,NB
+2021,Campbellton,2750,
+2021,Edmundston,5500,NB
+2021,Non CMA-CA,73330,NB
+2021,Quebec,2024180,
+2021,Campbellton,490,
+2021,Matane,4510,QC
+2021,Rimouski,13250,QC
+2021,Rivière-du-loup,7460,QC
+2021,Baie-Comeau,6580,QC
+2021,Saguenay,40980,QC
+2021,Alma,7660,QC
+2021,Dolbeau-Mistassini,3950,QC
+2021,Sept-Îles,6260,QC
+2021,Québec,204790,QC
+2021,Sainte-Marie,3460,QC
+2021,Saint-Georges,8310,QC
+2021,Thetford Mines,7130,QC
+2021,Sherbrooke,53150,QC
+2021,Cowansville,3660,QC
+2021,Victoriaville,12860,QC
+2021,Trois-Rivières,37980,QC
+2021,Shawinigan,11680,QC
+2021,Drummondville,25140,QC
+2021,Granby,23350,QC
+2021,Saint-Hyacinthe,13930,QC
+2021,Sorel-Tracy,10390,QC
+2021,Joliette,12260,QC
+2021,Montréal,981670,QC
+2021,Salaberry-de-Valleyfield,9970,QC
+2021,Sainte-Agathe-des-Monts,4960,QC
+2021,Lachute,3060,QC
+2021,Val-d'Or,8120,QC
+2021,Amos,4500,QC
+2021,Rouyn-Noranda,10160,QC
+2021,Hawkesbury,410,
+2021,Ottawa-Gatineau,79870,
+2021,Non CMA-CA,402250,QC
+2021,Ontario,3471160,
+2021,Cornwall,15000,ON
+2021,Hawkesbury,2830,
+2021,Ottawa-Gatineau,269680,
+2021,Brockville,7320,ON
+2021,Pembroke,6340,ON
+2021,Petawawa,3880,ON
+2021,Kingston,38610,ON
+2021,Belleville-Quinte West,27060,ON
+2021,Cobourg,6780,ON
+2021,Port Hope,4470,ON
+2021,Peterborough,30380,ON
+2021,Kawartha Lakes,21140,ON
+2021,Centre Wellington,7860,ON
+2021,Oshawa,98380,ON
+2021,Ingersoll,3800,ON
+2021,Toronto,1527460,ON
+2021,Hamilton,183220,ON
+2021,St. Catharines-Niagara,104500,ON
+2021,Kitchener-Cambridge-Waterloo,141260,ON
+2021,Brantford,36630,ON
+2021,Woodstock,12910,ON
+2021,Tillsonburg,5590,ON
+2021,Norfolk,17440,ON
+2021,Guelph,40590,ON
+2021,Stratford,8540,ON
+2021,London,126760,ON
+2021,Chatham-Kent,26810,ON
+2021,Windsor,108300,ON
+2021,Sarnia,23500,ON
+2021,Essa,5460,ON
+2021,Wasaga Beach,6570,ON
+2021,Owen Sound,7480,ON
+2021,Collingwood,6170,ON
+2021,Barrie,50810,ON
+2021,Orillia,7470,ON
+2021,Midland,6890,ON
+2021,North Bay,17630,ON
+2021,Greater Sudbury,39610,ON
+2021,Elliot Lake,2780,ON
+2021,Timmins,9670,ON
+2021,Sault Ste. Marie,18420,ON
+2021,Thunder Bay,28050,ON
+2021,Kenora,4050,ON
+2021,Non CMA-CA,353070,ON
+2021,Manitoba,307390,
+2021,Winnipeg,193150,MB
+2021,Winkler,8290,MB
+2021,Steinbach,5380,MB
+2021,Portage la Prairie,4240,MB
+2021,Brandon,13940,MB
+2021,Thompson,2590,MB
+2021,Non CMA-CA,79810,MB
+2021,Saskatchewan,262900,
+2021,Regina,58950,SK
+2021,Yorkton,4970,SK
+2021,Moose Jaw,8590,SK
+2021,Swift Current,5050,SK
+2021,Saskatoon,75190,SK
+2021,North Battleford,4620,SK
+2021,Prince Albert,9210,SK
+2021,Estevan,3280,SK
+2021,Weyburn,3020,SK
+2021,Lloydminster,3840,
+2021,Non CMA-CA,86190,SK
+2021,Alberta,1028550,
+2021,Medicine Hat,18640,AB
+2021,Brooks,4600,AB
+2021,Lethbridge,29220,AB
+2021,Okotoks,9140,AB
+2021,High River,4330,AB
+2021,Calgary,369780,AB
+2021,Strathmore,3870,AB
+2021,Canmore,4190,AB
+2021,Red Deer,24090,AB
+2021,Sylvan Lake,3760,AB
+2021,Lacombe,4520,AB
+2021,Camrose,4960,AB
+2021,Edmonton,333960,AB
+2021,Lloydminster,5040,
+2021,Grande Prairie,14610,AB
+2021,Wood Buffalo,17900,AB
+2021,Wetaskiwin,3410,AB
+2021,Non CMA-CA,172530,AB
+2021,British Columbia,1269070,
+2021,Cranbrook,7080,BC
+2021,Nelson,4600,BC
+2021,Trail,3600,BC
+2021,Penticton,11890,BC
+2021,Kelowna,56690,BC
+2021,Vernon,17540,BC
+2021,Salmon Arm,5220,BC
+2021,Kamloops,27870,BC
+2021,Chilliwack,28220,BC
+2021,Abbotsford-Mission,51810,BC
+2021,Vancouver,678320,BC
+2021,Squamish,3500,BC
+2021,Victoria,96620,BC
+2021,Ladysmith,4210,BC
+2021,Duncan,12750,BC
+2021,Nanaimo,27510,BC
+2021,Parksville,9500,BC
+2021,Port Alberni,6330,BC
+2021,Courtenay,16770,BC
+2021,Campbell River,10710,BC
+2021,Powell River,4760,BC
+2021,Williams Lake,4920,BC
+2021,Quesnel,5590,BC
+2021,Prince Rupert,2870,BC
+2021,Terrace,4590,BC
+2021,Prince George,21030,BC
+2021,Dawson Creek,4190,BC
+2021,Fort St. John,7280,BC
+2021,Non CMA-CA,133110,BC
+2021,Yukon,8780,
+2021,Whitehorse,7080,YT
+2021,Non CMA-CA,1690,YT
+2021,Northwest Territories,8400,
+2021,Yellowknife,4680,NT
+2021,Non CMA-CA,3720,NT
+2021,Nunavut,5980,
+2021,Campbellton,3240,
+2021,Hawkesbury,3230,
+2021,Ottawa - Gatineau,349550,
+2021,Lloydminster,8870,
+2022,Canada,9210400,
+2022,Newfoundland and Labrador,131010,
+2022,St. John's,51660,NL
+2022,Grand Falls-Windsor,3600,NL
+2022,Gander,3570,NL
+2022,Corner Brook,8030,NL
+2022,Non CMA-CA,64160,NL
+2022,Prince Edward Island,39750,
+2022,Charlottetown,19710,PE
+2022,Summerside,5140,PE
+2022,Non CMA-CA,14900,PE
+2022,Nova Scotia,238780,
+2022,Halifax,114520,NS
+2022,Kentville,6990,NS
+2022,Truro,11240,NS
+2022,New Glasgow,7880,NS
+2022,Cape Breton,21870,NS
+2022,Non CMA-CA,76280,NS
+2022,New Brunswick,197980,
+2022,Moncton,41120,NB
+2022,Saint John,31970,NB
+2022,Fredericton,27170,NB
+2022,Bathurst,8440,NB
+2022,Miramichi,6790,NB
+2022,Campbellton,2720,
+2022,Edmundston,5590,NB
+2022,Non CMA-CA,74180,NB
+2022,Quebec,2043950,
+2022,Campbellton,470,
+2022,Matane,4570,QC
+2022,Rimouski,13240,QC
+2022,Rivière-du-loup,7510,QC
+2022,Baie-Comeau,6520,QC
+2022,Saguenay,41130,QC
+2022,Alma,7700,QC
+2022,Dolbeau-Mistassini,3900,QC
+2022,Sept-Îles,6070,QC
+2022,Québec,207360,QC
+2022,Sainte-Marie,3510,QC
+2022,Saint-Georges,8400,QC
+2022,Thetford Mines,7140,QC
+2022,Sherbrooke,54120,QC
+2022,Cowansville,3740,QC
+2022,Victoriaville,12970,QC
+2022,Trois-Rivières,38270,QC
+2022,Shawinigan,11750,QC
+2022,Drummondville,25540,QC
+2022,Granby,23720,QC
+2022,Saint-Hyacinthe,14140,QC
+2022,Sorel-Tracy,10500,QC
+2022,Joliette,12320,QC
+2022,Montréal,990470,QC
+2022,Salaberry-de-Valleyfield,10110,QC
+2022,Sainte-Agathe-des-Monts,5020,QC
+2022,Lachute,3190,QC
+2022,Val-d'Or,8080,QC
+2022,Amos,4510,QC
+2022,Rouyn-Noranda,10070,QC
+2022,Hawkesbury,400,
+2022,Ottawa-Gatineau,80450,
+2022,Non CMA-CA,407080,QC
+2022,Ontario,3577520,
+2022,Cornwall,15030,ON
+2022,Hawkesbury,2620,
+2022,Ottawa-Gatineau,277960,
+2022,Brockville,7390,ON
+2022,Pembroke,6440,ON
+2022,Petawawa,3910,ON
+2022,Kingston,39480,ON
+2022,Belleville-Quinte West,27380,ON
+2022,Cobourg,5820,ON
+2022,Port Hope,4560,ON
+2022,Peterborough,30100,ON
+2022,Kawartha Lakes,20990,ON
+2022,Centre Wellington,7990,ON
+2022,Oshawa,101970,ON
+2022,Ingersoll,3880,ON
+2022,Toronto,1584980,ON
+2022,Hamilton,187140,ON
+2022,St. Catharines-Niagara,107220,ON
+2022,Kitchener-Cambridge-Waterloo,147310,ON
+2022,Brantford,38550,ON
+2022,Woodstock,13370,ON
+2022,Tillsonburg,5740,ON
+2022,Norfolk,17600,ON
+2022,Guelph,41560,ON
+2022,Stratford,8690,ON
+2022,London,131840,ON
+2022,Chatham-Kent,27050,ON
+2022,Windsor,112000,ON
+2022,Sarnia,24280,ON
+2022,Essa,5600,ON
+2022,Wasaga Beach,6660,ON
+2022,Owen Sound,7580,ON
+2022,Collingwood,6340,ON
+2022,Barrie,51690,ON
+2022,Orillia,7620,ON
+2022,Midland,6600,ON
+2022,North Bay,17980,ON
+2022,Greater Sudbury,40290,ON
+2022,Elliot Lake,2760,ON
+2022,Timmins,9810,ON
+2022,Sault Ste. Marie,18490,ON
+2022,Thunder Bay,27860,ON
+2022,Kenora,4010,ON
+2022,Non CMA-CA,361380,ON
+2022,Manitoba,314480,
+2022,Winnipeg,198910,MB
+2022,Winkler,8570,MB
+2022,Steinbach,5590,MB
+2022,Portage la Prairie,4260,MB
+2022,Brandon,14310,MB
+2022,Thompson,2510,MB
+2022,Non CMA-CA,80340,MB
+2022,Saskatchewan,266960,
+2022,Regina,60400,SK
+2022,Yorkton,4990,SK
+2022,Moose Jaw,8810,SK
+2022,Swift Current,5090,SK
+2022,Saskatoon,78090,SK
+2022,North Battleford,4620,SK
+2022,Prince Albert,9240,SK
+2022,Estevan,3310,SK
+2022,Weyburn,3030,SK
+2022,Lloydminster,3820,
+2022,Non CMA-CA,85570,SK
+2022,Alberta,1068250,
+2022,Medicine Hat,18850,AB
+2022,Brooks,4620,AB
+2022,Lethbridge,29900,AB
+2022,Okotoks,9430,AB
+2022,High River,4460,AB
+2022,Calgary,391680,AB
+2022,Strathmore,3720,AB
+2022,Canmore,4320,AB
+2022,Red Deer,23500,AB
+2022,Sylvan Lake,3870,AB
+2022,Lacombe,4620,AB
+2022,Camrose,5070,AB
+2022,Edmonton,346620,AB
+2022,Lloydminster,5110,
+2022,Grande Prairie,15010,AB
+2022,Wood Buffalo,18210,AB
+2022,Wetaskiwin,3440,AB
+2022,Non CMA-CA,175830,AB
+2022,British Columbia,1308580,
+2022,Cranbrook,7240,BC
+2022,Nelson,4870,BC
+2022,Trail,3640,BC
+2022,Penticton,11950,BC
+2022,Kelowna,58160,BC
+2022,Vernon,17940,BC
+2022,Salmon Arm,5250,BC
+2022,Kamloops,29220,BC
+2022,Chilliwack,29150,BC
+2022,Abbotsford-Mission,53320,BC
+2022,Vancouver,706310,BC
+2022,Squamish,6100,BC
+2022,Victoria,98980,BC
+2022,Ladysmith,4310,BC
+2022,Duncan,12310,BC
+2022,Nanaimo,28140,BC
+2022,Parksville,9530,BC
+2022,Port Alberni,6390,BC
+2022,Courtenay,17090,BC
+2022,Campbell River,10770,BC
+2022,Powell River,4640,BC
+2022,Williams Lake,5740,BC
+2022,Quesnel,5690,BC
+2022,Prince Rupert,2890,BC
+2022,Terrace,4670,BC
+2022,Prince George,21420,BC
+2022,Dawson Creek,4230,BC
+2022,Fort St. John,7140,BC
+2022,Non CMA-CA,131510,BC
+2022,Yukon,9060,
+2022,Whitehorse,7510,YT
+2022,Non CMA-CA,1560,YT
+2022,Northwest Territories,8250,
+2022,Yellowknife,4680,NT
+2022,Non CMA-CA,3560,NT
+2022,Nunavut,5840,
+2022,Campbellton,3190,
+2022,Hawkesbury,3020,
+2022,Ottawa - Gatineau,358410,
+2022,Lloydminster,8930,
+2023,Canada,9510660,
+2023,Newfoundland and Labrador,132670,
+2023,St. John's,53420,NL
+2023,Grand Falls-Windsor,3600,NL
+2023,Gander,3640,NL
+2023,Corner Brook,8170,NL
+2023,Non CMA-CA,63850,NL
+2023,Prince Edward Island,41020,
+2023,Charlottetown,20540,PE
+2023,Summerside,5310,PE
+2023,Non CMA-CA,15160,PE
+2023,Nova Scotia,247350,
+2023,Halifax,120570,NS
+2023,Kentville,7190,NS
+2023,Truro,11600,NS
+2023,New Glasgow,8010,NS
+2023,Cape Breton,22590,NS
+2023,Non CMA-CA,77390,NS
+2023,New Brunswick,204110,
+2023,Moncton,43980,NB
+2023,Saint John,33070,NB
+2023,Fredericton,28290,NB
+2023,Bathurst,8460,NB
+2023,Miramichi,6970,NB
+2023,Campbellton,2740,
+2023,Edmundston,5660,NB
+2023,Non CMA-CA,74950,NB
+2023,Quebec,2078330,
+2023,Campbellton,490,
+2023,Matane,4540,QC
+2023,Rimouski,13280,QC
+2023,Rivière-du-loup,7630,QC
+2023,Baie-Comeau,6530,QC
+2023,Saguenay,41480,QC
+2023,Alma,7690,QC
+2023,Dolbeau-Mistassini,3920,QC
+2023,Sept-Îles,6070,QC
+2023,Québec,211710,QC
+2023,Sainte-Marie,3580,QC
+2023,Saint-Georges,8550,QC
+2023,Thetford Mines,7250,QC
+2023,Sherbrooke,54990,QC
+2023,Cowansville,3840,QC
+2023,Victoriaville,13110,QC
+2023,Trois-Rivières,38860,QC
+2023,Shawinigan,11850,QC
+2023,Drummondville,26250,QC
+2023,Granby,24220,QC
+2023,Saint-Hyacinthe,14700,QC
+2023,Sorel-Tracy,10600,QC
+2023,Joliette,12550,QC
+2023,Montréal,1009940,QC
+2023,Salaberry-de-Valleyfield,10370,QC
+2023,Sainte-Agathe-des-Monts,5120,QC
+2023,Lachute,3210,QC
+2023,Val-d'Or,8110,QC
+2023,Amos,4570,QC
+2023,Rouyn-Noranda,10140,QC
+2023,Hawkesbury,410,
+2023,Ottawa-Gatineau,81600,
+2023,Non CMA-CA,411180,QC
+2023,Ontario,3707800,
+2023,Cornwall,15430,ON
+2023,Hawkesbury,2670,
+2023,Ottawa-Gatineau,288970,
+2023,Brockville,7460,ON
+2023,Pembroke,6450,ON
+2023,Petawawa,3970,ON
+2023,Kingston,40380,ON
+2023,Belleville-Quinte West,27920,ON
+2023,Cobourg,5920,ON
+2023,Port Hope,4600,ON
+2023,Peterborough,30970,ON
+2023,Kawartha Lakes,21210,ON
+2023,Centre Wellington,8230,ON
+2023,Oshawa,106240,ON
+2023,Ingersoll,3900,ON
+2023,Toronto,1650560,ON
+2023,Hamilton,193200,ON
+2023,St. Catharines-Niagara,111180,ON
+2023,Kitchener-Cambridge-Waterloo,156040,ON
+2023,Brantford,41440,ON
+2023,Woodstock,13920,ON
+2023,Tillsonburg,5940,ON
+2023,Norfolk,18040,ON
+2023,Guelph,42700,ON
+2023,Stratford,8870,ON
+2023,London,137120,ON
+2023,Chatham-Kent,27570,ON
+2023,Windsor,115840,ON
+2023,Sarnia,24740,ON
+2023,Essa,5760,ON
+2023,Wasaga Beach,6890,ON
+2023,Owen Sound,7690,ON
+2023,Collingwood,6450,ON
+2023,Barrie,53930,ON
+2023,Orillia,7830,ON
+2023,Midland,6690,ON
+2023,North Bay,18500,ON
+2023,Greater Sudbury,41830,ON
+2023,Elliot Lake,2730,ON
+2023,Timmins,10030,ON
+2023,Sault Ste. Marie,19140,ON
+2023,Thunder Bay,28510,ON
+2023,Kenora,4020,ON
+2023,Non CMA-CA,366340,ON
+2023,Manitoba,323740,
+2023,Winnipeg,206800,MB
+2023,Winkler,8840,MB
+2023,Steinbach,5790,MB
+2023,Portage la Prairie,4350,MB
+2023,Brandon,14610,MB
+2023,Thompson,2480,MB
+2023,Non CMA-CA,80870,MB
+2023,Saskatchewan,273480,
+2023,Regina,63010,SK
+2023,Yorkton,5100,SK
+2023,Moose Jaw,9100,SK
+2023,Swift Current,5180,SK
+2023,Saskatoon,81310,SK
+2023,North Battleford,4730,SK
+2023,Prince Albert,9440,SK
+2023,Estevan,3360,SK
+2023,Weyburn,3120,SK
+2023,Lloydminster,3870,
+2023,Non CMA-CA,85280,SK
+2023,Alberta,1126540,
+2023,Medicine Hat,19330,AB
+2023,Brooks,4930,AB
+2023,Lethbridge,30950,AB
+2023,Okotoks,9140,AB
+2023,High River,4590,AB
+2023,Calgary,419240,AB
+2023,Strathmore,3820,AB
+2023,Canmore,4560,AB
+2023,Red Deer,24670,AB
+2023,Sylvan Lake,4020,AB
+2023,Lacombe,4760,AB
+2023,Camrose,5160,AB
+2023,Edmonton,367470,AB
+2023,Lloydminster,5220,
+2023,Grande Prairie,15800,AB
+2023,Wood Buffalo,19000,AB
+2023,Wetaskiwin,3570,AB
+2023,Non CMA-CA,180310,AB
+2023,British Columbia,1351920,
+2023,Cranbrook,7330,BC
+2023,Nelson,4950,BC
+2023,Trail,3680,BC
+2023,Penticton,12030,BC
+2023,Kelowna,59690,BC
+2023,Vernon,18280,BC
+2023,Salmon Arm,5340,BC
+2023,Kamloops,30000,BC
+2023,Chilliwack,31860,BC
+2023,Abbotsford-Mission,53820,BC
+2023,Vancouver,736290,BC
+2023,Squamish,6410,BC
+2023,Victoria,101640,BC
+2023,Ladysmith,4360,BC
+2023,Duncan,12500,BC
+2023,Nanaimo,28770,BC
+2023,Parksville,9580,BC
+2023,Port Alberni,6410,BC
+2023,Courtenay,17540,BC
+2023,Campbell River,11030,BC
+2023,Powell River,4670,BC
+2023,Williams Lake,5760,BC
+2023,Quesnel,5690,BC
+2023,Prince Rupert,2930,BC
+2023,Terrace,4730,BC
+2023,Prince George,21830,BC
+2023,Dawson Creek,4350,BC
+2023,Fort St. John,7310,BC
+2023,Non CMA-CA,133170,BC
+2023,Yukon,9500,
+2023,Whitehorse,7930,YT
+2023,Non CMA-CA,1570,YT
+2023,Northwest Territories,8360,
+2023,Yellowknife,4840,NT
+2023,Non CMA-CA,3530,NT
+2023,Nunavut,5830,
+2023,Campbellton,3220,
+2023,Hawkesbury,3080,
+2023,Ottawa - Gatineau,370560,
+2023,Lloydminster,9090,

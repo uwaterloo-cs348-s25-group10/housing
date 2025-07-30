@@ -167,8 +167,8 @@ END $$;
 
 SELECT * FROM IncomeGrowthResult;
 
--- FEATURE 5 - Advanced: Down Payment Simulator
-\echo 'FEATURE 5- Advanced: Down Payment Simulator (15% down, 25% save, 2020 condos)'
+-- Advanced Feature 5: Down Payment Simulator
+\echo 'Advanced Feature 5: Down Payment Simulator (15% down, 25% save, 2020 condos)'
 SELECT
   r.region_id,
   r.name AS region,

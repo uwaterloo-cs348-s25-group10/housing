@@ -3,229 +3,341 @@ Timing is on.
 == FEATURE 1a EXPLORE HOUSING PRICES: Average price of ON condos in 2020 by region (Limit 10)==
                                                                          QUERY PLAN                                                                          
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=103.96..103.98 rows=1 width=108) (actual time=0.680..0.685 rows=9 loops=1)
-   Buffers: shared hit=179
-   ->  GroupAggregate  (cost=103.96..103.98 rows=1 width=108) (actual time=0.678..0.683 rows=9 loops=1)
+ Limit  (cost=103.71..103.73 rows=1 width=108) (actual time=0.639..0.644 rows=10 loops=1)
+   Buffers: shared hit=194
+   ->  GroupAggregate  (cost=103.71..103.73 rows=1 width=108) (actual time=0.638..0.642 rows=10 loops=1)
          Group Key: r.name
-         Buffers: shared hit=179
-         ->  Sort  (cost=103.96..103.97 rows=1 width=108) (actual time=0.674..0.676 rows=9 loops=1)
+         Buffers: shared hit=194
+         ->  Sort  (cost=103.71..103.72 rows=1 width=108) (actual time=0.634..0.636 rows=11 loops=1)
                Sort Key: r.name
-               Sort Method: quicksort  Memory: 25kB
-               Buffers: shared hit=179
-               ->  Nested Loop  (cost=43.71..103.95 rows=1 width=108) (actual time=0.519..0.635 rows=9 loops=1)
-                     Buffers: shared hit=176
-                     ->  Hash Join  (cost=43.42..95.78 rows=1 width=100) (actual time=0.360..0.521 rows=60 loops=1)
+               Sort Method: quicksort  Memory: 26kB
+               Buffers: shared hit=194
+               ->  Nested Loop  (cost=43.71..103.70 rows=1 width=108) (actual time=0.323..0.592 rows=24 loops=1)
+                     Buffers: shared hit=191
+                     ->  Hash Join  (cost=43.42..95.78 rows=1 width=100) (actual time=0.307..0.455 rows=60 loops=1)
                            Hash Cond: (p.region_id = r.region_id)
                            Buffers: shared hit=47
-                           ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=40) (actual time=0.009..0.222 rows=298 loops=1)
+                           ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=40) (actual time=0.005..0.198 rows=298 loops=1)
                                  Filter: ((type)::text = 'Condo'::text)
                                  Rows Removed by Filter: 3732
                                  Buffers: shared hit=26
-                           ->  Hash  (cost=43.31..43.31 rows=9 width=68) (actual time=0.264..0.264 rows=353 loops=1)
+                           ->  Hash  (cost=43.31..43.31 rows=9 width=68) (actual time=0.227..0.227 rows=353 loops=1)
                                  Buckets: 1024  Batches: 1  Memory Usage: 26kB
                                  Buffers: shared hit=21
-                                 ->  Seq Scan on region r  (cost=0.00..43.31 rows=9 width=68) (actual time=0.035..0.221 rows=353 loops=1)
+                                 ->  Seq Scan on region r  (cost=0.00..43.31 rows=9 width=68) (actual time=0.027..0.189 rows=353 loops=1)
                                        Filter: ((province)::text = 'ON'::text)
                                        Rows Removed by Filter: 2914
                                        Buffers: shared hit=21
-                     ->  Index Scan using uq_property_year on housing_price hp  (cost=0.29..7.94 rows=1 width=16) (actual time=0.002..0.002 rows=0 loops=60)
+                     ->  Index Scan using uq_property_year on housing_price hp  (cost=0.28..7.58 rows=1 width=16) (actual time=0.002..0.002 rows=0 loops=60)
                            Index Cond: ((property_id = p.property_id) AND (year = 2020))
-                           Buffers: shared hit=129
+                           Buffers: shared hit=144
  Planning:
-   Buffers: shared hit=236
- Planning Time: 1.168 ms
- Execution Time: 0.743 ms
+   Buffers: shared hit=229 read=2
+ Planning Time: 0.642 ms
+ Execution Time: 0.699 ms
 (32 rows)
 
-Time: 3.884 ms
+Time: 2.614 ms
 == FEATURE 1b EXPLORE INCOME DATA: Average income of ON regions in 2020 (Limit 10) ==
-                                                               QUERY PLAN                                                               
-----------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=74.70..74.72 rows=1 width=76) (actual time=0.237..0.240 rows=7 loops=1)
-   Buffers: shared hit=25
-   ->  GroupAggregate  (cost=74.70..74.72 rows=1 width=76) (actual time=0.237..0.239 rows=7 loops=1)
+                                                                QUERY PLAN                                                                
+------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=80.97..80.99 rows=1 width=76) (actual time=0.297..0.302 rows=10 loops=1)
+   Buffers: shared hit=33
+   ->  GroupAggregate  (cost=80.97..80.99 rows=1 width=76) (actual time=0.297..0.300 rows=10 loops=1)
          Group Key: r.name
-         Buffers: shared hit=25
-         ->  Sort  (cost=74.70..74.70 rows=1 width=76) (actual time=0.233..0.233 rows=7 loops=1)
+         Buffers: shared hit=33
+         ->  Sort  (cost=80.97..80.98 rows=1 width=76) (actual time=0.296..0.297 rows=11 loops=1)
                Sort Key: r.name
-               Sort Method: quicksort  Memory: 25kB
-               Buffers: shared hit=25
-               ->  Hash Join  (cost=31.35..74.69 rows=1 width=76) (actual time=0.093..0.229 rows=7 loops=1)
+               Sort Method: quicksort  Memory: 26kB
+               Buffers: shared hit=33
+               ->  Hash Join  (cost=37.62..80.96 rows=1 width=76) (actual time=0.123..0.285 rows=29 loops=1)
                      Hash Cond: (r.region_id = i.region_id)
-                     Buffers: shared hit=25
-                     ->  Seq Scan on region r  (cost=0.00..43.31 rows=9 width=68) (actual time=0.024..0.173 rows=353 loops=1)
+                     Buffers: shared hit=33
+                     ->  Seq Scan on region r  (cost=0.00..43.31 rows=9 width=68) (actual time=0.025..0.168 rows=353 loops=1)
                            Filter: ((province)::text = 'ON'::text)
                            Rows Removed by Filter: 2914
                            Buffers: shared hit=21
-                     ->  Hash  (cost=31.25..31.25 rows=8 width=16) (actual time=0.034..0.034 rows=22 loops=1)
-                           Buckets: 1024  Batches: 1  Memory Usage: 10kB
-                           Buffers: shared hit=4
-                           ->  Seq Scan on income_data i  (cost=0.00..31.25 rows=8 width=16) (actual time=0.007..0.031 rows=22 loops=1)
+                     ->  Hash  (cost=37.50..37.50 rows=10 width=16) (actual time=0.093..0.093 rows=102 loops=1)
+                           Buckets: 1024  Batches: 1  Memory Usage: 14kB
+                           Buffers: shared hit=12
+                           ->  Seq Scan on income_data i  (cost=0.00..37.50 rows=10 width=16) (actual time=0.057..0.083 rows=102 loops=1)
                                  Filter: (year = 2020)
-                                 Rows Removed by Filter: 528
-                                 Buffers: shared hit=4
+                                 Rows Removed by Filter: 1753
+                                 Buffers: shared hit=12
  Planning:
-   Buffers: shared hit=69
- Planning Time: 0.153 ms
- Execution Time: 0.255 ms
+   Buffers: shared hit=67
+ Planning Time: 0.139 ms
+ Execution Time: 0.313 ms
 (27 rows)
 
-Time: 0.601 ms
+Time: 0.598 ms
 FEATURE 2: Top 5 regions where $145,000 income yields HAI ≥ 25% for 2020 condos (Limit 10)
                                                                           QUERY PLAN                                                                          
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=146.99..146.99 rows=1 width=64) (actual time=0.634..0.636 rows=10 loops=1)
-   Buffers: shared hit=756
-   ->  Sort  (cost=146.99..146.99 rows=1 width=64) (actual time=0.633..0.635 rows=10 loops=1)
+ Limit  (cost=143.27..143.27 rows=1 width=64) (actual time=0.691..0.693 rows=10 loops=1)
+   Buffers: shared hit=899
+   ->  Sort  (cost=143.27..143.27 rows=1 width=64) (actual time=0.691..0.692 rows=10 loops=1)
          Sort Key: (round(((('145000'::double precision / hp.avg_price) * '100'::double precision))::numeric, 2)) DESC
-         Sort Method: top-N heapsort  Memory: 25kB
-         Buffers: shared hit=756
-         ->  Nested Loop  (cost=0.56..146.98 rows=1 width=64) (actual time=0.042..0.620 rows=28 loops=1)
-               Buffers: shared hit=753
-               ->  Nested Loop  (cost=0.29..140.48 rows=1 width=12) (actual time=0.037..0.563 rows=28 loops=1)
-                     Buffers: shared hit=669
-                     ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=8) (actual time=0.004..0.196 rows=298 loops=1)
+         Sort Method: top-N heapsort  Memory: 26kB
+         Buffers: shared hit=899
+         ->  Nested Loop  (cost=0.56..143.26 rows=1 width=64) (actual time=0.028..0.664 rows=57 loops=1)
+               Buffers: shared hit=896
+               ->  Nested Loop  (cost=0.28..136.76 rows=1 width=12) (actual time=0.025..0.575 rows=57 loops=1)
+                     Buffers: shared hit=725
+                     ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=8) (actual time=0.003..0.177 rows=298 loops=1)
                            Filter: ((type)::text = 'Condo'::text)
                            Rows Removed by Filter: 3732
                            Buffers: shared hit=26
-                     ->  Index Scan using uq_property_year on housing_price hp  (cost=0.29..7.95 rows=1 width=12) (actual time=0.001..0.001 rows=0 loops=298)
+                     ->  Index Scan using uq_property_year on housing_price hp  (cost=0.28..7.59 rows=1 width=12) (actual time=0.001..0.001 rows=0 loops=298)
                            Index Cond: ((property_id = p.property_id) AND (year = 2020))
                            Filter: (round(((('145000'::double precision / avg_price) * '100'::double precision))::numeric, 2) >= '25'::numeric)
                            Rows Removed by Filter: 0
-                           Buffers: shared hit=643
-               ->  Index Scan using ix_region_region_id on region r  (cost=0.28..6.48 rows=1 width=36) (actual time=0.001..0.001 rows=1 loops=28)
+                           Buffers: shared hit=699
+               ->  Index Scan using ix_region_region_id on region r  (cost=0.28..6.48 rows=1 width=36) (actual time=0.001..0.001 rows=1 loops=57)
                      Index Cond: (region_id = p.region_id)
-                     Buffers: shared hit=84
+                     Buffers: shared hit=171
  Planning:
-   Buffers: shared hit=10
- Planning Time: 0.152 ms
- Execution Time: 0.649 ms
+   Buffers: shared hit=8 read=2
+ Planning Time: 0.122 ms
+ Execution Time: 0.701 ms
 (26 rows)
 
-Time: 1.283 ms
+Time: 1.264 ms
 FEATURE 3: Reverse Lookup – Where Did This Price Exist? (±$25,000 around 600000) (Limit 10)
                                                                             QUERY PLAN                                                                            
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=0.84..4.77 rows=10 width=76) (actual time=0.072..0.147 rows=10 loops=1)
-   Buffers: shared hit=363
-   ->  Merge Join  (cost=0.84..1715.67 rows=4363 width=76) (actual time=0.072..0.145 rows=10 loops=1)
+ Limit  (cost=0.84..6.15 rows=10 width=76) (actual time=0.105..0.292 rows=10 loops=1)
+   Buffers: shared hit=834
+   ->  Merge Join  (cost=0.84..1444.21 rows=2720 width=76) (actual time=0.105..0.290 rows=10 loops=1)
          Merge Cond: (p.property_id = hp.property_id)
-         Buffers: shared hit=363
-         ->  Nested Loop  (cost=0.56..937.06 rows=2106 width=68) (actual time=0.009..0.085 rows=89 loops=1)
-               Buffers: shared hit=270
-               ->  Index Scan using ix_property_property_id on property p  (cost=0.28..187.87 rows=2106 width=40) (actual time=0.006..0.021 rows=89 loops=1)
-                     Buffers: shared hit=3
-               ->  Index Scan using ix_region_region_id on region r  (cost=0.28..0.36 rows=1 width=36) (actual time=0.000..0.000 rows=1 loops=89)
+         Buffers: shared hit=834
+         ->  Nested Loop  (cost=0.56..937.06 rows=2106 width=68) (actual time=0.015..0.196 rows=226 loops=1)
+               Buffers: shared hit=682
+               ->  Index Scan using ix_property_property_id on property p  (cost=0.28..187.87 rows=2106 width=40) (actual time=0.013..0.033 rows=226 loops=1)
+                     Buffers: shared hit=4
+               ->  Index Scan using ix_region_region_id on region r  (cost=0.28..0.36 rows=1 width=36) (actual time=0.000..0.000 rows=1 loops=226)
                      Index Cond: (region_id = p.region_id)
-                     Buffers: shared hit=267
-         ->  Index Scan using ix_housing_price_property_id on housing_price hp  (cost=0.29..718.81 rows=4363 width=16) (actual time=0.022..0.053 rows=10 loops=1)
+                     Buffers: shared hit=678
+         ->  Index Scan using ix_housing_price_property_id on housing_price hp  (cost=0.28..467.88 rows=2720 width=16) (actual time=0.041..0.080 rows=10 loops=1)
                Filter: (abs((avg_price - '600000'::double precision)) <= '25000'::double precision)
-               Rows Removed by Filter: 142
-               Buffers: shared hit=93
- Planning Time: 0.113 ms
- Execution Time: 0.169 ms
+               Rows Removed by Filter: 199
+               Buffers: shared hit=152
+ Planning Time: 0.057 ms
+ Execution Time: 0.312 ms
 (18 rows)
 
-Time: 0.603 ms
+Time: 0.672 ms
 FEATURE 4: Top 5 HAI rankings for all regions in 2020 condos (Limit 10)
                                                                              QUERY PLAN                                                                             
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=98.78..98.79 rows=1 width=76) (actual time=0.376..0.378 rows=4 loops=1)
-   Buffers: shared hit=127
-   ->  Sort  (cost=98.78..98.79 rows=1 width=76) (actual time=0.376..0.377 rows=4 loops=1)
+ Limit  (cost=104.84..104.85 rows=1 width=76) (actual time=0.930..0.933 rows=5 loops=1)
+   Buffers: shared hit=435
+   ->  Sort  (cost=104.84..104.85 rows=1 width=76) (actual time=0.929..0.932 rows=5 loops=1)
          Sort Key: (round((((i.avg_income / avg(h.avg_price)) * '100'::double precision))::numeric, 2)) DESC
-         Sort Method: quicksort  Memory: 25kB
-         Buffers: shared hit=127
-         ->  GroupAggregate  (cost=91.56..98.77 rows=1 width=76) (actual time=0.368..0.372 rows=4 loops=1)
+         Sort Method: top-N heapsort  Memory: 25kB
+         Buffers: shared hit=435
+         ->  GroupAggregate  (cost=97.73..104.83 rows=1 width=76) (actual time=0.611..0.914 rows=19 loops=1)
                Group Key: r.region_id, i.avg_income
-               Buffers: shared hit=127
-               ->  Incremental Sort  (cost=91.56..98.74 rows=2 width=52) (actual time=0.359..0.360 rows=4 loops=1)
+               Buffers: shared hit=435
+               ->  Incremental Sort  (cost=97.73..104.79 rows=2 width=52) (actual time=0.605..0.610 rows=19 loops=1)
                      Sort Key: r.region_id, i.avg_income
                      Presorted Key: r.region_id
-                     Full-sort Groups: 1  Sort Method: quicksort  Average Memory: 25kB  Peak Memory: 25kB
-                     Buffers: shared hit=127
-                     ->  Nested Loop  (cost=84.45..98.65 rows=1 width=52) (actual time=0.266..0.319 rows=4 loops=1)
-                           Buffers: shared hit=124
-                           ->  Nested Loop  (cost=84.16..90.47 rows=1 width=52) (actual time=0.260..0.302 rows=18 loops=1)
-                                 Buffers: shared hit=84
-                                 ->  Merge Join  (cost=83.89..83.99 rows=1 width=24) (actual time=0.252..0.280 rows=18 loops=1)
+                     Full-sort Groups: 1  Sort Method: quicksort  Average Memory: 26kB  Peak Memory: 26kB
+                     Buffers: shared hit=435
+                     ->  Nested Loop  (cost=90.74..104.70 rows=1 width=52) (actual time=0.413..0.580 rows=19 loops=1)
+                           Buffers: shared hit=432
+                           ->  Nested Loop  (cost=90.46..96.78 rows=1 width=52) (actual time=0.386..0.501 rows=75 loops=1)
+                                 Buffers: shared hit=263
+                                 ->  Merge Join  (cost=90.18..90.30 rows=1 width=24) (actual time=0.368..0.428 rows=75 loops=1)
                                        Merge Cond: (p.region_id = i.region_id)
-                                       Buffers: shared hit=30
-                                       ->  Sort  (cost=52.52..52.54 rows=11 width=8) (actual time=0.214..0.227 rows=274 loops=1)
+                                       Buffers: shared hit=38
+                                       ->  Sort  (cost=52.52..52.54 rows=11 width=8) (actual time=0.258..0.280 rows=284 loops=1)
                                              Sort Key: p.region_id
                                              Sort Method: quicksort  Memory: 31kB
                                              Buffers: shared hit=26
-                                             ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=8) (actual time=0.004..0.179 rows=298 loops=1)
+                                             ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=8) (actual time=0.006..0.215 rows=298 loops=1)
                                                    Filter: ((type)::text = 'Condo'::text)
                                                    Rows Removed by Filter: 3732
                                                    Buffers: shared hit=26
-                                       ->  Sort  (cost=31.37..31.39 rows=8 width=16) (actual time=0.034..0.036 rows=22 loops=1)
+                                       ->  Sort  (cost=37.67..37.69 rows=10 width=16) (actual time=0.107..0.115 rows=102 loops=1)
                                              Sort Key: i.region_id
-                                             Sort Method: quicksort  Memory: 25kB
-                                             Buffers: shared hit=4
-                                             ->  Seq Scan on income_data i  (cost=0.00..31.25 rows=8 width=16) (actual time=0.006..0.027 rows=22 loops=1)
+                                             Sort Method: quicksort  Memory: 28kB
+                                             Buffers: shared hit=12
+                                             ->  Seq Scan on income_data i  (cost=0.00..37.50 rows=10 width=16) (actual time=0.064..0.087 rows=102 loops=1)
                                                    Filter: (year = 2020)
-                                                   Rows Removed by Filter: 528
-                                                   Buffers: shared hit=4
-                                 ->  Index Scan using ix_region_region_id on region r  (cost=0.28..6.48 rows=1 width=36) (actual time=0.001..0.001 rows=1 loops=18)
+                                                   Rows Removed by Filter: 1753
+                                                   Buffers: shared hit=12
+                                 ->  Index Scan using ix_region_region_id on region r  (cost=0.28..6.48 rows=1 width=36) (actual time=0.001..0.001 rows=1 loops=75)
                                        Index Cond: (region_id = p.region_id)
-                                       Buffers: shared hit=54
-                           ->  Index Scan using uq_property_year on housing_price h  (cost=0.29..7.94 rows=1 width=16) (actual time=0.001..0.001 rows=0 loops=18)
+                                       Buffers: shared hit=225
+                           ->  Index Scan using uq_property_year on housing_price h  (cost=0.28..7.58 rows=1 width=16) (actual time=0.001..0.001 rows=0 loops=75)
                                  Index Cond: ((property_id = p.property_id) AND (year = 2020))
-                                 Buffers: shared hit=40
+                                 Buffers: shared hit=169
  Planning:
-   Buffers: shared hit=14
- Planning Time: 0.246 ms
- Execution Time: 0.437 ms
+   Buffers: shared hit=13
+ Planning Time: 0.314 ms
+ Execution Time: 1.011 ms
 (47 rows)
 
-Time: 0.947 ms
+Time: 1.716 ms
 FEATURE 5: Data Gap Finder - Regions with housing data but no income data for 2019 condos
                                                                                      QUERY PLAN                                                                                     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- HashSetOp Except  (cost=146.41..221.49 rows=1 width=40) (actual time=1.107..1.114 rows=56 loops=1)
-   Buffers: shared hit=883
-   ->  Append  (cost=146.41..221.45 rows=9 width=40) (actual time=0.629..1.080 rows=81 loops=1)
-         Buffers: shared hit=883
-         ->  Subquery Scan on "*SELECT* 1"  (cost=146.41..146.43 rows=1 width=40) (actual time=0.628..0.655 rows=59 loops=1)
-               Buffers: shared hit=858
-               ->  Unique  (cost=146.41..146.42 rows=1 width=36) (actual time=0.628..0.638 rows=59 loops=1)
-                     Buffers: shared hit=858
-                     ->  Sort  (cost=146.41..146.41 rows=1 width=36) (actual time=0.627..0.631 rows=59 loops=1)
+ HashSetOp Except  (cost=142.49..223.90 rows=1 width=40) (actual time=0.906..0.908 rows=0 loops=1)
+   Buffers: shared hit=655
+   ->  Append  (cost=142.49..223.84 rows=11 width=40) (actual time=0.486..0.901 rows=100 loops=1)
+         Buffers: shared hit=655
+         ->  Subquery Scan on "*SELECT* 1"  (cost=142.49..142.51 rows=1 width=40) (actual time=0.399..0.399 rows=0 loops=1)
+               Buffers: shared hit=622
+               ->  Unique  (cost=142.49..142.50 rows=1 width=36) (actual time=0.398..0.399 rows=0 loops=1)
+                     Buffers: shared hit=622
+                     ->  Sort  (cost=142.49..142.50 rows=1 width=36) (actual time=0.398..0.399 rows=0 loops=1)
                            Sort Key: r.region_id, r.name
-                           Sort Method: quicksort  Memory: 26kB
-                           Buffers: shared hit=858
-                           ->  Nested Loop  (cost=0.56..146.40 rows=1 width=36) (actual time=0.058..0.617 rows=59 loops=1)
-                                 Buffers: shared hit=858
-                                 ->  Nested Loop  (cost=0.29..139.91 rows=1 width=4) (actual time=0.055..0.540 rows=59 loops=1)
-                                       Buffers: shared hit=681
-                                       ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=8) (actual time=0.006..0.207 rows=298 loops=1)
+                           Sort Method: quicksort  Memory: 25kB
+                           Buffers: shared hit=622
+                           ->  Nested Loop  (cost=0.56..142.48 rows=1 width=36) (actual time=0.396..0.396 rows=0 loops=1)
+                                 Buffers: shared hit=622
+                                 ->  Nested Loop  (cost=0.28..136.00 rows=1 width=4) (actual time=0.395..0.396 rows=0 loops=1)
+                                       Buffers: shared hit=622
+                                       ->  Seq Scan on property p  (cost=0.00..52.33 rows=11 width=8) (actual time=0.005..0.195 rows=298 loops=1)
                                              Filter: ((type)::text = 'Condo'::text)
                                              Rows Removed by Filter: 3732
                                              Buffers: shared hit=26
-                                       ->  Index Only Scan using uq_property_year on housing_price hp  (cost=0.29..7.94 rows=1 width=4) (actual time=0.001..0.001 rows=0 loops=298)
+                                       ->  Index Only Scan using uq_property_year on housing_price hp  (cost=0.28..7.58 rows=1 width=4) (actual time=0.001..0.001 rows=0 loops=298)
                                              Index Cond: ((property_id = p.property_id) AND (year = 2019))
-                                             Heap Fetches: 59
-                                             Buffers: shared hit=655
-                                 ->  Index Scan using ix_region_region_id on region r  (cost=0.28..6.48 rows=1 width=36) (actual time=0.001..0.001 rows=1 loops=59)
+                                             Heap Fetches: 0
+                                             Buffers: shared hit=596
+                                 ->  Index Scan using ix_region_region_id on region r  (cost=0.28..6.48 rows=1 width=36) (never executed)
                                        Index Cond: (region_id = p.region_id)
-                                       Buffers: shared hit=177
-         ->  Subquery Scan on "*SELECT* 2"  (cost=31.35..74.98 rows=8 width=40) (actual time=0.034..0.418 rows=22 loops=1)
-               Buffers: shared hit=25
-               ->  Hash Join  (cost=31.35..74.90 rows=8 width=36) (actual time=0.034..0.416 rows=22 loops=1)
+         ->  Subquery Scan on "*SELECT* 2"  (cost=37.62..81.27 rows=10 width=40) (actual time=0.087..0.493 rows=100 loops=1)
+               Buffers: shared hit=33
+               ->  Hash Join  (cost=37.62..81.17 rows=10 width=36) (actual time=0.087..0.484 rows=100 loops=1)
                      Hash Cond: (r_1.region_id = i.region_id)
-                     Buffers: shared hit=25
-                     ->  Seq Scan on region r_1  (cost=0.00..38.85 rows=1785 width=36) (actual time=0.003..0.227 rows=3267 loops=1)
+                     Buffers: shared hit=33
+                     ->  Seq Scan on region r_1  (cost=0.00..38.85 rows=1785 width=36) (actual time=0.002..0.221 rows=3267 loops=1)
                            Buffers: shared hit=21
-                     ->  Hash  (cost=31.25..31.25 rows=8 width=4) (actual time=0.028..0.028 rows=22 loops=1)
-                           Buckets: 1024  Batches: 1  Memory Usage: 9kB
-                           Buffers: shared hit=4
-                           ->  Seq Scan on income_data i  (cost=0.00..31.25 rows=8 width=4) (actual time=0.004..0.025 rows=22 loops=1)
+                     ->  Hash  (cost=37.50..37.50 rows=10 width=4) (actual time=0.075..0.075 rows=100 loops=1)
+                           Buckets: 1024  Batches: 1  Memory Usage: 12kB
+                           Buffers: shared hit=12
+                           ->  Seq Scan on income_data i  (cost=0.00..37.50 rows=10 width=4) (actual time=0.041..0.066 rows=100 loops=1)
                                  Filter: (year = 2019)
-                                 Rows Removed by Filter: 528
-                                 Buffers: shared hit=4
- Planning Time: 0.133 ms
- Execution Time: 1.140 ms
-(43 rows)
+                                 Rows Removed by Filter: 1755
+                                 Buffers: shared hit=12
+ Planning Time: 0.163 ms
+ Execution Time: 0.936 ms
+(42 rows)
 
-Time: 1.450 ms
+Time: 1.351 ms
+Advanced Feature 1: Find region that has minimum x consecutive Income Growth (by default, x = 3) 
+CREATE TABLE
+Time: 1.830 ms
+DO
+Time: 4.611 ms
+ region_id |     region_name     | max_consecutive_growth 
+-----------+---------------------+------------------------
+        10 | Saskatoon           |                     26
+      1088 | Halifax             |                     24
+        78 | Edmonton            |                     24
+       465 | Winnipeg            |                     24
+      3066 | Toronto             |                     24
+        15 | Vancouver           |                     24
+         6 | Calgary             |                     24
+       419 | Victoria            |                     22
+      3052 | Oshawa              |                     22
+      3084 | Guelph              |                     19
+      3051 | Hamilton            |                     19
+         4 | Kelowna             |                     19
+       440 | Regina              |                     18
+      1085 | Moncton             |                     18
+      1159 | Fredericton         |                     17
+        59 | Canmore             |                     17
+        22 | Nanaimo             |                     17
+      2287 | St. John's          |                     16
+      3090 | Brantford           |                     15
+      3055 | London              |                     14
+      2053 | Kingston            |                     14
+        45 | Kamloops            |                     14
+        11 | Campbell River      |                     13
+        48 | Vernon              |                     13
+        84 | Squamish            |                     13
+       480 | Brandon             |                     13
+        14 | Lethbridge          |                     11
+        41 | Prince George       |                     10
+       396 | Terrace             |                      9
+      3108 | Woodstock           |                      9
+       439 | Moose Jaw           |                      9
+      2953 | Whitehorse          |                      9
+      3077 | Tillsonburg         |                      9
+      1029 | Centre Wellington   |                      9
+      1017 | Barrie              |                      9
+        99 | Prince Albert       |                      9
+        91 | Chilliwack          |                      9
+        79 | Cranbrook           |                      9
+      3057 | Windsor             |                      8
+      1036 | Collingwood         |                      8
+        16 | Okotoks             |                      8
+      1041 | Wasaga Beach        |                      7
+         7 | Camrose             |                      7
+      1028 | Orillia             |                      7
+      2302 | Bay Roberts         |                      7
+       476 | Steinbach           |                      7
+        51 | Penticton           |                      7
+      3018 | North Bay           |                      7
+      2949 | Yellowknife         |                      7
+       105 | Parksville          |                      7
+       445 | Estevan             |                      7
+        13 | Red Deer            |                      7
+        71 | Courtenay           |                      7
+      1536 | Pembroke            |                      7
+        93 | Port Alberni        |                      7
+      2312 | Gander              |                      7
+        44 | Salmon Arm          |                      7
+        55 | Nelson              |                      7
+      1060 | Greater Sudbury     |                      7
+      1127 | Bathurst            |                      6
+        34 | Powell River        |                      6
+      1108 | Kentville           |                      6
+       444 | Yorkton             |                      6
+      2400 | Owen Sound          |                      6
+       230 | Swift Current       |                      6
+       386 | Prince Rupert       |                      6
+        17 | Medicine Hat        |                      6
+       144 | Sylvan Lake         |                      5
+      1021 | Sault Ste. Marie    |                      5
+      1081 | Saint John          |                      5
+        82 | Dawson Creek        |                      5
+       203 | Lacombe             |                      5
+      3081 | Leamington          |                      5
+      1245 | Miramichi           |                      5
+      1074 | Charlottetown       |                      5
+       471 | Weyburn             |                      5
+      3111 | Sarnia              |                      5
+      1075 | Summerside          |                      5
+        33 | Quesnel             |                      5
+        64 | Williams Lake       |                      5
+      1191 | New Glasgow         |                      5
+       178 | High River          |                      5
+       145 | Cold Lake           |                      4
+      2487 | Essa                |                      4
+      1025 | Thunder Bay         |                      4
+       119 | North Battleford    |                      4
+      1047 | Midland             |                      4
+       207 | Strathmore          |                      4
+        35 | Fort St. John       |                      4
+      1128 | Truro               |                      4
+        20 | Grande Prairie      |                      4
+      2337 | Peterborough        |                      4
+       101 | Brooks              |                      4
+      1614 | Cornwall            |                      4
+       399 | Trail               |                      4
+      1096 | Edmundston          |                      4
+       393 | Ladysmith           |                      3
+      1160 | Corner Brook        |                      3
+      1478 | Grand Falls-Windsor |                      3
+      2483 | Kawartha Lakes      |                      3
+       481 | Kenora              |                      3
+      1026 | Elliot Lake         |                      3
+       835 | Thompson            |                      3
+(103 rows)
+
+Time: 0.235 ms
