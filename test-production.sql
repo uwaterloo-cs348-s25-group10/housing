@@ -15,6 +15,7 @@ CREATE INDEX IF NOT EXISTS idx_housing_year_price ON housing_price(year, avg_pri
 
 CREATE INDEX IF NOT EXISTS idx_income_year ON income_data(year);
 CREATE INDEX IF NOT EXISTS idx_income_year_region ON income_data(year, region_id);
+CREATE INDEX IF NOT EXISTS idx_income_region_year_income ON income_data(region_id, year, avg_income);
 
 -- FEATURE 1a EXPLORE HOUSING PRICES
 -- This query returns the average price of Ontario (“ON”) condos in 2020, broken down by region.
